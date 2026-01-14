@@ -7,6 +7,7 @@ target_sources(algebra
       include
     FILES
       include/algebraic_concepts.h
+      include/matrix.h
       include/modulo_fields.h
       include/number_theory.h
       include/z2_field.h
