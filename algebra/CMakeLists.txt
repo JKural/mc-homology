@@ -7,6 +7,8 @@ target_sources(algebra
       include
     FILES
       include/algebraic_concepts.h
+      include/modulo_fields.h
+      include/number_theory.h
 )
 
 target_compile_features(algebra PUBLIC cxx_std_23)
