@@ -122,6 +122,10 @@ struct DummyField {
         return *this;
     }
 
+    int euclidean_function() const noexcept {
+        return 1;
+    }
+
     static DummyField one() noexcept {
         return DummyField {.data = 1};
     }
@@ -164,6 +168,15 @@ DummyField operator/(DummyField x, DummyField y) {
 
 } // namespace
 
+template<>
+constexpr bool algebra::is_commutative_v<DummyGroup> = true;
+
+template<>
+constexpr bool algebra::is_commutative_v<DummyRing> = true;
+
+template<>
+constexpr bool algebra::is_commutative_v<DummyField> = true;
+
 TEST(AlgebraicConceptsTest, AdditiveGroup) {
     using namespace algebra;
 
@@ -176,10 +189,10 @@ TEST(AlgebraicConceptsTest, AdditiveGroup) {
 TEST(AlgebraicConceptsTest, AbelianRing) {
     using namespace algebra;
 
-    EXPECT_FALSE(AbelianRing<void>);
-    EXPECT_FALSE(AbelianRing<DummyGroup>);
-    EXPECT_TRUE(AbelianRing<DummyRing>);
-    EXPECT_TRUE(AbelianRing<DummyField>);
+    EXPECT_FALSE(CommutativeRing<void>);
+    EXPECT_FALSE(CommutativeRing<DummyGroup>);
+    EXPECT_TRUE(CommutativeRing<DummyRing>);
+    EXPECT_TRUE(CommutativeRing<DummyField>);
 }
 
 TEST(AlgebraicConceptsTest, Field) {

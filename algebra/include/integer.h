@@ -5,6 +5,7 @@
 #include <format>
 #include <iostream>
 
+#include "algebraic_concepts.h"
 #include "number_theory.h"
 
 namespace algebra {
@@ -54,6 +55,11 @@ public:
         return *this;
     }
 
+    constexpr int euclidean_function() const noexcept {
+        using std::abs;
+        return abs(m_inner_representation);
+    }
+
 private:
     int m_inner_representation = 0;
 };
@@ -85,6 +91,9 @@ constexpr DivResult<Integer> divide(Integer a, Integer b) {
 constexpr Integer modulo(Integer a, Integer n) {
     return divide(a, n).remainder;
 }
+
+template<>
+constexpr inline bool is_commutative_v<Integer> = true;
 
 std::ostream& operator<<(std::ostream& output, Integer k);
 

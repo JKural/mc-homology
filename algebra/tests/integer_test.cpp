@@ -7,7 +7,7 @@
 using namespace algebra;
 
 TEST(IntegerTest, Basics) {
-    EXPECT_TRUE(AbelianRing<Integer>);
+    EXPECT_TRUE(CommutativeRing<Integer>);
 
     EXPECT_EQ(static_cast<int>(Integer::zero()), 0);
     EXPECT_EQ(static_cast<int>(Integer::one()), 1);

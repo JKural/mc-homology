@@ -4,6 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 
+#include "algebraic_concepts.h"
 #include "number_theory.h"
 
 namespace algebra {
@@ -73,6 +74,10 @@ public:
         return *this;
     }
 
+    constexpr int euclidean_function() const noexcept {
+        return 1;
+    }
+
     constexpr ZModP& operator/=(ZModP lhs) {
         auto inverse = inverse_mod(lhs.m_inner_representation, P);
         if (!inverse) [[unlikely]] {
@@ -109,6 +114,9 @@ template<int P>
 std::ostream& operator<<(std::ostream& output, ZModP<P> x) {
     return output << static_cast<int>(x);
 }
+
+template<int P>
+constexpr inline bool is_commutative_v<ZModP<P>> = true;
 
 } // namespace algebra
 

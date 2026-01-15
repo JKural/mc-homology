@@ -241,7 +241,7 @@ public:
 
     /// \brief Return an identity matrix
     constexpr static Matrix id(size_type n)
-        requires AbelianRing<T>
+        requires CommutativeRing<T>
     {
         auto identity = zero(n);
         for (size_type i = 0; i < n; ++i) {

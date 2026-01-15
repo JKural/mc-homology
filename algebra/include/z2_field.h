@@ -58,6 +58,10 @@ public:
         return *this;
     }
 
+    constexpr int euclidean_function() const noexcept {
+        return 1;
+    }
+
     constexpr ZModP& operator/=(ZModP lhs) {
         if (!lhs.m_inner_representation) [[unlikely]] {
             throw std::domain_error("Division by 0");

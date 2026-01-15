@@ -26,7 +26,7 @@ TEST(ZModPTest, RingOperations) {
     Z7 z = 2;
     Z7 one = Z7::one();
 
-    EXPECT_TRUE(AbelianRing<Z7>);
+    EXPECT_TRUE(CommutativeRing<Z7>);
     EXPECT_EQ((x * y) * z, x * (y * z));
     EXPECT_EQ(x * one, x);
     EXPECT_EQ(x * (y + z), x * y + x * z);

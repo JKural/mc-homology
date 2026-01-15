@@ -1,7 +1,8 @@
+#include "z2_field.h"
+
 #include <gtest/gtest.h>
 
 #include "algebraic_concepts.h"
-#include "z2_field.h"
 
 using namespace algebra;
 
@@ -24,7 +25,7 @@ TEST(Z2, RingOperations) {
     Z2 z = 1;
     Z2 one = Z2::one();
 
-    EXPECT_TRUE(AbelianRing<Z2>);
+    EXPECT_TRUE(CommutativeRing<Z2>);
     EXPECT_EQ((x * y) * z, x * (y * z));
     EXPECT_EQ(x * one, x);
     EXPECT_EQ(x * (y + z), x * y + x * z);
