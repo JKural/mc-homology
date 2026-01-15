@@ -2,6 +2,7 @@
 
 #include <cmath>
 #include <optional>
+#include <stdexcept>
 
 namespace algebra {
 
@@ -25,28 +26,52 @@ constexpr bool is_prime(int n) noexcept {
     return true;
 }
 
-/// \brief Modulo
+/// \brief Result struct for the division operation
+template<class T>
+struct DivResult {
+    T quotient = {};
+    T remainder = {};
+};
+
+/// \brief Calculates quotient and remainder of two numbers
 ///
-/// A function calculating modulo by a positive number `n`,
-/// such that for the result `r` the following holds: `0 <= r < n`.
+/// A function calculating numbers `quotient` and `remainder` satisfying
+/// `a == quotient * n + remainder` and 0 <= remainder < abs(n)
 ///
 /// \param a An integer
-/// \param n A nonnegative integer
+/// \param n An integer
 ///
-/// \return An optional holding the result if n is positive,
-/// `nullopt` otherwise
-constexpr std::optional<int> mod(int a, int n) noexcept {
-    if (n >= 1) [[likely]] {
-        return (a % n + n) % n;
+/// \return A struct holding three numbers:
+///     `quotient`: the quotient
+///     `remainder`: the remainder
+constexpr DivResult<int> divide(int a, int b) {
+    if (b != 0) [[likely]] {
+        auto [q, r] = std::div(a, b);
+        if (r < 0) {
+            q -= b > 0 ? 1 : -1;
+            r += b > 0 ? b : -b;
+        }
+        return {.quotient = q, .remainder = r};
     } else [[unlikely]] {
-        return std::nullopt;
+        throw std::domain_error("Modulo by a nonpositive integer");
     }
 }
 
-struct ExtendedGCDRV {
-    int g = 1;
-    int x = 1;
-    int y = 1;
+/// \brief Calculates the remainder of a by n
+///
+/// \param a An integer
+/// \param n an integer
+///
+/// \return The remainder
+constexpr int modulo(int a, int n) {
+    return divide(a, n).remainder;
+}
+
+/// \brief Result struct for the extended gcd algorithm
+struct ExtendedGCDResult {
+    int g = 0;
+    int x = 0;
+    int y = 0;
 };
 
 /// \brief Extended Euclidean algorithm
@@ -61,7 +86,7 @@ struct ExtendedGCDRV {
 ///     `g`: the gcd
 ///     `x`: first coefficient
 ///     `y`: second coefficient
-constexpr ExtendedGCDRV extended_gcd(int a, int b) noexcept {
+constexpr ExtendedGCDResult extended_gcd(int a, int b) noexcept {
     a = std::abs(a);
     b = std::abs(b);
     int x1 = 1;
@@ -69,16 +94,10 @@ constexpr ExtendedGCDRV extended_gcd(int a, int b) noexcept {
     int y1 = 0;
     int y2 = 1;
     while (b > 0) {
-        int q = a / b;
-        int c = b;
-        int x3 = x2;
-        int y3 = y2;
-        b = a - q * b;
-        x2 = x1 - q * x2;
-        y2 = y1 - q * y2;
-        a = c;
-        x1 = x3;
-        y1 = y3;
+        auto [q, r] = divide(a, b);
+        std::tie(a, b) = std::pair {b, r};
+        std::tie(x1, x2) = std::pair {x2, x1 - q * x2};
+        std::tie(y1, y2) = std::pair {y2, y1 - q * y2};
     }
     return {.g = a, .x = x1, .y = y1};
 }

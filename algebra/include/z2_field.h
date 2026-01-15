@@ -11,8 +11,7 @@ public:
     constexpr ZModP() = default;
 
     /// \brief Retur>ns n mod P.
-    constexpr ZModP(int n) noexcept :
-        m_inner_representation(mod(n, 2).value()) {}
+    constexpr ZModP(int n) noexcept : m_inner_representation(modulo(n, 2)) {}
 
     /// \brief Returns the modulus P.
     constexpr static int p() noexcept {

@@ -23,8 +23,7 @@ public:
     constexpr ZModP() = default;
 
     /// \brief Returns n mod P.
-    constexpr ZModP(int n) noexcept :
-        m_inner_representation(mod(n, P).value()) {}
+    constexpr ZModP(int n) noexcept : m_inner_representation(modulo(n, P)) {}
 
     /// \brief Returns the modulus P.
     constexpr static int p() noexcept {
@@ -50,13 +49,13 @@ public:
 
     constexpr ZModP& operator+=(ZModP lhs) noexcept {
         m_inner_representation =
-            mod(m_inner_representation + lhs.m_inner_representation, P).value();
+            modulo(m_inner_representation + lhs.m_inner_representation, P);
         return *this;
     }
 
     constexpr ZModP& operator-=(ZModP lhs) noexcept {
         m_inner_representation =
-            mod(m_inner_representation - lhs.m_inner_representation, P).value();
+            modulo(m_inner_representation - lhs.m_inner_representation, P);
         return *this;
     }
 
@@ -65,12 +64,12 @@ public:
     }
 
     constexpr ZModP operator-() const noexcept {
-        return ZModP(mod(-m_inner_representation, P).value());
+        return ZModP(modulo(-m_inner_representation, P));
     }
 
     constexpr ZModP& operator*=(ZModP lhs) noexcept {
         m_inner_representation =
-            mod(m_inner_representation * lhs.m_inner_representation, P).value();
+            modulo(m_inner_representation * lhs.m_inner_representation, P);
         return *this;
     }
 

@@ -3,6 +3,7 @@
 #include <gtest/gtest.h>
 
 #include <functional>
+#include <stdexcept>
 
 using namespace algebra;
 
@@ -13,11 +14,27 @@ TEST(NumberTheoryTest, Primes) {
     EXPECT_PRED1(is_prime, 11);
 }
 
+TEST(NumberTheoryTest, Division) {
+    auto [q1, r1] = divide(17, 7);
+    auto [q2, r2] = divide(-17, 7);
+    auto [q3, r3] = divide(-17, -7);
+    auto [q4, r4] = divide(17, -7);
+    EXPECT_EQ(q1, 2);
+    EXPECT_EQ(r1, 3);
+    EXPECT_EQ(q2, -3);
+    EXPECT_EQ(r2, 4);
+    EXPECT_EQ(q3, 3);
+    EXPECT_EQ(r3, 4);
+    EXPECT_EQ(q4, -2);
+    EXPECT_EQ(r4, 3);
+}
+
 TEST(NumberTheoryTest, Modulo) {
-    EXPECT_EQ(mod(17, 7), std::optional {3});
-    EXPECT_EQ(mod(-17, 7), std::optional {4});
-    EXPECT_EQ(mod(-17, -7), std::nullopt);
-    EXPECT_EQ(mod(17, -7), std::nullopt);
+    EXPECT_EQ(modulo(17, 7), 3);
+    EXPECT_EQ(modulo(-17, 7), 4);
+    EXPECT_EQ(modulo(-17, -7), 4);
+    EXPECT_EQ(modulo(17, -7), 3);
+    EXPECT_THROW(modulo(17, 0), std::domain_error);
 }
 
 TEST(NumberTheoryTest, ExtendedGCD) {
