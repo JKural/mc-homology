@@ -212,6 +212,17 @@ public:
         return m_data;
     }
 
+    /// \brief The transpose of the matrix
+    constexpr Matrix transpose() const {
+        auto transposed = zero(m_ncols, m_nrows);
+        for (size_type i = 0; i < m_nrows; ++i) {
+            for (size_type j = 0; j < m_ncols; ++j) {
+                transposed[j, i] = at(i, j);
+            }
+        }
+        return transposed;
+    }
+
     /// \brief Return a square zero matrix
     constexpr static Matrix zero(size_type n)
         requires AdditiveGroup<T>

@@ -62,3 +62,22 @@ TEST(MatrixTest, Printing) {
     std::println("{}\n{}\n{}\n{}\n{}", txt1, txt2, txt3, txt4, txt5);
     FAIL();
 }
+
+TEST(MatrixTest, Transpose) {
+    using Z5 = ZModP<5>;
+    using Matrix = Matrix<Z5>;
+    // clang-format off
+    Matrix m(
+        std::vector {1, 2, 3,
+                     4, 5, 6},
+        2, 3);
+    // clang-format on
+    auto m_t = m.transpose();
+    EXPECT_EQ(m_t.nrows(), 3);
+    EXPECT_EQ(m_t.ncols(), 2);
+    for (std::size_t i = 0; i < 2; ++i) {
+        for (std::size_t j = 0; j < 3; ++j) {
+            EXPECT_EQ(m_t.at(j, i), m.at(i, j));
+        }
+    }
+}
