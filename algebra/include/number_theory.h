@@ -53,7 +53,7 @@ constexpr DivResult<int> divide(int a, int b) {
         }
         return {.quotient = q, .remainder = r};
     } else [[unlikely]] {
-        throw std::domain_error("Modulo by a nonpositive integer");
+        throw std::domain_error("Division by 0");
     }
 }
 
