@@ -1,5 +1,7 @@
 #pragma once
 
+#include <format>
+#include <iostream>
 #include <ranges>
 #include <stdexcept>
 #include <utility>
@@ -157,6 +159,8 @@ public:
         return m_ncols;
     }
 
+    constexpr bool operator==(Matrix const&) const = default;
+
     /// \brief Access element at row `row` and columns `col`
     ///
     /// \param row Accessed row
@@ -248,4 +252,77 @@ private:
 template<std::ranges::sized_range R>
 Matrix(R&&, std::size_t, std::size_t) -> Matrix<std::ranges::range_value_t<R>>;
 
+template<class T>
+std::ostream& operator<<(std::ostream& output, Matrix<T> const& matrix) {
+    return output << std::format("{}", matrix);
+}
+
 } // namespace algebra
+
+template<class T>
+    requires std::formattable<T, char>
+struct std::formatter<algebra::Matrix<T>> {
+    bool one_line = true;
+    std::formatter<T> coefficient_formatter;
+
+    template<class ParseContext>
+    constexpr ParseContext::iterator parse(ParseContext& ctx) {
+        auto it = ctx.begin();
+        if (it == ctx.end() || *it == '}') {
+            return it;
+        } else if (*it == '-') {
+            one_line = true;
+            ++it;
+        } else if (*it == '#') {
+            one_line = false;
+            ++it;
+        }
+
+        if (it == ctx.end() || *it == '}') {
+            return it;
+        } else if (*it == ':') {
+            ctx.advance_to(++it);
+            return coefficient_formatter.parse(ctx);
+        } else {
+            throw std::format_error("Invalid formatting option for Matrix");
+        }
+    }
+
+    template<class FmtContext>
+    FmtContext::iterator
+    format(algebra::Matrix<T> const& matrix, FmtContext& ctx) const {
+        auto const spacer = one_line ? ' ' : '\n';
+        auto const indent = one_line ? "" : " ";
+        if (matrix.empty()) {
+            std::format_to(ctx.out(), "[]");
+        } else {
+            std::format_to(ctx.out(), "{}[", spacer);
+            for (std::size_t i = 0; i < matrix.nrows(); ++i) {
+                if (i > 0) {
+                    std::format_to(ctx.out(), "{}", indent);
+                }
+                std::format_to(ctx.out(), "[");
+                for (std::size_t j = 0; j < matrix.ncols(); ++j) {
+                    coefficient_formatter.format(matrix[i, j], ctx);
+                    if (j + 1 < matrix.ncols()) {
+                        std::format_to(ctx.out(), ", ");
+                    }
+                }
+                std::format_to(ctx.out(), "]");
+                if (i + 1 < matrix.nrows()) {
+                    std::format_to(ctx.out(), ",{}", spacer);
+                }
+            }
+            std::format_to(ctx.out(), "]{}", spacer);
+        }
+        if (!one_line) {
+            std::format_to(
+                ctx.out(),
+                "Matrix {} x {}\n",
+                matrix.nrows(),
+                matrix.ncols()
+            );
+        }
+        return ctx.out();
+    }
+};

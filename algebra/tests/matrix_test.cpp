@@ -3,6 +3,7 @@
 #include <gtest/gtest.h>
 
 #include <array>
+#include <print>
 #include <stdexcept>
 
 #include "z2_field.h"
@@ -45,4 +46,19 @@ TEST(MatrixTest, IdentityAndZero) {
     }
     EXPECT_EQ(matrix2.nrows(), 2);
     EXPECT_EQ(matrix2.ncols(), 4);
+}
+
+TEST(MatrixTest, Printing) {
+    using Z13 = ZModP<13>;
+    using Matrix = Matrix<Z13>;
+    Matrix m(std::vector<Z13> {1, 2, 3, 4, 5, 6, 7, 8}, 2, 4);
+    std::stringstream sstream;
+    sstream << m;
+    std::string txt1 = sstream.str();
+    std::string txt2 = std::format("{}", m);
+    std::string txt3 = std::format("{:-}", m);
+    std::string txt4 = std::format("{:#}", m);
+    std::string txt5 = std::format("{::^3}", m);
+    std::println("{}\n{}\n{}\n{}\n{}", txt1, txt2, txt3, txt4, txt5);
+    FAIL();
 }
