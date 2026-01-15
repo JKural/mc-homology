@@ -1,4 +1,28 @@
-# add_library(algebra)
+add_library(algebra)
+
+target_sources(algebra
+  PRIVATE
+    src/integer.cpp
+  PUBLIC
+    FILE_SET HEADERS
+    BASE_DIRS
+      include
+    FILES
+      include/algebraic_concepts.h
+      include/integer.h
+      include/matrix.h
+      include/matrix_algorithms.h
+      include/modulo_fields.h
+      include/number_theory.h
+      include/z2_field.h
+      include/detail/matrix_utils.h
+)
+
+target_compile_features(algebra PUBLIC cxx_std_23)
+set_target_properties(algebra
+  PROPERTIES
+    LINKER_LANGUAGE CXX
+)
 
 if(BUILD_TESTING)
   add_subdirectory(tests)
