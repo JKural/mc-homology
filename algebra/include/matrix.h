@@ -1,5 +1,6 @@
 #pragma once
 
+#include <concepts>
 #include <format>
 #include <iostream>
 #include <ranges>
@@ -56,6 +57,7 @@ public:
     /// \param nrows Number of rows
     /// \param ncols Number of colums
     template<std::ranges::sized_range R>
+        requires std::convertible_to<std::ranges::range_value_t<R>, T>
     constexpr explicit Matrix(R&& data, size_type nrows, size_type ncols) :
         m_data {},
         m_nrows {nrows},
@@ -66,7 +68,7 @@ public:
                 " of rows times the number of columns"
             );
         }
-        m_data = std::ranges::to<std::vector>(std::forward<R>(data));
+        m_data = std::ranges::to<std::vector<T>>(std::forward<R>(data));
     }
 
     /// \brief Iterator over the coefficients
