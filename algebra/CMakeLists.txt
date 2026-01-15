@@ -8,9 +8,11 @@ target_sources(algebra
     FILES
       include/algebraic_concepts.h
       include/matrix.h
+      include/matrix_algorithms.h
       include/modulo_fields.h
       include/number_theory.h
       include/z2_field.h
+      include/detail/matrix_utils.h
 )
 
 target_compile_features(algebra PUBLIC cxx_std_23)
