@@ -29,8 +29,8 @@ constexpr std::size_t row_echelon_form(std::in_place_t, Matrix<T>& matrix) {
             detail::submatrix_swap_rows(matrix, i, *maybe_i, j);
         }
         for (auto k = i + 1; k < matrix.nrows(); ++k) {
-            auto mult = matrix[k, j] / matrix[i, j];
-            detail::submatrix_add_row(matrix, mult, k, i, j);
+            auto mult = -matrix[k, j] / matrix[i, j];
+            detail::submatrix_add_row(matrix, mult, i, k, j);
         }
         ++i;
     }

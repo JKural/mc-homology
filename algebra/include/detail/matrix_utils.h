@@ -29,7 +29,7 @@ constexpr void submatrix_swap_rows(
 ) noexcept {
     for (auto l = j; l < matrix.ncols(); ++l) {
         namespace rs = std::ranges;
-        rs::swap(matrix[i1, j], matrix[i2, j]);
+        rs::swap(matrix[i1, l], matrix[i2, l]);
     }
 }
 
@@ -37,12 +37,12 @@ template<AbelianRing T>
 constexpr void submatrix_add_row(
     Matrix<T>& matrix,
     T const& mult,
-    std::size_t i1,
-    std::size_t i2,
+    std::size_t source_row,
+    std::size_t target_row,
     std::size_t j
 ) noexcept {
     for (auto l = j; l < matrix.ncols(); ++l) {
-        matrix[i2, j] += mult * matrix[i1, j];
+        matrix[target_row, l] += mult * matrix[source_row, l];
     }
 }
 

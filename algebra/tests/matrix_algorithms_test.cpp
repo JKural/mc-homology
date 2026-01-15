@@ -2,6 +2,7 @@
 
 #include <gtest/gtest.h>
 
+#include "gtest/gtest.h"
 #include "modulo_fields.h"
 
 using namespace algebra;
@@ -61,4 +62,23 @@ TEST(MatrixAlgorithmsTest, RowEchelonZero) {
     EXPECT_EQ(m2_non_empty_rows, 0);
     EXPECT_EQ(m3_row_echelon, m3);
     EXPECT_EQ(m3_non_empty_rows, 0);
+}
+
+TEST(MatrixAlgorithmsTest, RowEchelon) {
+    using Z13 = ZModP<13>;
+    using Matrix = Matrix<Z13>;
+    // clang-format off
+    Matrix m1(
+        std::vector {2, 0, 3, 2,
+                     1, 5, 3, 0},
+        2, 4);
+    // clang-format on
+    auto m1_row_echelon_result = row_echelon_form(m1);
+    EXPECT_PRED1(is_row_echelon<Z13>, m1_row_echelon_result.row_echelon_form);
+    EXPECT_EQ(m1_row_echelon_result.non_empty_rows, 2);
+
+    auto m2 = m1.transpose();
+    auto m2_row_echelon_result = row_echelon_form(m2);
+    EXPECT_PRED1(is_row_echelon<Z13>, m2_row_echelon_result.row_echelon_form);
+    EXPECT_EQ(m2_row_echelon_result.non_empty_rows, 2);
 }
