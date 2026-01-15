@@ -3,7 +3,6 @@
 #include <gtest/gtest.h>
 
 #include <array>
-#include <print>
 #include <stdexcept>
 
 #include "z2_field.h"
@@ -51,16 +50,34 @@ TEST(MatrixTest, IdentityAndZero) {
 TEST(MatrixTest, Printing) {
     using Z13 = ZModP<13>;
     using Matrix = Matrix<Z13>;
-    Matrix m(std::vector<Z13> {1, 2, 3, 4, 5, 6, 7, 8}, 2, 4);
+    // clang-format off
+    Matrix m(
+        std::vector {1, 2, 3, 4,
+                     5, 6, 7, 8},
+        2, 4);
+    // clang-format on
     std::stringstream sstream;
     sstream << m;
     std::string txt1 = sstream.str();
     std::string txt2 = std::format("{}", m);
     std::string txt3 = std::format("{:-}", m);
     std::string txt4 = std::format("{:#}", m);
-    std::string txt5 = std::format("{::^3}", m);
-    std::println("{}\n{}\n{}\n{}\n{}", txt1, txt2, txt3, txt4, txt5);
-    FAIL();
+    std::string txt5 = std::format("{::-^3}", m);
+    std::string txt6 = std::format("{:#:-^3}", m);
+    std::string txt1_expected = "[[1, 2, 3, 4], [5, 6, 7, 8]]";
+    std::string txt2_expected = "[[1, 2, 3, 4], [5, 6, 7, 8]]";
+    std::string txt3_expected = "[[1, 2, 3, 4], [5, 6, 7, 8]]";
+    std::string txt4_expected =
+        "[[1, 2, 3, 4],\n [5, 6, 7, 8]]\nMatrix 2 x 4\n";
+    std::string txt5_expected = "[[-1-, -2-, -3-, -4-], [-5-, -6-, -7-, -8-]]";
+    std::string txt6_expected =
+        "[[-1-, -2-, -3-, -4-],\n [-5-, -6-, -7-, -8-]]\nMatrix 2 x 4\n";
+    EXPECT_EQ(txt1, txt1_expected);
+    EXPECT_EQ(txt2, txt2_expected);
+    EXPECT_EQ(txt3, txt3_expected);
+    EXPECT_EQ(txt4, txt4_expected);
+    EXPECT_EQ(txt5, txt5_expected);
+    EXPECT_EQ(txt6, txt6_expected);
 }
 
 TEST(MatrixTest, Transpose) {

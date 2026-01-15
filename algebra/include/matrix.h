@@ -304,16 +304,12 @@ struct std::formatter<algebra::Matrix<T>> {
     template<class FmtContext>
     FmtContext::iterator
     format(algebra::Matrix<T> const& matrix, FmtContext& ctx) const {
-        auto const spacer = one_line ? ' ' : '\n';
-        auto const indent = one_line ? "" : " ";
+        auto const maybe_new_line = one_line ? "" : "\n";
         if (matrix.empty()) {
             std::format_to(ctx.out(), "[]");
         } else {
-            std::format_to(ctx.out(), "{}[", spacer);
+            std::format_to(ctx.out(), "[");
             for (std::size_t i = 0; i < matrix.nrows(); ++i) {
-                if (i > 0) {
-                    std::format_to(ctx.out(), "{}", indent);
-                }
                 std::format_to(ctx.out(), "[");
                 for (std::size_t j = 0; j < matrix.ncols(); ++j) {
                     coefficient_formatter.format(matrix[i, j], ctx);
@@ -323,15 +319,15 @@ struct std::formatter<algebra::Matrix<T>> {
                 }
                 std::format_to(ctx.out(), "]");
                 if (i + 1 < matrix.nrows()) {
-                    std::format_to(ctx.out(), ",{}", spacer);
+                    std::format_to(ctx.out(), ",{} ", maybe_new_line);
                 }
             }
-            std::format_to(ctx.out(), "]{}", spacer);
+            std::format_to(ctx.out(), "]");
         }
         if (!one_line) {
             std::format_to(
                 ctx.out(),
-                "Matrix {} x {}\n",
+                "\nMatrix {} x {}\n",
                 matrix.nrows(),
                 matrix.ncols()
             );
