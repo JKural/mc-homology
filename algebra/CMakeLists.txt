@@ -1,12 +1,15 @@
 add_library(algebra)
 
 target_sources(algebra
+  PRIVATE
+    src/integer.cpp
   PUBLIC
     FILE_SET HEADERS
     BASE_DIRS
       include
     FILES
       include/algebraic_concepts.h
+      include/integer.h
       include/matrix.h
       include/matrix_algorithms.h
       include/modulo_fields.h
