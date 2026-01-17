@@ -4,6 +4,7 @@
 
 namespace algebra {
 
+/// \brief Template specialization for P == 2
 template<>
 class ZModP<2> {
 public:

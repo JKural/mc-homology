@@ -272,10 +272,33 @@ std::ostream& operator<<(std::ostream& output, Matrix<T> const& matrix) {
 
 } // namespace algebra
 
+/// \brief Formatter for the `Matrix` type
+///
+/// Impletementation of the formatter for the `Matrix` type.
+///
+/// # Format syntax
+///
+/// 1. :[-|#][<cofficient_format_string>]
+///
+/// where <coefficient_format_string> is the format string for the
+/// coefficient type. `-` or no specifier means that the matrix will
+/// be printed in a single line, `#` will print the matrix in multiple
+/// lines, making it easier to read.
+///
+/// # Example
+///
+/// For `Matrix<Integer> matrix`
+/// 1. `std::format("{}", matrix)` outputs a single line matrix
+/// 2. `std::format("{:-}", matrix)` also outputs a single line matrix
+/// 3. `std::format("{:#}", matrix)` output a multi-line matrix
+/// 4. `std::format("{::b}", matrix)` output a single line matrix of
+///    integers in binary representation
+/// 5. `std::format("{:#:x}", matrix)` output a multi-line matrix of
+///    integers in hexadecimal representation
 template<class T>
     requires std::formattable<T, char>
 struct std::formatter<algebra::Matrix<T>> {
-    bool one_line = true;
+    bool multi_line = false;
     std::formatter<T> coefficient_formatter;
 
     template<class ParseContext>
@@ -284,10 +307,10 @@ struct std::formatter<algebra::Matrix<T>> {
         if (it == ctx.end() || *it == '}') {
             return it;
         } else if (*it == '-') {
-            one_line = true;
+            multi_line = false;
             ++it;
         } else if (*it == '#') {
-            one_line = false;
+            multi_line = true;
             ++it;
         }
 
@@ -304,7 +327,7 @@ struct std::formatter<algebra::Matrix<T>> {
     template<class FmtContext>
     FmtContext::iterator
     format(algebra::Matrix<T> const& matrix, FmtContext& ctx) const {
-        auto const maybe_new_line = one_line ? "" : "\n";
+        auto const maybe_new_line = multi_line ? "\n" : "";
         if (matrix.empty()) {
             std::format_to(ctx.out(), "[]");
         } else {
@@ -324,7 +347,7 @@ struct std::formatter<algebra::Matrix<T>> {
             }
             std::format_to(ctx.out(), "]");
         }
-        if (!one_line) {
+        if (multi_line) {
             std::format_to(
                 ctx.out(),
                 "\nMatrix {} x {}\n",

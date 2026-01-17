@@ -120,6 +120,10 @@ constexpr inline bool is_commutative_v<ZModP<P>> = true;
 
 } // namespace algebra
 
+/// \brief Formatter for ZModP type
+///
+/// Allows use of `std::format` with the `ZModP` type. The format
+/// syntax is the same, as in the case of `int`.
 template<int P>
 struct std::formatter<algebra::ZModP<P>>: public std::formatter<int> {
     template<class FmtContext>
