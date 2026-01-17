@@ -5,6 +5,7 @@
 #include <array>
 #include <stdexcept>
 
+#include "integer.h"
 #include "z2_field.h"
 
 using namespace algebra;
@@ -97,4 +98,43 @@ TEST(MatrixTest, Transpose) {
             EXPECT_EQ(m_t.at(j, i), m.at(i, j));
         }
     }
+}
+
+TEST(MatrixTest, Operations) {
+    using Matrix = Matrix<Integer>;
+    // clang-format off
+    Matrix m1 = Matrix(
+        std::vector {1, 2, 3,
+                     4, 5, 6},
+        2, 3);
+    Matrix m2 = Matrix(
+        std::vector { 1, -2,  3,
+                     -4,  5, -6},
+        2, 3);
+    Matrix m3 = Matrix(
+        std::vector {2,  0, 6,
+                     0, 10, 0},
+        2, 3);
+    Matrix m4 = Matrix(
+        std::vector {1, 2, 3, 4,
+                     5, 6, 7, 8,
+                     9, 0, 1, 2},
+        3, 4);
+    Matrix m5 = Matrix(
+        std::vector {1, 2, 3, 4,
+                     5, 6, 7, 8,
+                     9, 0, 1, 2},
+        3, 4);
+    Matrix m6 = Matrix(
+        std::vector {38, 14, 20, 26,
+                     83, 38, 53, 68},
+        2, 4);
+    // clang-format on
+    EXPECT_EQ(m1 + m2, m3);
+    EXPECT_EQ(m1 + Matrix::zero(2, 3), m1);
+    EXPECT_THROW(m1 + Matrix::zero(2), std::domain_error);
+    EXPECT_EQ(m1 * m5, m6);
+    EXPECT_EQ(Matrix::id(3) * m5, m5);
+    EXPECT_EQ(m5 * Matrix::id(4), m5);
+    EXPECT_THROW(m1 * Matrix::zero(2), std::domain_error);
 }
