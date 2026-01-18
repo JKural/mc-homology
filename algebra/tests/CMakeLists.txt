@@ -3,6 +3,7 @@ add_executable(algebra_test)
 target_sources(algebra_test
   PRIVATE
     algebraic_concepts_test.cpp
+    chain_complex_test.cpp
     integer_test.cpp
     matrix_test.cpp
     matrix_algorithms_test.cpp

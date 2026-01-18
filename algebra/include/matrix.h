@@ -285,6 +285,13 @@ public:
         return Matrix(std::move(data), n, m);
     }
 
+    /// \brief Returns true if matrix is zero, false otherwise
+    constexpr bool is_zero() const noexcept {
+        return std::ranges::all_of(m_data, [](T const& x) {
+            return x == T::zero();
+        });
+    }
+
     /// \brief Return an identity matrix
     constexpr static Matrix id(size_type n)
         requires CommutativeRing<T>
