@@ -1,3 +1,7 @@
+/// \file number_theory.h
+/// \brief A file containing implementations of selected number
+///        theoretic algorithms
+
 #pragma once
 
 #include <cmath>
@@ -29,7 +33,9 @@ constexpr bool is_prime(int n) noexcept {
 /// \brief Result struct for the division operation
 template<class T>
 struct DivResult {
+    /// \brief Quotient of the division
     T quotient = {};
+    /// \brief Remainder of the division
     T remainder = {};
 };
 
@@ -39,7 +45,7 @@ struct DivResult {
 /// `a == quotient * n + remainder` and 0 <= remainder < abs(n)
 ///
 /// \param a An integer
-/// \param n An integer
+/// \param b An integer
 ///
 /// \return A struct holding three numbers:
 ///     `quotient`: the quotient
@@ -68,9 +74,15 @@ constexpr int modulo(int a, int n) {
 }
 
 /// \brief Result struct for the extended gcd algorithm
+///
+/// Results of the extended gcd algorithm. For input `a`, `b` satisfies
+/// `g == a * x + b * y`
 struct ExtendedGCDResult {
+    /// \brief Greatest common divisor
     int g = 0;
+    /// \brief First coefficient from the extended algorithm
     int x = 0;
+    /// \brief Second coefficient from the extended algorithm
     int y = 0;
 };
 

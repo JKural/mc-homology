@@ -1,3 +1,6 @@
+/// \file z2_field.h
+/// \brief A file containing optimized implementation of Z2 field
+
 #pragma once
 
 #include "modulo_fields.h"
@@ -34,37 +37,47 @@ public:
         return m_inner_representation;
     }
 
+    /// \brief Equality comparison
     constexpr bool operator==(ZModP const&) const = default;
 
-    constexpr ZModP& operator+=(ZModP lhs) noexcept {
-        m_inner_representation ^= lhs.m_inner_representation;
+    /// \brief Adds rhs to itself
+    constexpr ZModP& operator+=(ZModP rhs) noexcept {
+        m_inner_representation ^= rhs.m_inner_representation;
         return *this;
     }
 
-    constexpr ZModP& operator-=(ZModP lhs) noexcept {
-        m_inner_representation ^= lhs.m_inner_representation;
+    /// \brief Subtracts rhs from itself
+    constexpr ZModP& operator-=(ZModP rhs) noexcept {
+        m_inner_representation ^= rhs.m_inner_representation;
         return *this;
     }
 
+    /// \brief Returns a copy of itself
     constexpr ZModP operator+() const noexcept {
         return *this;
     }
 
+    /// \brief Returns a negation of itself
     constexpr ZModP operator-() const noexcept {
         return *this;
     }
 
-    constexpr ZModP& operator*=(ZModP lhs) noexcept {
-        m_inner_representation &= lhs.m_inner_representation;
+    /// \brief Multiplies itself by rhs
+    constexpr ZModP& operator*=(ZModP rhs) noexcept {
+        m_inner_representation &= rhs.m_inner_representation;
         return *this;
     }
 
+    /// \brief Euclidean function for fields
+    ///
+    /// Euclidean function for fields is constantly equal to 1.
     constexpr int euclidean_function() const noexcept {
         return 1;
     }
 
-    constexpr ZModP& operator/=(ZModP lhs) {
-        if (!lhs.m_inner_representation) [[unlikely]] {
+    /// \brief Divides itself by rhs
+    constexpr ZModP& operator/=(ZModP rhs) {
+        if (!rhs.m_inner_representation) [[unlikely]] {
             throw std::domain_error("Division by 0");
         }
         return *this;
@@ -74,6 +87,7 @@ private:
     bool m_inner_representation = false;
 };
 
+/// \brief Alias for ZModP<2>
 using Z2 = ZModP<2>;
 
 } // namespace algebra

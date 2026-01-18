@@ -1,3 +1,6 @@
+/// \file algebraic_concepts.h
+/// \brief A file defining multiple concepts for algebraic structures
+
 #pragma once
 
 #include <concepts>
@@ -6,7 +9,7 @@
 
 namespace algebra {
 
-/// \brief Helper variable template, that can be used as a mark a that
+/// \brief Helper variable template that can be used as a mark that
 ///        class' main operation (addition or multiplication) is abelian
 template<class T>
 constexpr inline bool is_commutative_v = false;

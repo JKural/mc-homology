@@ -1,3 +1,6 @@
+/// \file chain_complex.h
+/// \brief A file containing chain complex and homology implementations
+
 #pragma once
 
 #include <algorithm>
@@ -107,12 +110,27 @@ private:
     std::vector<Matrix<T>> m_boundaries;
 };
 
+/// \brief Homology of a chain complex
+///
+/// A struct containing homology information of a chain complex - its
+/// betti numbers and torsion group.
+/// The data is stored increasingly in dimension:
+/// dim(H_0) = betti_numbers[0], dim(H_1) = betti_numbers[1] itd.
 template<class T>
 struct Homology {
+    /// \brief Betti numbers of a chain complex
     std::vector<std::size_t> betti_numbers {};
+
+    /// \brief Torsion of a chain complex
+    ///
+    /// Information about the torsion group is stored in the following
+    /// way: torsion[n] contains an array of elements such that
+    /// torsion is equal to the simple sum of T/aT for a in the array.
     std::vector<std::vector<T>> torsion {};
 };
 
+/// \brief Computes homology of a chain complex with coefficients from
+///        an euclidean domain
 template<EuclideanDomain T>
 Homology<T> homology(ChainComplex<T> const& chain_complex) {
     namespace rs = std::ranges;
@@ -146,6 +164,8 @@ Homology<T> homology(ChainComplex<T> const& chain_complex) {
     return homology;
 }
 
+/// \brief Computes homology of a chain complex with coefficients from
+///        a field
 template<Field T>
 Homology<T> homology(ChainComplex<T> const& chain_complex) {
     auto const& boundaries = chain_complex.boundaries();

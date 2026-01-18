@@ -1,3 +1,6 @@
+/// \file matrix.h
+/// \brief A file containing matrix implementation
+
 #pragma once
 
 #include <algorithm>
@@ -162,6 +165,7 @@ public:
         return m_ncols;
     }
 
+    /// \brief Equality comparison for matrices
     constexpr bool operator==(Matrix const&) const = default;
 
     /// \brief Access element at row `row` and columns `col`
@@ -224,6 +228,7 @@ public:
         return transposed;
     }
 
+    /// \brief Adds rhs to itself
     constexpr Matrix& operator+=(Matrix const& rhs)
         requires AdditiveGroup<T>
     {
@@ -235,6 +240,7 @@ public:
         return *this;
     }
 
+    /// \brief Subtracts rhs from itself
     constexpr Matrix& operator-=(Matrix const& rhs)
         requires AdditiveGroup<T>
     {
@@ -247,12 +253,14 @@ public:
         rs::transform(m_data, rhs.m_data, rs::begin(m_data), std::minus {});
     }
 
+    /// \brief Returns a copy of itself
     constexpr Matrix operator+() const
         requires AdditiveGroup<T>
     {
         return *this;
     }
 
+    /// \brief Returns a negation of itself
     constexpr Matrix operator-() const
         requires AdditiveGroup<T>
     {
@@ -263,6 +271,9 @@ public:
         return Matrix(negated, m_nrows, m_ncols);
     }
 
+    /// \brief Multiplies itself by rhs
+    ///
+    /// Matrix multiplies itself from the right-hand side by rhs.
     constexpr Matrix operator*=(Matrix const& rhs)
         requires Ring<T>
     {
@@ -314,16 +325,21 @@ private:
     size_type m_ncols;
 };
 
+/// \brief Adds two matrices
 template<AdditiveGroup T>
 constexpr Matrix<T> operator+(Matrix<T> lhs, Matrix<T> const& rhs) {
     return lhs += rhs;
 }
 
+/// \brief Subtracts two matrices
 template<AdditiveGroup T>
 constexpr Matrix<T> operator-(Matrix<T> lhs, Matrix<T> const& rhs) {
     return lhs -= rhs;
 }
 
+/// \brief Multiplies two matrices
+///
+/// Multiplies two matrices using the usual matrix multiplication.
 template<Ring T>
 constexpr Matrix<T> operator*(Matrix<T> const& lhs, Matrix<T> const& rhs) {
     using Matrix = Matrix<T>;
@@ -350,6 +366,7 @@ constexpr Matrix<T> operator*(Matrix<T> const& lhs, Matrix<T> const& rhs) {
 template<std::ranges::sized_range R>
 Matrix(R&&, std::size_t, std::size_t) -> Matrix<std::ranges::range_value_t<R>>;
 
+/// \brief Outputs a matrix to a stream
 template<class T>
 std::ostream& operator<<(std::ostream& output, Matrix<T> const& matrix) {
     return output << std::format("{}", matrix);
@@ -363,9 +380,9 @@ std::ostream& operator<<(std::ostream& output, Matrix<T> const& matrix) {
 ///
 /// # Format syntax
 ///
-/// 1. :[-|#][<cofficient_format_string>]
+/// 1. :[-|#][&ltcofficient_format_string&gt]
 ///
-/// where <coefficient_format_string> is the format string for the
+/// where &ltcoefficient_format_string&gt is the format string for the
 /// coefficient type. `-` or no specifier means that the matrix will
 /// be printed in a single line, `#` will print the matrix in multiple
 /// lines, making it easier to read.
@@ -383,9 +400,7 @@ std::ostream& operator<<(std::ostream& output, Matrix<T> const& matrix) {
 template<class T>
     requires std::formattable<T, char>
 struct std::formatter<algebra::Matrix<T>> {
-    bool multi_line = false;
-    std::formatter<T> coefficient_formatter;
-
+    /// \brief Parses a context string
     template<class ParseContext>
     constexpr ParseContext::iterator parse(ParseContext& ctx) {
         auto it = ctx.begin();
@@ -409,6 +424,10 @@ struct std::formatter<algebra::Matrix<T>> {
         }
     }
 
+    /// \brief Formats a matrix
+    ///
+    /// Formats a matrix. Rules for the format string are specified in
+    /// the class documentation.
     template<class FmtContext>
     FmtContext::iterator
     format(algebra::Matrix<T> const& matrix, FmtContext& ctx) const {
@@ -442,4 +461,8 @@ struct std::formatter<algebra::Matrix<T>> {
         }
         return ctx.out();
     }
+
+private:
+    bool multi_line = false;
+    std::formatter<T> coefficient_formatter;
 };

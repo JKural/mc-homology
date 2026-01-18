@@ -1,3 +1,6 @@
+/// \file matrix_algorithms.h
+/// \brief A file containing selected matrix algorithms
+
 #pragma once
 
 #include <concepts>
@@ -41,7 +44,11 @@ constexpr std::size_t row_echelon_form(std::in_place_t, Matrix<T>& matrix) {
 /// \brief Result struct for the row echelon algorithm
 template<class T>
 struct RowEchelonFormResult {
+    /// \brief Row echelon form of a matrix
     Matrix<T> row_echelon_form = {};
+
+    /// \brief Number of non-empty rows of the matrix in row echelon
+    ///        form
     std::size_t non_empty_rows = 0;
 };
 
@@ -133,7 +140,10 @@ constexpr std::size_t smith_form(std::in_place_t, Matrix<T>& matrix) {
 /// \brief Result struct for the smith algorithm
 template<class T>
 struct SmithFormResult {
+    /// \brief Smith form of a matrix
     Matrix<T> smith_form = {};
+
+    /// \brief Number of non zero rows or columns
     std::size_t non_empty = 0;
 };
 
