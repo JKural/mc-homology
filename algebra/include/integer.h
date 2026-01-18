@@ -10,7 +10,6 @@
 #include <iostream>
 
 #include "algebraic_concepts.h"
-#include "number_theory.h"
 
 namespace algebra {
 

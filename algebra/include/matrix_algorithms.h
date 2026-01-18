@@ -3,10 +3,6 @@
 
 #pragma once
 
-#include <concepts>
-#include <utility>
-
-#include "algebraic_concepts.h"
 #include "detail/matrix_utils.h"
 #include "matrix.h"
 

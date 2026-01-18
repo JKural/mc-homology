@@ -3,12 +3,6 @@
 
 #pragma once
 
-#include <algorithm>
-#include <concepts>
-#include <ranges>
-#include <stdexcept>
-
-#include "matrix.h"
 #include "matrix_algorithms.h"
 
 namespace algebra {

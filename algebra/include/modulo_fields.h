@@ -5,10 +5,8 @@
 
 #include <format>
 #include <iostream>
-#include <stdexcept>
 
 #include "algebraic_concepts.h"
-#include "number_theory.h"
 
 namespace algebra {
 

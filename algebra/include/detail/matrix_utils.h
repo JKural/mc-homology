@@ -1,6 +1,5 @@
 #pragma once
 
-#include "algebraic_concepts.h"
 #include "matrix.h"
 
 namespace algebra {
