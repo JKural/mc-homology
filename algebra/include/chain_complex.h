@@ -159,6 +159,7 @@ Homology<T> homology(ChainComplex<T> const& chain_complex) {
         auto [_, rank] = row_echelon_form(boundary);
         auto nullity = boundary.ncols() - rank;
         homology.betti_numbers[n] = nullity - prev_rank;
+        prev_rank = rank;
     }
     return homology;
 }

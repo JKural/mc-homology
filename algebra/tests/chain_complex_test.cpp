@@ -46,6 +46,15 @@ ChainComplex<T> n_sphere(std::size_t n) {
     return ChainComplex {std::move(boundaries)};
 }
 
+template<class T>
+ChainComplex<T> klein_bottle() {
+    return ChainComplex {std::vector<Matrix<T>> {
+        Matrix<T>::zero(0, 1),
+        Matrix<T>::zero(1, 2),
+        Matrix<T>(std::vector<T> {2, 0}, 2, 1)
+    }};
+}
+
 } // namespace
 
 TEST(ChainComplexTest, Points) {
@@ -134,4 +143,39 @@ TEST(ChainComplexTest, Sphere) {
     EXPECT_EQ(homology_2_sphere_z.torsion, expected_torsion(2, Integer {}));
     EXPECT_EQ(homology_9_sphere_z.betti_numbers, expected_betti_numbers(9));
     EXPECT_EQ(homology_9_sphere_z.torsion, expected_torsion(9, Integer {}));
+}
+
+TEST(ChainComplexTest, KleinBottle) {
+    auto homology_klein_bottle_z = homology(klein_bottle<Integer>());
+    auto homology_klein_bottle_z2 = homology(klein_bottle<Z2>());
+    auto homology_klein_bottle_z3 = homology(klein_bottle<ZModP<3>>());
+
+    auto homology_expected_z = Homology<Integer> {
+        .betti_numbers = {1, 1, 0},
+        .torsion = {{}, {Integer(2)}, {}}
+    };
+
+    auto homology_expected_z2 =
+        Homology<Z2> {.betti_numbers = {1, 2, 1}, .torsion = {{}, {}, {}}};
+
+    auto homology_expected_z3 = Homology<ZModP<3>> {
+        .betti_numbers = {1, 1, 0},
+        .torsion = {{}, {}, {}}
+    };
+
+    EXPECT_EQ(
+        homology_klein_bottle_z.betti_numbers,
+        homology_expected_z.betti_numbers
+    );
+    EXPECT_EQ(homology_klein_bottle_z.torsion, homology_expected_z.torsion);
+    EXPECT_EQ(
+        homology_klein_bottle_z2.betti_numbers,
+        homology_expected_z2.betti_numbers
+    );
+    EXPECT_EQ(homology_klein_bottle_z2.torsion, homology_expected_z2.torsion);
+    EXPECT_EQ(
+        homology_klein_bottle_z3.betti_numbers,
+        homology_expected_z3.betti_numbers
+    );
+    EXPECT_EQ(homology_klein_bottle_z3.torsion, homology_expected_z3.torsion);
 }
