@@ -9,6 +9,7 @@ target_sources(algebra
       include
     FILES
       include/algebraic_concepts.h
+      include/chain_complex.h
       include/integer.h
       include/matrix.h
       include/matrix_algorithms.h

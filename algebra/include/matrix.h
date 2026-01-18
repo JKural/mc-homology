@@ -1,5 +1,6 @@
 #pragma once
 
+#include <algorithm>
 #include <concepts>
 #include <format>
 #include <iostream>
@@ -223,6 +224,51 @@ public:
         return transposed;
     }
 
+    constexpr Matrix& operator+=(Matrix const& rhs)
+        requires AdditiveGroup<T>
+    {
+        if (m_nrows != rhs.m_nrows || m_ncols != rhs.m_ncols) {
+            throw std::domain_error("Adding matrices of different dimensions");
+        }
+        namespace rs = std::ranges;
+        rs::transform(m_data, rhs.m_data, rs::begin(m_data), std::plus {});
+        return *this;
+    }
+
+    constexpr Matrix& operator-=(Matrix const& rhs)
+        requires AdditiveGroup<T>
+    {
+        if (m_nrows != rhs.m_nrows || m_ncols != rhs.m_ncols) {
+            throw std::domain_error(
+                "Subtracting matrices of different dimensions"
+            );
+        }
+        namespace rs = std::ranges;
+        rs::transform(m_data, rhs.m_data, rs::begin(m_data), std::minus {});
+    }
+
+    constexpr Matrix operator+() const
+        requires AdditiveGroup<T>
+    {
+        return *this;
+    }
+
+    constexpr Matrix operator-() const
+        requires AdditiveGroup<T>
+    {
+        namespace rs = std::ranges;
+        std::vector<T> negated;
+        negated.reserve(m_data.capacity());
+        rs::transform(m_data, rs::begin(negated), std::negate {});
+        return Matrix(negated, m_nrows, m_ncols);
+    }
+
+    constexpr Matrix operator*=(Matrix const& rhs)
+        requires Ring<T>
+    {
+        *this = *this * rhs;
+    }
+
     /// \brief Return a square zero matrix
     constexpr static Matrix zero(size_type n)
         requires AdditiveGroup<T>
@@ -237,6 +283,13 @@ public:
     {
         std::vector data(n * m, value_type::zero());
         return Matrix(std::move(data), n, m);
+    }
+
+    /// \brief Returns true if matrix is zero, false otherwise
+    constexpr bool is_zero() const noexcept {
+        return std::ranges::all_of(m_data, [](T const& x) {
+            return x == T::zero();
+        });
     }
 
     /// \brief Return an identity matrix
@@ -260,6 +313,38 @@ private:
     size_type m_nrows;
     size_type m_ncols;
 };
+
+template<AdditiveGroup T>
+constexpr Matrix<T> operator+(Matrix<T> lhs, Matrix<T> const& rhs) {
+    return lhs += rhs;
+}
+
+template<AdditiveGroup T>
+constexpr Matrix<T> operator-(Matrix<T> lhs, Matrix<T> const& rhs) {
+    return lhs -= rhs;
+}
+
+template<Ring T>
+constexpr Matrix<T> operator*(Matrix<T> const& lhs, Matrix<T> const& rhs) {
+    using Matrix = Matrix<T>;
+    using size_type = Matrix::size_type;
+    if (lhs.ncols() != rhs.nrows()) {
+        throw std::domain_error(
+            "The number of columns of lhs is different "
+            "than the number of rows of rhs"
+        );
+    }
+    auto const inner_dim = lhs.ncols();
+    Matrix product = Matrix::zero(lhs.nrows(), rhs.ncols());
+    for (size_type i = 0; i < product.nrows(); ++i) {
+        for (size_type j = 0; j < product.ncols(); ++j) {
+            for (size_type k = 0; k < inner_dim; ++k) {
+                product[i, j] += lhs[i, k] * rhs[k, j];
+            }
+        }
+    }
+    return product;
+}
 
 /// \brief Deduce matrix value type from the submitted range
 template<std::ranges::sized_range R>
