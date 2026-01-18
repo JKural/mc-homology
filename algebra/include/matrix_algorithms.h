@@ -1,7 +1,7 @@
 #pragma once
 
+#include <concepts>
 #include <utility>
-#include <print>
 
 #include "algebraic_concepts.h"
 #include "detail/matrix_utils.h"
@@ -92,7 +92,6 @@ constexpr std::size_t smith_form(std::in_place_t, Matrix<T>& matrix) {
         bool col_all_zeros = false;
         while (!col_all_zeros) {
             move_min_to_corner();
-            std::println("{:#}", matrix);
             if (matrix[k, k] == T::zero()) {
                 return k;
             }
@@ -108,7 +107,6 @@ constexpr std::size_t smith_form(std::in_place_t, Matrix<T>& matrix) {
         bool row_all_zeros = false;
         while (!row_all_zeros) {
             move_min_to_corner();
-            std::println("{:#}", matrix);
             if (matrix[k, k] == T::zero()) {
                 return k;
             }
@@ -119,6 +117,13 @@ constexpr std::size_t smith_form(std::in_place_t, Matrix<T>& matrix) {
                 if (r != T::zero()) {
                     row_all_zeros = false;
                 }
+            }
+        }
+    }
+    if constexpr (std::totally_ordered<T>) {
+        for (std::size_t i = 0; i < k; ++i) {
+            if (matrix[i, i] < T::zero()) {
+                matrix[i, i] = -matrix[i, i];
             }
         }
     }
