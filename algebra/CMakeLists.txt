@@ -1,8 +1,6 @@
 add_library(algebra)
 
 target_sources(algebra
-  PRIVATE
-    src/integer.cpp
   PUBLIC
     FILE_SET HEADERS
     BASE_DIRS

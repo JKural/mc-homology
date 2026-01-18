@@ -113,7 +113,9 @@ constexpr Integer modulo(Integer a, Integer n) {
 template<>
 constexpr inline bool is_commutative_v<Integer> = true;
 
-std::ostream& operator<<(std::ostream& output, Integer k);
+inline std::ostream& operator<<(std::ostream& output, Integer k) {
+    return output << static_cast<int>(k);
+}
 
 } // namespace algebra
 
