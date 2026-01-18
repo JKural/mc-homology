@@ -131,7 +131,9 @@ Homology<T> homology(ChainComplex<T> const& chain_complex) {
         auto smith_diagonal_without_units = rs::to<std::vector>(
             vs::iota(0u, rank)
             | vs::transform([&smith](std::size_t n) { return smith[n, n]; })
-            | vs::drop_while([](T const& x) { return x.euclidean_function(); })
+            | vs::drop_while([](T const& x) {
+                  return x.euclidean_function() == 1;
+              })
         );
         auto smith_units = rank - smith_diagonal_without_units.size();
         homology.betti_numbers[n] = nullity - prev_smith_units_count
