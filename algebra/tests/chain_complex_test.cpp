@@ -2,6 +2,7 @@
 
 #include <gtest/gtest.h>
 
+#include <algorithm>
 #include <ranges>
 #include <vector>
 
@@ -178,4 +179,94 @@ TEST(ChainComplexTest, KleinBottle) {
         homology_expected_z3.betti_numbers
     );
     EXPECT_EQ(homology_klein_bottle_z3.torsion, homology_expected_z3.torsion);
+}
+
+TEST(ChainComplexTest, BigSimplex) {
+    namespace rs = std::ranges;
+    namespace vs = std::views;
+    auto n_choose_k = [cache = std::vector<std::vector<std::size_t>> {
+                           {1}
+                       }](std::size_t n, std::size_t k) mutable {
+        for (std::size_t i = cache.size(); i <= n; ++i) {
+            cache.emplace_back(i + 1, 1);
+            for (std::size_t j = 1; j < i; ++j) {
+                cache[i][j] = cache[i - 1][j - 1] + cache[i - 1][j];
+            }
+        }
+        return cache[n][k];
+    };
+    auto subsets = [&n_choose_k](std::size_t n, std::size_t k) {
+        std::vector<std::vector<std::size_t>> indexes(n_choose_k(n, k));
+        indexes[0] = rs::to<std::vector<std::size_t>>(vs::iota(0u, k));
+        for (std::size_t i = 1; i < indexes.size(); ++i) {
+            indexes[i] = indexes[i - 1];
+            std::size_t j = k;
+            for (; j > 0; --j) {
+                if (indexes[i][j - 1] < n - k + j - 1) {
+                    ++indexes[i][j - 1];
+                    break;
+                }
+            }
+            if (j == 0) {
+                continue;
+            }
+            for (; j < k; ++j) {
+                indexes[i][j] = indexes[i][j - 1] + 1;
+            }
+        }
+        return indexes;
+    };
+    auto const simplex = [&n_choose_k, &subsets](std::size_t n) {
+        std::vector<Matrix<Integer>> boundaries(n + 1);
+        auto const subset = [](auto const& range1, auto const& range2) {
+            auto first1 = rs::begin(range1);
+            auto first2 = rs::begin(range2);
+            auto const last1 = rs::end(range1);
+            auto const last2 = rs::end(range2);
+            for (; first1 != last1; ++first1) {
+                while (first2 != last2 && *first1 > *first2) {
+                    ++first2;
+                }
+                if (first2 == last2 || *first1 != *first2) {
+                    return false;
+                }
+                ++first2;
+            }
+            return true;
+        };
+        for (std::size_t d = 0; d <= n; ++d) {
+            boundaries[d] = Matrix<Integer>::zero(
+                n_choose_k(n + 1, d),
+                n_choose_k(n + 1, d + 1)
+            );
+            for (auto&& [j, subset_col] :
+                 subsets(n + 1, d + 1) | vs::enumerate) {
+                bool negate = false;
+                for (auto&& [i, subset_row] :
+                     subsets(n + 1, d) | vs::enumerate) {
+                    if (subset(subset_row, subset_col)) {
+                        boundaries[d][i, j] = negate ? -1 : 1;
+                        negate = !negate;
+                    }
+                }
+            }
+        }
+        return ChainComplex<Integer> {std::move(boundaries)};
+    };
+
+    auto homology_simplex_0 = homology(simplex(0));
+    auto homology_simplex_1 = homology(simplex(1));
+    auto homology_simplex_2 = homology(simplex(2));
+    auto homology_simplex_4 = homology(simplex(4));
+    auto homology_simplex_8 = homology(simplex(8));
+    EXPECT_EQ(homology_simplex_0.betti_numbers, std::vector<std::size_t>(1));
+    EXPECT_EQ(homology_simplex_0.torsion, std::vector<std::vector<Integer>>(1));
+    EXPECT_EQ(homology_simplex_1.betti_numbers, std::vector<std::size_t>(2));
+    EXPECT_EQ(homology_simplex_1.torsion, std::vector<std::vector<Integer>>(2));
+    EXPECT_EQ(homology_simplex_2.betti_numbers, std::vector<std::size_t>(3));
+    EXPECT_EQ(homology_simplex_2.torsion, std::vector<std::vector<Integer>>(3));
+    EXPECT_EQ(homology_simplex_4.betti_numbers, std::vector<std::size_t>(5));
+    EXPECT_EQ(homology_simplex_4.torsion, std::vector<std::vector<Integer>>(5));
+    EXPECT_EQ(homology_simplex_8.betti_numbers, std::vector<std::size_t>(9));
+    EXPECT_EQ(homology_simplex_8.torsion, std::vector<std::vector<Integer>>(9));
 }
