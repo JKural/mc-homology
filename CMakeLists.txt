@@ -38,6 +38,6 @@ if(BUILD_TESTING)
 endif()
 
 add_subdirectory(algebra)
-add_subdirectory(homology)
+add_subdirectory(core)
 add_subdirectory(parsers)
 
