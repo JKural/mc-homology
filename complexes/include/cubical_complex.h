@@ -134,6 +134,10 @@ private:
 /// \brief Prints a cubical simplex to output
 std::ostream& operator<<(std::ostream& output, CubicalSimplex const& s);
 
+/// \brief Class representing a cubical complex
+///
+/// A class representing a topological space constructed from cubical
+/// simplexes.
 class CubicalComplex {
 public:
     /// \brief Default constructor for the CubicalComplex
