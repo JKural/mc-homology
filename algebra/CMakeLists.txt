@@ -1,7 +1,7 @@
-add_library(algebra)
+add_library(algebra INTERFACE)
 
 target_sources(algebra
-  PUBLIC
+  INTERFACE
     FILE_SET HEADERS
     BASE_DIRS
       include
@@ -15,12 +15,6 @@ target_sources(algebra
       include/number_theory.h
       include/z2_field.h
       include/detail/matrix_utils.h
-)
-
-target_compile_features(algebra PUBLIC cxx_std_23)
-set_target_properties(algebra
-  PROPERTIES
-    LINKER_LANGUAGE CXX
 )
 
 if(BUILD_TESTING)
