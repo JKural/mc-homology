@@ -3,19 +3,9 @@
 
 #include <concepts>
 #include <ranges>
-#include <string>
 
-namespace core {
+namespace complexes {
 namespace utils {
-
-/// \brief Interface for string printable classes
-///
-/// String printable classes contain a to_string() method, that returns
-/// a string representation of the class.
-class IStringPrintable {
-public:
-    virtual std::string to_string() const = 0;
-};
 
 /// \brief Combines two hashes into a single hash
 std::size_t combine_hashes(std::size_t hash1, std::size_t hash2);
@@ -41,4 +31,4 @@ std::size_t hash_range(R&& r) {
 }
 
 } // namespace utils
-} // namespace core
+} // namespace complexes

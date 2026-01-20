@@ -9,7 +9,7 @@
 
 #include "utils.h"
 
-namespace core {
+namespace complexes {
 
 BasicInterval::BasicInterval() = default;
 
@@ -261,15 +261,16 @@ void CubicalComplex::add_recursive_impl(CubicalSimplex simplex) {
     m_simplices[dim].emplace(std::move(simplex));
 }
 
-} // namespace core
+} // namespace complexes
 
-std::size_t
-std::hash<core::BasicInterval>::operator()(core::BasicInterval const& i) const {
+std::size_t std::hash<complexes::BasicInterval>::operator()(
+    complexes::BasicInterval const& i
+) const {
     return i.hash();
 }
 
-std::size_t std::hash<core::CubicalSimplex>::operator()(
-    core::CubicalSimplex const& s
+std::size_t std::hash<complexes::CubicalSimplex>::operator()(
+    complexes::CubicalSimplex const& s
 ) const {
     return s.hash();
 }

@@ -5,7 +5,7 @@
 #include <algorithm>
 #include <vector>
 
-using namespace core;
+using namespace complexes;
 
 TEST(BasicIntervalTest, Basics) {
     auto a = BasicInterval::point(0);

@@ -10,7 +10,7 @@
 #include <unordered_set>
 #include <vector>
 
-namespace core {
+namespace complexes {
 
 /// \brief A struct representing an interval of length 0 or 1
 ///
@@ -198,20 +198,20 @@ private:
     std::vector<std::unordered_set<CubicalSimplex>> m_simplices;
 };
 
-} // namespace core
+} // namespace complexes
 
 /// \brief std::hash specialization for Interval
 template<>
-struct std::hash<core::BasicInterval> {
+struct std::hash<complexes::BasicInterval> {
     /// \brief Returns a hash of an interval
-    std::size_t operator()(core::BasicInterval const& i) const;
+    std::size_t operator()(complexes::BasicInterval const& i) const;
 };
 
 /// \brief std::hash specialization for CubicalSimplex
 template<>
-struct std::hash<core::CubicalSimplex> {
+struct std::hash<complexes::CubicalSimplex> {
     /// \brief Returns a hash of a cubical simplex
-    std::size_t operator()(core::CubicalSimplex const& s) const;
+    std::size_t operator()(complexes::CubicalSimplex const& s) const;
 };
 
 /// \brief Formatter for BasicInterval type
@@ -219,12 +219,13 @@ struct std::hash<core::CubicalSimplex> {
 /// Allows use of `std::format` with the `BasicInterval` type. The format
 /// syntax is the same, as in the case of `int`.
 template<>
-struct std::formatter<core::BasicInterval>: public std::formatter<int> {
+struct std::formatter<complexes::BasicInterval>: public std::formatter<int> {
     /// \brief Formats an integer
     ///
     /// Formats an interval using a formatting syntax for int.
     template<class FmtContext>
-    FmtContext::iterator format(core::BasicInterval i, FmtContext& ctx) const {
+    FmtContext::iterator
+    format(complexes::BasicInterval i, FmtContext& ctx) const {
         std::format_to(ctx.out(), "[");
         std::formatter<int>::format(i.left(), ctx);
         if (!i.is_trivial()) {
@@ -241,19 +242,22 @@ struct std::formatter<core::BasicInterval>: public std::formatter<int> {
 /// Allows use of `std::format` with the `CubicalSimplex` type. The format
 /// syntax is the same, as in the case of `BasicInterval`.
 template<>
-struct std::formatter<core::CubicalSimplex>:
-    public std::formatter<core::BasicInterval> {
+struct std::formatter<complexes::CubicalSimplex>:
+    public std::formatter<complexes::BasicInterval> {
     /// \brief Formats a cubical simplex
     ///
     /// Formats an integer using a formatting syntax for an interval.
     template<class FmtContext>
     FmtContext::iterator
-    format(core::CubicalSimplex const& s, FmtContext& ctx) const {
+    format(complexes::CubicalSimplex const& s, FmtContext& ctx) const {
         namespace vs = std::views;
-        std::formatter<core::BasicInterval>::format(s.intervals().front(), ctx);
+        std::formatter<complexes::BasicInterval>::format(
+            s.intervals().front(),
+            ctx
+        );
         for (auto i : s.intervals() | vs::drop(1)) {
             std::format_to(ctx.out(), "x");
-            std::formatter<core::BasicInterval>::format(i, ctx);
+            std::formatter<complexes::BasicInterval>::format(i, ctx);
         }
         return ctx.out();
     }
