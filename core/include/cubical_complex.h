@@ -193,6 +193,8 @@ public:
     std::size_t ambient_dimension() const;
 
 private:
+    void add_recursive_impl(CubicalSimplex simplex);
+
     std::vector<std::unordered_set<CubicalSimplex>> m_simplices;
 };
 

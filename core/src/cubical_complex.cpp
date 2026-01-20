@@ -169,7 +169,7 @@ bool CubicalComplex::add(CubicalSimplex simplex) {
     } else {
         if (std::ranges::all_of(
                 simplex.boundary(),
-                [*this](CubicalSimplex const& boundary_simplex) {
+                [this](CubicalSimplex const& boundary_simplex) {
                     return this->contains(boundary_simplex);
                 }
             )) {
@@ -179,7 +179,8 @@ bool CubicalComplex::add(CubicalSimplex simplex) {
                 );
                 return true;
             } else {
-                auto [_, success] = m_simplices[0].emplace(std::move(simplex));
+                auto [_, success] =
+                    m_simplices[dimension].emplace(std::move(simplex));
                 return success;
             }
         } else {
@@ -198,10 +199,7 @@ void CubicalComplex::add_recursive(CubicalSimplex simplex) {
     m_simplices.resize(
         std::ranges::max(simplex.dimension() + 1, dimension() + 1)
     );
-    for (auto const& boundary : simplex.boundary()) {
-        auto dim = boundary.dimension();
-        m_simplices[dim].emplace(boundary);
-    }
+    add_recursive_impl(std::move(simplex));
 }
 
 bool CubicalComplex::remove(CubicalSimplex const& simplex) {
@@ -251,6 +249,16 @@ std::size_t CubicalComplex::ambient_dimension() const {
     }
     assert(!m_simplices[0].empty());
     return m_simplices[0].begin()->ambient_dimension();
+}
+
+void CubicalComplex::add_recursive_impl(CubicalSimplex simplex) {
+    auto const dim = simplex.dimension();
+    if (dim != 0) {
+        for (auto simplex : simplex.boundary()) {
+            add_recursive_impl(std::move(simplex));
+        }
+    }
+    m_simplices[dim].emplace(std::move(simplex));
 }
 
 } // namespace core

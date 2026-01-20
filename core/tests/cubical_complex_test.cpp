@@ -140,8 +140,23 @@ TEST(CubicalComplexTest, Basics) {
     complex1.add(l1011);
     complex1.add(l0010);
     complex1.add(l0111);
+    auto complex3 = complex1;
     complex1.add(sq);
 
     complex2.add_recursive(sq);
+
+    auto simplices = std::vector {
+        std::unordered_set {p00, p01, p10, p11},
+        std::unordered_set {l0001, l1011, l0010, l0111},
+        std::unordered_set {sq},
+    };
+
     EXPECT_EQ(complex1, complex2);
+    EXPECT_EQ(complex1.simplices(), simplices);
+
+    complex2.remove(sq);
+    simplices.pop_back();
+
+    EXPECT_EQ(complex2, complex3);
+    EXPECT_EQ(complex3.simplices(), simplices);
 }
