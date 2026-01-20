@@ -117,7 +117,31 @@ TEST(CubicalSimplexTest, Product) {
 }
 
 TEST(CubicalComplexTest, Basics) {
-    CubicalSimplex p00 {std::vector {BasicInterval::point(0)}};
-    CubicalSimplex p1 {std::vector {BasicInterval::point(0)}};
-    CubicalComplex complex;
+    CubicalComplex complex1;
+    CubicalComplex complex2;
+
+    auto p0 = CubicalSimplex::point(0);
+    auto p1 = CubicalSimplex::point(1);
+    auto p00 = product(p0, p0);
+    auto p01 = product(p0, p1);
+    auto p10 = product(p1, p0);
+    auto p11 = product(p1, p1);
+    auto l01 = CubicalSimplex::interval(0);
+    auto l0001 = product(p0, l01);
+    auto l1011 = product(p1, l01);
+    auto l0010 = product(l01, p0);
+    auto l0111 = product(l01, p1);
+    auto sq = product(l01, l01);
+    complex1.add(p00);
+    complex1.add(p01);
+    complex1.add(p10);
+    complex1.add(p11);
+    complex1.add(l0001);
+    complex1.add(l1011);
+    complex1.add(l0010);
+    complex1.add(l0111);
+    complex1.add(sq);
+
+    complex2.add_recursive(sq);
+    EXPECT_EQ(complex1, complex2);
 }

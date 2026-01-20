@@ -19,13 +19,13 @@ namespace core {
 class BasicInterval {
 public:
     /// \brief Returns an singleton of 0
-    BasicInterval() = default;
+    BasicInterval();
 
     /// \brief Computer a hash of the inverval
     std::size_t hash() const;
 
     /// \brief Compares two intervals
-    bool operator==(BasicInterval const&) const = default;
+    bool operator==(BasicInterval const&) const;
 
     /// \brief Returns the left end of the interval
     int left() const;
@@ -83,7 +83,7 @@ public:
     std::vector<CubicalSimplex> boundary() const;
 
     /// \brief Compares two simplices
-    bool operator==(CubicalSimplex const&) const = default;
+    bool operator==(CubicalSimplex const&) const;
 
     /// \brief Returns the underlying intervals
     std::vector<BasicInterval> const& intervals() const;
@@ -125,7 +125,7 @@ public:
     product(CubicalSimplex const& s1, CubicalSimplex const& s2);
 
 private:
-    CubicalSimplex() = default;
+    CubicalSimplex();
 
     std::vector<BasicInterval> m_intervals = {};
     std::size_t m_dimension = 0;
@@ -139,7 +139,7 @@ public:
     /// \brief Default constructor for the CubicalComplex
     ///
     /// Creates an empty complex
-    CubicalComplex() = default;
+    CubicalComplex();
 
     /// \brief Adds a cubical simplex to the complex
     ///
@@ -177,6 +177,9 @@ public:
     ///         otherwise
     bool contains(CubicalSimplex const& simplex) const;
 
+    /// \brief Equality comparison operator
+    bool operator==(CubicalComplex const&) const;
+
     /// \brief Grants access to the simplexes of the complex
     ///
     /// The simplices are returned in a vector, where `n`'th element
@@ -185,6 +188,9 @@ public:
 
     /// \brief Returns the dimension of the simplex
     std::size_t dimension() const;
+
+    /// \brief Returns the ambient dimension of the simplex
+    std::size_t ambient_dimension() const;
 
 private:
     std::vector<std::unordered_set<CubicalSimplex>> m_simplices;

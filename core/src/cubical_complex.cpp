@@ -11,12 +11,16 @@
 
 namespace core {
 
+BasicInterval::BasicInterval() = default;
+
 std::size_t BasicInterval::hash() const {
     return utils::combine_hashes(
         std::hash<int> {}(m_left),
         std::hash<bool> {}(m_full)
     );
 }
+
+bool BasicInterval::operator==(BasicInterval const&) const = default;
 
 int BasicInterval::left() const {
     return m_left;
@@ -89,6 +93,8 @@ std::vector<CubicalSimplex> CubicalSimplex::boundary() const {
     return boundary;
 }
 
+bool CubicalSimplex::operator==(CubicalSimplex const&) const = default;
+
 std::vector<BasicInterval> const& CubicalSimplex::intervals() const {
     return m_intervals;
 }
@@ -124,6 +130,8 @@ CubicalSimplex CubicalSimplex::interval(int left) {
     return CubicalSimplex(std::vector {BasicInterval::interval(left)});
 }
 
+CubicalSimplex::CubicalSimplex() = default;
+
 CubicalSimplex product(CubicalSimplex const& s1, CubicalSimplex const& s2) {
     CubicalSimplex result {};
     result.m_intervals = s1.m_intervals;
@@ -136,7 +144,15 @@ std::ostream& operator<<(std::ostream& output, CubicalSimplex const& s) {
     return output << std::format("{}", s);
 }
 
+CubicalComplex::CubicalComplex() = default;
+
 bool CubicalComplex::add(CubicalSimplex simplex) {
+    if (ambient_dimension() != 0
+        && ambient_dimension() != simplex.ambient_dimension()) {
+        throw std::domain_error(
+            "All simplices of a complex must be of the same ambient dimension"
+        );
+    }
     auto dimension = simplex.dimension();
     if (dimension == 0) {
         if (m_simplices.empty()) {
@@ -173,6 +189,12 @@ bool CubicalComplex::add(CubicalSimplex simplex) {
 }
 
 void CubicalComplex::add_recursive(CubicalSimplex simplex) {
+    if (ambient_dimension() != 0
+        && ambient_dimension() != simplex.ambient_dimension()) {
+        throw std::domain_error(
+            "All simplices of a complex must be of the same ambient dimension"
+        );
+    }
     m_simplices.resize(
         std::ranges::max(simplex.dimension() + 1, dimension() + 1)
     );
@@ -209,6 +231,8 @@ bool CubicalComplex::contains(CubicalSimplex const& simplex) const {
         : false;
 }
 
+bool CubicalComplex::operator==(CubicalComplex const&) const = default;
+
 std::vector<std::unordered_set<CubicalSimplex>> const&
 CubicalComplex::simplices() const {
     return m_simplices;
@@ -219,6 +243,14 @@ std::size_t CubicalComplex::dimension() const {
         return 0;
     }
     return m_simplices.size() - 1;
+}
+
+std::size_t CubicalComplex::ambient_dimension() const {
+    if (m_simplices.empty()) {
+        return 0;
+    }
+    assert(!m_simplices[0].empty());
+    return m_simplices[0].begin()->ambient_dimension();
 }
 
 } // namespace core
