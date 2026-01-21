@@ -18,4 +18,6 @@ target_link_libraries(algebra_test
     GTest::gtest_main
 )
 
+target_compile_features(algebra_test PRIVATE cxx_std_23)
+
 gtest_discover_tests(algebra_test)

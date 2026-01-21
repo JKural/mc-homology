@@ -1,4 +1,4 @@
-#include "cubical_complex.h"
+#include "../include/complexes/cubical_complex.h"
 
 #include <algorithm>
 #include <cassert>
@@ -7,7 +7,7 @@
 #include <unordered_set>
 #include <vector>
 
-#include "utils.h"
+#include "../include/complexes/utils.h"
 
 namespace complexes {
 

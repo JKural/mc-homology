@@ -9,8 +9,8 @@ target_sources(complexes
     BASE_DIRS
       include
     FILES
-      include/cubical_complex.h
-      include/utils.h
+      include/complexes/cubical_complex.h
+      include/complexes/utils.h
 )
 
 target_compile_features(complexes PUBLIC cxx_std_23)

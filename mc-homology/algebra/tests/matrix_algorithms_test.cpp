@@ -1,10 +1,7 @@
-#include "matrix_algorithms.h"
-
+#include <algebra/integer.h>
+#include <algebra/matrix_algorithms.h>
+#include <algebra/modulo_fields.h>
 #include <gtest/gtest.h>
-
-#include "gtest/gtest.h"
-#include "integer.h"
-#include "modulo_fields.h"
 
 using namespace algebra;
 

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "matrix.h"
+#include "../matrix.h"
 
 namespace algebra {
 namespace detail {

@@ -1,5 +1,4 @@
-#include "algebraic_concepts.h"
-
+#include <algebra/algebraic_concepts.h>
 #include <gtest/gtest.h>
 
 namespace {
