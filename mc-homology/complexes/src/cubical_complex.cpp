@@ -206,7 +206,10 @@ bool CubicalComplex::remove(CubicalSimplex const& simplex) {
     if (simplex.dimension() > dimension()) {
         return false;
     } else if (simplex.dimension() == dimension()) {
-        m_simplices.pop_back();
+        m_simplices[simplex.dimension()].erase(simplex);
+        if (m_simplices[simplex.dimension()].empty()) {
+            m_simplices.pop_back();
+        }
         return true;
     } else {
         for (auto const& higher_dimensional_simplices :
