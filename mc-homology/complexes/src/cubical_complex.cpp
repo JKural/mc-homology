@@ -253,12 +253,12 @@ std::size_t CubicalComplex::ambient_dimension() const {
 
 void CubicalComplex::add_recursive_impl(CubicalSimplex simplex) {
     auto const dim = simplex.dimension();
-    if (dim != 0) {
-        for (auto simplex : simplex.boundary()) {
+    auto [it, success] = m_simplices[dim].emplace(std::move(simplex));
+    if (success && dim != 0) {
+        for (auto simplex : it->boundary()) {
             add_recursive_impl(std::move(simplex));
         }
     }
-    m_simplices[dim].emplace(std::move(simplex));
 }
 
 } // namespace complexes
