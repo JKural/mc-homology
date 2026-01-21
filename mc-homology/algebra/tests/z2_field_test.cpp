@@ -1,8 +1,6 @@
-#include "z2_field.h"
-
+#include <algebra/algebraic_concepts.h>
+#include <algebra/z2_field.h>
 #include <gtest/gtest.h>
-
-#include "algebraic_concepts.h"
 
 using namespace algebra;
 

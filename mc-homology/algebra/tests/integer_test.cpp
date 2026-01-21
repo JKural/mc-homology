@@ -1,8 +1,6 @@
-#include "integer.h"
-
+#include <algebra/algebraic_concepts.h>
+#include <algebra/integer.h>
 #include <gtest/gtest.h>
-
-#include "algebraic_concepts.h"
 
 using namespace algebra;
 
