@@ -20,6 +20,7 @@ target_compile_features(mc-homology
 
 add_subdirectory(algebra)
 add_subdirectory(complexes)
+add_subdirectory(core)
 add_subdirectory(homology)
 add_subdirectory(parsers)
 
