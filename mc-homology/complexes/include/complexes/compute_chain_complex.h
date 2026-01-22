@@ -14,6 +14,13 @@
 
 namespace complexes {
 
+/// \brief Computes a chain complex from a cubical complex
+///
+/// Transforms relationships between faces into boundary operators
+///
+/// \param cubical_complex Complex to transorm
+///
+/// \result A chain complex
 template<class T>
 algebra::ChainComplex<T>
 compute_chain_complex(CubicalComplex const& cubical_complex) {

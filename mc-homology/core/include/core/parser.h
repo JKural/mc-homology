@@ -32,8 +32,8 @@ public:
     /// lower_corner.z <= upper_corner.z
     ///
     /// \param path Path to the save file region directory
-    /// \paraw lower_corner Lower bounds on the studied cube
-    /// \paraw upper_corner Upper bounds on the studied cube
+    /// \param lower_corner Lower bounds on the studied cube
+    /// \param upper_corner Upper bounds on the studied cube
     virtual Polymorphic<Complex> parse(
         std::filesystem::path const& path,
         MinecraftCoordinates lower_corner,
@@ -54,8 +54,8 @@ class MinecraftSavefileParser_mcSavefileParsers:
     /// lower_corner.z <= upper_corner.z
     ///
     /// \param path Path to the save file region directory
-    /// \paraw lower_corner Lower bounds on the studied cube
-    /// \paraw upper_corner Upper bounds on the studied cube
+    /// \param lower_corner Lower bounds on the studied cube
+    /// \param upper_corner Upper bounds on the studied cube
     Polymorphic<Complex> parse(
         std::filesystem::path const& path,
         MinecraftCoordinates lower_corner,

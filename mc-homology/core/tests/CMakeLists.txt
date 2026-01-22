@@ -3,7 +3,6 @@ add_executable(core_test)
 target_sources(core_test
   PRIVATE
     polymorphic_test.cpp
-    test_test.cpp
 )
 
 target_link_libraries(core_test

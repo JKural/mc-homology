@@ -36,6 +36,7 @@ public:
     /// Constructor for the strategy, allows to select names for the
     /// homology and torsion groups
     ///
+    /// \param ring_name Name for the coefficient ring
     /// \param homology_name Name for the homology group
     /// \param torsion_name Name for the torsion group
     HomologyLatexPrint(
