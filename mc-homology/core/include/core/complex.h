@@ -2,7 +2,9 @@
 /// \brief A file containing interface for the Complex class
 #pragma once
 
-#include "homology.h"
+#include <memory>
+
+#include "core/homology.h"
 
 namespace core {
 
@@ -10,13 +12,13 @@ namespace core {
 class Complex {
 public:
     /// \brief Computes Z2 homology of the complex
-    virtual Polymorphic<Homology> z2_homology() const = 0;
+    virtual std::unique_ptr<Homology> z2_homology() const = 0;
 
     /// \brief Computes Z3 homology of the complex
-    virtual Polymorphic<Homology> z3_homology() const = 0;
+    virtual std::unique_ptr<Homology> z3_homology() const = 0;
 
     /// \brief Computes Z homology of the complex
-    virtual Polymorphic<Homology> z_homology() const = 0;
+    virtual std::unique_ptr<Homology> z_homology() const = 0;
 
     /// \brief Decreases the complex's size without changing its
     ///        homology

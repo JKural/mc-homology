@@ -4,7 +4,7 @@
 #include <iterator>
 #include <ranges>
 
-#include "../include/core/homology.h"
+#include "core/homology.h"
 
 namespace core {
 

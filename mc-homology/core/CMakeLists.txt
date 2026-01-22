@@ -7,6 +7,8 @@ target_sources(core
     src/homology.cpp
     src/homology_printing_strategy.cpp
     src/latex_wrapper.cpp
+    src/manager.cpp
+    src/options.cpp
     src/parser.cpp
     src/text_drawable.cpp
   PUBLIC
@@ -20,6 +22,8 @@ target_sources(core
       include/core/homology.h
       include/core/homology_printing_strategy.h
       include/core/latex_wrapper.h
+      include/core/manager.h
+      include/core/options.h
       include/core/parser.h
       include/core/polymorphic.h
       include/core/text_drawable.h

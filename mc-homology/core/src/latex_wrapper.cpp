@@ -1,13 +1,16 @@
 #include "../include/core/latex_wrapper.h"
 
 #include <sstream>
-
-#include "core/polymorphic.h"
+#include <stdexcept>
 
 namespace core {
 
-LatexWrapper::LatexWrapper(Polymorphic<TextDrawable> inner) :
-    m_inner(std::move(inner)) {}
+LatexWrapper::LatexWrapper(std::unique_ptr<TextDrawable> inner) :
+    m_inner(std::move(inner)) {
+    if (!m_inner) {
+        throw std::invalid_argument("Inner data can't be a null pointer");
+    }
+}
 
 std::string LatexWrapper::text() const {
     std::stringstream output;

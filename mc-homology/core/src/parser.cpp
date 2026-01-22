@@ -25,7 +25,7 @@ namespace core {
 
 MinecraftSavefileParser::~MinecraftSavefileParser() = default;
 
-Polymorphic<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
+std::unique_ptr<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
     std::filesystem::path const& path,
     MinecraftCoordinates lower_corner,
     MinecraftCoordinates upper_corner
@@ -68,7 +68,6 @@ Polymorphic<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
                             }
                             auto block =
                                 createBlock(x, y, z, block_states, section);
-                            std::cout << std::flush;
                             if (strcmp(block.type, mcAir) != 0) {
                                 complex.add_cube(
                                     16 * chunk_x + x,
@@ -87,7 +86,7 @@ Polymorphic<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
             free(chunk.data);
         }
     }
-    return Polymorphic<Complex> {std::move(complex)};
+    return std::make_unique<CubicalComplex3D>(std::move(complex));
 }
 
 } // namespace core

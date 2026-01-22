@@ -2,16 +2,12 @@
 /// \brief File containing concrete classes deriving from Homology
 #pragma once
 
-#include <algebra/chain_complex.h>
-#include <algebra/integer.h>
-#include <algebra/modulo_fields.h>
-#include <algebra/z2_field.h>
-
+#include <memory>
 #include <ranges>
 
+#include "algebra/chain_complex.h"
+#include "core/homology.h"
 #include "core/homology_printing_strategy.h"
-#include "core/polymorphic.h"
-#include "homology.h"
 
 namespace core {
 
@@ -22,8 +18,8 @@ public:
     /// \brief Constructs homology and stores printing strategy
     AlgebraHomology(
         algebra::Homology<T> homology,
-        Polymorphic<HomologyPrintingStrategy> printing_strategy =
-            Polymorphic<HomologyPrintingStrategy> {HomologyRawPrint {}}
+        std::unique_ptr<HomologyPrintingStrategy> printing_strategy =
+            std::make_unique<HomologyRawPrint>()
     ) :
         Homology(std::move(printing_strategy)),
         m_homology(std::move(homology)) {}

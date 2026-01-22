@@ -1,8 +1,7 @@
 #include "../include/core/cubical_complex_3d.h"
 
-#include <algebra/z2_field.h>
-
 #include "algebra/integer.h"
+#include "algebra/z2_field.h"
 #include "complexes/cubical_complex.h"
 
 namespace core {
@@ -17,16 +16,16 @@ void CubicalComplex3D::add_cube(int x, int y, int z) {
     ));
 }
 
-Polymorphic<Homology> CubicalComplex3D::z2_homology() const {
-    return Polymorphic<Homology> {homology<algebra::Z2>()};
+std::unique_ptr<Homology> CubicalComplex3D::z2_homology() const {
+    return homology<algebra::Z2>();
 }
 
-Polymorphic<Homology> CubicalComplex3D::z3_homology() const {
-    return Polymorphic<Homology> {homology<algebra::ZModP<3>>()};
+std::unique_ptr<Homology> CubicalComplex3D::z3_homology() const {
+    return homology<algebra::ZModP<3>>();
 }
 
-Polymorphic<Homology> CubicalComplex3D::z_homology() const {
-    return Polymorphic<Homology> {homology<algebra::Integer>()};
+std::unique_ptr<Homology> CubicalComplex3D::z_homology() const {
+    return homology<algebra::Integer>();
 }
 
 void CubicalComplex3D::reduce() {

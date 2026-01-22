@@ -4,8 +4,7 @@
 
 #include <filesystem>
 
-#include "complex.h"
-#include "polymorphic.h"
+#include "core/complex.h"
 
 namespace core {
 
@@ -34,7 +33,7 @@ public:
     /// \param path Path to the save file region directory
     /// \param lower_corner Lower bounds on the studied cube
     /// \param upper_corner Upper bounds on the studied cube
-    virtual Polymorphic<Complex> parse(
+    virtual std::unique_ptr<Complex> parse(
         std::filesystem::path const& path,
         MinecraftCoordinates lower_corner,
         MinecraftCoordinates upper_corner
@@ -46,6 +45,7 @@ public:
 ///        https://github.com/TCA166/mcSavefileParsers.git
 class MinecraftSavefileParser_mcSavefileParsers:
     public MinecraftSavefileParser {
+public:
     /// \brief Parses a Minecraft savefile
     ///
     /// Parses a Minecraft savefile within given bounds.
@@ -56,7 +56,7 @@ class MinecraftSavefileParser_mcSavefileParsers:
     /// \param path Path to the save file region directory
     /// \param lower_corner Lower bounds on the studied cube
     /// \param upper_corner Upper bounds on the studied cube
-    Polymorphic<Complex> parse(
+    std::unique_ptr<Complex> parse(
         std::filesystem::path const& path,
         MinecraftCoordinates lower_corner,
         MinecraftCoordinates upper_corner

@@ -2,8 +2,9 @@
 /// \brief Turns a TextDrawable into a simple latex document
 #pragma once
 
-#include "polymorphic.h"
-#include "text_drawable.h"
+#include <memory>
+
+#include "core/text_drawable.h"
 
 namespace core {
 
@@ -12,13 +13,13 @@ namespace core {
 class LatexWrapper: public TextDrawable {
 public:
     /// \brief Constructs the decorator with the object to wrap
-    LatexWrapper(Polymorphic<TextDrawable> inner);
+    LatexWrapper(std::unique_ptr<TextDrawable> inner);
 
     /// \brief Returns the text representation of the object
     std::string text() const override;
 
 private:
-    Polymorphic<TextDrawable> m_inner;
+    std::unique_ptr<TextDrawable> m_inner;
 };
 
 } // namespace core

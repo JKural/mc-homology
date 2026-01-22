@@ -2,11 +2,11 @@
 /// \brief A file containing a Homology interface
 #pragma once
 
+#include <memory>
 #include <vector>
 
-#include "homology_printing_strategy.h"
-#include "polymorphic.h"
-#include "text_drawable.h"
+#include "core/homology_printing_strategy.h"
+#include "core/text_drawable.h"
 
 namespace core {
 
@@ -23,15 +23,16 @@ public:
     ///
     /// \param printing_strategy A strategy used with printing
     Homology(
-        Polymorphic<HomologyPrintingStrategy> printing_strategy =
-            Polymorphic<HomologyPrintingStrategy> {HomologyRawPrint {}}
+        std::unique_ptr<HomologyPrintingStrategy> printing_strategy =
+            std::make_unique<HomologyRawPrint>()
     );
 
     /// \brief Select a new printing_strategy
     ///
     /// \param printing_strategy A strategy used with printing
-    void
-    select_strategy(Polymorphic<HomologyPrintingStrategy> printing_strategy);
+    void select_strategy(
+        std::unique_ptr<HomologyPrintingStrategy> printing_strategy
+    );
 
     /// \brief Outputs the test form of the homology using given
     ///        strategy
@@ -48,7 +49,7 @@ public:
     virtual ~Homology();
 
 private:
-    Polymorphic<HomologyPrintingStrategy> m_printing_strategy;
+    std::unique_ptr<HomologyPrintingStrategy> m_printing_strategy;
 };
 
 } // namespace core
