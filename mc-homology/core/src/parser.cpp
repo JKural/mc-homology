@@ -7,14 +7,16 @@ extern "C" {
 #include <regionParser.h>
 }
 
-#include <print>
-
 #include "core/cubical_complex_3d.h"
 
 namespace {
 
-std::pair<int, int> get_chunk_coords(int block_x, int block_z) {
+std::pair<int, int> get_lower_chunk_coords(int block_x, int block_z) {
     return {block_x >> 4, block_z >> 4};
+}
+
+std::pair<int, int> get_upper_chunk_coords(int block_x, int block_z) {
+    return {(block_x >> 4) + 1, (block_z >> 4) + 1};
 }
 
 } // namespace
@@ -30,9 +32,9 @@ Polymorphic<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
 ) {
     CubicalComplex3D complex {};
     auto const [lower_chunk_x, lower_chunk_z] =
-        get_chunk_coords(lower_corner.x, lower_corner.z);
+        get_lower_chunk_coords(lower_corner.x, lower_corner.z);
     auto const [upper_chunk_x, upper_chunk_z] =
-        get_chunk_coords(upper_corner.x, upper_corner.z);
+        get_upper_chunk_coords(upper_corner.x, upper_corner.z);
     for (int chunk_x = lower_chunk_x; chunk_x < upper_chunk_x; ++chunk_x) {
         for (int chunk_z = lower_chunk_z; chunk_z < upper_chunk_z; ++chunk_z) {
             // we const cast, because the original C API doesn't accept const char*
@@ -66,8 +68,13 @@ Polymorphic<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
                             }
                             auto block =
                                 createBlock(x, y, z, block_states, section);
+                            std::cout << std::flush;
                             if (strcmp(block.type, mcAir) != 0) {
-                                complex.add_cube(x, y, z);
+                                complex.add_cube(
+                                    16 * chunk_x + x,
+                                    16 * section.y + y,
+                                    16 * chunk_z + z
+                                );
                             }
                         }
                     }
