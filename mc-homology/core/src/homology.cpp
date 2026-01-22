@@ -2,6 +2,8 @@
 
 namespace core {
 
+Homology::~Homology() = default;
+
 Homology::Homology(Polymorphic<HomologyPrintingStrategy> printing_strategy) :
     m_printing_strategy(std::move(printing_strategy)) {}
 

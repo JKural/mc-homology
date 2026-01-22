@@ -13,7 +13,9 @@ class TextDrawable {
 public:
     /// \brief Returns the text representation of the object
     virtual std::string text() const = 0;
-    ~TextDrawable() = default;
+
+    /// \brief Virtual destructor
+    virtual ~TextDrawable();
 };
 
 } // namespace core

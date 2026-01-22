@@ -8,6 +8,8 @@
 
 namespace core {
 
+HomologyPrintingStrategy::~HomologyPrintingStrategy() = default;
+
 std::string HomologyRawPrint::draw(Homology const& homology) const {
     return std::format("{}, {}", homology.betti_numbers(), homology.torsion());
 }

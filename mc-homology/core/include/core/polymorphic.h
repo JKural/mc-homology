@@ -7,6 +7,7 @@
 
 #include <concepts>
 #include <memory>
+#include <type_traits>
 #include <utility>
 
 namespace core {
@@ -23,20 +24,31 @@ class Polymorphic {
 public:
     /// \brief Constructs a default initialized object
     constexpr explicit Polymorphic()
-        requires std::default_initializable<T>
+        requires std::default_initializable<T> && std::copy_constructible<T>
         : Polymorphic(T {}) {}
 
     /// \brief Constructs the object from the object u
     template<class U = T>
-        requires std::derived_from<U, T>
+        requires std::derived_from<std::remove_cvref_t<U>, T>
+        && std::copy_constructible<std::remove_cvref_t<U>>
+        && std::constructible_from<std::remove_cvref_t<U>, U>
     constexpr explicit Polymorphic(U&& u) :
-        m_object(std::make_unique<Model<U>>(std::forward<U>(u))) {}
+        m_object(
+            std::make_unique<Model<std::remove_cvref_t<U>>>(std::forward<U>(u))
+        ) {}
 
     /// \brief Constructs the object in place
     template<class U, class... Args>
-        requires std::derived_from<U, T>
+        requires std::derived_from<std::remove_cvref_t<U>, T>
+        && std::copy_constructible<std::remove_cvref_t<U>>
+        && std::constructible_from<std::remove_cvref_t<U>, Args...>
+        && std::same_as<std::remove_cvref_t<U>, U>
     constexpr explicit Polymorphic(std::in_place_type_t<U>, Args&&... args) :
-        m_object(std::make_unique<Model<U>>(std::forward<Args>(args)...)) {}
+        m_object(
+            std::make_unique<Model<std::remove_cvref_t<U>>>(
+                std::forward<Args>(args)...
+            )
+        ) {}
 
     /// \brief Copy constructor
     constexpr Polymorphic(Polymorphic const& other) :

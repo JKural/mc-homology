@@ -8,7 +8,7 @@
 namespace core {
 
 void CubicalComplex3D::add_cube(int x, int y, int z) {
-    m_inner->add_recursive(product(
+    m_inner.add_recursive(product(
         product(
             complexes::CubicalSimplex::interval(x),
             complexes::CubicalSimplex::interval(y)
@@ -18,15 +18,15 @@ void CubicalComplex3D::add_cube(int x, int y, int z) {
 }
 
 Polymorphic<Homology> CubicalComplex3D::z2_homology() const {
-    return homology<algebra::Z2>();
+    return Polymorphic<Homology> {homology<algebra::Z2>()};
 }
 
 Polymorphic<Homology> CubicalComplex3D::z3_homology() const {
-    return homology<algebra::ZModP<3>>();
+    return Polymorphic<Homology> {homology<algebra::ZModP<3>>()};
 }
 
 Polymorphic<Homology> CubicalComplex3D::z_homology() const {
-    return homology<algebra::Integer>();
+    return Polymorphic<Homology> {homology<algebra::Integer>()};
 }
 
 void CubicalComplex3D::reduce() {

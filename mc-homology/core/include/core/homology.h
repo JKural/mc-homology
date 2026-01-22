@@ -44,6 +44,9 @@ public:
     ///        non-trivial part of the Smith's form diagonal
     virtual std::vector<std::vector<std::string>> torsion() const = 0;
 
+    // \brief Virtual destructor
+    virtual ~Homology();
+
 private:
     Polymorphic<HomologyPrintingStrategy> m_printing_strategy;
 };

@@ -11,6 +11,7 @@ fetchcontent_declare(
   GIT_TAG 52eb8108c5bdec04579160ae17225d66034bd723
 )
 
+find_package(ZLIB REQUIRED)
 
 if(BUILD_TESTING)
   fetchcontent_makeavailable(googletest)
@@ -18,3 +19,4 @@ if(BUILD_TESTING)
 endif()
 
 add_subdirectory(mc-homology)
+add_subdirectory(mcSavefileParsers)

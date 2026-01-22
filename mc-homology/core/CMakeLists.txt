@@ -2,10 +2,13 @@ add_library(core)
 
 target_sources(core
   PRIVATE
+    src/complex.cpp
     src/cubical_complex_3d.cpp
     src/homology.cpp
     src/homology_printing_strategy.cpp
     src/latex_wrapper.cpp
+    src/parser.cpp
+    src/text_drawable.cpp
   PUBLIC
     FILE_SET HEADERS
     BASE_DIRS
@@ -22,7 +25,7 @@ target_sources(core
       include/core/text_drawable.h
 )
 
-target_link_libraries(core PUBLIC algebra complexes)
+target_link_libraries(core PUBLIC algebra complexes mcSavefileParsers)
 target_compile_features(core PUBLIC cxx_std_23)
 set_target_properties(core
   PROPERTIES

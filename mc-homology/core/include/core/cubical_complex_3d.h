@@ -4,10 +4,9 @@
 
 #include <complexes/compute_chain_complex.h>
 
-#include <memory>
-
 #include "algebra_homology.h"
 #include "complex.h"
+#include "complexes/cubical_complex.h"
 
 namespace core {
 
@@ -29,11 +28,8 @@ public:
     /// \brief Computes homology of the complex for coefficients
     ///        of type T
     template<class T>
-    Polymorphic<Homology> homology() const {
-        return Polymorphic<Homology>(
-            std::in_place_type<AlgebraHomology<T>>,
-            algebra::homology(complexes::compute_chain_complex<T>(*m_inner))
-        );
+    AlgebraHomology<T> homology() const {
+        return algebra::homology(complexes::compute_chain_complex<T>(m_inner));
     }
 
     /// \brief Decreases the complex's size without changing its
@@ -41,8 +37,7 @@ public:
     void reduce() override;
 
 private:
-    std::unique_ptr<complexes::CubicalComplex> m_inner =
-        std::make_unique<complexes::CubicalComplex>();
+    complexes::CubicalComplex m_inner;
 };
 
 } // namespace core
