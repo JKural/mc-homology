@@ -1,0 +1,3 @@
+[submodule "mcSavefileParsers"]
+	path = mcSavefileParsers
+	url = https://github.com/TCA166/mcSavefileParsers.git
