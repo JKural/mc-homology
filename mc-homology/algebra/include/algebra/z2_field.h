@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "modulo_fields.h"
+#include "algebra/modulo_fields.h"
 
 namespace algebra {
 

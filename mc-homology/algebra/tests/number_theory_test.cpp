@@ -1,4 +1,5 @@
-#include <algebra/number_theory.h>
+#include "algebra/number_theory.h"
+
 #include <gtest/gtest.h>
 
 #include <functional>

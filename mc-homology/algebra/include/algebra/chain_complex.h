@@ -3,7 +3,7 @@
 
 #pragma once
 
-#include "matrix_algorithms.h"
+#include "algebra/matrix_algorithms.h"
 
 namespace algebra {
 

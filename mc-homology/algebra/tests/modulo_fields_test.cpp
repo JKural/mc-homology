@@ -1,6 +1,8 @@
-#include <algebra/algebraic_concepts.h>
-#include <algebra/modulo_fields.h>
+#include "algebra/modulo_fields.h"
+
 #include <gtest/gtest.h>
+
+#include "algebra/algebraic_concepts.h"
 
 using namespace algebra;
 using Z7 = ZModP<7>;

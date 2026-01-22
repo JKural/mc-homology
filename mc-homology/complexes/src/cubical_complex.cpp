@@ -7,7 +7,7 @@
 #include <unordered_set>
 #include <vector>
 
-#include "../include/complexes/utils.h"
+#include "complexes/utils.h"
 
 namespace complexes {
 

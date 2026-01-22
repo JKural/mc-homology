@@ -10,7 +10,7 @@
 #include <utility>
 #include <vector>
 
-#include "algebraic_concepts.h"
+#include "algebra/algebraic_concepts.h"
 
 namespace algebra {
 

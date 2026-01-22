@@ -1,11 +1,12 @@
-#include <algebra/integer.h>
-#include <complexes/compute_chain_complex.h>
-#include <complexes/cubical_complex.h>
+#include "complexes/compute_chain_complex.h"
+
 #include <gtest/gtest.h>
 
 #include <vector>
 
 #include "algebra/chain_complex.h"
+#include "algebra/integer.h"
+#include "complexes/cubical_complex.h"
 
 using namespace complexes;
 

@@ -3,8 +3,8 @@
 
 #pragma once
 
-#include "detail/matrix_utils.h"
-#include "matrix.h"
+#include "algebra/detail/matrix_utils.h"
+#include "algebra/matrix.h"
 
 namespace algebra {
 

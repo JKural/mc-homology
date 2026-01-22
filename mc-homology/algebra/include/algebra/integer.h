@@ -9,7 +9,7 @@
 #include <format>
 #include <iostream>
 
-#include "algebraic_concepts.h"
+#include "algebra/algebraic_concepts.h"
 
 namespace algebra {
 

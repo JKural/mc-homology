@@ -1,10 +1,12 @@
-#include <algebra/integer.h>
-#include <algebra/matrix.h>
-#include <algebra/z2_field.h>
+#include "algebra/matrix.h"
+
 #include <gtest/gtest.h>
 
 #include <array>
 #include <stdexcept>
+
+#include "algebra/integer.h"
+#include "algebra/z2_field.h"
 
 using namespace algebra;
 

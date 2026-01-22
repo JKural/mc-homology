@@ -3,12 +3,11 @@
 ///        chain complexes.
 #pragma once
 
-#include <algebra/chain_complex.h>
-
 #include <ranges>
 #include <unordered_map>
 #include <vector>
 
+#include "algebra/chain_complex.h"
 #include "algebra/matrix.h"
 #include "cubical_complex.h"
 

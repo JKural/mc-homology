@@ -1,4 +1,5 @@
-#include <complexes/cubical_complex.h>
+#include "complexes/cubical_complex.h"
+
 #include <gtest/gtest.h>
 
 #include <algorithm>

@@ -5,7 +5,7 @@
 
 #include <concepts>
 
-#include "number_theory.h"
+#include "algebra/number_theory.h"
 
 namespace algebra {
 
