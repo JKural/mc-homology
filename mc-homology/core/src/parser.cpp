@@ -1,6 +1,7 @@
 #include "../include/core/parser.h"
 
 #include <cstring>
+#include <print>
 
 extern "C" {
 #include <chunkParser.h>
@@ -35,6 +36,9 @@ std::unique_ptr<Complex> MinecraftSavefileParser_mcSavefileParsers::parse(
         get_lower_chunk_coords(lower_corner.x, lower_corner.z);
     auto const [upper_chunk_x, upper_chunk_z] =
         get_upper_chunk_coords(upper_corner.x, upper_corner.z);
+    std::println("{}, {}", lower_corner.x, upper_corner.x);
+    std::println("{}, {}", lower_corner.y, upper_corner.y);
+    std::println("{}, {}", lower_corner.z, upper_corner.z);
     for (int chunk_x = lower_chunk_x; chunk_x < upper_chunk_x; ++chunk_x) {
         for (int chunk_z = lower_chunk_z; chunk_z < upper_chunk_z; ++chunk_z) {
             // we const cast, because the original C API doesn't accept const char*
