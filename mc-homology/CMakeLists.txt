@@ -3,13 +3,6 @@ add_executable(mc-homology)
 target_sources(mc-homology
   PRIVATE
     src/main.cpp
-
-  PRIVATE
-    FILE_SET HEADERS
-    BASE_DIRS
-      include
-    FILES
-      include/helloworld.h
 )
 
 target_link_libraries(mc-homology PRIVATE core)

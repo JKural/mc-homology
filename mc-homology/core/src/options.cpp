@@ -67,6 +67,9 @@ CommandlineOptions::CommandlineOptions(int argc, char** argv) {
             i += 2;
         }
     }
+    if (m_filename.empty()) {
+        throw std::invalid_argument("Filename not specified");
+    }
 }
 
 std::filesystem::path CommandlineOptions::filename() const {
