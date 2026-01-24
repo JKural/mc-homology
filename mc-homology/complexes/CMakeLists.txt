@@ -1,4 +1,5 @@
 add_library(complexes)
+add_library(${CMAKE_PROJECT_NAME}::complexes ALIAS complexes)
 
 target_sources(complexes
   PRIVATE
@@ -16,6 +17,8 @@ target_sources(complexes
 
 target_link_libraries(complexes PUBLIC algebra)
 target_compile_features(complexes PUBLIC cxx_std_23)
+
+install_lib(complexes)
 
 if(BUILD_TESTING)
   add_subdirectory(tests)

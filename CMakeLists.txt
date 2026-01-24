@@ -4,6 +4,8 @@ project(mc-homology)
 
 include(CTest)
 include(FetchContent)
+include(GNUInstallDirs)
+include(cmake/InstallLib.cmake)
 
 fetchcontent_declare(
   googletest

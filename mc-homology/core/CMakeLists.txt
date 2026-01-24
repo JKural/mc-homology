@@ -1,4 +1,5 @@
 add_library(core)
+add_library(${CMAKE_PROJECT_NAME}::core ALIAS core)
 
 target_sources(core
   PRIVATE
@@ -41,6 +42,8 @@ set_target_properties(core
   PROPERTIES
     LINKER_LANGUAGE CXX
 )
+
+install_lib(core)
 
 if(BUILD_TESTING)
   add_subdirectory(tests)

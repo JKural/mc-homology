@@ -12,6 +12,10 @@ target_compile_features(mc-homology
     cxx_std_23
 )
 
+install(
+  TARGETS mc-homology
+)
+
 add_subdirectory(algebra)
 add_subdirectory(complexes)
 add_subdirectory(core)

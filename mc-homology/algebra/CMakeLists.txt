@@ -1,4 +1,5 @@
 add_library(algebra INTERFACE)
+add_library(${CMAKE_PROJECT_NAME}::algebra ALIAS algebra)
 
 target_sources(algebra
   INTERFACE
@@ -16,6 +17,8 @@ target_sources(algebra
       include/algebra/z2_field.h
       include/algebra/detail/matrix_utils.h
 )
+
+install_lib(algebra)
 
 if(BUILD_TESTING)
   add_subdirectory(tests)
