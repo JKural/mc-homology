@@ -135,7 +135,9 @@ CubicalSimplex::CubicalSimplex() = default;
 CubicalSimplex product(CubicalSimplex const& s1, CubicalSimplex const& s2) {
     CubicalSimplex result {};
     result.m_intervals = s1.m_intervals;
-    result.m_intervals.append_range(s2.m_intervals);
+    for (auto const& i : s2.m_intervals) {
+        result.m_intervals.push_back(i);
+    }
     result.m_dimension = s1.m_dimension + s2.m_dimension;
     return result;
 }

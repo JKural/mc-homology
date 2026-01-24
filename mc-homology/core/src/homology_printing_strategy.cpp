@@ -7,12 +7,40 @@
 
 #include "core/homology.h"
 
+namespace {
+template<std::ranges::range R>
+    requires std::formattable<std::ranges::range_value_t<R>, char>
+std::string format_range(R&& r) {
+    namespace rs = std::ranges;
+    namespace vs = std::views;
+    if (rs::empty(r)) {
+        return std::format("[]");
+    }
+    std::string output;
+    auto out = std::back_inserter(output);
+    std::format_to(out, "[{}", *rs::begin(r));
+    for (auto&& x : std::forward<R>(r) | vs::drop(1)) {
+        std::format_to(out, ", {}", std::forward<decltype(x)>(x));
+    }
+    std::format_to(out, "]");
+    return output;
+}
+
+} // namespace
+
 namespace core {
 
 HomologyPrintingStrategy::~HomologyPrintingStrategy() = default;
 
 std::string HomologyRawPrint::draw(Homology const& homology) const {
-    return std::format("{}, {}", homology.betti_numbers(), homology.torsion());
+    namespace vs = std::views;
+    return std::format(
+        "{}, {}",
+        format_range(homology.betti_numbers()),
+        format_range(homology.torsion() | vs::transform([](auto&& v) {
+                         return format_range(std::forward<decltype(v)>(v));
+                     }))
+    );
 }
 
 HomologyLatexPrint::HomologyLatexPrint(

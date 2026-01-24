@@ -37,10 +37,10 @@ compute_chain_complex(CubicalComplex const& cubical_complex) {
             simplices[dim - 1].size(),
             simplices[dim].size()
         );
-        std::unordered_map<CubicalSimplex, std::size_t> assigned_rows(
-            std::from_range,
-            vs::zip(simplices[dim - 1], vs::iota(0))
-        );
+        std::unordered_map<CubicalSimplex, std::size_t> assigned_rows;
+        for (auto const& [s, i] : vs::zip(simplices[dim - 1], vs::iota(0))) {
+            assigned_rows.emplace(s, i);
+        }
         for (auto const& [j, simplex] : simplices[dim] | vs::enumerate) {
             std::array sgn = {1, -1, -1, 1};
             for (auto const& [k, bd] : simplex.boundary() | vs::enumerate) {
