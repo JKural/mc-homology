@@ -16,6 +16,24 @@
         "CMAKE_CXX_FLAGS": "-Wall -Wextra -Wpedantic",
         "INSTALL_GTEST": "False"
       }
+    },
+    {
+      "name": "release",
+      "displayName": "Release preset",
+      "description": "The preset of the project targeted for release",
+      "inherits": "default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "debug",
+      "displayName": "Debug preset",
+      "description": "The preset of the project targeted for debugging",
+      "inherits": "default",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
     }
   ]
 }
