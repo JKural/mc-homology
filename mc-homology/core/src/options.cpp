@@ -35,7 +35,7 @@ CommandlineOptions::CommandlineOptions(int argc, char** argv) {
             m_latex = true;
         } else if (std::strcmp(argv[i], "--no-latex") == 0) {
             m_latex = false;
-        } else if (std::strcmp(argv[i], "--x")) {
+        } else if (std::strcmp(argv[i], "--x") == 0) {
             if (i + 2 >= argc) {
                 throw std::invalid_argument("Not enough arguments for --x");
             }
@@ -45,7 +45,7 @@ CommandlineOptions::CommandlineOptions(int argc, char** argv) {
                 throw std::invalid_argument("Expected numbers for bounds");
             }
             i += 2;
-        } else if (std::strcmp(argv[i], "--y")) {
+        } else if (std::strcmp(argv[i], "--y") == 0) {
             if (i + 2 >= argc) {
                 throw std::invalid_argument("Not enough arguments for --y");
             }
@@ -55,7 +55,7 @@ CommandlineOptions::CommandlineOptions(int argc, char** argv) {
                 throw std::invalid_argument("Expected numbers for bounds");
             }
             i += 2;
-        } else if (std::strcmp(argv[i], "--z")) {
+        } else if (std::strcmp(argv[i], "--z") == 0) {
             if (i + 2 >= argc) {
                 throw std::invalid_argument("Not enough arguments for --z");
             }
