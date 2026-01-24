@@ -5,8 +5,12 @@
 
 namespace core {
 
-LatexWrapper::LatexWrapper(std::unique_ptr<TextDrawable> inner) :
-    m_inner(std::move(inner)) {
+LatexWrapper::LatexWrapper(
+    std::unique_ptr<TextDrawable> inner,
+    std::string documentclass
+) :
+    m_inner(std::move(inner)),
+    m_documentclass(std::move(documentclass)) {
     if (!m_inner) {
         throw std::invalid_argument("Inner data can't be a null pointer");
     }
@@ -14,7 +18,7 @@ LatexWrapper::LatexWrapper(std::unique_ptr<TextDrawable> inner) :
 
 std::string LatexWrapper::text() const {
     std::stringstream output;
-    output << R"(\documentclass{article}
+    output << R"(\documentclass{)" << m_documentclass << R"(}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{amsmath}

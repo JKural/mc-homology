@@ -13,13 +13,17 @@ namespace core {
 class LatexWrapper: public TextDrawable {
 public:
     /// \brief Constructs the decorator with the object to wrap
-    LatexWrapper(std::unique_ptr<TextDrawable> inner);
+    LatexWrapper(
+        std::unique_ptr<TextDrawable> inner,
+        std::string documentclass = "article"
+    );
 
     /// \brief Returns the text representation of the object
     std::string text() const override;
 
 private:
     std::unique_ptr<TextDrawable> m_inner;
+    std::string m_documentclass;
 };
 
 } // namespace core

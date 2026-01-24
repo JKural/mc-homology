@@ -64,7 +64,7 @@ std::string HomologyLatexPrint::draw(Homology const& homology) const {
                 return i == 0 && v.empty();
             }
         )) {
-        std::format_to(out, "    {} &= 0\n", m_homology_name);
+        std::format_to(out, "    {} &= 0\\\\\n", m_homology_name);
     } else {
         for (auto const& [i, betti_number, torsion] : vs::zip(
                  vs::iota(0),
@@ -75,7 +75,7 @@ std::string HomologyLatexPrint::draw(Homology const& homology) const {
                 case 0: {
                     std::format_to(
                         out,
-                        "    {}_{{{}}} &= 0\n",
+                        "    {}_{{{}}} &= 0\\\\\n",
                         m_homology_name,
                         i
                     );
@@ -84,7 +84,7 @@ std::string HomologyLatexPrint::draw(Homology const& homology) const {
                 case 1: {
                     std::format_to(
                         out,
-                        "    {}_{{{}}} &= {}\n",
+                        "    {}_{{{}}} &= {}\\\\\n",
                         m_homology_name,
                         i,
                         m_ring_name
@@ -94,7 +94,7 @@ std::string HomologyLatexPrint::draw(Homology const& homology) const {
                 default: {
                     std::format_to(
                         out,
-                        "    {}_{{{}}} &= {}^{{{}}}\n",
+                        "    {}_{{{}}} &= {}^{{{}}}\\\\\n",
                         m_homology_name,
                         i,
                         m_ring_name,
