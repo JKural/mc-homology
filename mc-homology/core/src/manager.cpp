@@ -12,10 +12,17 @@
 
 namespace core {
 
-Manager::Manager(std::unique_ptr<Options> options) :
-    m_options(std::move(options)) {
+Manager::Manager(
+    std::unique_ptr<Options> options,
+    std::unique_ptr<MinecraftSavefileParser> parser
+) :
+    m_options(std::move(options)),
+    m_parser(std::move(parser)) {
     if (!m_options) {
         throw std::invalid_argument("Options can't be null");
+    }
+    if (!m_parser) {
+        throw std::invalid_argument("Parser can't be null");
     }
 }
 
@@ -24,6 +31,13 @@ void Manager::set_options(std::unique_ptr<Options> options) {
         throw std::invalid_argument("Options can't be null");
     }
     m_options = std::move(options);
+}
+
+void Manager::set_parser(std::unique_ptr<MinecraftSavefileParser> parser) {
+    if (!parser) {
+        throw std::invalid_argument("Parser can't be null");
+    }
+    m_parser = std::move(parser);
 }
 
 int Manager::run() {

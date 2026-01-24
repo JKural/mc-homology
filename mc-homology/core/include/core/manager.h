@@ -5,17 +5,24 @@
 #include <memory>
 
 #include "core/options.h"
+#include "core/parser.h"
 
 namespace core {
 
 /// \brief Main manager for the program
 class Manager {
 public:
-    /// \brief Construct from options
-    Manager(std::unique_ptr<Options> options);
+    /// \brief Construct a new manager with selected parser and options
+    Manager(
+        std::unique_ptr<Options> options,
+        std::unique_ptr<MinecraftSavefileParser> parser
+    );
 
     /// \brief Select options
     void set_options(std::unique_ptr<Options> options);
+
+    /// \brief Select parser
+    void set_parser(std::unique_ptr<MinecraftSavefileParser> parser);
 
     /// \brief Start the program
     ///
@@ -24,6 +31,7 @@ public:
 
 private:
     std::unique_ptr<Options> m_options;
+    std::unique_ptr<MinecraftSavefileParser> m_parser;
 };
 
 } // namespace core
