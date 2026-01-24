@@ -14,7 +14,7 @@ fetchcontent_declare(
 fetchcontent_declare(
   mcSavefileParsers
   GIT_REPOSITORY https://github.com/JKural/mcSavefileParsers.git
-  GIT_TAG 91e58d971938fbe4ccb6f38718be25d7a72458cb
+  GIT_TAG 984843b45a6d465ffc814b94fc698121ab432c25
 )
 
 if(BUILD_TESTING)
