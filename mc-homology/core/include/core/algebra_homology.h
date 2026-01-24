@@ -25,13 +25,8 @@ public:
         m_homology(std::move(homology)) {}
 
     /// \brief Returns text representation of the betti numbers
-    std::vector<std::string> betti_numbers() const override {
-        namespace rs = std::ranges;
-        namespace vs = std::views;
-        return rs::to<std::vector>(
-            m_homology.betti_numbers
-            | vs::transform([](std::size_t n) { return std::format("{}", n); })
-        );
+    std::vector<std::size_t> betti_numbers() const override {
+        return m_homology.betti_numbers;
     }
 
     /// \brief Returns text represetnation of torsion

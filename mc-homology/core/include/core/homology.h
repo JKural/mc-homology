@@ -39,7 +39,7 @@ public:
     std::string text() const override;
 
     /// \brief Returns text representations of stored betti numbers
-    virtual std::vector<std::string> betti_numbers() const = 0;
+    virtual std::vector<std::size_t> betti_numbers() const = 0;
 
     /// \brief Returns text representations of stored torsion as the
     ///        non-trivial part of the Smith's form diagonal
