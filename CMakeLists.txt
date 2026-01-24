@@ -11,12 +11,17 @@ fetchcontent_declare(
   GIT_TAG 52eb8108c5bdec04579160ae17225d66034bd723
 )
 
-find_package(ZLIB REQUIRED)
+fetchcontent_declare(
+  mcSavefileParsers
+  GIT_REPOSITORY https://github.com/JKural/mcSavefileParsers.git
+  GIT_TAG 91e58d971938fbe4ccb6f38718be25d7a72458cb
+)
 
 if(BUILD_TESTING)
   fetchcontent_makeavailable(googletest)
   include(GoogleTest)
 endif()
 
+fetchcontent_makeavailable(mcSavefileParsers)
+
 add_subdirectory(mc-homology)
-add_subdirectory(mcSavefileParsers)
