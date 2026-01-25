@@ -13,7 +13,7 @@ enum class HomologyChoice {
     Z3,
 };
 
-/// \bief A class for storing user options
+/// \brief A class for storing user options
 class Options {
 public:
     /// \brief Path to the region directory

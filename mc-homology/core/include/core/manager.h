@@ -1,4 +1,4 @@
-/// \file mediator.h
+/// \file manager.h
 /// \brief A file containing main logic of the program
 #pragma once
 

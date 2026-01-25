@@ -38,7 +38,6 @@ public:
     ///
     /// \param ring_name Name for the coefficient ring
     /// \param homology_name Name for the homology group
-    /// \param torsion_name Name for the torsion group
     HomologyLatexPrint(std::string ring_name, std::string homology_name = "H");
 
     /// \brief Returns the homology description in latex syntax
