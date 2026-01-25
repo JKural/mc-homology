@@ -101,7 +101,7 @@ Collaboration diagram for complexes::BasicInterval:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcomplexes_1_1BasicInterval__coll__graph.png" border="0" usemap="#acomplexes_1_1BasicInterval_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="acomplexes_1_1BasicInterval_coll__map" id="acomplexes_1_1BasicInterval_coll__map">
-<area shape="rect" title="A struct representing an interval of length 0 or 1." alt="" coords="5,5,169,254"/>
+<area shape="rect" title="A struct representing an interval of length 0 or 1." alt="" coords="5,5,169,278"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -133,6 +133,15 @@ static <a class="el" href="#ad19968e4fd4bd61b9be7ae23321899ae">BasicInterval</a>
 <tr class="memdesc:a980d11ad1afb8d4c59f3775971056643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a trivial interval. <br /></td></tr>
 <tr class="memitem:aa6ccd4723c82af1f2b740d0401328ef8" id="r_aa6ccd4723c82af1f2b740d0401328ef8"><td class="memItemLeft">static <a class="el" href="#ad19968e4fd4bd61b9be7ae23321899ae">BasicInterval</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa6ccd4723c82af1f2b740d0401328ef8">interval</a> (int <a class="el" href="#a102317692e6b358e76e99bb14319c8c7">left</a>)</td></tr>
 <tr class="memdesc:aa6ccd4723c82af1f2b740d0401328ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a interval of length one starting in left.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:afb57e1c1e4c26b3a2a3a8e7beee00c69" id="r_afb57e1c1e4c26b3a2a3a8e7beee00c69"><td class="memItemLeft"><a id="afb57e1c1e4c26b3a2a3a8e7beee00c69" name="afb57e1c1e4c26b3a2a3a8e7beee00c69"></a>
+int&#160;</td><td class="memItemRight"><b>m_left</b> = 0</td></tr>
+<tr class="memdesc:afb57e1c1e4c26b3a2a3a8e7beee00c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left bound of the interval. <br /></td></tr>
+<tr class="memitem:a9ac2a4742b41a6d229872d9f5bc28202" id="r_a9ac2a4742b41a6d229872d9f5bc28202"><td class="memItemLeft"><a id="a9ac2a4742b41a6d229872d9f5bc28202" name="a9ac2a4742b41a6d229872d9f5bc28202"></a>
+bool&#160;</td><td class="memItemRight"><b>m_full</b> = false</td></tr>
+<tr class="memdesc:a9ac2a4742b41a6d229872d9f5bc28202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marker, if the interval is full or trivial (degenerate). <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A struct representing an interval of length 0 or 1. </p>

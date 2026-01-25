@@ -11,22 +11,20 @@ A class for storing user\textquotesingle{}s options from the commandline.
 
 
 
-Inheritance diagram for core::\+Commandline\+Options:\+
-\nopagebreak
+Inheritance diagram for core::\+Commandline\+Options:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=214pt]{classcore_1_1CommandlineOptions__inherit__graph}
+\includegraphics[height=550pt]{classcore_1_1CommandlineOptions__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for core::\+Commandline\+Options:\+
-\nopagebreak
+Collaboration diagram for core::\+Commandline\+Options:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=214pt]{classcore_1_1CommandlineOptions__coll__graph}
+\includegraphics[height=550pt]{classcore_1_1CommandlineOptions__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -54,6 +52,30 @@ bool \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1abcf70b97e1e6f8008f9
 \item 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Options} ()
 \begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1CommandlineOptions_a1b23b59cac060844bcad24c875bad3e5}\label{classcore_1_1CommandlineOptions_a1b23b59cac060844bcad24c875bad3e5} 
+std::\+filesystem::\+path {\bfseries m\+\_\+filename} = "{}"{}
+\begin{DoxyCompactList}\small\item\em Filename of the save file. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CommandlineOptions_a48a52cc74222e84cbcb55a29069143f5}\label{classcore_1_1CommandlineOptions_a48a52cc74222e84cbcb55a29069143f5} 
+std::\+pair$<$ int, int $>$ {\bfseries m\+\_\+x\+\_\+bounds} = \{0, 0\}
+\begin{DoxyCompactList}\small\item\em x bounds in the save file \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CommandlineOptions_adb57159a138115aa0559f25a9893b5ec}\label{classcore_1_1CommandlineOptions_adb57159a138115aa0559f25a9893b5ec} 
+std::\+pair$<$ int, int $>$ {\bfseries m\+\_\+y\+\_\+bounds} = \{0, 0\}
+\begin{DoxyCompactList}\small\item\em y bounds in the save file \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CommandlineOptions_a142e3312b07323980a463a4a29819905}\label{classcore_1_1CommandlineOptions_a142e3312b07323980a463a4a29819905} 
+std::\+pair$<$ int, int $>$ {\bfseries m\+\_\+z\+\_\+bounds} = \{0, 0\}
+\begin{DoxyCompactList}\small\item\em z bounds in the save file \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CommandlineOptions_aa554797be4e98600a40256c9c0792bae}\label{classcore_1_1CommandlineOptions_aa554797be4e98600a40256c9c0792bae} 
+\doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{Homology\+Choice}} {\bfseries m\+\_\+homology\+\_\+to\+\_\+compute} = Homology\+Choice::\+\+Z2
+\begin{DoxyCompactList}\small\item\em Type of homology to compute. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CommandlineOptions_a61e76bbdede0ab880c4e5fb9953d229c}\label{classcore_1_1CommandlineOptions_a61e76bbdede0ab880c4e5fb9953d229c} 
+bool {\bfseries m\+\_\+latex} = false
+\begin{DoxyCompactList}\small\item\em Flag whether to print latex syntax. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CommandlineOptions_a8116c275cfc81a73d7f1945e9ce05951}\label{classcore_1_1CommandlineOptions_a8116c275cfc81a73d7f1945e9ce05951} 
+bool {\bfseries m\+\_\+help} = false
+\begin{DoxyCompactList}\small\item\em Flag whether to print help. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

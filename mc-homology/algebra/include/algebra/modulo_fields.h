@@ -98,6 +98,7 @@ public:
     }
 
 private:
+    /// \brief Inner representation of the integer
     int m_inner_representation = 0;
 };
 

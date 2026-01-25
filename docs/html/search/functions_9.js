@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['manager_0',['Manager',['../classcore_1_1Manager.html#a4a83c61b398d08833df2e13391095118',1,'core::Manager']]],
-  ['matrix_1',['Matrix',['../classalgebra_1_1Matrix.html#aeed32f6526fd494cbc25646f539caa98',1,'algebra::Matrix::Matrix()'],['../matrix_8h.html#abed0b66c149933f74c933def897afa3c',1,'algebra::Matrix(R &amp;&amp;, std::size_t, std::size_t) -&gt; Matrix&lt; std::ranges::range_value_t&lt; R &gt; &gt;']]],
-  ['modulo_2',['modulo',['../integer_8h.html#a7557df3e0d51e921d301661b095a8ccf',1,'algebra::modulo(Integer a, Integer n)'],['../number__theory_8h.html#a35001d3da463f1cabac1ab9756ff8826',1,'algebra::modulo(int a, int n)']]]
+  ['latex_0',['latex',['../classcore_1_1Options.html#a5b998ab1c70c3663c2e5a941ae4ef984',1,'core::Options::latex()'],['../classcore_1_1CommandlineOptions.html#a8a0803d8df5a8e844dddef0f72742e01',1,'core::CommandlineOptions::latex()']]],
+  ['latexwrapper_1',['LatexWrapper',['../classcore_1_1LatexWrapper.html#a6b4e35964c253ec9d4ba83d2e6fc883c',1,'core::LatexWrapper']]],
+  ['left_2',['left',['../classcomplexes_1_1BasicInterval.html#a102317692e6b358e76e99bb14319c8c7',1,'complexes::BasicInterval']]]
 ];

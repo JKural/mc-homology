@@ -5,6 +5,9 @@ var hierarchy =
     [ "core::Complex", "classcore_1_1Complex.html", [
       [ "core::CubicalComplex3D", "classcore_1_1CubicalComplex3D.html", null ]
     ] ],
+    [ "core::Polymorphic&lt; T &gt;::Concept", "structcore_1_1Polymorphic_1_1Concept.html", [
+      [ "core::Polymorphic< T >::Model< Object >", "structcore_1_1Polymorphic_1_1Model.html", null ]
+    ] ],
     [ "complexes::CubicalComplex", "classcomplexes_1_1CubicalComplex.html", null ],
     [ "complexes::CubicalSimplex", "classcomplexes_1_1CubicalSimplex.html", null ],
     [ "algebra::DivResult&lt; T &gt;", "structalgebra_1_1DivResult.html", null ],

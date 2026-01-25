@@ -1,5 +1,13 @@
 <map id="core::CommandlineOptions" name="core::CommandlineOptions">
-<area shape="rect" id="Node000001" title="A class for storing user&#39;s options from the commandline." alt="" coords="5,302,184,551"/>
-<area shape="rect" id="Node000002" href="$classcore_1_1Options.html" title="A class for storing user options." alt="" coords="8,5,182,254"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,266,97,302,92,302,94,272"/>
+<area shape="rect" id="Node000001" title="A class for storing user&#39;s options from the commandline." alt="" coords="54,684,238,1006"/>
+<area shape="rect" id="Node000002" href="$classcore_1_1Options.html" title="A class for storing user options." alt="" coords="5,312,179,561"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,573,127,685,122,684,110,578"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="203,385,326,488"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,485,200,669,194,667,248,490"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="204,159,325,237"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="265,249,267,385,262,385,264,254"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="200,5,225,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="208,81,210,109,216,134,220,144,215,144,211,135,205,109,207,86"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="305,5,330,84"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="305,86,291,136,288,143,283,142,286,134,307,81"/>
 </map>

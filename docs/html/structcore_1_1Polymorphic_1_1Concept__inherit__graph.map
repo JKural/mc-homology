@@ -1,0 +1,5 @@
+<map id="core::Polymorphic&lt; T &gt;::Concept" name="core::Polymorphic&lt; T &gt;::Concept">
+<area shape="rect" id="Node000001" title="Base class used for type erasure." alt="" coords="10,5,141,176"/>
+<area shape="rect" id="Node000002" href="$structcore_1_1Polymorphic_1_1Model.html" title="Concrete class used for type erasure." alt="" coords="5,224,146,394"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,188,78,224,73,224,75,193"/>
+</map>

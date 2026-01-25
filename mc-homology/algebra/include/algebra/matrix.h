@@ -313,13 +313,18 @@ public:
     }
 
 private:
+    /// \brief Returns the underlying index of an element at given
+    ///        coordinates
     constexpr size_type
     to_underlying_index(size_type row, size_type col) const noexcept {
         return row * m_ncols + col;
     }
 
+    /// \brief Stored coefficients
     storage_type m_data;
+    /// \brief Number of rows
     size_type m_nrows;
+    /// \brief Number of columns
     size_type m_ncols;
 };
 
@@ -461,6 +466,8 @@ struct std::formatter<algebra::Matrix<T>> {
     }
 
 private:
+    /// \brief Flag whether to print the matrix in multiple lines
     bool multi_line = false;
+    /// \brief Formatter for the coefficients
     std::formatter<T> coefficient_formatter;
 };

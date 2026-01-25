@@ -49,6 +49,7 @@ public:
     virtual ~Homology();
 
 private:
+    /// \brief Printing strategy used to print the homology
     std::unique_ptr<HomologyPrintingStrategy> m_printing_strategy;
 };
 

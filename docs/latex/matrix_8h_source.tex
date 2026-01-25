@@ -39,129 +39,129 @@
 \DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
 \DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ std::convertible\_to<std::ranges::range\_value\_t<R>,\ T>}
 \DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_aeed32f6526fd494cbc25646f539caa98}{Matrix}}(R\&\&\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}},\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}},\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}})\ :}
-\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ m\_data\ \{\},}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ m\_nrows\ \{\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}\},}
-\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ m\_ncols\ \{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}\}\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}\ \{\},}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ \{\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}\},}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}}\ \{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}\}\ \{}
 \DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::ranges::size(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}})\ !=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}\ *\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}})\ [[unlikely]]\ \{}
 \DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(}
 \DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Size\ of\ the\ array\ is\ not\ equal\ to\ the\ number"{}}}
 \DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ of\ rows\ times\ the\ number\ of\ columns"{}}}
 \DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ );}
 \DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ m\_data\ =\ std::ranges::to<std::vector<T>>(std::forward<R>(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}}));}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}\ =\ std::ranges::to<std::vector<T>>(std::forward<R>(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}}));}
 \DoxyCodeLine{00074\ \ \ \ \ \}}
 \DoxyCodeLine{00075\ }
 \DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a90e2f25e23b866f1f4ec3b1597caaa28}{iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a711ce3ddc1e3fe6eda7f913861d57ff2}{begin}}()\ noexcept\ \{}
-\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.begin();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.begin();}
 \DoxyCodeLine{00079\ \ \ \ \ \}}
 \DoxyCodeLine{00080\ }
 \DoxyCodeLine{00082\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a1514c8d9a5a3a0f2945c8a8adbb239c1}{begin}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.begin();}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.begin();}
 \DoxyCodeLine{00084\ \ \ \ \ \}}
 \DoxyCodeLine{00085\ }
 \DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae435b62c30e5cff213667ed27acdb70c}{cbegin}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.cbegin();}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.cbegin();}
 \DoxyCodeLine{00089\ \ \ \ \ \}}
 \DoxyCodeLine{00090\ }
 \DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a90e2f25e23b866f1f4ec3b1597caaa28}{iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a3eee82886269c289a4508bb01f32c1e9}{end}}()\ noexcept\ \{}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.end();}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.end();}
 \DoxyCodeLine{00094\ \ \ \ \ \}}
 \DoxyCodeLine{00095\ }
 \DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a8099c0ff19aaeaa7ebdd67f5b664ce22}{end}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.end();}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.end();}
 \DoxyCodeLine{00099\ \ \ \ \ \}}
 \DoxyCodeLine{00100\ }
 \DoxyCodeLine{00102\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a608a81e0abf75d0df279ae3ab915f6f5}{cend}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.cend();}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.cend();}
 \DoxyCodeLine{00104\ \ \ \ \ \}}
 \DoxyCodeLine{00105\ }
 \DoxyCodeLine{00107\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a021b66dd476946b3c91890448e13fe50}{reverse\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75dc1d15559dab7d43b4af2d7cc16cb}{rbegin}}()\ noexcept\ \{}
-\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.rbegin();}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.rbegin();}
 \DoxyCodeLine{00109\ \ \ \ \ \}}
 \DoxyCodeLine{00110\ }
 \DoxyCodeLine{00112\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\_reverse\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0d705707bb29eb36fe6ddc3c53830d83}{rbegin}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.rbegin();}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.rbegin();}
 \DoxyCodeLine{00114\ \ \ \ \ \}}
 \DoxyCodeLine{00115\ }
 \DoxyCodeLine{00117\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\_reverse\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_afc976da3d25ea9ac8946e7d314e04556}{crbegin}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.crbegin();}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.crbegin();}
 \DoxyCodeLine{00119\ \ \ \ \ \}}
 \DoxyCodeLine{00120\ }
 \DoxyCodeLine{00122\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a021b66dd476946b3c91890448e13fe50}{reverse\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a403d37deae4f8cc4acb46992bd76b838}{rend}}()\ noexcept\ \{}
-\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.rend();}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.rend();}
 \DoxyCodeLine{00124\ \ \ \ \ \}}
 \DoxyCodeLine{00125\ }
 \DoxyCodeLine{00127\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\_reverse\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a4b6fb86f09c92d84368aa3b82b570557}{rend}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.rend();}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.rend();}
 \DoxyCodeLine{00129\ \ \ \ \ \}}
 \DoxyCodeLine{00130\ }
 \DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\_reverse\_iterator}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a6f13f0d64aeb38072a8a4261244e25d1}{crend}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.crend();}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.crend();}
 \DoxyCodeLine{00134\ \ \ \ \ \}}
 \DoxyCodeLine{00135\ }
 \DoxyCodeLine{00137\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_af3a54e29cbd467362cc44d3524f04702}{empty}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.empty();}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.empty();}
 \DoxyCodeLine{00139\ \ \ \ \ \}}
 \DoxyCodeLine{00140\ }
 \DoxyCodeLine{00142\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_af7766a3f471894ece7be31dbc6e9687f}{size}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.size();}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.size();}
 \DoxyCodeLine{00144\ \ \ \ \ \}}
 \DoxyCodeLine{00145\ }
 \DoxyCodeLine{00147\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a54f9a88e32ef7ea844b4c7d1d9b9539d}{swap}}(Matrix\&\ other)\ \textcolor{keyword}{noexcept}(}
-\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ m\_data.swap(std::declval<std::vector<value\_type>>())}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.swap(std::declval<std::vector<value\_type>>())}
 \DoxyCodeLine{00149\ \ \ \ \ )\ \{}
 \DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
-\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ m\_data.swap(other.m\_data);}
-\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ rs::swap(m\_nrows,\ other.m\_nrows);}
-\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ rs::swap(m\_ncols,\ other.m\_ncols);}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.swap(other.m\_data);}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ rs::swap(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}},\ other.m\_nrows);}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ rs::swap(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}},\ other.m\_ncols);}
 \DoxyCodeLine{00154\ \ \ \ \ \}}
 \DoxyCodeLine{00155\ }
 \DoxyCodeLine{00157\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_nrows;}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}};}
 \DoxyCodeLine{00159\ \ \ \ \ \}}
 \DoxyCodeLine{00160\ }
 \DoxyCodeLine{00162\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_ncols;}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}};}
 \DoxyCodeLine{00164\ \ \ \ \ \}}
 \DoxyCodeLine{00165\ }
 \DoxyCodeLine{00167\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a5e0c8d73345a610e75f40c191de39cad}{operator==}}(Matrix\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const}\ =\ \textcolor{keywordflow}{default};}
 \DoxyCodeLine{00168\ }
 \DoxyCodeLine{00173\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}{reference}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a916be7ee40b9b3e1bb67094dddb1a707}{operator[]}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ row,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ col)\ \{}
-\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ m\_nrows\ ||\ col\ >=\ m\_ncols)\ [[unlikely]]\ \{}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ ||\ col\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}})\ [[unlikely]]\ \{}
 \DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Indices\ out\ of\ matrix\ range"{}});}
 \DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data[to\_underlying\_index(row,\ col)];}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}[\doxymbox{\hyperlink{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097}{to\_underlying\_index}}(row,\ col)];}
 \DoxyCodeLine{00178\ \ \ \ \ \}}
 \DoxyCodeLine{00179\ }
 \DoxyCodeLine{00184\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}{const\_reference}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a29b8dda21386e9a763ae13b72be89610}{operator[]}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ row,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ col)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ m\_nrows\ ||\ col\ >=\ m\_ncols)\ [[unlikely]]\ \{}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ ||\ col\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}})\ [[unlikely]]\ \{}
 \DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Indices\ out\ of\ matrix\ range"{}});}
 \DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data[to\_underlying\_index(row,\ col)];}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}[\doxymbox{\hyperlink{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097}{to\_underlying\_index}}(row,\ col)];}
 \DoxyCodeLine{00189\ \ \ \ \ \}}
 \DoxyCodeLine{00190\ }
 \DoxyCodeLine{00195\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}{reference}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_adfcf4e7bcb8e66e723de6715679953b4}{at}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ row,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ col)\ \{}
-\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ m\_nrows\ ||\ col\ >=\ m\_ncols)\ [[unlikely]]\ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ ||\ col\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}})\ [[unlikely]]\ \{}
 \DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Indices\ out\ of\ matrix\ range"{}});}
 \DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.at(to\_underlying\_index(row,\ col));}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.at(\doxymbox{\hyperlink{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097}{to\_underlying\_index}}(row,\ col));}
 \DoxyCodeLine{00200\ \ \ \ \ \}}
 \DoxyCodeLine{00201\ }
 \DoxyCodeLine{00206\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}{const\_reference}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a857d525ad0d5aa3bc1abbc2b3cac1040}{at}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ row,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ col)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ m\_nrows\ ||\ col\ >=\ m\_ncols)\ [[unlikely]]\ \{}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (row\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ ||\ col\ >=\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}})\ [[unlikely]]\ \{}
 \DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::out\_of\_range(\textcolor{stringliteral}{"{}Indices\ out\ of\ matrix\ range"{}});}
 \DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data.at(to\_underlying\_index(row,\ col));}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.at(\doxymbox{\hyperlink{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097}{to\_underlying\_index}}(row,\ col));}
 \DoxyCodeLine{00211\ \ \ \ \ \}}
 \DoxyCodeLine{00212\ }
 \DoxyCodeLine{00214\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01}{storage\_type}}\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_data;}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}};}
 \DoxyCodeLine{00216\ \ \ \ \ \}}
 \DoxyCodeLine{00217\ }
 \DoxyCodeLine{00219\ \ \ \ \ \textcolor{keyword}{constexpr}\ Matrix\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ab297b9b3550d6fa60eb92cb47c44be8f}{transpose}}()\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ transposed\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}{zero}}(m\_ncols,\ m\_nrows);}
-\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ i\ =\ 0;\ i\ <\ m\_nrows;\ ++i)\ \{}
-\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ j\ =\ 0;\ j\ <\ m\_ncols;\ ++j)\ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ transposed\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}{zero}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}},\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}});}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ i\ =\ 0;\ i\ <\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}};\ ++i)\ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ j\ =\ 0;\ j\ <\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}};\ ++j)\ \{}
 \DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ transposed[j,\ i]\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_adfcf4e7bcb8e66e723de6715679953b4}{at}}(i,\ j);}
 \DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \}}
@@ -171,24 +171,24 @@
 \DoxyCodeLine{00230\ \ \ \ \ \textcolor{keyword}{constexpr}\ Matrix\&\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae2deb66304cd4e6e2789e1b9950813ad}{operator+=}}(Matrix\ \textcolor{keyword}{const}\&\ rhs)}
 \DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ \doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{AdditiveGroup<T>}}}
 \DoxyCodeLine{00232\ \ \ \ \ \{}
-\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_nrows\ !=\ rhs.m\_nrows\ ||\ m\_ncols\ !=\ rhs.m\_ncols)\ \{}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ !=\ rhs.m\_nrows\ ||\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}}\ !=\ rhs.m\_ncols)\ \{}
 \DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(\textcolor{stringliteral}{"{}Adding\ matrices\ of\ different\ dimensions"{}});}
 \DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
-\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ rs::transform(m\_data,\ rhs.m\_data,\ rs::begin(m\_data),\ std::plus\ \{\});}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ rs::transform(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}},\ rhs.m\_data,\ rs::begin(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}),\ std::plus\ \{\});}
 \DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
 \DoxyCodeLine{00239\ \ \ \ \ \}}
 \DoxyCodeLine{00240\ }
 \DoxyCodeLine{00242\ \ \ \ \ \textcolor{keyword}{constexpr}\ Matrix\&\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_af2ee162099ab953825da002e0f608337}{operator-\/=}}(Matrix\ \textcolor{keyword}{const}\&\ rhs)}
 \DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ \doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{AdditiveGroup<T>}}}
 \DoxyCodeLine{00244\ \ \ \ \ \{}
-\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_nrows\ !=\ rhs.m\_nrows\ ||\ m\_ncols\ !=\ rhs.m\_ncols)\ \{}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}}\ !=\ rhs.m\_nrows\ ||\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}}\ !=\ rhs.m\_ncols)\ \{}
 \DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(}
 \DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Subtracting\ matrices\ of\ different\ dimensions"{}}}
 \DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ );}
 \DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
-\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ rs::transform(m\_data,\ rhs.m\_data,\ rs::begin(m\_data),\ std::minus\ \{\});}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ rs::transform(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}},\ rhs.m\_data,\ rs::begin(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}),\ std::minus\ \{\});}
 \DoxyCodeLine{00252\ \ \ \ \ \}}
 \DoxyCodeLine{00253\ }
 \DoxyCodeLine{00255\ \ \ \ \ \textcolor{keyword}{constexpr}\ Matrix\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a2e4a32eb1a088760580da40373623d3f}{operator+}}()\ const}
@@ -202,9 +202,9 @@
 \DoxyCodeLine{00264\ \ \ \ \ \{}
 \DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
 \DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ std::vector<T>\ negated;}
-\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ negated.reserve(m\_data.capacity());}
-\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ rs::transform(m\_data,\ rs::begin(negated),\ std::negate\ \{\});}
-\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Matrix(negated,\ m\_nrows,\ m\_ncols);}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ negated.reserve(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}}.capacity());}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ rs::transform(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}},\ rs::begin(negated),\ std::negate\ \{\});}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ Matrix(negated,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}},\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}});}
 \DoxyCodeLine{00270\ \ \ \ \ \}}
 \DoxyCodeLine{00271\ }
 \DoxyCodeLine{00275\ \ \ \ \ \textcolor{keyword}{constexpr}\ Matrix\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a404fc25e2cc52f3b21b62fa579e1296c}{operator*=}}(Matrix\ \textcolor{keyword}{const}\&\ rhs)}
@@ -228,7 +228,7 @@
 \DoxyCodeLine{00295\ \ \ \ \ \}}
 \DoxyCodeLine{00296\ }
 \DoxyCodeLine{00298\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a15d67c83373391984d674444e135e36b}{is\_zero}}()\ const\ noexcept\ \{}
-\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::ranges::all\_of(m\_data,\ [](T\ \textcolor{keyword}{const}\&\ x)\ \{}
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::ranges::all\_of(\doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}},\ [](T\ \textcolor{keyword}{const}\&\ x)\ \{}
 \DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ x\ ==\ T::zero();}
 \DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \});}
 \DoxyCodeLine{00302\ \ \ \ \ \}}
@@ -244,121 +244,121 @@
 \DoxyCodeLine{00313\ \ \ \ \ \}}
 \DoxyCodeLine{00314\ }
 \DoxyCodeLine{00315\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00316\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}}
-\DoxyCodeLine{00317\ \ \ \ \ to\_underlying\_index(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ row,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ col)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
-\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ row\ *\ m\_ncols\ +\ col;}
-\DoxyCodeLine{00319\ \ \ \ \ \}}
-\DoxyCodeLine{00320\ }
-\DoxyCodeLine{00321\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01}{storage\_type}}\ m\_data;}
-\DoxyCodeLine{00322\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ m\_nrows;}
-\DoxyCodeLine{00323\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ m\_ncols;}
-\DoxyCodeLine{00324\ \};}
-\DoxyCodeLine{00325\ }
-\DoxyCodeLine{00327\ \textcolor{keyword}{template}<AdditiveGroup\ T>}
-\DoxyCodeLine{00328\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \doxymbox{\hyperlink{integer_8h_ade04e6b8cc549a66f70769f8c44104f8}{operator+}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ rhs)\ \{}
-\DoxyCodeLine{00329\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ +=\ rhs;}
-\DoxyCodeLine{00330\ \}}
-\DoxyCodeLine{00331\ }
-\DoxyCodeLine{00333\ \textcolor{keyword}{template}<AdditiveGroup\ T>}
-\DoxyCodeLine{00334\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \doxymbox{\hyperlink{integer_8h_acb08f898d9c1b3fd624ef42e41a605a1}{operator-\/}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ rhs)\ \{}
-\DoxyCodeLine{00335\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ -\/=\ rhs;}
-\DoxyCodeLine{00336\ \}}
-\DoxyCodeLine{00337\ }
-\DoxyCodeLine{00341\ \textcolor{keyword}{template}<Ring\ T>}
-\DoxyCodeLine{00342\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \doxymbox{\hyperlink{integer_8h_a442462c93fc9e0ebffcc6e517e9e3796}{operator*}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ rhs)\ \{}
-\DoxyCodeLine{00343\ \ \ \ \ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}};}
-\DoxyCodeLine{00344\ \ \ \ \ \textcolor{keyword}{using\ }size\_type\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{Matrix::size\_type}};}
-\DoxyCodeLine{00345\ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}()\ !=\ rhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}())\ \{}
-\DoxyCodeLine{00346\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(}
-\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ number\ of\ columns\ of\ lhs\ is\ different\ "{}}}
-\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}than\ the\ number\ of\ rows\ of\ rhs"{}}}
-\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00350\ \ \ \ \ \}}
-\DoxyCodeLine{00351\ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\ inner\_dim\ =\ lhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}();}
-\DoxyCodeLine{00352\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}\ product\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}{Matrix::zero}}(lhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}(),\ rhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}());}
-\DoxyCodeLine{00353\ \ \ \ \ \textcolor{keywordflow}{for}\ (size\_type\ i\ =\ 0;\ i\ <\ product.nrows();\ ++i)\ \{}
-\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (size\_type\ j\ =\ 0;\ j\ <\ product.ncols();\ ++j)\ \{}
-\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (size\_type\ k\ =\ 0;\ k\ <\ inner\_dim;\ ++k)\ \{}
-\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ product[i,\ j]\ +=\ lhs[i,\ k]\ *\ rhs[k,\ j];}
-\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00359\ \ \ \ \ \}}
-\DoxyCodeLine{00360\ \ \ \ \ \textcolor{keywordflow}{return}\ product;}
-\DoxyCodeLine{00361\ \}}
-\DoxyCodeLine{00362\ }
-\DoxyCodeLine{00364\ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
-\DoxyCodeLine{00365\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}(R\&\&,\ std::size\_t,\ std::size\_t)\ -\/>\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<std::ranges::range\_value\_t<R>}}>;}
-\DoxyCodeLine{00366\ }
-\DoxyCodeLine{00368\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
-\DoxyCodeLine{00369\ std::ostream\&\ \doxymbox{\hyperlink{integer_8h_a33030836db242b656162529d27fc5ffd}{operator<<}}(std::ostream\&\ output,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ matrix)\ \{}
-\DoxyCodeLine{00370\ \ \ \ \ \textcolor{keywordflow}{return}\ output\ <<\ std::format(\textcolor{stringliteral}{"{}\{\}"{}},\ matrix);}
-\DoxyCodeLine{00371\ \}}
-\DoxyCodeLine{00372\ }
-\DoxyCodeLine{00373\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
-\DoxyCodeLine{00374\ }
-\DoxyCodeLine{00398\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
-\DoxyCodeLine{00399\ \ \ \ \ \textcolor{keyword}{requires}\ std::formattable<T,\ char>}
-\DoxyCodeLine{00400\ \textcolor{keyword}{struct\ }std::formatter<algebra::Matrix<T>>\ \{}
-\DoxyCodeLine{00402\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ ParseContext>}
-\DoxyCodeLine{00403\ \ \ \ \ \textcolor{keyword}{constexpr}\ ParseContext::iterator\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a50df22ad9226751053c9533c48173f7d}{parse}}(ParseContext\&\ ctx)\ \{}
-\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ ctx.begin();}
-\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it\ ==\ ctx.end()\ ||\ *it\ ==\ \textcolor{charliteral}{'\}'})\ \{}
-\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
-\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (*it\ ==\ \textcolor{charliteral}{'-\/'})\ \{}
-\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ \ \ \ \ multi\_line\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
-\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (*it\ ==\ \textcolor{charliteral}{'\#'})\ \{}
-\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ \ \ \ \ multi\_line\ =\ \textcolor{keyword}{true};}
-\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
-\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00414\ }
-\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it\ ==\ ctx.end()\ ||\ *it\ ==\ \textcolor{charliteral}{'\}'})\ \{}
-\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
-\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (*it\ ==\ \textcolor{charliteral}{':'})\ \{}
-\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ \ \ \ \ ctx.advance\_to(++it);}
-\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ coefficient\_formatter.parse(ctx);}
-\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::format\_error(\textcolor{stringliteral}{"{}Invalid\ formatting\ option\ for\ Matrix"{}});}
-\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00423\ \ \ \ \ \}}
-\DoxyCodeLine{00424\ }
-\DoxyCodeLine{00429\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
-\DoxyCodeLine{00430\ \ \ \ \ FmtContext::iterator}
-\DoxyCodeLine{00431\ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a49efc46f70b6de0f7ecc0bf8eaa77920}{format}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::Matrix<T>}}\ \textcolor{keyword}{const}\&\ matrix,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00432\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\ maybe\_new\_line\ =\ multi\_line\ ?\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ :\ \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_af3a54e29cbd467362cc44d3524f04702}{empty}}())\ \{}
-\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}[]"{}});}
-\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
-\DoxyCodeLine{00436\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}["{}});}
-\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ i\ =\ 0;\ i\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}();\ ++i)\ \{}
-\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}["{}});}
-\DoxyCodeLine{00439\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ j\ =\ 0;\ j\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}();\ ++j)\ \{}
-\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ coefficient\_formatter.format(matrix[i,\ j],\ ctx);}
-\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (j\ +\ 1\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}())\ \{}
-\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{},\ "{}});}
-\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}]"{}});}
-\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ +\ 1\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}())\ \{}
-\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{},\{\}\ "{}},\ maybe\_new\_line);}
-\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}]"{}});}
-\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (multi\_line)\ \{}
-\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(}
-\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ctx.out(),}
-\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)nMatrix\ \{\}\ x\ \{\}\(\backslash\)n"{}},}
-\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}(),}
-\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}()}
-\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ctx.out();}
-\DoxyCodeLine{00461\ \ \ \ \ \}}
-\DoxyCodeLine{00462\ }
-\DoxyCodeLine{00463\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00464\ \ \ \ \ \textcolor{keywordtype}{bool}\ multi\_line\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00465\ \ \ \ \ std::formatter<T>\ coefficient\_formatter;}
-\DoxyCodeLine{00466\ \};}
+\DoxyCodeLine{00318\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}}
+\DoxyCodeLine{00319\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097}{to\_underlying\_index}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ row,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ col)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ row\ *\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}}\ +\ col;}
+\DoxyCodeLine{00321\ \ \ \ \ \}}
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00324\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01}{storage\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}{m\_data}};}
+\DoxyCodeLine{00326\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}{m\_nrows}};}
+\DoxyCodeLine{00328\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\_type}}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}{m\_ncols}};}
+\DoxyCodeLine{00329\ \};}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00332\ \textcolor{keyword}{template}<AdditiveGroup\ T>}
+\DoxyCodeLine{00333\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \doxymbox{\hyperlink{integer_8h_ade04e6b8cc549a66f70769f8c44104f8}{operator+}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ rhs)\ \{}
+\DoxyCodeLine{00334\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ +=\ rhs;}
+\DoxyCodeLine{00335\ \}}
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00338\ \textcolor{keyword}{template}<AdditiveGroup\ T>}
+\DoxyCodeLine{00339\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \doxymbox{\hyperlink{integer_8h_acb08f898d9c1b3fd624ef42e41a605a1}{operator-\/}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ rhs)\ \{}
+\DoxyCodeLine{00340\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ -\/=\ rhs;}
+\DoxyCodeLine{00341\ \}}
+\DoxyCodeLine{00342\ }
+\DoxyCodeLine{00346\ \textcolor{keyword}{template}<Ring\ T>}
+\DoxyCodeLine{00347\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \doxymbox{\hyperlink{integer_8h_a442462c93fc9e0ebffcc6e517e9e3796}{operator*}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ rhs)\ \{}
+\DoxyCodeLine{00348\ \ \ \ \ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}};}
+\DoxyCodeLine{00349\ \ \ \ \ \textcolor{keyword}{using\ }size\_type\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{Matrix::size\_type}};}
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordflow}{if}\ (lhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}()\ !=\ rhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}())\ \{}
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ number\ of\ columns\ of\ lhs\ is\ different\ "{}}}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}than\ the\ number\ of\ rows\ of\ rhs"{}}}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00355\ \ \ \ \ \}}
+\DoxyCodeLine{00356\ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\ inner\_dim\ =\ lhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}();}
+\DoxyCodeLine{00357\ \ \ \ \ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}\ product\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}{Matrix::zero}}(lhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}(),\ rhs.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}());}
+\DoxyCodeLine{00358\ \ \ \ \ \textcolor{keywordflow}{for}\ (size\_type\ i\ =\ 0;\ i\ <\ product.nrows();\ ++i)\ \{}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (size\_type\ j\ =\ 0;\ j\ <\ product.ncols();\ ++j)\ \{}
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (size\_type\ k\ =\ 0;\ k\ <\ inner\_dim;\ ++k)\ \{}
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ product[i,\ j]\ +=\ lhs[i,\ k]\ *\ rhs[k,\ j];}
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00364\ \ \ \ \ \}}
+\DoxyCodeLine{00365\ \ \ \ \ \textcolor{keywordflow}{return}\ product;}
+\DoxyCodeLine{00366\ \}}
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00369\ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
+\DoxyCodeLine{00370\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}(R\&\&,\ std::size\_t,\ std::size\_t)\ -\/>\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<std::ranges::range\_value\_t<R>}}>;}
+\DoxyCodeLine{00371\ }
+\DoxyCodeLine{00373\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00374\ std::ostream\&\ \doxymbox{\hyperlink{integer_8h_a33030836db242b656162529d27fc5ffd}{operator<<}}(std::ostream\&\ output,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ matrix)\ \{}
+\DoxyCodeLine{00375\ \ \ \ \ \textcolor{keywordflow}{return}\ output\ <<\ std::format(\textcolor{stringliteral}{"{}\{\}"{}},\ matrix);}
+\DoxyCodeLine{00376\ \}}
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00378\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00403\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00404\ \ \ \ \ \textcolor{keyword}{requires}\ std::formattable<T,\ char>}
+\DoxyCodeLine{00405\ \textcolor{keyword}{struct\ }std::formatter<algebra::Matrix<T>>\ \{}
+\DoxyCodeLine{00407\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ ParseContext>}
+\DoxyCodeLine{00408\ \ \ \ \ \textcolor{keyword}{constexpr}\ ParseContext::iterator\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a50df22ad9226751053c9533c48173f7d}{parse}}(ParseContext\&\ ctx)\ \{}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ ctx.begin();}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it\ ==\ ctx.end()\ ||\ *it\ ==\ \textcolor{charliteral}{'\}'})\ \{}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (*it\ ==\ \textcolor{charliteral}{'-\/'})\ \{}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232}{multi\_line}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (*it\ ==\ \textcolor{charliteral}{'\#'})\ \{}
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232}{multi\_line}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \ \ \ \ ++it;}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00419\ }
+\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (it\ ==\ ctx.end()\ ||\ *it\ ==\ \textcolor{charliteral}{'\}'})\ \{}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ it;}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (*it\ ==\ \textcolor{charliteral}{':'})\ \{}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ \ \ \ \ ctx.advance\_to(++it);}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a20577f58fa8414d80f36328aa2082e6f}{coefficient\_formatter}}.parse(ctx);}
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::format\_error(\textcolor{stringliteral}{"{}Invalid\ formatting\ option\ for\ Matrix"{}});}
+\DoxyCodeLine{00427\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00428\ \ \ \ \ \}}
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00434\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
+\DoxyCodeLine{00435\ \ \ \ \ FmtContext::iterator}
+\DoxyCodeLine{00436\ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a49efc46f70b6de0f7ecc0bf8eaa77920}{format}}(\doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::Matrix<T>}}\ \textcolor{keyword}{const}\&\ matrix,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\ maybe\_new\_line\ =\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232}{multi\_line}}\ ?\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}}\ :\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_af3a54e29cbd467362cc44d3524f04702}{empty}}())\ \{}
+\DoxyCodeLine{00439\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}[]"{}});}
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}["{}});}
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ i\ =\ 0;\ i\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}();\ ++i)\ \{}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}["{}});}
+\DoxyCodeLine{00444\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ j\ =\ 0;\ j\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}();\ ++j)\ \{}
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a20577f58fa8414d80f36328aa2082e6f}{coefficient\_formatter}}.format(matrix[i,\ j],\ ctx);}
+\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (j\ +\ 1\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}())\ \{}
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{},\ "{}});}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ +\ 1\ <\ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}())\ \{}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{},\{\}\ "{}},\ maybe\_new\_line);}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{00456\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232}{multi\_line}})\ \{}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(}
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ctx.out(),}
+\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)nMatrix\ \{\}\ x\ \{\}\(\backslash\)n"{}},}
+\DoxyCodeLine{00461\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}(),}
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ matrix.\doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}}()}
+\DoxyCodeLine{00463\ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00464\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00465\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ctx.out();}
+\DoxyCodeLine{00466\ \ \ \ \ \}}
+\DoxyCodeLine{00467\ }
+\DoxyCodeLine{00468\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00470\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232}{multi\_line}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00472\ \ \ \ \ std::formatter<T>\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a20577f58fa8414d80f36328aa2082e6f}{coefficient\_formatter}};}
+\DoxyCodeLine{00473\ \};}
 
 \end{DoxyCode}

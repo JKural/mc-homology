@@ -101,7 +101,20 @@ Collaboration diagram for core::Manager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcore_1_1Manager__coll__graph.png" border="0" usemap="#acore_1_1Manager_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="acore_1_1Manager_coll__map" id="acore_1_1Manager_coll__map">
-<area shape="rect" title="Main manager for the program." alt="" coords="5,5,108,157"/>
+<area shape="rect" title="Main manager for the program." alt="" coords="177,679,280,830"/>
+<area shape="rect" title=" " alt="" coords="64,507,208,604"/>
+<area shape="poly" title=" " alt="" coords="159,601,189,664,184,664,158,606"/>
+<area shape="rect" href="classcore_1_1Options.html" title="A class for storing user options." alt="" coords="5,159,179,407"/>
+<area shape="poly" title=" " alt="" coords="83,404,88,445,96,482,99,491,93,491,91,483,83,446,83,410"/>
+<area shape="rect" title=" " alt="" coords="220,244,354,322"/>
+<area shape="poly" title=" " alt="" coords="243,336,212,381,180,433,164,470,151,508,146,506,159,468,176,430,208,378,246,331"/>
+<area shape="rect" title=" " alt="" coords="233,507,410,604"/>
+<area shape="poly" title=" " alt="" coords="290,334,296,406,306,482,311,508,306,506,301,483,291,407,288,339"/>
+<area shape="rect" title=" " alt="" coords="278,5,296,84"/>
+<area shape="poly" title=" " alt="" coords="288,81,290,227,284,226,286,86"/>
+<area shape="poly" title=" " alt="" coords="301,602,273,665,269,662,297,606"/>
+<area shape="rect" href="classcore_1_1MinecraftSavefileParser.html" title="An interface for Minecraft savefile parser." alt="" coords="397,232,590,334"/>
+<area shape="poly" title=" " alt="" coords="500,332,501,370,496,409,485,448,467,484,448,504,427,520,423,516,445,500,462,481,481,446,491,408,495,370,497,337"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -118,6 +131,15 @@ void&#160;</td><td class="memItemRight"><b>set_parser</b> (std::unique_ptr&lt; <
 <tr class="memdesc:a93b10a66323eb381e57f7cd40011264b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select parser. <br /></td></tr>
 <tr class="memitem:a8920c10e92e28a3f8090d51edaa8ab01" id="r_a8920c10e92e28a3f8090d51edaa8ab01"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8920c10e92e28a3f8090d51edaa8ab01">run</a> ()</td></tr>
 <tr class="memdesc:a8920c10e92e28a3f8090d51edaa8ab01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the program.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a552ac8d00ee81c7337f69ca8e2ec3271" id="r_a552ac8d00ee81c7337f69ca8e2ec3271"><td class="memItemLeft"><a id="a552ac8d00ee81c7337f69ca8e2ec3271" name="a552ac8d00ee81c7337f69ca8e2ec3271"></a>
+std::unique_ptr&lt; <a class="el" href="classcore_1_1Options.html">Options</a> &gt;&#160;</td><td class="memItemRight"><b>m_options</b></td></tr>
+<tr class="memdesc:a552ac8d00ee81c7337f69ca8e2ec3271"><td class="mdescLeft">&#160;</td><td class="mdescRight">User options. <br /></td></tr>
+<tr class="memitem:a09acbd47ef8935c83ae08983cdf870c9" id="r_a09acbd47ef8935c83ae08983cdf870c9"><td class="memItemLeft"><a id="a09acbd47ef8935c83ae08983cdf870c9" name="a09acbd47ef8935c83ae08983cdf870c9"></a>
+std::unique_ptr&lt; <a class="el" href="classcore_1_1MinecraftSavefileParser.html">MinecraftSavefileParser</a> &gt;&#160;</td><td class="memItemRight"><b>m_parser</b></td></tr>
+<tr class="memdesc:a09acbd47ef8935c83ae08983cdf870c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parser used to parse the save file. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main manager for the program. </p>

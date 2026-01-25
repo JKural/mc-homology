@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['remainder_0',['remainder',['../structalgebra_1_1DivResult.html#ad0e36befefbc995df5c7e0cd8b5f4c5b',1,'algebra::DivResult']]],
-  ['row_5fechelon_5fform_1',['row_echelon_form',['../structalgebra_1_1RowEchelonFormResult.html#a5d7445d749e91c17e53c38664c4c60bb',1,'algebra::RowEchelonFormResult']]]
+  ['non_5fempty_0',['non_empty',['../structalgebra_1_1SmithFormResult.html#a2cd799c73fa910aaf50e735092d1fe36',1,'algebra::SmithFormResult']]],
+  ['non_5fempty_5frows_1',['non_empty_rows',['../structalgebra_1_1RowEchelonFormResult.html#a1e5868ace3cfed893eb60eeaba83daa4',1,'algebra::RowEchelonFormResult']]]
 ];

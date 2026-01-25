@@ -11,12 +11,11 @@ Class representing a cubical complex.
 
 
 
-Collaboration diagram for complexes::\+Cubical\+Complex:\+
-\nopagebreak
+Collaboration diagram for complexes::\+Cubical\+Complex:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=215pt]{classcomplexes_1_1CubicalComplex__coll__graph}
+\includegraphics[height=550pt]{classcomplexes_1_1CubicalComplex__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -43,6 +42,18 @@ std::\+size\+\_\+t {\bfseries dimension} () const
 \Hypertarget{classcomplexes_1_1CubicalComplex_abea459ade96857a9ffc8e2914f4245e8}\label{classcomplexes_1_1CubicalComplex_abea459ade96857a9ffc8e2914f4245e8} 
 std::\+size\+\_\+t {\bfseries ambient\+\_\+dimension} () const
 \begin{DoxyCompactList}\small\item\em Returns the ambient dimension of the simplex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomplexes_1_1CubicalComplex_a67e10eb63875d63b71098f7d6553fb29}\label{classcomplexes_1_1CubicalComplex_a67e10eb63875d63b71098f7d6553fb29} 
+void {\bfseries add\+\_\+recursive\+\_\+impl} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} simplex)
+\begin{DoxyCompactList}\small\item\em Implementation of the recursive add algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomplexes_1_1CubicalComplex_a6dc5b1eda1b01f825a4da3abb0e2614a}\label{classcomplexes_1_1CubicalComplex_a6dc5b1eda1b01f825a4da3abb0e2614a} 
+std::\+vector$<$ std::\+unordered\+\_\+set$<$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} $>$ $>$ {\bfseries m\+\_\+simplices}
+\begin{DoxyCompactList}\small\item\em Simplexes in the comples stored by dimension. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

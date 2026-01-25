@@ -11,12 +11,11 @@ A class representing a single cubical simplex in a complex.
 
 
 
-Collaboration diagram for complexes::\+Cubical\+Simplex:\+
-\nopagebreak
+Collaboration diagram for complexes::\+Cubical\+Simplex:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=210pt]{classcomplexes_1_1CubicalSimplex__coll__graph}
+\includegraphics[height=550pt]{classcomplexes_1_1CubicalSimplex__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -50,6 +49,21 @@ static \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eae
 \begin{DoxyCompactList}\small\item\em Creates a cubical simplex out of a single 1d point. \end{DoxyCompactList}\item 
 static \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a80c0fda0b9a8f84afce1ce9f35a7e8a4}{interval}} (int left)
 \begin{DoxyCompactList}\small\item\em Creates a cubical simplex out of a single 1d interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a35b78250cd353114edcd6ac06812f296}\label{classcomplexes_1_1CubicalSimplex_a35b78250cd353114edcd6ac06812f296} 
+{\bfseries Cubical\+Simplex} ()
+\begin{DoxyCompactList}\small\item\em Creates an empty simplex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_ac15c1fec6e83aaac3cbae669751a8e93}\label{classcomplexes_1_1CubicalSimplex_ac15c1fec6e83aaac3cbae669751a8e93} 
+std::\+vector$<$ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}} $>$ {\bfseries m\+\_\+intervals} = \{\}
+\begin{DoxyCompactList}\small\item\em Stores intervals defining a simplex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_ae873beb96975a4d6a9954f0638504420}\label{classcomplexes_1_1CubicalSimplex_ae873beb96975a4d6a9954f0638504420} 
+std::\+size\+\_\+t {\bfseries m\+\_\+dimension} = 0
+\begin{DoxyCompactList}\small\item\em Stores the number of non-\/trivial intervals. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 

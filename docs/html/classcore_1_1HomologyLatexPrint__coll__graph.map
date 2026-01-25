@@ -1,5 +1,9 @@
 <map id="core::HomologyLatexPrint" name="core::HomologyLatexPrint">
-<area shape="rect" id="Node000001" title="Prints a homology group in Latex syntax." alt="" coords="24,156,197,259"/>
-<area shape="rect" id="Node000002" href="$classcore_1_1HomologyPrintingStrategy.html" title="A strategy for printing a homology group." alt="" coords="5,5,216,108"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,120,113,157,108,155,109,125"/>
+<area shape="rect" id="Node000001" title="Prints a homology group in Latex syntax." alt="" coords="46,354,218,457"/>
+<area shape="rect" id="Node000002" href="$classcore_1_1HomologyPrintingStrategy.html" title="A strategy for printing a homology group." alt="" coords="5,152,216,255"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,268,129,354,124,354,116,272"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="240,164,314,242"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,241,180,342,176,339,248,244"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="218,5,336,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="278,115,280,165,275,164,276,120"/>
 </map>

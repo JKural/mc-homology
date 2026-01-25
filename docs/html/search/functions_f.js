@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['text_0',['text',['../classcore_1_1Homology.html#a10b2a3199bd9f98f58610ee309201acd',1,'core::Homology::text()'],['../classcore_1_1LatexWrapper.html#a40394c81503ff7ce5e5e6b8e8b8ddc87',1,'core::LatexWrapper::text()'],['../classcore_1_1TextDrawable.html#ae05d4fd67c0d4cbc84210e6ecbd473cf',1,'core::TextDrawable::text()']]],
-  ['torsion_1',['torsion',['../classcore_1_1AlgebraHomology.html#a7023d347b18e85655d412a19d4cfb342',1,'core::AlgebraHomology::torsion()'],['../classcore_1_1Homology.html#ae89535d4e6050b68e21bcc6b806ab454',1,'core::Homology::torsion()']]],
-  ['transpose_2',['transpose',['../classalgebra_1_1Matrix.html#ab297b9b3550d6fa60eb92cb47c44be8f',1,'algebra::Matrix']]]
+  ['select_5fstrategy_0',['select_strategy',['../classcore_1_1Homology.html#a621e1e3eaf695f64f55e081f0077f07c',1,'core::Homology']]],
+  ['set_5foptions_1',['set_options',['../classcore_1_1Manager.html#a5ae66884c6da04bd9103a68786c18a2d',1,'core::Manager']]],
+  ['set_5fparser_2',['set_parser',['../classcore_1_1Manager.html#a93b10a66323eb381e57f7cd40011264b',1,'core::Manager']]],
+  ['simplices_3',['simplices',['../classcomplexes_1_1CubicalComplex.html#a8925b5d3f0b7186a7b4c28079a46cceb',1,'complexes::CubicalComplex']]],
+  ['size_4',['size',['../classalgebra_1_1Matrix.html#af7766a3f471894ece7be31dbc6e9687f',1,'algebra::Matrix']]],
+  ['smith_5fform_5',['smith_form',['../matrix__algorithms_8h.html#a53476fe37031aed47bb3b38d5e4b6dbc',1,'algebra::smith_form(std::in_place_t, Matrix&lt; T &gt; &amp;matrix)'],['../matrix__algorithms_8h.html#ad04bf6b87ead16604eb2ed6d6c5eabc4',1,'algebra::smith_form(Matrix&lt; T &gt; matrix)']]],
+  ['swap_6',['swap',['../classalgebra_1_1Matrix.html#a54f9a88e32ef7ea844b4c7d1d9b9539d',1,'algebra::Matrix::swap()'],['../classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1',1,'core::Polymorphic::swap()']]]
 ];

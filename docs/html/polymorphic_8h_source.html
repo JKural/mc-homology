@@ -123,8 +123,8 @@ $(function(){initNavTree('polymorphic_8h_source.html','',''); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        &amp;&amp; std::constructible_from&lt;std::remove_cvref_t&lt;U&gt;, U&gt;</div>
 <div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#a78dcef8315873c965afd6690873caf46">   35</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#a78dcef8315873c965afd6690873caf46">Polymorphic</a>(U&amp;&amp; u) :</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        m_object(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            std::make_unique&lt;Model&lt;std::remove_cvref_t&lt;U&gt;&gt;&gt;(std::forward&lt;U&gt;(u))</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>(</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            std::make_unique&lt;<a class="code hl_struct" href="structcore_1_1Polymorphic_1_1Model.html">Model</a>&lt;std::remove_cvref_t&lt;U&gt;&gt;&gt;(std::forward&lt;U&gt;(u))</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        ) {}</div>
 </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span></div>
@@ -135,8 +135,8 @@ $(function(){initNavTree('polymorphic_8h_source.html','',''); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        &amp;&amp; std::same_as&lt;std::remove_cvref_t&lt;U&gt;, U&gt;</div>
 <div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#af4e692f5a7d7d3a984be0b21c59f0089">   46</a></span>    <span class="keyword">constexpr</span> <span class="keyword">explicit</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#af4e692f5a7d7d3a984be0b21c59f0089">Polymorphic</a>(std::in_place_type_t&lt;U&gt;, Args&amp;&amp;... args) :</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        m_object(</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            std::make_unique&lt;Model&lt;std::remove_cvref_t&lt;U&gt;&gt;&gt;(</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            std::make_unique&lt;<a class="code hl_struct" href="structcore_1_1Polymorphic_1_1Model.html">Model</a>&lt;std::remove_cvref_t&lt;U&gt;&gt;&gt;(</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                std::forward&lt;Args&gt;(args)...</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            )</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        ) {}</div>
@@ -144,101 +144,111 @@ $(function(){initNavTree('polymorphic_8h_source.html','',''); });
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span></div>
 <div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#a729f9c6bd67e34e4d4e3ce070c3d7994">   54</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#a729f9c6bd67e34e4d4e3ce070c3d7994">Polymorphic</a>(<a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a> <span class="keyword">const</span>&amp; other) :</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        m_object(other.m_object-&gt;clone()) {}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>(other.<a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>-&gt;clone()) {}</div>
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
 <div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#af5bf398b45f412dc8347da431844102a">   58</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#af5bf398b45f412dc8347da431844102a">Polymorphic</a>(<a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a>&amp;&amp; other) noexcept :</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        m_object(std::move(other.m_object)) {}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>(std::move(other.m_object)) {}</div>
 </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
 <div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#aea051a61486b38ec244c7be7b68f4677">   62</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a>&amp; <a class="code hl_function" href="classcore_1_1Polymorphic.html#aea051a61486b38ec244c7be7b68f4677">operator=</a>(<a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a> <span class="keyword">const</span>&amp; other) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        m_object = other.m_object-&gt;clone();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a> = other.<a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>-&gt;clone();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
 </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
 <div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#a0aba960ee37d068c9aebf190ebe601e9">   68</a></span>    <span class="keyword">constexpr</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a>&amp; <a class="code hl_function" href="classcore_1_1Polymorphic.html#a0aba960ee37d068c9aebf190ebe601e9">operator=</a>(<a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a>&amp;&amp; other) <span class="keyword">noexcept</span> {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        m_object = std::move(other.m_object);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a> = std::move(other.m_object);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span></div>
 <div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#abb62e69bc83f5adc4cd43e3fd2861d21">   74</a></span>    <span class="keyword">constexpr</span> T <span class="keyword">const</span>* <a class="code hl_function" href="classcore_1_1Polymorphic.html#abb62e69bc83f5adc4cd43e3fd2861d21">operator-&gt;</a>() const noexcept {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> m_object-&gt;get_address();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>-&gt;get_address();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
 </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span></div>
 <div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#a54a1b80a57d7240ac304b7da4cef5ca4">   79</a></span>    <span class="keyword">constexpr</span> T* <a class="code hl_function" href="classcore_1_1Polymorphic.html#a54a1b80a57d7240ac304b7da4cef5ca4">operator-&gt;</a>() noexcept {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> m_object-&gt;get_address();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>-&gt;get_address();</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
 </div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span></div>
 <div class="foldopen" id="foldopen00084" data-start="{" data-end="}">
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#a8a7f4b6a3c6e2aa90c1e66c7123791d1">   84</a></span>    <span class="keyword">constexpr</span> T <span class="keyword">const</span>&amp; <a class="code hl_function" href="classcore_1_1Polymorphic.html#a8a7f4b6a3c6e2aa90c1e66c7123791d1">operator*</a>() const noexcept {</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> *m_object-&gt;get_address();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> *<a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>-&gt;get_address();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
 </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
 <div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#ae8b6a22c3161fcb04f636e52be471274">   89</a></span>    <span class="keyword">constexpr</span> T&amp; <a class="code hl_function" href="classcore_1_1Polymorphic.html#ae8b6a22c3161fcb04f636e52be471274">operator*</a>() noexcept {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> *m_object-&gt;get_address();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">return</span> *<a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>-&gt;get_address();</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
 </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span></div>
 <div class="foldopen" id="foldopen00094" data-start="{" data-end="}">
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#abbad9a973d3d41a45d59c1624ef608c2">   94</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#abbad9a973d3d41a45d59c1624ef608c2">valueless_after_move</a>() const noexcept {</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> m_object == <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a> == <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
 </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span></div>
 <div class="foldopen" id="foldopen00099" data-start="{" data-end="}">
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1">   99</a></span>    <span class="keyword">constexpr</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1">swap</a>(<a class="code hl_function" href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">Polymorphic</a>&amp; other) <span class="keyword">noexcept</span> {</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keyword">using </span>std::swap;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <a class="code hl_function" href="classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1">swap</a>(m_object, other.m_object);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <a class="code hl_function" href="classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1">swap</a>(<a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>, other.m_object);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
 </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">struct </span>Concept {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keyword">constexpr</span> <span class="keyword">virtual</span> T <span class="keyword">const</span>* get_address() const noexcept = 0;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        constexpr virtual T* get_address() noexcept = 0;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        constexpr virtual std::unique_ptr&lt;Concept&gt; clone() const = 0;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        constexpr virtual ~Concept() = default;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    };</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    template&lt;class Object&gt;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    struct Model: public Concept {</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="keyword">template</span>&lt;<span class="keyword">class</span> U = Object&gt;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keyword">constexpr</span> Model(U&amp;&amp; value) : m_value(std::forward&lt;U&gt;(value)) {}</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="keyword">constexpr</span> T <span class="keyword">const</span>* get_address() const noexcept<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="keywordflow">return</span> std::addressof(m_value);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        }</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="keyword">constexpr</span> T* get_address() noexcept<span class="keyword"> override </span>{</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>            <span class="keywordflow">return</span> std::addressof(m_value);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        }</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keyword">constexpr</span> std::unique_ptr&lt;Concept&gt; clone()<span class="keyword"> const override </span>{</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">return</span> std::make_unique&lt;Model&lt;Object&gt;&gt;(m_value);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        }</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        Object m_value;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    };</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    std::unique_ptr&lt;Concept&gt; m_object;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>};</div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="};">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Concept.html">  106</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structcore_1_1Polymorphic_1_1Concept.html">Concept</a> {</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Concept.html#afc6e04ceb480f25ea195a940e6bb7616">  108</a></span>        <span class="keyword">constexpr</span> <span class="keyword">virtual</span> T <span class="keyword">const</span>* <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Concept.html#afc6e04ceb480f25ea195a940e6bb7616">get_address</a>() const noexcept = 0;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Concept.html#ab38a16639886fabff610e56d2f36099d">  110</a></span>        constexpr virtual T* <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Concept.html#afc6e04ceb480f25ea195a940e6bb7616">get_address</a>() noexcept = 0;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Concept.html#a407fadca6a134953e46dde390a770a77">  112</a></span>        constexpr virtual std::unique_ptr&lt;<a class="code hl_struct" href="structcore_1_1Polymorphic_1_1Concept.html">Concept</a>&gt; <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Concept.html#a407fadca6a134953e46dde390a770a77">clone</a>() const = 0;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Concept.html#a28d2b9626d082202d4eac34d240d7154">  114</a></span>        constexpr virtual ~<a class="code hl_struct" href="structcore_1_1Polymorphic_1_1Concept.html">Concept</a>() = default;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    };</div>
 </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>} <span class="comment">// namespace core</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    template&lt;class Object&gt;</div>
+<div class="foldopen" id="foldopen00122" data-start="{" data-end="};">
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Model.html">  122</a></span>    struct <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Model.html#a87f8bcba3adc4030be836387d5429709">Model</a>: public <a class="code hl_struct" href="structcore_1_1Polymorphic_1_1Concept.html">Concept</a> {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        <span class="keyword">template</span>&lt;<span class="keyword">class</span> U = Object&gt;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Model.html#a87f8bcba3adc4030be836387d5429709">  125</a></span>        <span class="keyword">constexpr</span> <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Model.html#a87f8bcba3adc4030be836387d5429709">Model</a>(U&amp;&amp; value) : <a class="code hl_variable" href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">m_value</a>(std::forward&lt;U&gt;(value)) {}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span></div>
+<div class="foldopen" id="foldopen00128" data-start="{" data-end="}">
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Model.html#a50d9e1effae95ce02c48a33c68ea8fb6">  128</a></span>        <span class="keyword">constexpr</span> T <span class="keyword">const</span>* <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Model.html#a50d9e1effae95ce02c48a33c68ea8fb6">get_address</a>() const noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            <span class="keywordflow">return</span> std::addressof(<a class="code hl_variable" href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">m_value</a>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        }</div>
+</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span></div>
+<div class="foldopen" id="foldopen00133" data-start="{" data-end="}">
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Model.html#a2898b89e5b26d5d0f9e6c820f689c461">  133</a></span>        <span class="keyword">constexpr</span> T* <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Model.html#a2898b89e5b26d5d0f9e6c820f689c461">get_address</a>() noexcept<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="keywordflow">return</span> std::addressof(<a class="code hl_variable" href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">m_value</a>);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        }</div>
+</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span></div>
+<div class="foldopen" id="foldopen00139" data-start="{" data-end="}">
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Model.html#afc3d28a31bd62ec00ff2801f7b2966b0">  139</a></span>        <span class="keyword">constexpr</span> std::unique_ptr&lt;Concept&gt; <a class="code hl_function" href="structcore_1_1Polymorphic_1_1Model.html#afc3d28a31bd62ec00ff2801f7b2966b0">clone</a>()<span class="keyword"> const override </span>{</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="keywordflow">return</span> std::make_unique&lt;Model&lt;Object&gt;&gt;(<a class="code hl_variable" href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">m_value</a>);</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        }</div>
+</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">  145</a></span>        Object <a class="code hl_variable" href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">m_value</a>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    };</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">  150</a></span>    std::unique_ptr&lt;Concept&gt; <a class="code hl_variable" href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">m_object</a>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>};</div>
+</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>} <span class="comment">// namespace core</span></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html"><div class="ttname"><a href="classcore_1_1Polymorphic.html">core::Polymorphic</a></div><div class="ttdoc">A polymorphic class wrapper with value semantics.</div><div class="ttdef"><b>Definition</b> polymorphic.h:23</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_a0aba960ee37d068c9aebf190ebe601e9"><div class="ttname"><a href="classcore_1_1Polymorphic.html#a0aba960ee37d068c9aebf190ebe601e9">core::Polymorphic::operator=</a></div><div class="ttdeci">constexpr Polymorphic &amp; operator=(Polymorphic &amp;&amp;other) noexcept</div><div class="ttdoc">Move assignment.</div><div class="ttdef"><b>Definition</b> polymorphic.h:68</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_a54a1b80a57d7240ac304b7da4cef5ca4"><div class="ttname"><a href="classcore_1_1Polymorphic.html#a54a1b80a57d7240ac304b7da4cef5ca4">core::Polymorphic::operator-&gt;</a></div><div class="ttdeci">constexpr T * operator-&gt;() noexcept</div><div class="ttdoc">Arrow operator.</div><div class="ttdef"><b>Definition</b> polymorphic.h:79</div></div>
@@ -248,11 +258,21 @@ $(function(){initNavTree('polymorphic_8h_source.html','',''); });
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_abb62e69bc83f5adc4cd43e3fd2861d21"><div class="ttname"><a href="classcore_1_1Polymorphic.html#abb62e69bc83f5adc4cd43e3fd2861d21">core::Polymorphic::operator-&gt;</a></div><div class="ttdeci">constexpr T const * operator-&gt;() const noexcept</div><div class="ttdoc">Arrow operator.</div><div class="ttdef"><b>Definition</b> polymorphic.h:74</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_abbad9a973d3d41a45d59c1624ef608c2"><div class="ttname"><a href="classcore_1_1Polymorphic.html#abbad9a973d3d41a45d59c1624ef608c2">core::Polymorphic::valueless_after_move</a></div><div class="ttdeci">constexpr bool valueless_after_move() const noexcept</div><div class="ttdoc">Returns true, if the object has been moved out of.</div><div class="ttdef"><b>Definition</b> polymorphic.h:94</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_aca4b76b305b2546ea43a3fa21d292e25"><div class="ttname"><a href="classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25">core::Polymorphic::Polymorphic</a></div><div class="ttdeci">constexpr Polymorphic()</div><div class="ttdoc">Constructs a default initialized object.</div><div class="ttdef"><b>Definition</b> polymorphic.h:26</div></div>
+<div class="ttc" id="aclasscore_1_1Polymorphic_html_acd4e0d05863ae02fa3025f66f233a42c"><div class="ttname"><a href="classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c">core::Polymorphic::m_object</a></div><div class="ttdeci">std::unique_ptr&lt; Concept &gt; m_object</div><div class="ttdoc">Pointer to the Concept class, which in turn holds a Model with our object.</div><div class="ttdef"><b>Definition</b> polymorphic.h:150</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_adf56d4df87396595e28695d1a03c86c1"><div class="ttname"><a href="classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1">core::Polymorphic::swap</a></div><div class="ttdeci">constexpr void swap(Polymorphic &amp;other) noexcept</div><div class="ttdoc">Swaps two objects together.</div><div class="ttdef"><b>Definition</b> polymorphic.h:99</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_ae8b6a22c3161fcb04f636e52be471274"><div class="ttname"><a href="classcore_1_1Polymorphic.html#ae8b6a22c3161fcb04f636e52be471274">core::Polymorphic::operator*</a></div><div class="ttdeci">constexpr T &amp; operator*() noexcept</div><div class="ttdoc">Dereference operator.</div><div class="ttdef"><b>Definition</b> polymorphic.h:89</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_aea051a61486b38ec244c7be7b68f4677"><div class="ttname"><a href="classcore_1_1Polymorphic.html#aea051a61486b38ec244c7be7b68f4677">core::Polymorphic::operator=</a></div><div class="ttdeci">constexpr Polymorphic &amp; operator=(Polymorphic const &amp;other)</div><div class="ttdoc">Copy assignment.</div><div class="ttdef"><b>Definition</b> polymorphic.h:62</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_af4e692f5a7d7d3a984be0b21c59f0089"><div class="ttname"><a href="classcore_1_1Polymorphic.html#af4e692f5a7d7d3a984be0b21c59f0089">core::Polymorphic::Polymorphic</a></div><div class="ttdeci">constexpr Polymorphic(std::in_place_type_t&lt; U &gt;, Args &amp;&amp;... args)</div><div class="ttdoc">Constructs the object in place.</div><div class="ttdef"><b>Definition</b> polymorphic.h:46</div></div>
 <div class="ttc" id="aclasscore_1_1Polymorphic_html_af5bf398b45f412dc8347da431844102a"><div class="ttname"><a href="classcore_1_1Polymorphic.html#af5bf398b45f412dc8347da431844102a">core::Polymorphic::Polymorphic</a></div><div class="ttdeci">constexpr Polymorphic(Polymorphic &amp;&amp;other) noexcept</div><div class="ttdoc">Move constructor.</div><div class="ttdef"><b>Definition</b> polymorphic.h:58</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Concept_html"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Concept.html">core::Polymorphic::Concept</a></div><div class="ttdoc">Base class used for type erasure.</div><div class="ttdef"><b>Definition</b> polymorphic.h:106</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Concept_html_a407fadca6a134953e46dde390a770a77"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Concept.html#a407fadca6a134953e46dde390a770a77">core::Polymorphic::Concept::clone</a></div><div class="ttdeci">virtual constexpr std::unique_ptr&lt; Concept &gt; clone() const =0</div><div class="ttdoc">Returns a copy of the stored object.</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Concept_html_afc6e04ceb480f25ea195a940e6bb7616"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Concept.html#afc6e04ceb480f25ea195a940e6bb7616">core::Polymorphic::Concept::get_address</a></div><div class="ttdeci">virtual constexpr T const * get_address() const noexcept=0</div><div class="ttdoc">Returns address of the stored object.</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Model_html"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Model.html">core::Polymorphic::Model</a></div><div class="ttdoc">Concrete class used for type erasure.</div><div class="ttdef"><b>Definition</b> polymorphic.h:122</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Model_html_a287f81958ea48647409cc379c7262ab0"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Model.html#a287f81958ea48647409cc379c7262ab0">core::Polymorphic::Model::m_value</a></div><div class="ttdeci">Object m_value</div><div class="ttdoc">The stored object.</div><div class="ttdef"><b>Definition</b> polymorphic.h:145</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Model_html_a2898b89e5b26d5d0f9e6c820f689c461"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Model.html#a2898b89e5b26d5d0f9e6c820f689c461">core::Polymorphic::Model::get_address</a></div><div class="ttdeci">constexpr T * get_address() noexcept override</div><div class="ttdoc">Returns address of the stored object.</div><div class="ttdef"><b>Definition</b> polymorphic.h:133</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Model_html_a50d9e1effae95ce02c48a33c68ea8fb6"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Model.html#a50d9e1effae95ce02c48a33c68ea8fb6">core::Polymorphic::Model::get_address</a></div><div class="ttdeci">constexpr T const * get_address() const noexcept override</div><div class="ttdoc">Returns address of the stored object.</div><div class="ttdef"><b>Definition</b> polymorphic.h:128</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Model_html_a87f8bcba3adc4030be836387d5429709"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Model.html#a87f8bcba3adc4030be836387d5429709">core::Polymorphic::Model::Model</a></div><div class="ttdeci">constexpr Model(U &amp;&amp;value)</div><div class="ttdoc">Constructs a new object.</div><div class="ttdef"><b>Definition</b> polymorphic.h:125</div></div>
+<div class="ttc" id="astructcore_1_1Polymorphic_1_1Model_html_afc3d28a31bd62ec00ff2801f7b2966b0"><div class="ttname"><a href="structcore_1_1Polymorphic_1_1Model.html#afc3d28a31bd62ec00ff2801f7b2966b0">core::Polymorphic::Model::clone</a></div><div class="ttdeci">constexpr std::unique_ptr&lt; Concept &gt; clone() const override</div><div class="ttdoc">Returns a copy of the stored object as a unique pointer.</div><div class="ttdef"><b>Definition</b> polymorphic.h:139</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

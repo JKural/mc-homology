@@ -11,8 +11,7 @@ Formatter for the {\ttfamily Matrix} type.
 
 
 
-Collaboration diagram for std::\+formatter\texorpdfstring{$<$}{<} algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>}:\+
-\nopagebreak
+Collaboration diagram for std::\+formatter\texorpdfstring{$<$}{<} algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>}:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -27,6 +26,15 @@ Collaboration diagram for std::\+formatter\texorpdfstring{$<$}{<} algebra::\+Mat
 \begin{DoxyCompactList}\small\item\em Parses a context string. \end{DoxyCompactList}\item 
 {\footnotesize template$<$class Fmt\+Context$>$ }\\Fmt\+Context::\+iterator \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a49efc46f70b6de0f7ecc0bf8eaa77920}{format}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$ const \&matrix, Fmt\+Context \&ctx) const
 \begin{DoxyCompactList}\small\item\em Formats a matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232}\label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_ad56d6b0ea02f27424c26e91360d39232} 
+bool {\bfseries multi\+\_\+line} = false
+\begin{DoxyCompactList}\small\item\em Flag whether to print the matrix in multiple lines. \end{DoxyCompactList}\item 
+\Hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a20577f58fa8414d80f36328aa2082e6f}\label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a20577f58fa8414d80f36328aa2082e6f} 
+std::\+formatter$<$ T $>$ {\bfseries coefficient\+\_\+formatter}
+\begin{DoxyCompactList}\small\item\em Formatter for the coefficients. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

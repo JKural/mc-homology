@@ -114,12 +114,12 @@ $(function(){initNavTree('algebra__homology_8h_source.html','',''); });
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            std::make_unique&lt;HomologyRawPrint&gt;()</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    ) :</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <a class="code hl_function" href="classcore_1_1Homology.html#a4c3dc2b89498346f54a68b3366c3f9dd">Homology</a>(std::move(printing_strategy)),</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        m_homology(std::move(homology)) {}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <a class="code hl_variable" href="classcore_1_1AlgebraHomology.html#a3a237c0a83a09d091f593674fcb8df30">m_homology</a>(std::move(homology)) {}</div>
 </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
 <div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classcore_1_1AlgebraHomology.html#a30a40b1690bdf4b1bbee2805f4d3c50e">   28</a></span>    std::vector&lt;std::size_t&gt; <a class="code hl_function" href="classcore_1_1AlgebraHomology.html#a30a40b1690bdf4b1bbee2805f4d3c50e">betti_numbers</a>()<span class="keyword"> const override </span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> m_homology.betti_numbers;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="classcore_1_1AlgebraHomology.html#a3a237c0a83a09d091f593674fcb8df30">m_homology</a>.betti_numbers;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
 </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
@@ -128,7 +128,7 @@ $(function(){initNavTree('algebra__homology_8h_source.html','',''); });
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keyword">namespace </span>rs = std::ranges;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">namespace </span>vs = std::views;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">return</span> rs::to&lt;std::vector&gt;(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            m_homology.torsion | vs::transform([](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; tor) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="classcore_1_1AlgebraHomology.html#a3a237c0a83a09d091f593674fcb8df30">m_homology</a>.torsion | vs::transform([](<span class="keyword">auto</span> <span class="keyword">const</span>&amp; tor) {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                return rs::to&lt;std::vector&gt;(tor | vs::transform([](auto x) {</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                                               return std::format(<span class="stringliteral">&quot;{}&quot;</span>, x);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                           }));</div>
@@ -138,19 +138,20 @@ $(function(){initNavTree('algebra__homology_8h_source.html','',''); });
 </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_struct" href="structalgebra_1_1Homology.html">algebra::Homology&lt;T&gt;</a> m_homology;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classcore_1_1AlgebraHomology.html#a3a237c0a83a09d091f593674fcb8df30">   47</a></span>    <a class="code hl_struct" href="structalgebra_1_1Homology.html">algebra::Homology&lt;T&gt;</a> <a class="code hl_variable" href="classcore_1_1AlgebraHomology.html#a3a237c0a83a09d091f593674fcb8df30">m_homology</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <span class="comment">// namespace core</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace core</span></div>
 <div class="ttc" id="achain__complex_8h_html"><div class="ttname"><a href="chain__complex_8h.html">chain_complex.h</a></div><div class="ttdoc">A file containing chain complex and homology implementations.</div></div>
 <div class="ttc" id="aclasscore_1_1AlgebraHomology_html_a162a8f0fa2f67ea136e0da5adf297687"><div class="ttname"><a href="classcore_1_1AlgebraHomology.html#a162a8f0fa2f67ea136e0da5adf297687">core::AlgebraHomology::AlgebraHomology</a></div><div class="ttdeci">AlgebraHomology(algebra::Homology&lt; T &gt; homology, std::unique_ptr&lt; HomologyPrintingStrategy &gt; printing_strategy=std::make_unique&lt; HomologyRawPrint &gt;())</div><div class="ttdoc">Constructs homology and stores printing strategy.</div><div class="ttdef"><b>Definition</b> algebra_homology.h:19</div></div>
 <div class="ttc" id="aclasscore_1_1AlgebraHomology_html_a30a40b1690bdf4b1bbee2805f4d3c50e"><div class="ttname"><a href="classcore_1_1AlgebraHomology.html#a30a40b1690bdf4b1bbee2805f4d3c50e">core::AlgebraHomology::betti_numbers</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; betti_numbers() const override</div><div class="ttdoc">Returns text representation of the betti numbers.</div><div class="ttdef"><b>Definition</b> algebra_homology.h:28</div></div>
+<div class="ttc" id="aclasscore_1_1AlgebraHomology_html_a3a237c0a83a09d091f593674fcb8df30"><div class="ttname"><a href="classcore_1_1AlgebraHomology.html#a3a237c0a83a09d091f593674fcb8df30">core::AlgebraHomology::m_homology</a></div><div class="ttdeci">algebra::Homology&lt; T &gt; m_homology</div><div class="ttdoc">The inner representation of the homology.</div><div class="ttdef"><b>Definition</b> algebra_homology.h:47</div></div>
 <div class="ttc" id="aclasscore_1_1AlgebraHomology_html_a7023d347b18e85655d412a19d4cfb342"><div class="ttname"><a href="classcore_1_1AlgebraHomology.html#a7023d347b18e85655d412a19d4cfb342">core::AlgebraHomology::torsion</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::string &gt; &gt; torsion() const override</div><div class="ttdoc">Returns text represetnation of torsion.</div><div class="ttdef"><b>Definition</b> algebra_homology.h:33</div></div>
 <div class="ttc" id="aclasscore_1_1Homology_html_a4c3dc2b89498346f54a68b3366c3f9dd"><div class="ttname"><a href="classcore_1_1Homology.html#a4c3dc2b89498346f54a68b3366c3f9dd">core::Homology::Homology</a></div><div class="ttdeci">Homology(std::unique_ptr&lt; HomologyPrintingStrategy &gt; printing_strategy=std::make_unique&lt; HomologyRawPrint &gt;())</div><div class="ttdoc">Constructs a new homology instance.</div><div class="ttdef"><b>Definition</b> homology.cpp:9</div></div>
 <div class="ttc" id="ahomology_8h_html"><div class="ttname"><a href="homology_8h.html">homology.h</a></div><div class="ttdoc">A file containing a Homology interface.</div></div>
 <div class="ttc" id="ahomology__printing__strategy_8h_html"><div class="ttname"><a href="homology__printing__strategy_8h.html">homology_printing_strategy.h</a></div><div class="ttdoc">File containing strategies for printing homology.</div></div>
-<div class="ttc" id="astructalgebra_1_1Homology_html"><div class="ttname"><a href="structalgebra_1_1Homology.html">algebra::Homology</a></div><div class="ttdoc">Homology of a chain complex.</div><div class="ttdef"><b>Definition</b> chain_complex.h:114</div></div>
+<div class="ttc" id="astructalgebra_1_1Homology_html"><div class="ttname"><a href="structalgebra_1_1Homology.html">algebra::Homology</a></div><div class="ttdoc">Homology of a chain complex.</div><div class="ttdef"><b>Definition</b> chain_complex.h:115</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

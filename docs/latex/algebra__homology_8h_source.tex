@@ -23,17 +23,17 @@
 \DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ std::make\_unique<HomologyRawPrint>()}
 \DoxyCodeLine{00023\ \ \ \ \ )\ :}
 \DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd}{Homology}}(std::move(printing\_strategy)),}
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ m\_homology(std::move(homology))\ \{\}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a3a237c0a83a09d091f593674fcb8df30}{m\_homology}}(std::move(homology))\ \{\}}
 \DoxyCodeLine{00026\ }
 \DoxyCodeLine{00028\ \ \ \ \ std::vector<std::size\_t>\ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a30a40b1690bdf4b1bbee2805f4d3c50e}{betti\_numbers}}()\textcolor{keyword}{\ const\ override\ }\{}
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_homology.betti\_numbers;}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a3a237c0a83a09d091f593674fcb8df30}{m\_homology}}.betti\_numbers;}
 \DoxyCodeLine{00030\ \ \ \ \ \}}
 \DoxyCodeLine{00031\ }
 \DoxyCodeLine{00033\ \ \ \ \ std::vector<std::vector<std::string>>\ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a7023d347b18e85655d412a19d4cfb342}{torsion}}()\textcolor{keyword}{\ const\ override\ }\{}
 \DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
 \DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
 \DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rs::to<std::vector>(}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ m\_homology.torsion\ |\ vs::transform([](\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ tor)\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a3a237c0a83a09d091f593674fcb8df30}{m\_homology}}.torsion\ |\ vs::transform([](\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ tor)\ \{}
 \DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ rs::to<std::vector>(tor\ |\ vs::transform([](auto\ x)\ \{}
 \DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ std::format(\textcolor{stringliteral}{"{}\{\}"{}},\ x);}
 \DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}));}
@@ -42,9 +42,9 @@
 \DoxyCodeLine{00043\ \ \ \ \ \}}
 \DoxyCodeLine{00044\ }
 \DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00046\ \ \ \ \ \doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::Homology<T>}}\ m\_homology;}
-\DoxyCodeLine{00047\ \};}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00049\ \}\ \textcolor{comment}{//\ namespace\ core}}
+\DoxyCodeLine{00047\ \ \ \ \ \doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::Homology<T>}}\ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a3a237c0a83a09d091f593674fcb8df30}{m\_homology}};}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \}\ \textcolor{comment}{//\ namespace\ core}}
 
 \end{DoxyCode}

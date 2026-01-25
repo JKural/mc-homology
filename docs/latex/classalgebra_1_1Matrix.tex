@@ -11,12 +11,11 @@ A \doxylink{classalgebra_1_1Matrix}{Matrix} class.
 
 
 
-Collaboration diagram for algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
-\nopagebreak
+Collaboration diagram for algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=180pt]{classalgebra_1_1Matrix__coll__graph}
+\includegraphics[width=198pt]{classalgebra_1_1Matrix__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Types}
@@ -163,6 +162,24 @@ static constexpr Matrix {\bfseries zero} (\doxymbox{\hyperlink{classalgebra_1_1M
 \Hypertarget{classalgebra_1_1Matrix_a83ecbb0e3450c094d2b956ed82a0f0c4}\label{classalgebra_1_1Matrix_a83ecbb0e3450c094d2b956ed82a0f0c4} 
 static constexpr Matrix {\bfseries id} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} n)
 \begin{DoxyCompactList}\small\item\em Return an identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097}\label{classalgebra_1_1Matrix_aa06635adf6783ea2d660cf61946e9097} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} {\bfseries to\+\_\+underlying\+\_\+index} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} row, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} col) const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the underlying index of an element at given coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266}\label{classalgebra_1_1Matrix_a090961126711bfbcdbccd9c2976b7266} 
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01}{storage\+\_\+type}} {\bfseries m\+\_\+data}
+\begin{DoxyCompactList}\small\item\em Stored coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d}\label{classalgebra_1_1Matrix_a94ba6212665ccf78fecf810e6fba4e6d} 
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} {\bfseries m\+\_\+nrows}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3}\label{classalgebra_1_1Matrix_ae05b02dfb3a6e9c057d20104b16716c3} 
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} {\bfseries m\+\_\+ncols}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

@@ -1,0 +1,91 @@
+\doxysection{complexes Namespace Reference}
+\hypertarget{namespacecomplexes}{}\label{namespacecomplexes}\index{complexes@{complexes}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacecomplexes_1_1utils}{utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}}
+\begin{DoxyCompactList}\small\item\em A struct representing an interval of length 0 or 1. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}}
+\begin{DoxyCompactList}\small\item\em A class representing a single cubical simplex in a complex. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}}
+\begin{DoxyCompactList}\small\item\em Class representing a cubical complex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$ \doxymbox{\hyperlink{namespacecomplexes_aef7f4e0ba88dfb188a3410804a5096e5}{compute\+\_\+chain\+\_\+complex}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}} const \&cubical\+\_\+complex)
+\begin{DoxyCompactList}\small\item\em Computes a chain complex from a cubical complex. \end{DoxyCompactList}\item 
+std::\+ostream \& \doxymbox{\hyperlink{namespacecomplexes_ad65e88e91768aa7accb7367d15795d22}{operator$<$$<$}} (std::\+ostream \&output, \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}} i)
+\begin{DoxyCompactList}\small\item\em Prints an interval to output. \end{DoxyCompactList}\item 
+std::\+ostream \& \doxymbox{\hyperlink{namespacecomplexes_aac6269f844faccd3c9b9c155030a92be}{operator$<$$<$}} (std::\+ostream \&output, \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&s)
+\begin{DoxyCompactList}\small\item\em Prints a cubical simplex to output. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} \doxymbox{\hyperlink{namespacecomplexes_a70b937fe96345c675456f6039e941ad0}{product}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&s1, \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&s2)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacecomplexes_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacecomplexes_aef7f4e0ba88dfb188a3410804a5096e5}\index{complexes@{complexes}!compute\_chain\_complex@{compute\_chain\_complex}}
+\index{compute\_chain\_complex@{compute\_chain\_complex}!complexes@{complexes}}
+\doxysubsubsection{\texorpdfstring{compute\_chain\_complex()}{compute\_chain\_complex()}}
+{\footnotesize\ttfamily \label{namespacecomplexes_aef7f4e0ba88dfb188a3410804a5096e5} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$ complexes::\+compute\+\_\+chain\+\_\+complex (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}} const \&}]{cubical\+\_\+complex}{}\end{DoxyParamCaption})}
+
+
+
+Computes a chain complex from a cubical complex. 
+
+Transforms relationships between faces into boundary operators
+
+
+\begin{DoxyParams}{Parameters}
+{\em cubical\+\_\+complex} & Complex to transorm\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A chain complex 
+\end{DoxyReturn}
+\Hypertarget{namespacecomplexes_ad65e88e91768aa7accb7367d15795d22}\index{complexes@{complexes}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!complexes@{complexes}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacecomplexes_ad65e88e91768aa7accb7367d15795d22} 
+std::\+ostream \& complexes::\+operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{output}{, }\item[{\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}}}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Prints an interval to output. 
+
+\Hypertarget{namespacecomplexes_aac6269f844faccd3c9b9c155030a92be}\index{complexes@{complexes}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!complexes@{complexes}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacecomplexes_aac6269f844faccd3c9b9c155030a92be} 
+std::\+ostream \& complexes::\+operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{output}{, }\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&}]{s}{}\end{DoxyParamCaption})}
+
+
+
+Prints a cubical simplex to output. 
+
+\Hypertarget{namespacecomplexes_a70b937fe96345c675456f6039e941ad0}\index{complexes@{complexes}!product@{product}}
+\index{product@{product}!complexes@{complexes}}
+\doxysubsubsection{\texorpdfstring{product()}{product()}}
+{\footnotesize\ttfamily \label{namespacecomplexes_a70b937fe96345c675456f6039e941ad0} 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} complexes::\+product (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&}]{s1}{, }\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&}]{s2}{}\end{DoxyParamCaption})}
+
+Creates a simplex in a higher dimension by taking a cartesian product and concatenating them
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & First simplex \\
+\hline
+{\em s2} & Second simplex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of concatenation 
+\end{DoxyReturn}

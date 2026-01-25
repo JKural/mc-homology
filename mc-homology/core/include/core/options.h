@@ -70,12 +70,19 @@ public:
     bool help() const override;
 
 private:
+    /// \brief Filename of the save file
     std::filesystem::path m_filename = "";
+    /// \brief x bounds in the save file
     std::pair<int, int> m_x_bounds = {0, 0};
+    /// \brief y bounds in the save file
     std::pair<int, int> m_y_bounds = {0, 0};
+    /// \brief z bounds in the save file
     std::pair<int, int> m_z_bounds = {0, 0};
+    /// \brief Type of homology to compute
     HomologyChoice m_homology_to_compute = HomologyChoice::Z2;
+    /// \brief Flag whether to print latex syntax
     bool m_latex = false;
+    /// \brief Flag whether to print help
     bool m_help = false;
 };
 

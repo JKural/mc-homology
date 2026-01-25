@@ -101,9 +101,9 @@ Inheritance diagram for core::CommandlineOptions:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcore_1_1CommandlineOptions__inherit__graph.png" border="0" usemap="#acore_1_1CommandlineOptions_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="acore_1_1CommandlineOptions_inherit__map" id="acore_1_1CommandlineOptions_inherit__map">
-<area shape="rect" title="A class for storing user&#39;s options from the commandline." alt="" coords="5,302,184,551"/>
-<area shape="rect" href="classcore_1_1Options.html" title="A class for storing user options." alt="" coords="8,5,182,254"/>
-<area shape="poly" title=" " alt="" coords="95,266,97,302,92,302,94,272"/>
+<area shape="rect" title="A class for storing user&#39;s options from the commandline." alt="" coords="5,302,189,697"/>
+<area shape="rect" href="classcore_1_1Options.html" title="A class for storing user options." alt="" coords="10,5,184,254"/>
+<area shape="poly" title=" " alt="" coords="98,266,100,302,95,302,97,272"/>
 </map>
 </div>
 <div class="dynheader">
@@ -111,9 +111,17 @@ Collaboration diagram for core::CommandlineOptions:</div>
 <div class="dyncontent">
 <div class="center"><img src="classcore_1_1CommandlineOptions__coll__graph.png" border="0" usemap="#acore_1_1CommandlineOptions_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="acore_1_1CommandlineOptions_coll__map" id="acore_1_1CommandlineOptions_coll__map">
-<area shape="rect" title="A class for storing user&#39;s options from the commandline." alt="" coords="5,302,184,551"/>
-<area shape="rect" href="classcore_1_1Options.html" title="A class for storing user options." alt="" coords="8,5,182,254"/>
-<area shape="poly" title=" " alt="" coords="95,266,97,302,92,302,94,272"/>
+<area shape="rect" title="A class for storing user&#39;s options from the commandline." alt="" coords="54,684,238,1006"/>
+<area shape="rect" href="classcore_1_1Options.html" title="A class for storing user options." alt="" coords="5,312,179,561"/>
+<area shape="poly" title=" " alt="" coords="111,573,127,685,122,684,110,578"/>
+<area shape="rect" title=" " alt="" coords="203,385,326,488"/>
+<area shape="poly" title=" " alt="" coords="251,485,200,669,194,667,248,490"/>
+<area shape="rect" title=" " alt="" coords="204,159,325,237"/>
+<area shape="poly" title=" " alt="" coords="265,249,267,385,262,385,264,254"/>
+<area shape="rect" title=" " alt="" coords="200,5,225,84"/>
+<area shape="poly" title=" " alt="" coords="208,81,210,109,216,134,220,144,215,144,211,135,205,109,207,86"/>
+<area shape="rect" title=" " alt="" coords="305,5,330,84"/>
+<area shape="poly" title=" " alt="" coords="305,86,291,136,288,143,283,142,286,134,307,81"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -140,6 +148,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6a550eec2c0d7007054e9883fdde627 inherit pub_methods_classcore_1_1Options" id="r_ae6a550eec2c0d7007054e9883fdde627"><td class="memItemLeft">
 virtual&#160;</td><td class="memItemRight"><b>~Options</b> ()</td></tr>
 <tr class="memdesc:ae6a550eec2c0d7007054e9883fdde627 inherit pub_methods_classcore_1_1Options"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual destructor <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a1b23b59cac060844bcad24c875bad3e5" id="r_a1b23b59cac060844bcad24c875bad3e5"><td class="memItemLeft"><a id="a1b23b59cac060844bcad24c875bad3e5" name="a1b23b59cac060844bcad24c875bad3e5"></a>
+std::filesystem::path&#160;</td><td class="memItemRight"><b>m_filename</b> = &quot;&quot;</td></tr>
+<tr class="memdesc:a1b23b59cac060844bcad24c875bad3e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filename of the save file. <br /></td></tr>
+<tr class="memitem:a48a52cc74222e84cbcb55a29069143f5" id="r_a48a52cc74222e84cbcb55a29069143f5"><td class="memItemLeft"><a id="a48a52cc74222e84cbcb55a29069143f5" name="a48a52cc74222e84cbcb55a29069143f5"></a>
+std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight"><b>m_x_bounds</b> = {0, 0}</td></tr>
+<tr class="memdesc:a48a52cc74222e84cbcb55a29069143f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">x bounds in the save file <br /></td></tr>
+<tr class="memitem:adb57159a138115aa0559f25a9893b5ec" id="r_adb57159a138115aa0559f25a9893b5ec"><td class="memItemLeft"><a id="adb57159a138115aa0559f25a9893b5ec" name="adb57159a138115aa0559f25a9893b5ec"></a>
+std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight"><b>m_y_bounds</b> = {0, 0}</td></tr>
+<tr class="memdesc:adb57159a138115aa0559f25a9893b5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">y bounds in the save file <br /></td></tr>
+<tr class="memitem:a142e3312b07323980a463a4a29819905" id="r_a142e3312b07323980a463a4a29819905"><td class="memItemLeft"><a id="a142e3312b07323980a463a4a29819905" name="a142e3312b07323980a463a4a29819905"></a>
+std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight"><b>m_z_bounds</b> = {0, 0}</td></tr>
+<tr class="memdesc:a142e3312b07323980a463a4a29819905"><td class="mdescLeft">&#160;</td><td class="mdescRight">z bounds in the save file <br /></td></tr>
+<tr class="memitem:aa554797be4e98600a40256c9c0792bae" id="r_aa554797be4e98600a40256c9c0792bae"><td class="memItemLeft"><a id="aa554797be4e98600a40256c9c0792bae" name="aa554797be4e98600a40256c9c0792bae"></a>
+<a class="el" href="options_8h.html#ad6f3cd1c61b752713405b33f07f081ae">HomologyChoice</a>&#160;</td><td class="memItemRight"><b>m_homology_to_compute</b> = HomologyChoice::Z2</td></tr>
+<tr class="memdesc:aa554797be4e98600a40256c9c0792bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of homology to compute. <br /></td></tr>
+<tr class="memitem:a61e76bbdede0ab880c4e5fb9953d229c" id="r_a61e76bbdede0ab880c4e5fb9953d229c"><td class="memItemLeft"><a id="a61e76bbdede0ab880c4e5fb9953d229c" name="a61e76bbdede0ab880c4e5fb9953d229c"></a>
+bool&#160;</td><td class="memItemRight"><b>m_latex</b> = false</td></tr>
+<tr class="memdesc:a61e76bbdede0ab880c4e5fb9953d229c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether to print latex syntax. <br /></td></tr>
+<tr class="memitem:a8116c275cfc81a73d7f1945e9ce05951" id="r_a8116c275cfc81a73d7f1945e9ce05951"><td class="memItemLeft"><a id="a8116c275cfc81a73d7f1945e9ce05951" name="a8116c275cfc81a73d7f1945e9ce05951"></a>
+bool&#160;</td><td class="memItemRight"><b>m_help</b> = false</td></tr>
+<tr class="memdesc:a8116c275cfc81a73d7f1945e9ce05951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag whether to print help. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for storing user's options from the commandline. </p>

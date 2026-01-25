@@ -46,7 +46,9 @@ public:
     static BasicInterval interval(int left);
 
 private:
+    /// \brief Left bound of the interval
     int m_left = 0;
+    /// \brief Marker, if the interval is full or trivial (degenerate)
     bool m_full = false;
 };
 
@@ -125,9 +127,12 @@ public:
     product(CubicalSimplex const& s1, CubicalSimplex const& s2);
 
 private:
+    /// \brief Creates an empty simplex
     CubicalSimplex();
 
+    /// \brief Stores intervals defining a simplex
     std::vector<BasicInterval> m_intervals = {};
+    /// \brief Stores the number of non-trivial intervals
     std::size_t m_dimension = 0;
 };
 
@@ -197,8 +202,10 @@ public:
     std::size_t ambient_dimension() const;
 
 private:
+    /// \brief Implementation of the recursive add algorithm
     void add_recursive_impl(CubicalSimplex simplex);
 
+    /// \brief Simplexes in the comples stored by dimension
     std::vector<std::unordered_set<CubicalSimplex>> m_simplices;
 };
 

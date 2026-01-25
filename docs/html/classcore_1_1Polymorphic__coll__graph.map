@@ -1,3 +1,11 @@
 <map id="core::Polymorphic&lt; T &gt;" name="core::Polymorphic&lt; T &gt;">
-<area shape="rect" id="Node000001" title="A polymorphic class wrapper with value semantics." alt="" coords="5,5,171,376"/>
+<area shape="rect" id="Node000001" title="A polymorphic class wrapper with value semantics." alt="" coords="20,601,186,971"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="20,428,186,526"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,523,105,584,100,583,102,528"/>
+<area shape="rect" id="Node000003" href="$structcore_1_1Polymorphic_1_1Concept.html" title="Base class used for type erasure." alt="" coords="5,159,136,329"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,326,96,412,91,412,82,331"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,205,295,283"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="200,299,131,430,126,428,201,293"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="219,5,237,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="228,81,231,188,225,188,228,86"/>
 </map>

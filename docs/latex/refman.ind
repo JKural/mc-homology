@@ -1,359 +1,377 @@
 \begin{theindex}
 
   \item {add}
-    \subitem {complexes::CubicalComplex}, \hyperpage{30}
+    \subitem {complexes::CubicalComplex}, \hyperpage{35}
   \item {add\_recursive}
-    \subitem {complexes::CubicalComplex}, \hyperpage{30}
+    \subitem {complexes::CubicalComplex}, \hyperpage{35}
   \item {algebra::AdditiveGroup}, \hyperpage{9}
-  \item {algebra::ChainComplex$<$ T $>$}, \hyperpage{20}
-    \subitem {boundary}, \hyperpage{22}
-    \subitem {ChainComplex}, \hyperpage{21}
+  \item {algebra::ChainComplex$<$ T $>$}, \hyperpage{21}
+    \subitem {boundary}, \hyperpage{23}
+    \subitem {ChainComplex}, \hyperpage{22}
   \item {algebra::Commutative}, \hyperpage{10}
   \item {algebra::CommutativeRing}, \hyperpage{10}
-  \item {algebra::DivResult$<$ T $>$}, \hyperpage{38}
+  \item {algebra::DivResult$<$ T $>$}, \hyperpage{44}
   \item {algebra::EuclideanDomain}, \hyperpage{11}
-  \item {algebra::ExtendedGCDResult}, \hyperpage{39}
+  \item {algebra::ExtendedGCDResult}, \hyperpage{46}
   \item {algebra::Field}, \hyperpage{11}
   \item {algebra::Group}, \hyperpage{12}
-  \item {algebra::Homology$<$ T $>$}, \hyperpage{49}
-    \subitem {torsion}, \hyperpage{51}
-  \item {algebra::Integer}, \hyperpage{61}
-    \subitem {euclidean\_function}, \hyperpage{63}
-  \item {algebra::Matrix$<$ T $>$}, \hyperpage{66}
-    \subitem {at}, \hyperpage{70}
-    \subitem {Matrix}, \hyperpage{70}
-    \subitem {operator[]}, \hyperpage{71}
-    \subitem {operator\texorpdfstring{$\ast$}{*}=}, \hyperpage{71}
+  \item {algebra::Homology$<$ T $>$}, \hyperpage{57}
+    \subitem {torsion}, \hyperpage{59}
+  \item {algebra::Integer}, \hyperpage{70}
+    \subitem {euclidean\_function}, \hyperpage{71}
+  \item {algebra::Matrix$<$ T $>$}, \hyperpage{76}
+    \subitem {at}, \hyperpage{80}
+    \subitem {Matrix}, \hyperpage{80}
+    \subitem {operator[]}, \hyperpage{82}
+    \subitem {operator\texorpdfstring{$\ast$}{*}=}, \hyperpage{82}
   \item {algebra::Ring}, \hyperpage{13}
-  \item {algebra::RowEchelonFormResult$<$ T $>$}, \hyperpage{82}
-  \item {algebra::SkipCorrectnessCheckT}, \hyperpage{83}
-  \item {algebra::SmithFormResult$<$ T $>$}, \hyperpage{83}
-  \item {algebra::ZModP$<$ 2 $>$}, \hyperpage{90}
-    \subitem {euclidean\_function}, \hyperpage{92}
-  \item {algebra::ZModP$<$ P $>$}, \hyperpage{87}
-    \subitem {euclidean\_function}, \hyperpage{89}
+  \item {algebra::RowEchelonFormResult$<$ T $>$}, \hyperpage{97}
+  \item {algebra::SkipCorrectnessCheckT}, \hyperpage{98}
+  \item {algebra::SmithFormResult$<$ T $>$}, \hyperpage{98}
+  \item {algebra::ZModP$<$ 2 $>$}, \hyperpage{105}
+    \subitem {euclidean\_function}, \hyperpage{107}
+  \item {algebra::ZModP$<$ P $>$}, \hyperpage{102}
+    \subitem {euclidean\_function}, \hyperpage{104}
   \item {at}
-    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{70}
+    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{80}
 
   \indexspace
 
   \item {betti\_numbers}
     \subitem {core::AlgebraHomology$<$ T $>$}, \hyperpage{18}
-    \subitem {core::Homology}, \hyperpage{54}
+    \subitem {core::Homology}, \hyperpage{62}
   \item {boundary}
-    \subitem {algebra::ChainComplex$<$ T $>$}, \hyperpage{22}
-    \subitem {complexes::CubicalSimplex}, \hyperpage{36}
+    \subitem {algebra::ChainComplex$<$ T $>$}, \hyperpage{23}
+    \subitem {complexes::CubicalSimplex}, \hyperpage{43}
 
   \indexspace
 
   \item {ChainComplex}
-    \subitem {algebra::ChainComplex$<$ T $>$}, \hyperpage{21}
+    \subitem {algebra::ChainComplex$<$ T $>$}, \hyperpage{22}
+  \item {clone}
+    \subitem {core::Polymorphic$<$ T $>$::Concept}, \hyperpage{32}
+    \subitem {core::Polymorphic$<$ T $>$::Model$<$ Object $>$}, 
+		\hyperpage{90}
   \item {complexes::BasicInterval}, \hyperpage{19}
     \subitem {interval}, \hyperpage{20}
-  \item {complexes::CubicalComplex}, \hyperpage{29}
-    \subitem {add}, \hyperpage{30}
-    \subitem {add\_recursive}, \hyperpage{30}
-    \subitem {contains}, \hyperpage{31}
-    \subitem {CubicalComplex}, \hyperpage{30}
-    \subitem {remove}, \hyperpage{31}
-    \subitem {simplices}, \hyperpage{31}
-  \item {complexes::CubicalSimplex}, \hyperpage{35}
-    \subitem {boundary}, \hyperpage{36}
-    \subitem {CubicalSimplex}, \hyperpage{36}
-    \subitem {interval}, \hyperpage{36}
-    \subitem {operator$<$=$>$}, \hyperpage{37}
-    \subitem {point}, \hyperpage{37}
-    \subitem {product}, \hyperpage{37}
+  \item {complexes::CubicalComplex}, \hyperpage{33}
+    \subitem {add}, \hyperpage{35}
+    \subitem {add\_recursive}, \hyperpage{35}
+    \subitem {contains}, \hyperpage{35}
+    \subitem {CubicalComplex}, \hyperpage{34}
+    \subitem {remove}, \hyperpage{35}
+    \subitem {simplices}, \hyperpage{36}
+  \item {complexes::CubicalSimplex}, \hyperpage{40}
+    \subitem {boundary}, \hyperpage{43}
+    \subitem {CubicalSimplex}, \hyperpage{43}
+    \subitem {interval}, \hyperpage{43}
+    \subitem {operator$<$=$>$}, \hyperpage{43}
+    \subitem {point}, \hyperpage{43}
+    \subitem {product}, \hyperpage{44}
   \item {compute\_chain\_complex}
-    \subitem {compute\_chain\_complex.h}, \hyperpage{125}
+    \subitem {compute\_chain\_complex.h}, \hyperpage{141}
   \item {compute\_chain\_complex.h}
-    \subitem {compute\_chain\_complex}, \hyperpage{125}
+    \subitem {compute\_chain\_complex}, \hyperpage{141}
   \item {contains}
-    \subitem {complexes::CubicalComplex}, \hyperpage{31}
+    \subitem {complexes::CubicalComplex}, \hyperpage{35}
   \item {core::AlgebraHomology$<$ T $>$}, \hyperpage{15}
     \subitem {betti\_numbers}, \hyperpage{18}
     \subitem {torsion}, \hyperpage{18}
-  \item {core::CommandlineOptions}, \hyperpage{22}
-    \subitem {filename}, \hyperpage{25}
-    \subitem {help}, \hyperpage{25}
-    \subitem {homology\_to\_compute}, \hyperpage{25}
-    \subitem {latex}, \hyperpage{25}
-    \subitem {x\_bounds}, \hyperpage{26}
-    \subitem {y\_bounds}, \hyperpage{26}
-    \subitem {z\_bounds}, \hyperpage{26}
-  \item {core::Complex}, \hyperpage{27}
-    \subitem {reduce}, \hyperpage{28}
-    \subitem {z2\_homology}, \hyperpage{28}
-    \subitem {z3\_homology}, \hyperpage{29}
-    \subitem {z\_homology}, \hyperpage{29}
-  \item {core::CubicalComplex3D}, \hyperpage{32}
-    \subitem {reduce}, \hyperpage{34}
-    \subitem {z2\_homology}, \hyperpage{34}
-    \subitem {z3\_homology}, \hyperpage{34}
-    \subitem {z\_homology}, \hyperpage{34}
-  \item {core::Homology}, \hyperpage{51}
-    \subitem {betti\_numbers}, \hyperpage{54}
-    \subitem {Homology}, \hyperpage{54}
-    \subitem {select\_strategy}, \hyperpage{54}
-    \subitem {text}, \hyperpage{54}
-    \subitem {torsion}, \hyperpage{54}
-  \item {core::HomologyLatexPrint}, \hyperpage{55}
-    \subitem {draw}, \hyperpage{58}
-    \subitem {HomologyLatexPrint}, \hyperpage{57}
-  \item {core::HomologyPrintingStrategy}, \hyperpage{58}
-    \subitem {draw}, \hyperpage{59}
-  \item {core::HomologyRawPrint}, \hyperpage{60}
-    \subitem {draw}, \hyperpage{61}
-  \item {core::LatexWrapper}, \hyperpage{63}
-    \subitem {text}, \hyperpage{65}
-  \item {core::Manager}, \hyperpage{65}
-    \subitem {run}, \hyperpage{66}
-  \item {core::MinecraftCoordinates}, \hyperpage{72}
-  \item {core::MinecraftSavefileParser}, \hyperpage{73}
-    \subitem {parse}, \hyperpage{74}
+  \item {core::CommandlineOptions}, \hyperpage{23}
+    \subitem {filename}, \hyperpage{26}
+    \subitem {help}, \hyperpage{26}
+    \subitem {homology\_to\_compute}, \hyperpage{27}
+    \subitem {latex}, \hyperpage{27}
+    \subitem {x\_bounds}, \hyperpage{27}
+    \subitem {y\_bounds}, \hyperpage{27}
+    \subitem {z\_bounds}, \hyperpage{27}
+  \item {core::Complex}, \hyperpage{28}
+    \subitem {reduce}, \hyperpage{29}
+    \subitem {z2\_homology}, \hyperpage{29}
+    \subitem {z3\_homology}, \hyperpage{30}
+    \subitem {z\_homology}, \hyperpage{30}
+  \item {core::CubicalComplex3D}, \hyperpage{36}
+    \subitem {reduce}, \hyperpage{39}
+    \subitem {z2\_homology}, \hyperpage{39}
+    \subitem {z3\_homology}, \hyperpage{39}
+    \subitem {z\_homology}, \hyperpage{39}
+  \item {core::Homology}, \hyperpage{59}
+    \subitem {betti\_numbers}, \hyperpage{62}
+    \subitem {Homology}, \hyperpage{62}
+    \subitem {select\_strategy}, \hyperpage{62}
+    \subitem {text}, \hyperpage{63}
+    \subitem {torsion}, \hyperpage{63}
+  \item {core::HomologyLatexPrint}, \hyperpage{63}
+    \subitem {draw}, \hyperpage{66}
+    \subitem {HomologyLatexPrint}, \hyperpage{66}
+  \item {core::HomologyPrintingStrategy}, \hyperpage{67}
+    \subitem {draw}, \hyperpage{68}
+  \item {core::HomologyRawPrint}, \hyperpage{68}
+    \subitem {draw}, \hyperpage{69}
+  \item {core::LatexWrapper}, \hyperpage{72}
+    \subitem {text}, \hyperpage{74}
+  \item {core::Manager}, \hyperpage{74}
+    \subitem {run}, \hyperpage{76}
+  \item {core::MinecraftCoordinates}, \hyperpage{83}
+  \item {core::MinecraftSavefileParser}, \hyperpage{84}
+    \subitem {parse}, \hyperpage{85}
   \item {core::MinecraftSavefileParser\_mcSavefileParsers}, 
-		\hyperpage{74}
-    \subitem {parse}, \hyperpage{76}
-  \item {core::Options}, \hyperpage{76}
-    \subitem {filename}, \hyperpage{79}
-    \subitem {help}, \hyperpage{79}
-    \subitem {homology\_to\_compute}, \hyperpage{79}
-    \subitem {latex}, \hyperpage{79}
-    \subitem {x\_bounds}, \hyperpage{79}
-    \subitem {y\_bounds}, \hyperpage{79}
-    \subitem {z\_bounds}, \hyperpage{79}
-  \item {core::Polymorphic$<$ T $>$}, \hyperpage{80}
-  \item {core::TextDrawable}, \hyperpage{84}
-    \subitem {text}, \hyperpage{86}
+		\hyperpage{85}
+    \subitem {parse}, \hyperpage{87}
+  \item {core::Options}, \hyperpage{91}
+    \subitem {filename}, \hyperpage{93}
+    \subitem {help}, \hyperpage{93}
+    \subitem {homology\_to\_compute}, \hyperpage{93}
+    \subitem {latex}, \hyperpage{93}
+    \subitem {x\_bounds}, \hyperpage{93}
+    \subitem {y\_bounds}, \hyperpage{93}
+    \subitem {z\_bounds}, \hyperpage{93}
+  \item {core::Polymorphic$<$ T $>$}, \hyperpage{94}
+  \item {core::Polymorphic$<$ T $>$::Concept}, \hyperpage{30}
+    \subitem {clone}, \hyperpage{32}
+    \subitem {get\_address}, \hyperpage{32}
+  \item {core::Polymorphic$<$ T $>$::Model$<$ Object $>$}, 
+		\hyperpage{87}
+    \subitem {clone}, \hyperpage{90}
+    \subitem {get\_address}, \hyperpage{90}
+  \item {core::TextDrawable}, \hyperpage{99}
+    \subitem {text}, \hyperpage{101}
   \item {CubicalComplex}
-    \subitem {complexes::CubicalComplex}, \hyperpage{30}
+    \subitem {complexes::CubicalComplex}, \hyperpage{34}
   \item {CubicalSimplex}
-    \subitem {complexes::CubicalSimplex}, \hyperpage{36}
+    \subitem {complexes::CubicalSimplex}, \hyperpage{43}
 
   \indexspace
 
   \item {divide}
-    \subitem {integer.h}, \hyperpage{100}
-    \subitem {number\_theory.h}, \hyperpage{119}
+    \subitem {integer.h}, \hyperpage{116}
+    \subitem {number\_theory.h}, \hyperpage{135}
   \item {draw}
-    \subitem {core::HomologyLatexPrint}, \hyperpage{58}
-    \subitem {core::HomologyPrintingStrategy}, \hyperpage{59}
-    \subitem {core::HomologyRawPrint}, \hyperpage{61}
+    \subitem {core::HomologyLatexPrint}, \hyperpage{66}
+    \subitem {core::HomologyPrintingStrategy}, \hyperpage{68}
+    \subitem {core::HomologyRawPrint}, \hyperpage{69}
 
   \indexspace
 
   \item {euclidean\_function}
-    \subitem {algebra::Integer}, \hyperpage{63}
-    \subitem {algebra::ZModP$<$ 2 $>$}, \hyperpage{92}
-    \subitem {algebra::ZModP$<$ P $>$}, \hyperpage{89}
+    \subitem {algebra::Integer}, \hyperpage{71}
+    \subitem {algebra::ZModP$<$ 2 $>$}, \hyperpage{107}
+    \subitem {algebra::ZModP$<$ P $>$}, \hyperpage{104}
   \item {extended\_gcd}
-    \subitem {number\_theory.h}, \hyperpage{119}
+    \subitem {number\_theory.h}, \hyperpage{135}
 
   \indexspace
 
   \item {filename}
-    \subitem {core::CommandlineOptions}, \hyperpage{25}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{26}
+    \subitem {core::Options}, \hyperpage{93}
   \item {format}
-    \subitem {std::formatter$<$ algebra::Integer $>$}, \hyperpage{41}
+    \subitem {std::formatter$<$ algebra::Integer $>$}, \hyperpage{48}
     \subitem {std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}, 
-		\hyperpage{42}
+		\hyperpage{50}
     \subitem {std::formatter$<$ complexes::BasicInterval $>$}, 
-		\hyperpage{45}
+		\hyperpage{53}
     \subitem {std::formatter$<$ complexes::CubicalSimplex $>$}, 
-		\hyperpage{48}
+		\hyperpage{56}
+
+  \indexspace
+
+  \item {get\_address}
+    \subitem {core::Polymorphic$<$ T $>$::Concept}, \hyperpage{32}
+    \subitem {core::Polymorphic$<$ T $>$::Model$<$ Object $>$}, 
+		\hyperpage{90}
 
   \indexspace
 
   \item {help}
-    \subitem {core::CommandlineOptions}, \hyperpage{25}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{26}
+    \subitem {core::Options}, \hyperpage{93}
   \item {Homology}
-    \subitem {core::Homology}, \hyperpage{54}
+    \subitem {core::Homology}, \hyperpage{62}
   \item {homology\_to\_compute}
-    \subitem {core::CommandlineOptions}, \hyperpage{25}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{27}
+    \subitem {core::Options}, \hyperpage{93}
   \item {HomologyLatexPrint}
-    \subitem {core::HomologyLatexPrint}, \hyperpage{57}
+    \subitem {core::HomologyLatexPrint}, \hyperpage{66}
 
   \indexspace
 
   \item {integer.h}
-    \subitem {divide}, \hyperpage{100}
-    \subitem {modulo}, \hyperpage{100}
+    \subitem {divide}, \hyperpage{116}
+    \subitem {modulo}, \hyperpage{116}
   \item {interval}
     \subitem {complexes::BasicInterval}, \hyperpage{20}
-    \subitem {complexes::CubicalSimplex}, \hyperpage{36}
+    \subitem {complexes::CubicalSimplex}, \hyperpage{43}
   \item {inverse\_mod}
-    \subitem {number\_theory.h}, \hyperpage{119}
+    \subitem {number\_theory.h}, \hyperpage{135}
   \item {is\_prime}
-    \subitem {number\_theory.h}, \hyperpage{120}
+    \subitem {number\_theory.h}, \hyperpage{136}
 
   \indexspace
 
   \item {latex}
-    \subitem {core::CommandlineOptions}, \hyperpage{25}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{27}
+    \subitem {core::Options}, \hyperpage{93}
 
   \indexspace
 
   \item {Matrix}
-    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{70}
+    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{80}
   \item {matrix.h}
-    \subitem {operator\texorpdfstring{$\ast$}{*}}, \hyperpage{104}
+    \subitem {operator\texorpdfstring{$\ast$}{*}}, \hyperpage{120}
   \item {matrix\_algorithms.h}
-    \subitem {row\_echelon\_form}, \hyperpage{110}
-    \subitem {smith\_form}, \hyperpage{111}
+    \subitem {row\_echelon\_form}, \hyperpage{126}
+    \subitem {smith\_form}, \hyperpage{127}
   \item {mc-\/homology/algebra/include/algebra/algebraic\_concepts.h}, 
-		\hyperpage{93}, \hyperpage{95}
+		\hyperpage{109}, \hyperpage{111}
   \item {mc-\/homology/algebra/include/algebra/chain\_complex.h}, 
-		\hyperpage{95}, \hyperpage{97}
+		\hyperpage{111}, \hyperpage{113}
   \item {mc-\/homology/algebra/include/algebra/integer.h}, 
-		\hyperpage{99}, \hyperpage{101}
+		\hyperpage{115}, \hyperpage{117}
   \item {mc-\/homology/algebra/include/algebra/matrix.h}, 
-		\hyperpage{102}, \hyperpage{104}
+		\hyperpage{118}, \hyperpage{120}
   \item {mc-\/homology/algebra/include/algebra/matrix\_algorithms.h}, 
-		\hyperpage{108}, \hyperpage{112}
+		\hyperpage{124}, \hyperpage{128}
   \item {mc-\/homology/algebra/include/algebra/modulo\_fields.h}, 
-		\hyperpage{113}, \hyperpage{115}
+		\hyperpage{129}, \hyperpage{131}
   \item {mc-\/homology/algebra/include/algebra/number\_theory.h}, 
-		\hyperpage{116}, \hyperpage{121}
+		\hyperpage{132}, \hyperpage{137}
   \item {mc-\/homology/algebra/include/algebra/z2\_field.h}, 
-		\hyperpage{122, 123}
+		\hyperpage{138, 139}
   \item {mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}, 
-		\hyperpage{124, 125}
-  \item {mc-\/homology/complexes/include/complexes/cubical\_complex.h}, 
-		\hyperpage{126}, \hyperpage{128}
-  \item {mc-\/homology/complexes/include/complexes/utils.h}, 
-		\hyperpage{129, 130}
-  \item {mc-\/homology/core/include/core/algebra\_homology.h}, 
-		\hyperpage{131, 132}
-  \item {mc-\/homology/core/include/core/complex.h}, \hyperpage{132}, 
-		\hyperpage{134}
-  \item {mc-\/homology/core/include/core/cubical\_complex\_3d.h}, 
-		\hyperpage{134, 135}
-  \item {mc-\/homology/core/include/core/homology.h}, \hyperpage{135}, 
-		\hyperpage{137}
-  \item {mc-\/homology/core/include/core/homology\_printing\_strategy.h}, 
-		\hyperpage{137}, \hyperpage{139}
-  \item {mc-\/homology/core/include/core/latex\_wrapper.h}, 
-		\hyperpage{139, 140}
-  \item {mc-\/homology/core/include/core/manager.h}, 
 		\hyperpage{140, 141}
-  \item {mc-\/homology/core/include/core/options.h}, 
-		\hyperpage{142, 143}
-  \item {mc-\/homology/core/include/core/parser.h}, 
-		\hyperpage{144, 145}
-  \item {mc-\/homology/core/include/core/polymorphic.h}, 
+  \item {mc-\/homology/complexes/include/complexes/cubical\_complex.h}, 
+		\hyperpage{142}, \hyperpage{144}
+  \item {mc-\/homology/complexes/include/complexes/utils.h}, 
 		\hyperpage{145, 146}
+  \item {mc-\/homology/core/include/core/algebra\_homology.h}, 
+		\hyperpage{147, 148}
+  \item {mc-\/homology/core/include/core/complex.h}, \hyperpage{148}, 
+		\hyperpage{150}
+  \item {mc-\/homology/core/include/core/cubical\_complex\_3d.h}, 
+		\hyperpage{150, 151}
+  \item {mc-\/homology/core/include/core/homology.h}, \hyperpage{151}, 
+		\hyperpage{153}
+  \item {mc-\/homology/core/include/core/homology\_printing\_strategy.h}, 
+		\hyperpage{153}, \hyperpage{155}
+  \item {mc-\/homology/core/include/core/latex\_wrapper.h}, 
+		\hyperpage{155, 156}
+  \item {mc-\/homology/core/include/core/manager.h}, 
+		\hyperpage{156, 157}
+  \item {mc-\/homology/core/include/core/options.h}, 
+		\hyperpage{158, 159}
+  \item {mc-\/homology/core/include/core/parser.h}, 
+		\hyperpage{160, 161}
+  \item {mc-\/homology/core/include/core/polymorphic.h}, 
+		\hyperpage{161, 162}
   \item {mc-\/homology/core/include/core/text\_drawable.h}, 
-		\hyperpage{148, 149}
+		\hyperpage{164, 165}
   \item {modulo}
-    \subitem {integer.h}, \hyperpage{100}
-    \subitem {number\_theory.h}, \hyperpage{120}
+    \subitem {integer.h}, \hyperpage{116}
+    \subitem {number\_theory.h}, \hyperpage{136}
 
   \indexspace
 
   \item {number\_theory.h}
-    \subitem {divide}, \hyperpage{119}
-    \subitem {extended\_gcd}, \hyperpage{119}
-    \subitem {inverse\_mod}, \hyperpage{119}
-    \subitem {is\_prime}, \hyperpage{120}
-    \subitem {modulo}, \hyperpage{120}
+    \subitem {divide}, \hyperpage{135}
+    \subitem {extended\_gcd}, \hyperpage{135}
+    \subitem {inverse\_mod}, \hyperpage{135}
+    \subitem {is\_prime}, \hyperpage{136}
+    \subitem {modulo}, \hyperpage{136}
 
   \indexspace
 
   \item {operator$<$=$>$}
-    \subitem {complexes::CubicalSimplex}, \hyperpage{37}
+    \subitem {complexes::CubicalSimplex}, \hyperpage{43}
   \item {operator[]}
-    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{71}
+    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{82}
   \item {operator\texorpdfstring{$\ast$}{*}}
-    \subitem {matrix.h}, \hyperpage{104}
+    \subitem {matrix.h}, \hyperpage{120}
   \item {operator\texorpdfstring{$\ast$}{*}=}
-    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{71}
+    \subitem {algebra::Matrix$<$ T $>$}, \hyperpage{82}
 
   \indexspace
 
   \item {parse}
-    \subitem {core::MinecraftSavefileParser}, \hyperpage{74}
+    \subitem {core::MinecraftSavefileParser}, \hyperpage{85}
     \subitem {core::MinecraftSavefileParser\_mcSavefileParsers}, 
-		\hyperpage{76}
+		\hyperpage{87}
   \item {point}
-    \subitem {complexes::CubicalSimplex}, \hyperpage{37}
+    \subitem {complexes::CubicalSimplex}, \hyperpage{43}
   \item {product}
-    \subitem {complexes::CubicalSimplex}, \hyperpage{37}
+    \subitem {complexes::CubicalSimplex}, \hyperpage{44}
 
   \indexspace
 
   \item {reduce}
-    \subitem {core::Complex}, \hyperpage{28}
-    \subitem {core::CubicalComplex3D}, \hyperpage{34}
+    \subitem {core::Complex}, \hyperpage{29}
+    \subitem {core::CubicalComplex3D}, \hyperpage{39}
   \item {remove}
-    \subitem {complexes::CubicalComplex}, \hyperpage{31}
+    \subitem {complexes::CubicalComplex}, \hyperpage{35}
   \item {row\_echelon\_form}
-    \subitem {matrix\_algorithms.h}, \hyperpage{110}
+    \subitem {matrix\_algorithms.h}, \hyperpage{126}
   \item {run}
-    \subitem {core::Manager}, \hyperpage{66}
+    \subitem {core::Manager}, \hyperpage{76}
 
   \indexspace
 
   \item {select\_strategy}
-    \subitem {core::Homology}, \hyperpage{54}
+    \subitem {core::Homology}, \hyperpage{62}
   \item {simplices}
-    \subitem {complexes::CubicalComplex}, \hyperpage{31}
+    \subitem {complexes::CubicalComplex}, \hyperpage{36}
   \item {smith\_form}
-    \subitem {matrix\_algorithms.h}, \hyperpage{111}
-  \item {std::formatter$<$ algebra::Integer $>$}, \hyperpage{40}
-    \subitem {format}, \hyperpage{41}
-  \item {std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}, 
-		\hyperpage{41}
-    \subitem {format}, \hyperpage{42}
-  \item {std::formatter$<$ algebra::ZModP$<$ P $>$ $>$}, \hyperpage{43}
-  \item {std::formatter$<$ complexes::BasicInterval $>$}, 
-		\hyperpage{44}
-    \subitem {format}, \hyperpage{45}
-  \item {std::formatter$<$ complexes::CubicalSimplex $>$}, 
-		\hyperpage{46}
+    \subitem {matrix\_algorithms.h}, \hyperpage{127}
+  \item {std::formatter$<$ algebra::Integer $>$}, \hyperpage{47}
     \subitem {format}, \hyperpage{48}
-  \item {std::hash$<$ complexes::BasicInterval $>$}, \hyperpage{48}
-  \item {std::hash$<$ complexes::CubicalSimplex $>$}, \hyperpage{49}
+  \item {std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}, 
+		\hyperpage{48}
+    \subitem {format}, \hyperpage{50}
+  \item {std::formatter$<$ algebra::ZModP$<$ P $>$ $>$}, \hyperpage{50}
+  \item {std::formatter$<$ complexes::BasicInterval $>$}, 
+		\hyperpage{51}
+    \subitem {format}, \hyperpage{53}
+  \item {std::formatter$<$ complexes::CubicalSimplex $>$}, 
+		\hyperpage{53}
+    \subitem {format}, \hyperpage{56}
+  \item {std::hash$<$ complexes::BasicInterval $>$}, \hyperpage{56}
+  \item {std::hash$<$ complexes::CubicalSimplex $>$}, \hyperpage{57}
 
   \indexspace
 
   \item {text}
-    \subitem {core::Homology}, \hyperpage{54}
-    \subitem {core::LatexWrapper}, \hyperpage{65}
-    \subitem {core::TextDrawable}, \hyperpage{86}
+    \subitem {core::Homology}, \hyperpage{63}
+    \subitem {core::LatexWrapper}, \hyperpage{74}
+    \subitem {core::TextDrawable}, \hyperpage{101}
   \item {torsion}
-    \subitem {algebra::Homology$<$ T $>$}, \hyperpage{51}
+    \subitem {algebra::Homology$<$ T $>$}, \hyperpage{59}
     \subitem {core::AlgebraHomology$<$ T $>$}, \hyperpage{18}
-    \subitem {core::Homology}, \hyperpage{54}
+    \subitem {core::Homology}, \hyperpage{63}
 
   \indexspace
 
   \item {x\_bounds}
-    \subitem {core::CommandlineOptions}, \hyperpage{26}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{27}
+    \subitem {core::Options}, \hyperpage{93}
 
   \indexspace
 
   \item {y\_bounds}
-    \subitem {core::CommandlineOptions}, \hyperpage{26}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{27}
+    \subitem {core::Options}, \hyperpage{93}
 
   \indexspace
 
   \item {z2\_homology}
-    \subitem {core::Complex}, \hyperpage{28}
-    \subitem {core::CubicalComplex3D}, \hyperpage{34}
+    \subitem {core::Complex}, \hyperpage{29}
+    \subitem {core::CubicalComplex3D}, \hyperpage{39}
   \item {z3\_homology}
-    \subitem {core::Complex}, \hyperpage{29}
-    \subitem {core::CubicalComplex3D}, \hyperpage{34}
+    \subitem {core::Complex}, \hyperpage{30}
+    \subitem {core::CubicalComplex3D}, \hyperpage{39}
   \item {z\_bounds}
-    \subitem {core::CommandlineOptions}, \hyperpage{26}
-    \subitem {core::Options}, \hyperpage{79}
+    \subitem {core::CommandlineOptions}, \hyperpage{27}
+    \subitem {core::Options}, \hyperpage{93}
   \item {z\_homology}
-    \subitem {core::Complex}, \hyperpage{29}
-    \subitem {core::CubicalComplex3D}, \hyperpage{34}
+    \subitem {core::Complex}, \hyperpage{30}
+    \subitem {core::CubicalComplex3D}, \hyperpage{39}
 
 \end{theindex}

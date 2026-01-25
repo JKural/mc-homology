@@ -101,7 +101,7 @@ Collaboration diagram for algebra::Matrix&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classalgebra_1_1Matrix__coll__graph.png" border="0" usemap="#aalgebra_1_1Matrix_3_01T_01_4_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="aalgebra_1_1Matrix_3_01T_01_4_coll__map" id="aalgebra_1_1Matrix_3_01T_01_4_coll__map">
-<area shape="rect" title="A Matrix class." alt="" coords="5,5,139,400"/>
+<area shape="rect" title="A Matrix class." alt="" coords="5,5,162,473"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -249,6 +249,24 @@ static constexpr Matrix&#160;</td><td class="memItemRight"><b>zero</b> (<a class
 <tr class="memitem:a83ecbb0e3450c094d2b956ed82a0f0c4" id="r_a83ecbb0e3450c094d2b956ed82a0f0c4"><td class="memItemLeft"><a id="a83ecbb0e3450c094d2b956ed82a0f0c4" name="a83ecbb0e3450c094d2b956ed82a0f0c4"></a>
 static constexpr Matrix&#160;</td><td class="memItemRight"><b>id</b> (<a class="el" href="#ad75a0102abd605971362aa86ef74596b">size_type</a> n)</td></tr>
 <tr class="memdesc:a83ecbb0e3450c094d2b956ed82a0f0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an identity matrix. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa06635adf6783ea2d660cf61946e9097" id="r_aa06635adf6783ea2d660cf61946e9097"><td class="memItemLeft"><a id="aa06635adf6783ea2d660cf61946e9097" name="aa06635adf6783ea2d660cf61946e9097"></a>
+constexpr <a class="el" href="#ad75a0102abd605971362aa86ef74596b">size_type</a>&#160;</td><td class="memItemRight"><b>to_underlying_index</b> (<a class="el" href="#ad75a0102abd605971362aa86ef74596b">size_type</a> row, <a class="el" href="#ad75a0102abd605971362aa86ef74596b">size_type</a> col) const noexcept</td></tr>
+<tr class="memdesc:aa06635adf6783ea2d660cf61946e9097"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the underlying index of an element at given coordinates. <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a090961126711bfbcdbccd9c2976b7266" id="r_a090961126711bfbcdbccd9c2976b7266"><td class="memItemLeft"><a id="a090961126711bfbcdbccd9c2976b7266" name="a090961126711bfbcdbccd9c2976b7266"></a>
+<a class="el" href="#a867496e2042a95c2eb98762ed0c4ca01">storage_type</a>&#160;</td><td class="memItemRight"><b>m_data</b></td></tr>
+<tr class="memdesc:a090961126711bfbcdbccd9c2976b7266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored coefficients. <br /></td></tr>
+<tr class="memitem:a94ba6212665ccf78fecf810e6fba4e6d" id="r_a94ba6212665ccf78fecf810e6fba4e6d"><td class="memItemLeft"><a id="a94ba6212665ccf78fecf810e6fba4e6d" name="a94ba6212665ccf78fecf810e6fba4e6d"></a>
+<a class="el" href="#ad75a0102abd605971362aa86ef74596b">size_type</a>&#160;</td><td class="memItemRight"><b>m_nrows</b></td></tr>
+<tr class="memdesc:a94ba6212665ccf78fecf810e6fba4e6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of rows. <br /></td></tr>
+<tr class="memitem:ae05b02dfb3a6e9c057d20104b16716c3" id="r_ae05b02dfb3a6e9c057d20104b16716c3"><td class="memItemLeft"><a id="ae05b02dfb3a6e9c057d20104b16716c3" name="ae05b02dfb3a6e9c057d20104b16716c3"></a>
+<a class="el" href="#ad75a0102abd605971362aa86ef74596b">size_type</a>&#160;</td><td class="memItemRight"><b>m_ncols</b></td></tr>
+<tr class="memdesc:ae05b02dfb3a6e9c057d20104b16716c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of columns. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />

@@ -5,5 +5,6 @@ var classcore_1_1CubicalComplex3D =
     [ "reduce", "classcore_1_1CubicalComplex3D.html#afb140e7fa736a2e6e77b928f252469f8", null ],
     [ "z2_homology", "classcore_1_1CubicalComplex3D.html#aa3353005e19d5eafc53dcf603872e86b", null ],
     [ "z3_homology", "classcore_1_1CubicalComplex3D.html#a33cc149bfe11d904ab7f2223e91af1e3", null ],
-    [ "z_homology", "classcore_1_1CubicalComplex3D.html#accd6d910e146075ef5dff976d3960883", null ]
+    [ "z_homology", "classcore_1_1CubicalComplex3D.html#accd6d910e146075ef5dff976d3960883", null ],
+    [ "m_inner", "classcore_1_1CubicalComplex3D.html#af84e4753630084cd92801493bf927dc7", null ]
 ];

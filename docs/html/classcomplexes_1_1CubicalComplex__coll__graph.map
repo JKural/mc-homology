@@ -1,3 +1,22 @@
 <map id="complexes::CubicalComplex" name="complexes::CubicalComplex">
-<area shape="rect" id="Node000001" title="Class representing a cubical complex." alt="" coords="5,5,185,278"/>
+<area shape="rect" id="Node000001" title="Class representing a cubical complex." alt="" coords="31,1420,211,1718"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,1248,237,1345"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,1342,124,1404,119,1403,121,1348"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="282,1076,478,1173"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="306,1175,209,1241,206,1237,309,1171"/>
+<area shape="rect" id="Node000004" href="$classcomplexes_1_1CubicalSimplex.html" title="A class representing a single cubical simplex in a complex." alt="" coords="517,679,691,1001"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="602,998,592,1028,577,1053,559,1071,539,1085,495,1106,492,1102,537,1081,556,1067,572,1050,588,1026,599,1002"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="487,507,641,604"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="571,601,582,663,576,662,570,606"/>
+<area shape="rect" id="Node000006" href="$classcomplexes_1_1BasicInterval.html" title="A struct representing an interval of length 0 or 1." alt="" coords="482,159,646,432"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="564,429,566,491,561,490,563,434"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="120,256,226,334"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="149,350,119,443,107,498,102,554,102,1126,106,1190,115,1248,109,1248,101,1190,97,1126,97,554,102,497,114,441,150,345"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="216,343,289,413,332,449,377,480,489,524,485,527,374,485,328,453,285,417,217,348"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="164,5,182,84"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="173,81,176,239,171,239,173,86"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="334,801,492,879"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="403,891,393,957,384,1025,382,1077,377,1075,379,1024,388,956,401,896"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="404,516,422,594"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="414,592,416,784,411,783,413,597"/>
 </map>

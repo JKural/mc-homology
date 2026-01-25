@@ -5,5 +5,7 @@ var classcomplexes_1_1BasicInterval =
     [ "is_trivial", "classcomplexes_1_1BasicInterval.html#a80f1328d98bec511ebd621573b269611", null ],
     [ "left", "classcomplexes_1_1BasicInterval.html#a102317692e6b358e76e99bb14319c8c7", null ],
     [ "operator==", "classcomplexes_1_1BasicInterval.html#a38587c34607ec7749002fcff3f1e4e91", null ],
-    [ "right", "classcomplexes_1_1BasicInterval.html#a9e188203135d550351057ed061d4db60", null ]
+    [ "right", "classcomplexes_1_1BasicInterval.html#a9e188203135d550351057ed061d4db60", null ],
+    [ "m_full", "classcomplexes_1_1BasicInterval.html#a9ac2a4742b41a6d229872d9f5bc28202", null ],
+    [ "m_left", "classcomplexes_1_1BasicInterval.html#afb57e1c1e4c26b3a2a3a8e7beee00c69", null ]
 ];

@@ -84,6 +84,7 @@ public:
     }
 
 private:
+    /// \brief Represents 0 or 1 as a binary value
     bool m_inner_representation = false;
 };
 

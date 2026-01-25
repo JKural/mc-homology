@@ -34,117 +34,117 @@
 \DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae}{BasicInterval}}\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_aa6ccd4723c82af1f2b740d0401328ef8}{interval}}(\textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left}});}
 \DoxyCodeLine{00047\ }
 \DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_left\ =\ 0;}
-\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_full\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00051\ \};}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00054\ std::ostream\&\ \doxymbox{\hyperlink{cubical__complex_8h_ad65e88e91768aa7accb7367d15795d22}{operator<<}}(std::ostream\&\ output,\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{BasicInterval}}\ i);}
-\DoxyCodeLine{00055\ }
-\DoxyCodeLine{00061\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \{}
-\DoxyCodeLine{00062\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00069\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}(std::vector<BasicInterval>\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}});}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00072\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a9395e2d026503ab0dd0d2d0fa2a5e740}{dimension}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00073\ }
-\DoxyCodeLine{00075\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ab7ce13739aa5ad8a5d99f17ad9b0e471}{ambient\_dimension}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00078\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a32733f12bf86572def6ca11cbc7e5333}{hash}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00079\ }
-\DoxyCodeLine{00083\ \ \ \ \ std::vector<CubicalSimplex>\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a90efd82d26a8ff98e18d30931a0ca0c7}{boundary}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ac49fe0025a81b7cfc8a65db052aaea33}{operator==}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00089\ \ \ \ \ std::vector<BasicInterval>\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00090\ }
-\DoxyCodeLine{00103\ \ \ \ \ std::strong\_ordering\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a7cd9afadd14d1694d7ca480772944956}{operator<=>}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ simplex)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00104\ }
-\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a275bac48352687fca93c9f85bbfae4ad}{point}}(\textcolor{keywordtype}{int}\ p);}
-\DoxyCodeLine{00109\ }
-\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a80c0fda0b9a8f84afce1ce9f35a7e8a4}{interval}}(\textcolor{keywordtype}{int}\ left);}
-\DoxyCodeLine{00114\ }
-\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}}
-\DoxyCodeLine{00125\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ab4c234208aa3a0aa935a6fb56fbfa871}{product}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s1,\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s2);}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00127\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00128\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}();}
-\DoxyCodeLine{00129\ }
-\DoxyCodeLine{00130\ \ \ \ \ std::vector<BasicInterval>\ m\_intervals\ =\ \{\};}
-\DoxyCodeLine{00131\ \ \ \ \ std::size\_t\ m\_dimension\ =\ 0;}
-\DoxyCodeLine{00132\ \};}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00135\ std::ostream\&\ operator<<(std::ostream\&\ output,\ CubicalSimplex\ \textcolor{keyword}{const}\&\ s);}
-\DoxyCodeLine{00136\ }
-\DoxyCodeLine{00141\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{CubicalComplex}}\ \{}
-\DoxyCodeLine{00142\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00146\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{CubicalComplex}}();}
-\DoxyCodeLine{00147\ }
-\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_ad68054531d9085fa03e07be0ae427760}{add}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ simplex);}
-\DoxyCodeLine{00159\ }
-\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_af719c39a3cdb84fffd3680333bd014e0}{add\_recursive}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ simplex);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_afb57e1c1e4c26b3a2a3a8e7beee00c69}{m\_left}}\ =\ 0;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a9ac2a4742b41a6d229872d9f5bc28202}{m\_full}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ std::ostream\&\ \doxymbox{\hyperlink{cubical__complex_8h_ad65e88e91768aa7accb7367d15795d22}{operator<<}}(std::ostream\&\ output,\ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{BasicInterval}}\ i);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \{}
+\DoxyCodeLine{00064\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00071\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a35b78250cd353114edcd6ac06812f296}{CubicalSimplex}}(std::vector<BasicInterval>\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}});}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a9395e2d026503ab0dd0d2d0fa2a5e740}{dimension}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00077\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ab7ce13739aa5ad8a5d99f17ad9b0e471}{ambient\_dimension}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a32733f12bf86572def6ca11cbc7e5333}{hash}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ std::vector<CubicalSimplex>\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a90efd82d26a8ff98e18d30931a0ca0c7}{boundary}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ac49fe0025a81b7cfc8a65db052aaea33}{operator==}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00091\ \ \ \ \ std::vector<BasicInterval>\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00105\ \ \ \ \ std::strong\_ordering\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a7cd9afadd14d1694d7ca480772944956}{operator<=>}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ simplex)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a275bac48352687fca93c9f85bbfae4ad}{point}}(\textcolor{keywordtype}{int}\ p);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a80c0fda0b9a8f84afce1ce9f35a7e8a4}{interval}}(\textcolor{keywordtype}{int}\ left);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{friend}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}}
+\DoxyCodeLine{00127\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ab4c234208aa3a0aa935a6fb56fbfa871}{product}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s1,\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s2);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00131\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a35b78250cd353114edcd6ac06812f296}{CubicalSimplex}}();}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00134\ \ \ \ \ std::vector<BasicInterval>\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ac15c1fec6e83aaac3cbae669751a8e93}{m\_intervals}}\ =\ \{\};}
+\DoxyCodeLine{00136\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ae873beb96975a4d6a9954f0638504420}{m\_dimension}}\ =\ 0;}
+\DoxyCodeLine{00137\ \};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00140\ std::ostream\&\ \doxymbox{\hyperlink{cubical__complex_8h_ad65e88e91768aa7accb7367d15795d22}{operator<<}}(std::ostream\&\ output,\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00146\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{CubicalComplex}}\ \{}
+\DoxyCodeLine{00147\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00151\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{CubicalComplex}}();}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00163\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_ad68054531d9085fa03e07be0ae427760}{add}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ simplex);}
 \DoxyCodeLine{00164\ }
-\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a735d830ba060f9cc25ee7ce70d7eaff6}{remove}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ simplex);}
-\DoxyCodeLine{00175\ }
-\DoxyCodeLine{00182\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a9436031888683e97f8e65753f1209f26}{contains}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ simplex)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00183\ }
-\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a5a10a22c6a0ce7066dd17bc7327c60bc}{operator==}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{CubicalComplex}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00186\ }
-\DoxyCodeLine{00191\ \ \ \ \ std::vector<std::unordered\_set<CubicalSimplex>>\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a8925b5d3f0b7186a7b4c28079a46cceb}{simplices}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00192\ }
-\DoxyCodeLine{00194\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a24b21e409d32ade91bfa638996f662c3}{dimension}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00195\ }
-\DoxyCodeLine{00197\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_abea459ade96857a9ffc8e2914f4245e8}{ambient\_dimension}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00198\ }
-\DoxyCodeLine{00199\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{void}\ add\_recursive\_impl(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ simplex);}
-\DoxyCodeLine{00201\ }
-\DoxyCodeLine{00202\ \ \ \ \ std::vector<std::unordered\_set<CubicalSimplex>>\ m\_simplices;}
-\DoxyCodeLine{00203\ \};}
-\DoxyCodeLine{00204\ }
-\DoxyCodeLine{00205\ \}\ \textcolor{comment}{//\ namespace\ complexes}}
-\DoxyCodeLine{00206\ }
-\DoxyCodeLine{00208\ \textcolor{keyword}{template}<>}
-\DoxyCodeLine{00209\ \textcolor{keyword}{struct\ }std::hash<complexes::BasicInterval>\ \{}
-\DoxyCodeLine{00211\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4_a56eb299c48ed90f24dcb1b2938cfcd8b}{operator()}}(\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{complexes::BasicInterval}}\ \textcolor{keyword}{const}\&\ i)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00212\ \};}
+\DoxyCodeLine{00168\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_af719c39a3cdb84fffd3680333bd014e0}{add\_recursive}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ simplex);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a735d830ba060f9cc25ee7ce70d7eaff6}{remove}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ simplex);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00187\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a9436031888683e97f8e65753f1209f26}{contains}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ \textcolor{keyword}{const}\&\ simplex)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a5a10a22c6a0ce7066dd17bc7327c60bc}{operator==}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{CubicalComplex}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00196\ \ \ \ \ std::vector<std::unordered\_set<CubicalSimplex>>\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a8925b5d3f0b7186a7b4c28079a46cceb}{simplices}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00199\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a24b21e409d32ade91bfa638996f662c3}{dimension}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00200\ }
+\DoxyCodeLine{00202\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_abea459ade96857a9ffc8e2914f4245e8}{ambient\_dimension}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00204\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a67e10eb63875d63b71098f7d6553fb29}{add\_recursive\_impl}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{CubicalSimplex}}\ simplex);}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00209\ \ \ \ \ std::vector<std::unordered\_set<CubicalSimplex>>\ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a6dc5b1eda1b01f825a4da3abb0e2614a}{m\_simplices}};}
+\DoxyCodeLine{00210\ \};}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \}\ \textcolor{comment}{//\ namespace\ complexes}}
 \DoxyCodeLine{00213\ }
 \DoxyCodeLine{00215\ \textcolor{keyword}{template}<>}
-\DoxyCodeLine{00216\ \textcolor{keyword}{struct\ }std::hash<complexes::CubicalSimplex>\ \{}
-\DoxyCodeLine{00218\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4_a1e4dc3144b87153c41541dce2a8d72f3}{operator()}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{complexes::CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00216\ \textcolor{keyword}{struct\ }std::hash<complexes::BasicInterval>\ \{}
+\DoxyCodeLine{00218\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4_a56eb299c48ed90f24dcb1b2938cfcd8b}{operator()}}(\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{complexes::BasicInterval}}\ \textcolor{keyword}{const}\&\ i)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00219\ \};}
 \DoxyCodeLine{00220\ }
-\DoxyCodeLine{00225\ \textcolor{keyword}{template}<>}
-\DoxyCodeLine{00226\ \textcolor{keyword}{struct\ }std::formatter<complexes::BasicInterval>:\ \textcolor{keyword}{public}\ std::formatter<int>\ \{}
-\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
-\DoxyCodeLine{00231\ \ \ \ \ FmtContext::iterator}
-\DoxyCodeLine{00232\ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4_a11edbddf1571229391aa6acf43179843}{format}}(\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{complexes::BasicInterval}}\ i,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}["{}});}
-\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ std::formatter<int>::format(i.\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left}}(),\ ctx);}
-\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!i.\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a80f1328d98bec511ebd621573b269611}{is\_trivial}}())\ \{}
-\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{},\ "{}});}
-\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ std::formatter<int>::format(i.\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a9e188203135d550351057ed061d4db60}{right}}(),\ ctx);}
-\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}]"{}});}
-\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ctx.out();}
-\DoxyCodeLine{00241\ \ \ \ \ \}}
-\DoxyCodeLine{00242\ \};}
-\DoxyCodeLine{00243\ }
-\DoxyCodeLine{00248\ \textcolor{keyword}{template}<>}
-\DoxyCodeLine{00249\ \textcolor{keyword}{struct\ }std::formatter<complexes::CubicalSimplex>:}
-\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keyword}{public}\ std::formatter<complexes::BasicInterval>\ \{}
-\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
-\DoxyCodeLine{00255\ \ \ \ \ FmtContext::iterator}
-\DoxyCodeLine{00256\ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4_aee7ed08491fe8087998ee5c373a0cc48}{format}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{complexes::CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
-\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
-\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ std::formatter<complexes::BasicInterval>::format(}
-\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ s.\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}}().front(),}
-\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ ctx}
-\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ );}
-\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ s.\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}}()\ |\ vs::drop(1))\ \{}
-\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}x"{}});}
-\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ std::formatter<complexes::BasicInterval>::format(i,\ ctx);}
-\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ctx.out();}
-\DoxyCodeLine{00267\ \ \ \ \ \}}
-\DoxyCodeLine{00268\ \};}
+\DoxyCodeLine{00222\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00223\ \textcolor{keyword}{struct\ }std::hash<complexes::CubicalSimplex>\ \{}
+\DoxyCodeLine{00225\ \ \ \ \ std::size\_t\ \doxymbox{\hyperlink{structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4_a1e4dc3144b87153c41541dce2a8d72f3}{operator()}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{complexes::CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00226\ \};}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00232\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00233\ \textcolor{keyword}{struct\ }std::formatter<complexes::BasicInterval>:\ \textcolor{keyword}{public}\ std::formatter<int>\ \{}
+\DoxyCodeLine{00237\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
+\DoxyCodeLine{00238\ \ \ \ \ FmtContext::iterator}
+\DoxyCodeLine{00239\ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4_a11edbddf1571229391aa6acf43179843}{format}}(\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{complexes::BasicInterval}}\ i,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}["{}});}
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ std::formatter<int>::format(i.\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left}}(),\ ctx);}
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!i.\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a80f1328d98bec511ebd621573b269611}{is\_trivial}}())\ \{}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{},\ "{}});}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \ \ \ \ std::formatter<int>::format(i.\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a9e188203135d550351057ed061d4db60}{right}}(),\ ctx);}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}]"{}});}
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ctx.out();}
+\DoxyCodeLine{00248\ \ \ \ \ \}}
+\DoxyCodeLine{00249\ \};}
+\DoxyCodeLine{00250\ }
+\DoxyCodeLine{00255\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00256\ \textcolor{keyword}{struct\ }std::formatter<complexes::CubicalSimplex>:}
+\DoxyCodeLine{00257\ \ \ \ \ \textcolor{keyword}{public}\ std::formatter<complexes::BasicInterval>\ \{}
+\DoxyCodeLine{00261\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
+\DoxyCodeLine{00262\ \ \ \ \ FmtContext::iterator}
+\DoxyCodeLine{00263\ \ \ \ \ \doxymbox{\hyperlink{structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4_aee7ed08491fe8087998ee5c373a0cc48}{format}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{complexes::CubicalSimplex}}\ \textcolor{keyword}{const}\&\ s,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ std::formatter<complexes::BasicInterval>::format(}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ s.\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}}().front(),}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ ctx}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ i\ :\ s.\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}}()\ |\ vs::drop(1))\ \{}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ std::format\_to(ctx.out(),\ \textcolor{stringliteral}{"{}x"{}});}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ std::formatter<complexes::BasicInterval>::format(i,\ ctx);}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ctx.out();}
+\DoxyCodeLine{00274\ \ \ \ \ \}}
+\DoxyCodeLine{00275\ \};}
 
 \end{DoxyCode}

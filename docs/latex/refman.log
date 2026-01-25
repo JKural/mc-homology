@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.6)  25 JAN 2026 05:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2026.1.6)  25 JAN 2026 06:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,12 +825,6 @@ LaTeX Warning: Label `doc-func-members' multiply defined.
 LaTeX Warning: Label `doc-func-members' multiply defined.
 
 
-LaTeX Warning: Label `doc-constructors' multiply defined.
-
-
-LaTeX Warning: Label `doc-func-members' multiply defined.
-
-
 LaTeX Warning: Label `doc-func-members' multiply defined.
 
 
@@ -838,21 +832,6 @@ LaTeX Warning: Label `doc-constructors' multiply defined.
 
 
 LaTeX Warning: Label `doc-func-members' multiply defined.
-
-
-LaTeX Warning: Label `doc-func-members' multiply defined.
-
-
-LaTeX Warning: Label `doc-func-members' multiply defined.
-
-
-LaTeX Warning: Label `doc-func-members' multiply defined.
-
-
-LaTeX Warning: Label `doc-func-members' multiply defined.
-
-
-LaTeX Warning: Label `doc-constructors' multiply defined.
 
 
 LaTeX Warning: Label `doc-func-members' multiply defined.
@@ -876,10 +855,37 @@ LaTeX Warning: Label `doc-func-members' multiply defined.
 LaTeX Warning: Label `doc-func-members' multiply defined.
 
 
+LaTeX Warning: Label `doc-constructors' multiply defined.
+
+
 LaTeX Warning: Label `doc-func-members' multiply defined.
 
 
 LaTeX Warning: Label `doc-constructors' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
+
+
+LaTeX Warning: Label `doc-constructors' multiply defined.
+
+
+LaTeX Warning: Label `doc-func-members' multiply defined.
 
 
 LaTeX Warning: Label `doc-func-members' multiply defined.
@@ -1159,75 +1165,73 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 Chapter 6.
 (./classcore_1_1AlgebraHomology.tex <./classcore_1_1AlgebraHomology__inherit__g
 raph.pdf>
-<classcore_1_1AlgebraHomology__inherit__graph.pdf, id=1994, 220.825pt x 475.777
+<classcore_1_1AlgebraHomology__inherit__graph.pdf, id=2064, 220.825pt x 475.777
 5pt>
 File: classcore_1_1AlgebraHomology__inherit__graph.pdf Graphic file (type pdf)
 <use classcore_1_1AlgebraHomology__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1AlgebraHomology__inherit__graph.pdf  used
- on input line 19.
+ on input line 18.
 (pdftex.def)             Requested size: 220.0pt x 474.01945pt.
 
 
 [15] <./classcore_1_1AlgebraHomology__coll__graph.pdf>
-<classcore_1_1AlgebraHomology__coll__graph.pdf, id=2015, 220.825pt x 475.7775pt
+<classcore_1_1AlgebraHomology__coll__graph.pdf, id=2085, 461.725pt x 764.8575pt
 >
 File: classcore_1_1AlgebraHomology__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1AlgebraHomology__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1AlgebraHomology__coll__graph.pdf  used on
- input line 29.
-(pdftex.def)             Requested size: 220.0pt x 474.01945pt.
+ input line 27.
+(pdftex.def)             Requested size: 332.03311pt x 550.0pt.
 
 
 [16]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 37.
+(Font)              scaled to size 8.09995pt on input line 35.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 37.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 35.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 37.
+(Font)              scaled to size 8.09995pt on input line 35.
 
-Overfull \hbox (29.89587pt too wide) in paragraph at lines 45--46
+
+[17]
+Overfull \hbox (29.89587pt too wide) in paragraph at lines 43--44
 [][] \T1/phv/m/n/10 (std::[]unique[]_[]ptr$\OML/cmm/m/it/10 <$ [] $>$ \T1/phv/m
 /n/10 printing[]_[]strategy=std::[]make[]_[]unique$\OML/cmm/m/it/10 <$ []
  []
 
-
-
-[17]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 48.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 46.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 48.
+(Font)              scaled to size 6.29996pt on input line 46.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
 \T1/pcr/m/n/8 std::[]vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std::[]size[]_[]t 
 $\OML/cmm/m/it/8 >$ []$<$ \T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$\T1/pcr/m/n/8 ::[]
 betti[]_[]numbers () const [inline],
  []
 
 
-Overfull \hbox (20.1593pt too wide) in paragraph at lines 85--87
+Overfull \hbox (20.1593pt too wide) in paragraph at lines 89--91
 \T1/pcr/m/n/8 std::[]vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std::[]vector$\OML
 /cmm/m/it/8 <$ \T1/pcr/m/n/8 std::[]string $\OML/cmm/m/it/8 >$ $>$ []$<$ \T1/pc
 r/m/n/8 T $\OML/cmm/m/it/8 >$\T1/pcr/m/n/8 ::[]torsion () const [inline],
  []
 
-) (./classcomplexes_1_1BasicInterval.tex <./classcomplexes_1_1BasicInterval__co
-ll__graph.pdf>
-<classcomplexes_1_1BasicInterval__coll__graph.pdf, id=2085, 203.76125pt x 268.0
-0125pt>
+) (./classcomplexes_1_1BasicInterval.tex
+
+[18] <./classcomplexes_1_1BasicInterval__coll__graph.pdf>
+<classcomplexes_1_1BasicInterval__coll__graph.pdf, id=2173, 203.76125pt x 286.0
+6876pt>
 File: classcomplexes_1_1BasicInterval__coll__graph.pdf Graphic file (type pdf)
 <use classcomplexes_1_1BasicInterval__coll__graph.pdf>
 Package pdftex.def Info: classcomplexes_1_1BasicInterval__coll__graph.pdf  used
- on input line 19.
-(pdftex.def)             Requested size: 203.0pt x 267.01094pt.
+ on input line 18.
+(pdftex.def)             Requested size: 203.0pt x 285.0117pt.
 
-
-[18]
 
 [19]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 65.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 73.
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1236,9 +1240,9 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 75.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 83.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 75.
+(Font)              scaled to size 8.99994pt on input line 83.
 > Step: build the whole table.
 > Step: init table outer spec.
 > Step: parse table options.
@@ -1248,20 +1252,21 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./classalgebra_1_1ChainComplex.tex <./classalgebra_1_1ChainComplex__coll__gr
-aph.pdf>
-<classalgebra_1_1ChainComplex__coll__graph.pdf, id=2163, 238.8925pt x 248.93pt>
+) (./classalgebra_1_1ChainComplex.tex
 
+[20] <./classalgebra_1_1ChainComplex__coll__graph.pdf>
+<classalgebra_1_1ChainComplex__coll__graph.pdf, id=2240, 314.17375pt x 628.3475
+pt>
 File: classalgebra_1_1ChainComplex__coll__graph.pdf Graphic file (type pdf)
 <use classalgebra_1_1ChainComplex__coll__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1ChainComplex__coll__graph.pdf  used on
- input line 19.
-(pdftex.def)             Requested size: 238.0pt x 247.99878pt.
+ input line 18.
+(pdftex.def)             Requested size: 275.0116pt x 550.0pt.
 
 
-[20]
+[21]
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 36.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 35.
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1279,23 +1284,7 @@ LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 61.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
+(Font)              scaled to size 7.19995pt on input line 66.
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1314,7 +1303,23 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 > Step: build the whole table.
 
 
-[21]
+[22]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1333,68 +1338,107 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 > Step: build the whole table.
 ) (./classcore_1_1CommandlineOptions.tex <./classcore_1_1CommandlineOptions__in
 herit__graph.pdf>
-<classcore_1_1CommandlineOptions__inherit__graph.pdf, id=2245, 214.8025pt x 490
-.83376pt>
+<classcore_1_1CommandlineOptions__inherit__graph.pdf, id=2331, 218.8175pt x 601
+.24625pt>
 File: classcore_1_1CommandlineOptions__inherit__graph.pdf Graphic file (type pd
 f)
 <use classcore_1_1CommandlineOptions__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1CommandlineOptions__inherit__graph.pdf  u
-sed on input line 19.
-(pdftex.def)             Requested size: 214.0pt x 489.0051pt.
+sed on input line 18.
+(pdftex.def)             Requested size: 200.18599pt x 550.0pt.
 
 
-[22] <./classcore_1_1CommandlineOptions__coll__graph.pdf>
-<classcore_1_1CommandlineOptions__coll__graph.pdf, id=2268, 214.8025pt x 490.83
-376pt>
+[23] <./classcore_1_1CommandlineOptions__coll__graph.pdf>
+<classcore_1_1CommandlineOptions__coll__graph.pdf, id=2353, 371.3875pt x 834.11
+626pt>
 File: classcore_1_1CommandlineOptions__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1CommandlineOptions__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1CommandlineOptions__coll__graph.pdf  used
- on input line 29.
-(pdftex.def)             Requested size: 214.0pt x 489.0051pt.
+ on input line 27.
+(pdftex.def)             Requested size: 244.8955pt x 550.0pt.
 
-
-[23]
 
 [24]
 
-[25]) (./classcore_1_1Complex.tex <./classcore_1_1Complex__inherit__graph.pdf>
-<classcore_1_1Complex__inherit__graph.pdf, id=2350, 200.75pt x 399.4925pt>
+[25]
+
+[26]) (./classcore_1_1Complex.tex <./classcore_1_1Complex__inherit__graph.pdf>
+<classcore_1_1Complex__inherit__graph.pdf, id=2444, 200.75pt x 399.4925pt>
 File: classcore_1_1Complex__inherit__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Complex__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1Complex__inherit__graph.pdf  used on inpu
-t line 19.
+t line 18.
 (pdftex.def)             Requested size: 200.0pt x 398.02853pt.
 
 
-[26] <./classcore_1_1Complex__coll__graph.pdf>
-<classcore_1_1Complex__coll__graph.pdf, id=2373, 166.6225pt x 212.795pt>
+[27] <./classcore_1_1Complex__coll__graph.pdf>
+<classcore_1_1Complex__coll__graph.pdf, id=2470, 166.6225pt x 212.795pt>
 File: classcore_1_1Complex__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Complex__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1Complex__coll__graph.pdf  used on input l
-ine 29.
+ine 27.
 (pdftex.def)             Requested size: 166.0pt x 212.01518pt.
 
 
-[27]
+[28]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 42.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 40.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 42.
+(Font)              scaled to size 8.09995pt on input line 40.
 
 
-[28]) (./classcomplexes_1_1CubicalComplex.tex <./classcomplexes_1_1CubicalCompl
-ex__coll__graph.pdf>
-<classcomplexes_1_1CubicalComplex__coll__graph.pdf, id=2440, 215.80624pt x 286.
-06876pt>
+[29]) (./structcore_1_1Polymorphic_1_1Concept.tex <./structcore_1_1Polymorphic_
+1_1Concept__inherit__graph.pdf>
+<structcore_1_1Polymorphic_1_1Concept__inherit__graph.pdf, id=2535, 186.6975pt 
+x 373.395pt>
+File: structcore_1_1Polymorphic_1_1Concept__inherit__graph.pdf Graphic file (ty
+pe pdf)
+<use structcore_1_1Polymorphic_1_1Concept__inherit__graph.pdf>
+Package pdftex.def Info: structcore_1_1Polymorphic_1_1Concept__inherit__graph.p
+df  used on input line 14.
+(pdftex.def)             Requested size: 186.0pt x 372.01527pt.
+
+
+[30] <./structcore_1_1Polymorphic_1_1Concept__coll__graph.pdf>
+<structcore_1_1Polymorphic_1_1Concept__coll__graph.pdf, id=2551, 178.6675pt x 2
+08.78pt>
+File: structcore_1_1Polymorphic_1_1Concept__coll__graph.pdf Graphic file (type 
+pdf)
+<use structcore_1_1Polymorphic_1_1Concept__coll__graph.pdf>
+Package pdftex.def Info: structcore_1_1Polymorphic_1_1Concept__coll__graph.pdf 
+ used on input line 23.
+(pdftex.def)             Requested size: 178.0pt x 208.0117pt.
+
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 52--54
+\T1/pcr/m/n/8 virtual constexpr std::[]unique[]_[]ptr$\OML/cmm/m/it/8 <$ [] $>$
+ []$<$ \T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$\T1/pcr/m/n/8 ::[][]Concept::[]clone 
+() const
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
+\T1/pcr/m/n/8 virtual constexpr T $\OMS/cmsy/m/n/8 ^^C$ []$\OML/cmm/m/it/8 <$ \
+T1/pcr/m/n/8 T $\OML/cmm/m/it/8 >$\T1/pcr/m/n/8 ::[][]Concept::[]get[]_[]addres
+s () [constexpr], [pure
+ []
+
+) (./classcomplexes_1_1CubicalComplex.tex <./classcomplexes_1_1CubicalComplex__
+coll__graph.pdf>
+<classcomplexes_1_1CubicalComplex__coll__graph.pdf, id=2590, 596.2275pt x 1369.
+115pt>
 File: classcomplexes_1_1CubicalComplex__coll__graph.pdf Graphic file (type pdf)
 
 <use classcomplexes_1_1CubicalComplex__coll__graph.pdf>
 Package pdftex.def Info: classcomplexes_1_1CubicalComplex__coll__graph.pdf  use
-d on input line 19.
-(pdftex.def)             Requested size: 215.0pt x 285.00734pt.
+d on input line 18.
+(pdftex.def)             Requested size: 239.52391pt x 550.0pt.
 
 
-[29]
+[32]
+
+[33]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1411,50 +1455,13 @@ d on input line 19.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
+
+
+[34]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 88.
+(Font)              scaled to size 8.99994pt on input line 99.
 
-Underfull \hbox (badness 10000) detected at line 88
-[][][]
- []
-
-
-
-[30]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-Underfull \hbox (badness 10000) detected at line 121
+Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
 
@@ -1474,56 +1481,97 @@ Underfull \hbox (badness 10000) detected at line 121
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
 
-Underfull \hbox (badness 10000) detected at line 141
+Underfull \hbox (badness 10000) detected at line 132
+[][][]
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+
+[35]
+Underfull \hbox (badness 10000) detected at line 152
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 \T1/pcr/m/n/8 std::[]vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std::[]unordered[]
 _[]set$\OML/cmm/m/it/8 <$ [] $>$ $>$ \T1/pcr/m/n/8 const & complexes::[][]Cubic
 al[]Complex::[]
  []
 
-) (./classcore_1_1CubicalComplex3D.tex
-
-[31] <./classcore_1_1CubicalComplex3D__inherit__graph.pdf>
-<classcore_1_1CubicalComplex3D__inherit__graph.pdf, id=2529, 200.75pt x 399.492
+) (./classcore_1_1CubicalComplex3D.tex <./classcore_1_1CubicalComplex3D__inheri
+t__graph.pdf>
+<classcore_1_1CubicalComplex3D__inherit__graph.pdf, id=2700, 200.75pt x 399.492
 5pt>
 File: classcore_1_1CubicalComplex3D__inherit__graph.pdf Graphic file (type pdf)
 
 <use classcore_1_1CubicalComplex3D__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1CubicalComplex3D__inherit__graph.pdf  use
-d on input line 19.
+d on input line 18.
 (pdftex.def)             Requested size: 200.0pt x 398.02853pt.
- <./classcore_1_1CubicalComplex3D__coll__graph.pdf>
-<classcore_1_1CubicalComplex3D__coll__graph.pdf, id=2545, 200.75pt x 399.4925pt
->
+
+
+[36] <./classcore_1_1CubicalComplex3D__coll__graph.pdf>
+<classcore_1_1CubicalComplex3D__coll__graph.pdf, id=2720, 681.54625pt x 1576.89
+125pt>
 File: classcore_1_1CubicalComplex3D__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1CubicalComplex3D__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1CubicalComplex3D__coll__graph.pdf  used o
-n input line 29.
-(pdftex.def)             Requested size: 200.0pt x 398.02853pt.
+n input line 27.
+(pdftex.def)             Requested size: 237.7128pt x 550.0pt.
 
 
-[32]
+[37]
 
-[33]) (./classcomplexes_1_1CubicalSimplex.tex <./classcomplexes_1_1CubicalSimpl
-ex__coll__graph.pdf>
-<classcomplexes_1_1CubicalSimplex__coll__graph.pdf, id=2610, 210.7875pt x 304.1
-3625pt>
+[38]) (./classcomplexes_1_1CubicalSimplex.tex
+
+[39] <./classcomplexes_1_1CubicalSimplex__coll__graph.pdf>
+<classcomplexes_1_1CubicalSimplex__coll__graph.pdf, id=2795, 365.365pt x 830.10
+126pt>
 File: classcomplexes_1_1CubicalSimplex__coll__graph.pdf Graphic file (type pdf)
 
 <use classcomplexes_1_1CubicalSimplex__coll__graph.pdf>
 Package pdftex.def Info: classcomplexes_1_1CubicalSimplex__coll__graph.pdf  use
-d on input line 19.
-(pdftex.def)             Requested size: 210.0pt x 303.0078pt.
+d on input line 18.
+(pdftex.def)             Requested size: 242.08939pt x 550.0pt.
 
 
-[34]
+[40]
 
-[35]
+[41]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1540,25 +1588,9 @@ d on input line 19.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
 
 
-[36]
+[42]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1593,217 +1625,238 @@ d on input line 19.
 > Step: build the whole table.
 
 
-[37]
-Underfull \hbox (badness 10000) detected at line 171
+[43]
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+Underfull \hbox (badness 10000) detected at line 185
 [][][]
  []
 
 ) (./structalgebra_1_1DivResult.tex <./structalgebra_1_1DivResult__coll__graph.
 pdf>
-<structalgebra_1_1DivResult__coll__graph.pdf, id=2725, 198.7425pt x 273.02pt>
+<structalgebra_1_1DivResult__coll__graph.pdf, id=2919, 198.7425pt x 273.02pt>
 File: structalgebra_1_1DivResult__coll__graph.pdf Graphic file (type pdf)
 <use structalgebra_1_1DivResult__coll__graph.pdf>
 Package pdftex.def Info: structalgebra_1_1DivResult__coll__graph.pdf  used on i
-nput line 19.
+nput line 18.
 (pdftex.def)             Requested size: 198.0pt x 272.007pt.
 
 
-[38]) (./structalgebra_1_1ExtendedGCDResult.tex <./structalgebra_1_1ExtendedGCD
+[44]) (./structalgebra_1_1ExtendedGCDResult.tex <./structalgebra_1_1ExtendedGCD
 Result__coll__graph.pdf>
-<structalgebra_1_1ExtendedGCDResult__coll__graph.pdf, id=2751, 222.8325pt x 175
+<structalgebra_1_1ExtendedGCDResult__coll__graph.pdf, id=2943, 222.8325pt x 175
 .65625pt>
 File: structalgebra_1_1ExtendedGCDResult__coll__graph.pdf Graphic file (type pd
 f)
 <use structalgebra_1_1ExtendedGCDResult__coll__graph.pdf>
 Package pdftex.def Info: structalgebra_1_1ExtendedGCDResult__coll__graph.pdf  u
-sed on input line 19.
+sed on input line 18.
 (pdftex.def)             Requested size: 222.0pt x 175.0018pt.
-)
-(./structstd_1_1formatter_3_01algebra_1_1Integer_01_4.tex
 
-[39] <./structstd_1_1formatter_3_01algebra_1_1Integer_01_4__inherit__graph.pdf>
-<structstd_1_1formatter_3_01algebra_1_1Integer_01_4__inherit__graph.pdf, id=277
-9, 198.7425pt x 248.93pt>
+
+[45]) (./structstd_1_1formatter_3_01algebra_1_1Integer_01_4.tex <./structstd_1_
+1formatter_3_01algebra_1_1Integer_01_4__inherit__graph.pdf>
+<structstd_1_1formatter_3_01algebra_1_1Integer_01_4__inherit__graph.pdf, id=297
+1, 198.7425pt x 248.93pt>
 File: structstd_1_1formatter_3_01algebra_1_1Integer_01_4__inherit__graph.pdf Gr
 aphic file (type pdf)
 <use structstd_1_1formatter_3_01algebra_1_1Integer_01_4__inherit__graph.pdf>
 Package pdftex.def Info: structstd_1_1formatter_3_01algebra_1_1Integer_01_4__in
-herit__graph.pdf  used on input line 19.
+herit__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 198.0pt x 248.00638pt.
- <./structstd_1_1formatter_3_01algebra_1_1Integer_01_4__coll__graph.pdf>
-<structstd_1_1formatter_3_01algebra_1_1Integer_01_4__coll__graph.pdf, id=2794, 
+
+
+[46] <./structstd_1_1formatter_3_01algebra_1_1Integer_01_4__coll__graph.pdf>
+<structstd_1_1formatter_3_01algebra_1_1Integer_01_4__coll__graph.pdf, id=2996, 
 198.7425pt x 248.93pt>
 File: structstd_1_1formatter_3_01algebra_1_1Integer_01_4__coll__graph.pdf Graph
 ic file (type pdf)
 <use structstd_1_1formatter_3_01algebra_1_1Integer_01_4__coll__graph.pdf>
 Package pdftex.def Info: structstd_1_1formatter_3_01algebra_1_1Integer_01_4__co
-ll__graph.pdf  used on input line 29.
+ll__graph.pdf  used on input line 27.
 (pdftex.def)             Requested size: 198.0pt x 248.00638pt.
 
 
-[40]) (./structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4.tex <./st
+[47]) (./structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4.tex <./st
 ructstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4__coll__graph.pdf>
 <structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4__coll__graph.pdf,
- id=2827, 198.7425pt x 171.64125pt>
+ id=3028, 198.7425pt x 190.7125pt>
 File: structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4__coll__graph
 .pdf Graphic file (type pdf)
 <use structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4__coll__graph.
 pdf>
 Package pdftex.def Info: structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_
-4_01_4__coll__graph.pdf  used on input line 19.
-(pdftex.def)             Requested size: 198.0pt x 171.00438pt.
+4_01_4__coll__graph.pdf  used on input line 18.
+(pdftex.def)             Requested size: 198.0pt x 190.00487pt.
 
 
-[41]) (./structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4.tex
+[48]
 
-[42] <./structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__inherit__g
-raph.pdf>
+[49]) (./structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4.tex <./str
+uctstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__inherit__graph.pdf>
 <structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__inherit__graph.pd
-f, id=2871, 198.7425pt x 248.93pt>
+f, id=3082, 198.7425pt x 248.93pt>
 File: structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__inherit__gra
 ph.pdf Graphic file (type pdf)
 <use structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__inherit__grap
 h.pdf>
 Package pdftex.def Info: structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4
-_01_4__inherit__graph.pdf  used on input line 19.
+_01_4__inherit__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 198.0pt x 248.00638pt.
  <./structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__coll__graph.pd
 f>
 <structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__coll__graph.pdf, 
-id=2886, 198.7425pt x 248.93pt>
+id=3098, 198.7425pt x 248.93pt>
 File: structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__coll__graph.
 pdf Graphic file (type pdf)
 <use structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4__coll__graph.p
 df>
 Package pdftex.def Info: structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4
-_01_4__coll__graph.pdf  used on input line 29.
+_01_4__coll__graph.pdf  used on input line 27.
 (pdftex.def)             Requested size: 198.0pt x 248.00638pt.
 
 
-[43]) (./structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4.tex <./stru
+[50]) (./structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4.tex <./stru
 ctstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__inherit__graph.pdf>
 <structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__inherit__graph.pdf
-, id=2912, 212.795pt x 358.33875pt>
+, id=3123, 212.795pt x 358.33875pt>
 File: structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__inherit__grap
 h.pdf Graphic file (type pdf)
 <use structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__inherit__graph
 .pdf>
 Package pdftex.def Info: structstd_1_1formatter_3_01complexes_1_1BasicInterval_
-01_4__inherit__graph.pdf  used on input line 19.
+01_4__inherit__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 212.0pt x 357.02013pt.
- <./structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf
->
+
+
+[51] <./structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__coll__graph
+.pdf>
 <structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf, i
-d=2927, 212.795pt x 248.93pt>
+d=3148, 212.795pt x 248.93pt>
 File: structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__coll__graph.p
 df Graphic file (type pdf)
 <use structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4__coll__graph.pd
 f>
 Package pdftex.def Info: structstd_1_1formatter_3_01complexes_1_1BasicInterval_
-01_4__coll__graph.pdf  used on input line 29.
+01_4__coll__graph.pdf  used on input line 27.
 (pdftex.def)             Requested size: 212.0pt x 248.01398pt.
 
 
-[44]) (./structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4.tex
-
-[45] <./structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__inherit__g
-raph.pdf>
+[52]) (./structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4.tex <./str
+uctstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__inherit__graph.pdf>
 <structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__inherit__graph.pd
-f, id=2972, 212.795pt x 358.33875pt>
+f, id=3180, 212.795pt x 358.33875pt>
 File: structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__inherit__gra
 ph.pdf Graphic file (type pdf)
 <use structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__inherit__grap
 h.pdf>
 Package pdftex.def Info: structstd_1_1formatter_3_01complexes_1_1CubicalSimplex
-_01_4__inherit__graph.pdf  used on input line 19.
+_01_4__inherit__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 212.0pt x 357.02013pt.
- <./structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pd
-f>
+
+
+[53] <./structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__coll__grap
+h.pdf>
 <structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pdf, 
-id=2987, 212.795pt x 358.33875pt>
+id=3202, 212.795pt x 358.33875pt>
 File: structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.
 pdf Graphic file (type pdf)
 <use structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.p
 df>
 Package pdftex.def Info: structstd_1_1formatter_3_01complexes_1_1CubicalSimplex
-_01_4__coll__graph.pdf  used on input line 29.
+_01_4__coll__graph.pdf  used on input line 27.
 (pdftex.def)             Requested size: 212.0pt x 357.02013pt.
 
 
-[46]
+[54]
 
-[47]) (./structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4.tex <./structstd
+[55]) (./structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4.tex <./structstd
 _1_1hash_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf>
-<structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf, id=303
-4, 187.70125pt x 153.57375pt>
+<structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf, id=325
+0, 187.70125pt x 153.57375pt>
 File: structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf Gr
 aphic file (type pdf)
 <use structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4__coll__graph.pdf>
 Package pdftex.def Info: structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4_
-_coll__graph.pdf  used on input line 19.
+_coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 187.0pt x 153.0086pt.
 )
 (./structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4.tex <./structstd_1_1h
 ash_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pdf>
-<structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pdf, id=30
-46, 187.70125pt x 153.57375pt>
+<structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pdf, id=32
+62, 187.70125pt x 153.57375pt>
 File: structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pdf G
 raphic file (type pdf)
 <use structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4__coll__graph.pdf>
 Package pdftex.def Info: structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4
-__coll__graph.pdf  used on input line 19.
+__coll__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 187.0pt x 153.0086pt.
 
 
-[48]) (./structalgebra_1_1Homology.tex <./structalgebra_1_1Homology__coll__grap
+[56]) (./structalgebra_1_1Homology.tex <./structalgebra_1_1Homology__coll__grap
 h.pdf>
-<structalgebra_1_1Homology__coll__graph.pdf, id=3069, 398.48875pt x 499.8675pt>
+<structalgebra_1_1Homology__coll__graph.pdf, id=3284, 398.48875pt x 499.8675pt>
 
 File: structalgebra_1_1Homology__coll__graph.pdf Graphic file (type pdf)
 <use structalgebra_1_1Homology__coll__graph.pdf>
 Package pdftex.def Info: structalgebra_1_1Homology__coll__graph.pdf  used on in
-put line 19.
+put line 18.
 (pdftex.def)             Requested size: 350.0pt x 439.061pt.
 
 
-[49]
+[57]
 
-[50]) (./classcore_1_1Homology.tex <./classcore_1_1Homology__inherit__graph.pdf
+[58]) (./classcore_1_1Homology.tex <./classcore_1_1Homology__inherit__graph.pdf
 >
-<classcore_1_1Homology__inherit__graph.pdf, id=3111, 220.825pt x 475.7775pt>
+<classcore_1_1Homology__inherit__graph.pdf, id=3327, 220.825pt x 475.7775pt>
 File: classcore_1_1Homology__inherit__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Homology__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1Homology__inherit__graph.pdf  used on inp
-ut line 19.
+ut line 18.
 (pdftex.def)             Requested size: 220.0pt x 474.01945pt.
 
 
-[51] <./classcore_1_1Homology__coll__graph.pdf>
-<classcore_1_1Homology__coll__graph.pdf, id=3131, 177.66376pt x 344.28625pt>
+[59] <./classcore_1_1Homology__coll__graph.pdf>
+<classcore_1_1Homology__coll__graph.pdf, id=3347, 455.7025pt x 632.3625pt>
 File: classcore_1_1Homology__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Homology__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1Homology__coll__graph.pdf  used on input 
-line 29.
-(pdftex.def)             Requested size: 177.0pt x 343.00882pt.
+line 27.
+(pdftex.def)             Requested size: 350.0pt x 485.6952pt.
 
 
-[52]
-Overfull \hbox (29.89587pt too wide) in paragraph at lines 35--36
+[60]
+Overfull \hbox (29.89587pt too wide) in paragraph at lines 33--34
 [][] \T1/phv/m/n/10 (std::[]unique[]_[]ptr$\OML/cmm/m/it/10 <$ [] $>$ \T1/phv/m
 /n/10 printing[]_[]strategy=std::[]make[]_[]unique$\OML/cmm/m/it/10 <$ []
  []
 
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+[61]
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 68.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 |  \T1/pcr/m/n/8 std::[]unique[]_[]ptr$\OML/cmm/m/it/8 <$ [] $>$ \T1/pcr/m/sl/8
  printing[]_[]strategy \T1/pcr/m/n/8 = std:[]:[]make[]_[]
  []
 
-
-
-[53]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1837,35 +1890,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 \T1/pcr/m/n/8 virtual std::[]vector$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std::[]vec
 tor$\OML/cmm/m/it/8 <$ \T1/pcr/m/n/8 std::[]string $\OML/cmm/m/it/8 >$ $>$ \T1/
 pcr/m/n/8 core::[][]Homology::[]torsion () const [pure
  []
 
-
-
-[54]) (./classcore_1_1HomologyLatexPrint.tex <./classcore_1_1HomologyLatexPrint
-__inherit__graph.pdf>
-<classcore_1_1HomologyLatexPrint__inherit__graph.pdf, id=3202, 238.8925pt x 271
-.0125pt>
+) (./classcore_1_1HomologyLatexPrint.tex <./classcore_1_1HomologyLatexPrint__in
+herit__graph.pdf>
+<classcore_1_1HomologyLatexPrint__inherit__graph.pdf, id=3419, 238.8925pt x 289
+.08pt>
 File: classcore_1_1HomologyLatexPrint__inherit__graph.pdf Graphic file (type pd
 f)
 <use classcore_1_1HomologyLatexPrint__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1HomologyLatexPrint__inherit__graph.pdf  u
-sed on input line 19.
-(pdftex.def)             Requested size: 238.0pt x 269.99867pt.
- <./classcore_1_1HomologyLatexPrint__coll__graph.pdf>
-<classcore_1_1HomologyLatexPrint__coll__graph.pdf, id=3217, 238.8925pt x 271.01
-25pt>
+sed on input line 18.
+(pdftex.def)             Requested size: 238.0pt x 287.99858pt.
+
+
+[63] <./classcore_1_1HomologyLatexPrint__coll__graph.pdf>
+<classcore_1_1HomologyLatexPrint__coll__graph.pdf, id=3441, 343.2825pt x 420.57
+124pt>
 File: classcore_1_1HomologyLatexPrint__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1HomologyLatexPrint__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1HomologyLatexPrint__coll__graph.pdf  used
- on input line 29.
-(pdftex.def)             Requested size: 238.0pt x 269.99867pt.
+ on input line 27.
+(pdftex.def)             Requested size: 342.0pt x 418.99796pt.
 
 
-[55]
+[64]
+
+[65]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -1882,115 +1939,114 @@ Package pdftex.def Info: classcore_1_1HomologyLatexPrint__coll__graph.pdf  used
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-
-
-[56]
-
-[57]) (./classcore_1_1HomologyPrintingStrategy.tex <./classcore_1_1HomologyPrin
-tingStrategy__inherit__graph.pdf>
-<classcore_1_1HomologyPrintingStrategy__inherit__graph.pdf, id=3269, 353.32pt x
- 271.0125pt>
+) (./classcore_1_1HomologyPrintingStrategy.tex <./classcore_1_1HomologyPrinting
+Strategy__inherit__graph.pdf>
+<classcore_1_1HomologyPrintingStrategy__inherit__graph.pdf, id=3490, 353.32pt x
+ 289.08pt>
 File: classcore_1_1HomologyPrintingStrategy__inherit__graph.pdf Graphic file (t
 ype pdf)
 <use classcore_1_1HomologyPrintingStrategy__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1HomologyPrintingStrategy__inherit__graph.
-pdf  used on input line 19.
-(pdftex.def)             Requested size: 350.0pt x 268.4686pt.
- <./classcore_1_1HomologyPrintingStrategy__coll__graph.pdf>
-<classcore_1_1HomologyPrintingStrategy__coll__graph.pdf, id=3284, 238.8925pt x 
+pdf  used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 286.36652pt.
+
+
+[66] <./classcore_1_1HomologyPrintingStrategy__coll__graph.pdf>
+<classcore_1_1HomologyPrintingStrategy__coll__graph.pdf, id=3513, 238.8925pt x 
 157.58875pt>
 File: classcore_1_1HomologyPrintingStrategy__coll__graph.pdf Graphic file (type
  pdf)
 <use classcore_1_1HomologyPrintingStrategy__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1HomologyPrintingStrategy__coll__graph.pdf
-  used on input line 29.
+  used on input line 27.
 (pdftex.def)             Requested size: 238.0pt x 156.9992pt.
 
 
-[58]) (./classcore_1_1HomologyRawPrint.tex <./classcore_1_1HomologyRawPrint__in
+[67]) (./classcore_1_1HomologyRawPrint.tex <./classcore_1_1HomologyRawPrint__in
 herit__graph.pdf>
-<classcore_1_1HomologyRawPrint__inherit__graph.pdf, id=3319, 238.8925pt x 252.9
+<classcore_1_1HomologyRawPrint__inherit__graph.pdf, id=3549, 238.8925pt x 252.9
 45pt>
 File: classcore_1_1HomologyRawPrint__inherit__graph.pdf Graphic file (type pdf)
 
 <use classcore_1_1HomologyRawPrint__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1HomologyRawPrint__inherit__graph.pdf  use
-d on input line 19.
+d on input line 18.
 (pdftex.def)             Requested size: 238.0pt x 251.99876pt.
-
-
-[59] <./classcore_1_1HomologyRawPrint__coll__graph.pdf>
-<classcore_1_1HomologyRawPrint__coll__graph.pdf, id=3345, 238.8925pt x 252.945p
+ <./classcore_1_1HomologyRawPrint__coll__graph.pdf>
+<classcore_1_1HomologyRawPrint__coll__graph.pdf, id=3564, 238.8925pt x 252.945p
 t>
 File: classcore_1_1HomologyRawPrint__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1HomologyRawPrint__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1HomologyRawPrint__coll__graph.pdf  used o
-n input line 29.
+n input line 27.
 (pdftex.def)             Requested size: 238.0pt x 251.99876pt.
 
 
-[60]) (./classalgebra_1_1Integer.tex <./classalgebra_1_1Integer__coll__graph.pd
-f>
-<classalgebra_1_1Integer__coll__graph.pdf, id=3379, 191.71625pt x 359.3425pt>
+[68]) (./classalgebra_1_1Integer.tex
+
+[69] <./classalgebra_1_1Integer__coll__graph.pdf>
+<classalgebra_1_1Integer__coll__graph.pdf, id=3610, 210.7875pt x 359.3425pt>
 File: classalgebra_1_1Integer__coll__graph.pdf Graphic file (type pdf)
 <use classalgebra_1_1Integer__coll__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1Integer__coll__graph.pdf  used on inpu
-t line 19.
-(pdftex.def)             Requested size: 191.0pt x 358.02017pt.
+t line 18.
+(pdftex.def)             Requested size: 210.0pt x 358.0092pt.
 
 
-[61]
-
-[62]) (./classcore_1_1LatexWrapper.tex <./classcore_1_1LatexWrapper__inherit__g
+[70]) (./classcore_1_1LatexWrapper.tex <./classcore_1_1LatexWrapper__inherit__g
 raph.pdf>
-<classcore_1_1LatexWrapper__inherit__graph.pdf, id=3447, 180.675pt x 271.0125pt
->
+<classcore_1_1LatexWrapper__inherit__graph.pdf, id=3662, 180.675pt x 289.08pt>
 File: classcore_1_1LatexWrapper__inherit__graph.pdf Graphic file (type pdf)
 <use classcore_1_1LatexWrapper__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1LatexWrapper__inherit__graph.pdf  used on
- input line 19.
-(pdftex.def)             Requested size: 180.0pt x 270.0028pt.
+ input line 18.
+(pdftex.def)             Requested size: 180.0pt x 288.00299pt.
 
 
-[63] <./classcore_1_1LatexWrapper__coll__graph.pdf>
-<classcore_1_1LatexWrapper__coll__graph.pdf, id=3474, 180.675pt x 271.0125pt>
+[71] <./classcore_1_1LatexWrapper__coll__graph.pdf>
+<classcore_1_1LatexWrapper__coll__graph.pdf, id=3691, 403.5075pt x 537.00626pt>
+
 File: classcore_1_1LatexWrapper__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1LatexWrapper__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1LatexWrapper__coll__graph.pdf  used on in
-put line 29.
-(pdftex.def)             Requested size: 180.0pt x 270.0028pt.
+put line 27.
+(pdftex.def)             Requested size: 350.0pt x 465.79869pt.
 
 
-[64]) (./classcore_1_1Manager.tex <./classcore_1_1Manager__coll__graph.pdf>
-<classcore_1_1Manager__coll__graph.pdf, id=3508, 157.58875pt x 194.7275pt>
+[72]
+
+[73]) (./classcore_1_1Manager.tex <./classcore_1_1Manager__coll__graph.pdf>
+<classcore_1_1Manager__coll__graph.pdf, id=3734, 520.94624pt x 701.62125pt>
 File: classcore_1_1Manager__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Manager__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1Manager__coll__graph.pdf  used on input l
-ine 19.
-(pdftex.def)             Requested size: 157.0pt x 194.01091pt.
+ine 18.
+(pdftex.def)             Requested size: 350.0pt x 471.38991pt.
 
 
-[65]
-Underfull \hbox (badness 10000) detected at line 54
+[74]
+
+[75]
+Underfull \hbox (badness 10000) detected at line 62
 [][][]
  []
 
 ) (./classalgebra_1_1Matrix.tex <./classalgebra_1_1Matrix__coll__graph.pdf>
-<classalgebra_1_1Matrix__coll__graph.pdf, id=3546, 180.675pt x 377.41pt>
+<classalgebra_1_1Matrix__coll__graph.pdf, id=3788, 198.7425pt x 432.61626pt>
 File: classalgebra_1_1Matrix__coll__graph.pdf Graphic file (type pdf)
 <use classalgebra_1_1Matrix__coll__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1Matrix__coll__graph.pdf  used on input
- line 19.
-(pdftex.def)             Requested size: 180.0pt x 376.00392pt.
+ line 18.
+(pdftex.def)             Requested size: 198.0pt x 431.01111pt.
 
 
-[66]
+[76]
 
-[67]
+[77]
 
-[68]
+[78]
 
-[69]
+[79]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2041,7 +2097,9 @@ Package pdftex.def Info: classalgebra_1_1Matrix__coll__graph.pdf  used on input
 > Step: build the whole table.
 
 
-[70]
+[80]
+
+[81]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2076,40 +2134,40 @@ Package pdftex.def Info: classalgebra_1_1Matrix__coll__graph.pdf  used on input
 > Step: build the whole table.
 ) (./structcore_1_1MinecraftCoordinates.tex <./structcore_1_1MinecraftCoordinat
 es__coll__graph.pdf>
-<structcore_1_1MinecraftCoordinates__coll__graph.pdf, id=3805, 214.8025pt x 175
+<structcore_1_1MinecraftCoordinates__coll__graph.pdf, id=4067, 214.8025pt x 175
 .65625pt>
 File: structcore_1_1MinecraftCoordinates__coll__graph.pdf Graphic file (type pd
 f)
 <use structcore_1_1MinecraftCoordinates__coll__graph.pdf>
 Package pdftex.def Info: structcore_1_1MinecraftCoordinates__coll__graph.pdf  u
-sed on input line 19.
+sed on input line 18.
 (pdftex.def)             Requested size: 214.0pt x 175.0018pt.
 
 
-[71]) (./classcore_1_1MinecraftSavefileParser.tex <./classcore_1_1MinecraftSave
+[82]) (./classcore_1_1MinecraftSavefileParser.tex <./classcore_1_1MinecraftSave
 fileParser__inherit__graph.pdf>
-<classcore_1_1MinecraftSavefileParser__inherit__graph.pdf, id=3829, 225.84375pt
+<classcore_1_1MinecraftSavefileParser__inherit__graph.pdf, id=4090, 225.84375pt
  x 266.9975pt>
 File: classcore_1_1MinecraftSavefileParser__inherit__graph.pdf Graphic file (ty
 pe pdf)
 <use classcore_1_1MinecraftSavefileParser__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1MinecraftSavefileParser__inherit__graph.p
-df  used on input line 19.
+df  used on input line 18.
 (pdftex.def)             Requested size: 225.0pt x 266.01497pt.
 
 
-[72] <./classcore_1_1MinecraftSavefileParser__coll__graph.pdf>
-<classcore_1_1MinecraftSavefileParser__coll__graph.pdf, id=3854, 225.84375pt x 
+[83] <./classcore_1_1MinecraftSavefileParser__coll__graph.pdf>
+<classcore_1_1MinecraftSavefileParser__coll__graph.pdf, id=4115, 225.84375pt x 
 157.58875pt>
 File: classcore_1_1MinecraftSavefileParser__coll__graph.pdf Graphic file (type 
 pdf)
 <use classcore_1_1MinecraftSavefileParser__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1MinecraftSavefileParser__coll__graph.pdf 
- used on input line 29.
+ used on input line 27.
 (pdftex.def)             Requested size: 225.0pt x 157.00883pt.
 
 
-[73]
+[84]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2129,29 +2187,29 @@ Package pdftex.def Info: classcore_1_1MinecraftSavefileParser__coll__graph.pdf
 ) (./classcore_1_1MinecraftSavefileParser__mcSavefileParsers.tex <./classcore_1
 _1MinecraftSavefileParser__mcSavefileParsers__inherit__graph.pdf>
 <classcore_1_1MinecraftSavefileParser__mcSavefileParsers__inherit__graph.pdf, i
-d=3898, 225.84375pt x 266.9975pt>
+d=4158, 225.84375pt x 266.9975pt>
 File: classcore_1_1MinecraftSavefileParser__mcSavefileParsers__inherit__graph.p
 df Graphic file (type pdf)
 <use classcore_1_1MinecraftSavefileParser__mcSavefileParsers__inherit__graph.pd
 f>
 Package pdftex.def Info: classcore_1_1MinecraftSavefileParser__mcSavefileParser
-s__inherit__graph.pdf  used on input line 19.
+s__inherit__graph.pdf  used on input line 18.
 (pdftex.def)             Requested size: 225.0pt x 266.01497pt.
 
 
-[74] <./classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph.pd
+[85] <./classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph.pd
 f>
-<classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph.pdf, id=3
-920, 225.84375pt x 266.9975pt>
+<classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph.pdf, id=4
+181, 225.84375pt x 266.9975pt>
 File: classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph.pdf 
 Graphic file (type pdf)
 <use classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1MinecraftSavefileParser__mcSavefileParser
-s__coll__graph.pdf  used on input line 29.
+s__coll__graph.pdf  used on input line 27.
 (pdftex.def)             Requested size: 225.0pt x 266.01497pt.
 
 
-[75]
+[86]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2168,116 +2226,143 @@ s__coll__graph.pdf  used on input line 29.
 > Step: execute table commands.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
-) (./classcore_1_1Options.tex <./classcore_1_1Options__inherit__graph.pdf>
-<classcore_1_1Options__inherit__graph.pdf, id=3963, 214.8025pt x 490.83376pt>
+) (./structcore_1_1Polymorphic_1_1Model.tex <./structcore_1_1Polymorphic_1_1Mod
+el__inherit__graph.pdf>
+<structcore_1_1Polymorphic_1_1Model__inherit__graph.pdf, id=4223, 186.6975pt x 
+373.395pt>
+File: structcore_1_1Polymorphic_1_1Model__inherit__graph.pdf Graphic file (type
+ pdf)
+<use structcore_1_1Polymorphic_1_1Model__inherit__graph.pdf>
+Package pdftex.def Info: structcore_1_1Polymorphic_1_1Model__inherit__graph.pdf
+  used on input line 14.
+(pdftex.def)             Requested size: 186.0pt x 372.01527pt.
+
+
+[87] <./structcore_1_1Polymorphic_1_1Model__coll__graph.pdf>
+<structcore_1_1Polymorphic_1_1Model__coll__graph.pdf, id=4238, 186.6975pt x 373
+.395pt>
+File: structcore_1_1Polymorphic_1_1Model__coll__graph.pdf Graphic file (type pd
+f)
+<use structcore_1_1Polymorphic_1_1Model__coll__graph.pdf>
+Package pdftex.def Info: structcore_1_1Polymorphic_1_1Model__coll__graph.pdf  u
+sed on input line 23.
+(pdftex.def)             Requested size: 186.0pt x 372.01527pt.
+
+
+[88]
+
+[89]) (./classcore_1_1Options.tex <./classcore_1_1Options__inherit__graph.pdf>
+<classcore_1_1Options__inherit__graph.pdf, id=4297, 218.8175pt x 601.24625pt>
 File: classcore_1_1Options__inherit__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Options__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1Options__inherit__graph.pdf  used on inpu
-t line 19.
-(pdftex.def)             Requested size: 214.0pt x 489.0051pt.
+t line 18.
+(pdftex.def)             Requested size: 200.18599pt x 550.0pt.
 
 
-[76] <./classcore_1_1Options__coll__graph.pdf>
-<classcore_1_1Options__coll__graph.pdf, id=3984, 211.79124pt x 268.00125pt>
+[90] <./classcore_1_1Options__coll__graph.pdf>
+<classcore_1_1Options__coll__graph.pdf, id=4321, 211.79124pt x 268.00125pt>
 File: classcore_1_1Options__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Options__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1Options__coll__graph.pdf  used on input l
-ine 29.
+ine 27.
 (pdftex.def)             Requested size: 211.0pt x 267.01094pt.
 
 
-[77]
+[91]
 
-[78]) (./classcore_1_1Polymorphic.tex
+[92]) (./classcore_1_1Polymorphic.tex
 
-[79] <./classcore_1_1Polymorphic__coll__graph.pdf>
-<classcore_1_1Polymorphic__coll__graph.pdf, id=4053, 205.76875pt x 359.3425pt>
+[93] <./classcore_1_1Polymorphic__coll__graph.pdf>
+<classcore_1_1Polymorphic__coll__graph.pdf, id=4390, 302.12875pt x 807.015pt>
 File: classcore_1_1Polymorphic__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1Polymorphic__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1Polymorphic__coll__graph.pdf  used on inp
-ut line 19.
-(pdftex.def)             Requested size: 205.0pt x 358.00372pt.
+ut line 18.
+(pdftex.def)             Requested size: 205.91045pt x 550.0pt.
 
 
-[80]) (./structalgebra_1_1RowEchelonFormResult.tex <./structalgebra_1_1RowEchel
+[94]
+
+[95]) (./structalgebra_1_1RowEchelonFormResult.tex <./structalgebra_1_1RowEchel
 onFormResult__coll__graph.pdf>
-<structalgebra_1_1RowEchelonFormResult__coll__graph.pdf, id=4086, 259.97125pt x
+<structalgebra_1_1RowEchelonFormResult__coll__graph.pdf, id=4438, 259.97125pt x
  157.58875pt>
 File: structalgebra_1_1RowEchelonFormResult__coll__graph.pdf Graphic file (type
  pdf)
 <use structalgebra_1_1RowEchelonFormResult__coll__graph.pdf>
 Package pdftex.def Info: structalgebra_1_1RowEchelonFormResult__coll__graph.pdf
-  used on input line 19.
+  used on input line 18.
 (pdftex.def)             Requested size: 259.0pt x 156.9992pt.
 
 
-[81]) (./structalgebra_1_1SkipCorrectnessCheckT.tex <./structalgebra_1_1SkipCor
+[96]) (./structalgebra_1_1SkipCorrectnessCheckT.tex <./structalgebra_1_1SkipCor
 rectnessCheckT__coll__graph.pdf>
-<structalgebra_1_1SkipCorrectnessCheckT__coll__graph.pdf, id=4125, 203.76125pt 
+<structalgebra_1_1SkipCorrectnessCheckT__coll__graph.pdf, id=4479, 203.76125pt 
 x 153.57375pt>
 File: structalgebra_1_1SkipCorrectnessCheckT__coll__graph.pdf Graphic file (typ
 e pdf)
 <use structalgebra_1_1SkipCorrectnessCheckT__coll__graph.pdf>
 Package pdftex.def Info: structalgebra_1_1SkipCorrectnessCheckT__coll__graph.pd
-f  used on input line 19.
+f  used on input line 18.
 (pdftex.def)             Requested size: 203.0pt x 153.00627pt.
 
 
-[82]) (./structalgebra_1_1SmithFormResult.tex <./structalgebra_1_1SmithFormResu
+[97]) (./structalgebra_1_1SmithFormResult.tex <./structalgebra_1_1SmithFormResu
 lt__coll__graph.pdf>
-<structalgebra_1_1SmithFormResult__coll__graph.pdf, id=4153, 230.8625pt x 157.5
+<structalgebra_1_1SmithFormResult__coll__graph.pdf, id=4506, 230.8625pt x 157.5
 8875pt>
 File: structalgebra_1_1SmithFormResult__coll__graph.pdf Graphic file (type pdf)
 
 <use structalgebra_1_1SmithFormResult__coll__graph.pdf>
 Package pdftex.def Info: structalgebra_1_1SmithFormResult__coll__graph.pdf  use
-d on input line 19.
+d on input line 18.
 (pdftex.def)             Requested size: 230.0pt x 157.00162pt.
 
 
-[83]) (./classcore_1_1TextDrawable.tex <./classcore_1_1TextDrawable__inherit__g
+[98]) (./classcore_1_1TextDrawable.tex <./classcore_1_1TextDrawable__inherit__g
 raph.pdf>
-<classcore_1_1TextDrawable__inherit__graph.pdf, id=4179, 316.18124pt x 475.7775
+<classcore_1_1TextDrawable__inherit__graph.pdf, id=4532, 324.21124pt x 475.7775
 pt>
 File: classcore_1_1TextDrawable__inherit__graph.pdf Graphic file (type pdf)
 <use classcore_1_1TextDrawable__inherit__graph.pdf>
 Package pdftex.def Info: classcore_1_1TextDrawable__inherit__graph.pdf  used on
- input line 19.
-(pdftex.def)             Requested size: 315.0pt x 474.03397pt.
+ input line 18.
+(pdftex.def)             Requested size: 323.0pt x 474.0267pt.
 
 
-[84] <./classcore_1_1TextDrawable__coll__graph.pdf>
-<classcore_1_1TextDrawable__coll__graph.pdf, id=4202, 177.66376pt x 157.58875pt
+[99] <./classcore_1_1TextDrawable__coll__graph.pdf>
+<classcore_1_1TextDrawable__coll__graph.pdf, id=4557, 177.66376pt x 157.58875pt
 >
 File: classcore_1_1TextDrawable__coll__graph.pdf Graphic file (type pdf)
 <use classcore_1_1TextDrawable__coll__graph.pdf>
 Package pdftex.def Info: classcore_1_1TextDrawable__coll__graph.pdf  used on in
-put line 29.
+put line 27.
 (pdftex.def)             Requested size: 177.0pt x 157.00403pt.
 
 
-[85]) (./classalgebra_1_1ZModP.tex <./classalgebra_1_1ZModP__inherit__graph.pdf
->
-<classalgebra_1_1ZModP__inherit__graph.pdf, id=4233, 191.71625pt x 730.73pt>
+[100]) (./classalgebra_1_1ZModP.tex <./classalgebra_1_1ZModP__inherit__graph.pd
+f>
+<classalgebra_1_1ZModP__inherit__graph.pdf, id=4588, 210.7875pt x 730.73pt>
 File: classalgebra_1_1ZModP__inherit__graph.pdf Graphic file (type pdf)
 <use classalgebra_1_1ZModP__inherit__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1ZModP__inherit__graph.pdf  used on inp
-ut line 19.
-(pdftex.def)             Requested size: 144.30461pt x 550.0pt.
+ut line 18.
+(pdftex.def)             Requested size: 158.65953pt x 550.0pt.
 
 
-[86] <./classalgebra_1_1ZModP__coll__graph.pdf>
-<classalgebra_1_1ZModP__coll__graph.pdf, id=4257, 191.71625pt x 377.41pt>
+[101] <./classalgebra_1_1ZModP__coll__graph.pdf>
+<classalgebra_1_1ZModP__coll__graph.pdf, id=4605, 210.7875pt x 377.41pt>
 File: classalgebra_1_1ZModP__coll__graph.pdf Graphic file (type pdf)
 <use classalgebra_1_1ZModP__coll__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1ZModP__coll__graph.pdf  used on input 
-line 29.
-(pdftex.def)             Requested size: 191.0pt x 376.0212pt.
+line 27.
+(pdftex.def)             Requested size: 210.0pt x 376.00967pt.
 
 
-[87]
+[102]
 
-[88]
+[103]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2296,136 +2381,138 @@ line 29.
 > Step: build the whole table.
 ) (./classalgebra_1_1ZModP_3_012_01_4.tex <./classalgebra_1_1ZModP_3_012_01_4__
 inherit__graph.pdf>
-<classalgebra_1_1ZModP_3_012_01_4__inherit__graph.pdf, id=4330, 191.71625pt x 7
-30.73pt>
+<classalgebra_1_1ZModP_3_012_01_4__inherit__graph.pdf, id=4669, 210.7875pt x 73
+0.73pt>
 File: classalgebra_1_1ZModP_3_012_01_4__inherit__graph.pdf Graphic file (type p
 df)
 <use classalgebra_1_1ZModP_3_012_01_4__inherit__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1ZModP_3_012_01_4__inherit__graph.pdf  
-used on input line 19.
-(pdftex.def)             Requested size: 144.30461pt x 550.0pt.
+used on input line 18.
+(pdftex.def)             Requested size: 158.65953pt x 550.0pt.
 
 
-[89] <./classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf>
-<classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf, id=4358, 191.71625pt x 730.
-73pt>
+[104] <./classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf>
+<classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf, id=4693, 210.7875pt x 730.7
+3pt>
 File: classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf Graphic file (type pdf)
 
 <use classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf>
 Package pdftex.def Info: classalgebra_1_1ZModP_3_012_01_4__coll__graph.pdf  use
-d on input line 29.
-(pdftex.def)             Requested size: 144.30461pt x 550.0pt.
+d on input line 27.
+(pdftex.def)             Requested size: 158.65953pt x 550.0pt.
 
 
-[90]
+[105]
 
-[91])
+[106])
 
-[92]
+[107]
+
+[108
+
+]
 Chapter 7.
 (./algebraic__concepts_8h.tex <./algebraic__concepts_8h__incl.pdf>
-<algebraic__concepts_8h__incl.pdf, id=4440, 330.23375pt x 247.92625pt>
+<algebraic__concepts_8h__incl.pdf, id=4774, 330.23375pt x 247.92625pt>
 File: algebraic__concepts_8h__incl.pdf Graphic file (type pdf)
 <use algebraic__concepts_8h__incl.pdf>
 Package pdftex.def Info: algebraic__concepts_8h__incl.pdf  used on input line 1
-5.
+4.
 (pdftex.def)             Requested size: 329.0pt x 247.01013pt.
  <./algebraic__concepts_8h__dep__incl.pdf>
-<algebraic__concepts_8h__dep__incl.pdf, id=4448, 517.935pt x 552.0625pt>
+<algebraic__concepts_8h__dep__incl.pdf, id=4782, 517.935pt x 552.0625pt>
 File: algebraic__concepts_8h__dep__incl.pdf Graphic file (type pdf)
 <use algebraic__concepts_8h__dep__incl.pdf>
 Package pdftex.def Info: algebraic__concepts_8h__dep__incl.pdf  used on input l
-ine 23.
+ine 21.
 (pdftex.def)             Requested size: 350.0pt x 373.08098pt.
 
 
-[93
+[109]) (./algebraic__concepts_8h_source.tex
 
-]) (./algebraic__concepts_8h_source.tex
-
-[94]) (./chain__complex_8h.tex <./chain__complex_8h__incl.pdf>
-<chain__complex_8h__incl.pdf, id=4528, 729.72626pt x 437.635pt>
+[110]) (./chain__complex_8h.tex <./chain__complex_8h__incl.pdf>
+<chain__complex_8h__incl.pdf, id=4862, 729.72626pt x 437.635pt>
 File: chain__complex_8h__incl.pdf Graphic file (type pdf)
 <use chain__complex_8h__incl.pdf>
-Package pdftex.def Info: chain__complex_8h__incl.pdf  used on input line 14.
+Package pdftex.def Info: chain__complex_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 209.90215pt.
 
 
-[95] <./chain__complex_8h__dep__incl.pdf>
-<chain__complex_8h__dep__incl.pdf, id=4541, 389.455pt x 291.0875pt>
+[111] <./chain__complex_8h__dep__incl.pdf>
+<chain__complex_8h__dep__incl.pdf, id=4876, 389.455pt x 291.0875pt>
 File: chain__complex_8h__dep__incl.pdf Graphic file (type pdf)
 <use chain__complex_8h__dep__incl.pdf>
 Package pdftex.def Info: chain__complex_8h__dep__incl.pdf  used on input line 2
-2.
+0.
 (pdftex.def)             Requested size: 350.0pt x 261.60767pt.
 
 
-[96]) (./chain__complex_8h_source.tex
+[112]) (./chain__complex_8h_source.tex
 
-[97
+[113
 pdfTeX warning (ext4): destination with the same identifier (name{chain__comple
 x_8h_a3b6f25acf54da436f6f0e4e65d317158}) has been already used, duplicate ignor
 ed
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.46 ...\_view\ =\ m\_boundaries\ |\ vs::drop(1);}
+l.46 ...0df0a5e}{m\_boundaries}}\ |\ vs::drop(1);}
                                                   ]
 
-[98]) (./integer_8h.tex <./integer_8h__incl.pdf>
-<integer_8h__incl.pdf, id=4710, 598.235pt x 292.09125pt>
+[114]) (./integer_8h.tex <./integer_8h__incl.pdf>
+<integer_8h__incl.pdf, id=5063, 598.235pt x 292.09125pt>
 File: integer_8h__incl.pdf Graphic file (type pdf)
 <use integer_8h__incl.pdf>
-Package pdftex.def Info: integer_8h__incl.pdf  used on input line 18.
+Package pdftex.def Info: integer_8h__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 170.89273pt.
 
 
-[99]) (./integer_8h_source.tex
+[115]) (./integer_8h_source.tex
 
-[100]
+[116]
 
-[101]) (./matrix_8h.tex <./matrix_8h__incl.pdf>
-<matrix_8h__incl.pdf, id=4928, 729.72626pt x 292.09125pt>
+[117]) (./matrix_8h.tex <./matrix_8h__incl.pdf>
+<matrix_8h__incl.pdf, id=5296, 729.72626pt x 292.09125pt>
 File: matrix_8h__incl.pdf Graphic file (type pdf)
 <use matrix_8h__incl.pdf>
-Package pdftex.def Info: matrix_8h__incl.pdf  used on input line 20.
+Package pdftex.def Info: matrix_8h__incl.pdf  used on input line 19.
 (pdftex.def)             Requested size: 350.0pt x 140.09523pt.
  <./matrix_8h__dep__incl.pdf>
-<matrix_8h__dep__incl.pdf, id=4936, 389.455pt x 450.68375pt>
+<matrix_8h__dep__incl.pdf, id=5304, 389.455pt x 450.68375pt>
 File: matrix_8h__dep__incl.pdf Graphic file (type pdf)
 <use matrix_8h__dep__incl.pdf>
-Package pdftex.def Info: matrix_8h__dep__incl.pdf  used on input line 28.
+Package pdftex.def Info: matrix_8h__dep__incl.pdf  used on input line 26.
 (pdftex.def)             Requested size: 350.0pt x 405.04083pt.
 
 
-[102]
+[118]
 
-[103]) (./matrix_8h_source.tex
+[119]) (./matrix_8h_source.tex
 
-[104]
+[120]
 
-[105]
+[121]
 
-[106]
+[122]
 
-[107]) (./matrix__algorithms_8h.tex <./matrix__algorithms_8h__incl.pdf>
-<matrix__algorithms_8h__incl.pdf, id=5320, 729.72626pt x 379.4175pt>
+[123]) (./matrix__algorithms_8h.tex <./matrix__algorithms_8h__incl.pdf>
+<matrix__algorithms_8h__incl.pdf, id=5831, 729.72626pt x 379.4175pt>
 File: matrix__algorithms_8h__incl.pdf Graphic file (type pdf)
 <use matrix__algorithms_8h__incl.pdf>
-Package pdftex.def Info: matrix__algorithms_8h__incl.pdf  used on input line 15
+Package pdftex.def Info: matrix__algorithms_8h__incl.pdf  used on input line 14
 .
 (pdftex.def)             Requested size: 350.0pt x 181.97937pt.
 
 
-[108] <./matrix__algorithms_8h__dep__incl.pdf>
-<matrix__algorithms_8h__dep__incl.pdf, id=5332, 389.455pt x 378.41376pt>
+[124] <./matrix__algorithms_8h__dep__incl.pdf>
+<matrix__algorithms_8h__dep__incl.pdf, id=5843, 389.455pt x 378.41376pt>
 File: matrix__algorithms_8h__dep__incl.pdf Graphic file (type pdf)
 <use matrix__algorithms_8h__dep__incl.pdf>
 Package pdftex.def Info: matrix__algorithms_8h__dep__incl.pdf  used on input li
-ne 23.
+ne 21.
 (pdftex.def)             Requested size: 350.0pt x 340.08998pt.
 
 
-[109]
+[125]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2443,7 +2530,7 @@ ne 23.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) detected at line 72
+Underfull \hbox (badness 10000) detected at line 70
 [][][]
  []
 
@@ -2465,11 +2552,147 @@ Underfull \hbox (badness 10000) detected at line 72
 > Step: build the whole table.
 
 
-[110]
-Underfull \hbox (badness 10000) detected at line 97
+[126]
+Underfull \hbox (badness 10000) detected at line 95
 [][][]
  []
 
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+Underfull \hbox (badness 10000) detected at line 116
+[][][]
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+) (./matrix__algorithms_8h_source.tex
+
+[127]
+
+[128]) (./modulo__fields_8h.tex <./modulo__fields_8h__incl.pdf>
+<modulo__fields_8h__incl.pdf, id=5981, 459.7175pt x 307.1475pt>
+File: modulo__fields_8h__incl.pdf Graphic file (type pdf)
+<use modulo__fields_8h__incl.pdf>
+Package pdftex.def Info: modulo__fields_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 233.85632pt.
+ <./modulo__fields_8h__dep__incl.pdf>
+<modulo__fields_8h__dep__incl.pdf, id=5996, 210.7875pt x 218.8175pt>
+File: modulo__fields_8h__dep__incl.pdf Graphic file (type pdf)
+<use modulo__fields_8h__dep__incl.pdf>
+Package pdftex.def Info: modulo__fields_8h__dep__incl.pdf  used on input line 2
+2.
+(pdftex.def)             Requested size: 210.0pt x 218.0056pt.
+
+
+[129]) (./modulo__fields_8h_source.tex
+
+[130]
+
+[131]) (./number__theory_8h.tex <./number__theory_8h__incl.pdf>
+<number__theory_8h__incl.pdf, id=6215, 276.03125pt x 189.70876pt>
+File: number__theory_8h__incl.pdf Graphic file (type pdf)
+<use number__theory_8h__incl.pdf>
+Package pdftex.def Info: number__theory_8h__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 275.0pt x 189.01933pt.
+
+
+[132] <./number__theory_8h__dep__incl.pdf>
+<number__theory_8h__dep__incl.pdf, id=6227, 517.935pt x 639.38875pt>
+File: number__theory_8h__dep__incl.pdf Graphic file (type pdf)
+<use number__theory_8h__dep__incl.pdf>
+Package pdftex.def Info: number__theory_8h__dep__incl.pdf  used on input line 2
+2.
+(pdftex.def)             Requested size: 350.0pt x 432.09561pt.
+
+
+[133]
+
+[134]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[]\T1/phv/m/n/10 A func-tion cal-cu-lat-ing num-bers \T1/pcr/m/n/10 quotient \T
+1/phv/m/n/10 and \T1/pcr/m/n/10 remainder \T1/phv/m/n/10 sat-is-fy-ing \T1/pcr/
+m/n/10 a == quotient $\OMS/cmsy/m/n/10 ^^C$ \T1/pcr/m/n/10 n +
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+Underfull \hbox (badness 10000) detected at line 74
+[][][]
+ []
+
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+> Step: init table outer spec.
+> Step: parse table options.
+> Step: split table.
+> Step: init table inner spec.
+> Step: parse table inner spec.
+> Step: execute table commands.
+> Step: calculate cell and line sizes.
+> Step: build the whole table.
+
+Underfull \hbox (badness 10000) detected at line 96
+[][][]
+ []
+
+
+
+[135]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2508,143 +2731,7 @@ Underfull \hbox (badness 10000) detected at line 118
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) detected at line 143
-[][][]
- []
-
-) (./matrix__algorithms_8h_source.tex
-
-[111]
-
-[112]) (./modulo__fields_8h.tex <./modulo__fields_8h__incl.pdf>
-<modulo__fields_8h__incl.pdf, id=5471, 459.7175pt x 307.1475pt>
-File: modulo__fields_8h__incl.pdf Graphic file (type pdf)
-<use modulo__fields_8h__incl.pdf>
-Package pdftex.def Info: modulo__fields_8h__incl.pdf  used on input line 16.
-(pdftex.def)             Requested size: 350.0pt x 233.85632pt.
- <./modulo__fields_8h__dep__incl.pdf>
-<modulo__fields_8h__dep__incl.pdf, id=5486, 210.7875pt x 218.8175pt>
-File: modulo__fields_8h__dep__incl.pdf Graphic file (type pdf)
-<use modulo__fields_8h__dep__incl.pdf>
-Package pdftex.def Info: modulo__fields_8h__dep__incl.pdf  used on input line 2
-4.
-(pdftex.def)             Requested size: 210.0pt x 218.0056pt.
-
-
-[113]) (./modulo__fields_8h_source.tex
-
-[114]
-
-[115]) (./number__theory_8h.tex <./number__theory_8h__incl.pdf>
-<number__theory_8h__incl.pdf, id=5682, 276.03125pt x 189.70876pt>
-File: number__theory_8h__incl.pdf Graphic file (type pdf)
-<use number__theory_8h__incl.pdf>
-Package pdftex.def Info: number__theory_8h__incl.pdf  used on input line 16.
-(pdftex.def)             Requested size: 275.0pt x 189.01933pt.
-
-
-[116] <./number__theory_8h__dep__incl.pdf>
-<number__theory_8h__dep__incl.pdf, id=5694, 517.935pt x 639.38875pt>
-File: number__theory_8h__dep__incl.pdf Graphic file (type pdf)
-<use number__theory_8h__dep__incl.pdf>
-Package pdftex.def Info: number__theory_8h__dep__incl.pdf  used on input line 2
-4.
-(pdftex.def)             Requested size: 350.0pt x 432.09561pt.
-
-
-[117]
-
-[118]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-[]\T1/phv/m/n/10 A func-tion cal-cu-lat-ing num-bers \T1/pcr/m/n/10 quotient \T
-1/phv/m/n/10 and \T1/pcr/m/n/10 remainder \T1/phv/m/n/10 sat-is-fy-ing \T1/pcr/
-m/n/10 a == quotient $\OMS/cmsy/m/n/10 ^^C$ \T1/pcr/m/n/10 n +
- []
-
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-Underfull \hbox (badness 10000) detected at line 76
-[][][]
- []
-
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-Underfull \hbox (badness 10000) detected at line 98
-[][][]
- []
-
-
-
-[119]
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-Underfull \hbox (badness 10000) detected at line 120
-[][][]
- []
-
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-> Step: init table outer spec.
-> Step: parse table options.
-> Step: split table.
-> Step: init table inner spec.
-> Step: parse table inner spec.
-> Step: execute table commands.
-> Step: calculate cell and line sizes.
-> Step: build the whole table.
-
-Underfull \hbox (badness 10000) detected at line 140
+Underfull \hbox (badness 10000) detected at line 138
 [][][]
  []
 
@@ -2666,41 +2753,41 @@ Underfull \hbox (badness 10000) detected at line 140
 > Step: build the whole table.
 
 
-[120]
-Underfull \hbox (badness 10000) detected at line 160
+[136]
+Underfull \hbox (badness 10000) detected at line 158
 [][][]
  []
 
 ) (./number__theory_8h_source.tex
 
-[121]) (./z2__field_8h.tex <./z2__field_8h__incl.pdf>
-<z2__field_8h__incl.pdf, id=5801, 459.7175pt x 365.365pt>
+[137]) (./z2__field_8h.tex <./z2__field_8h__incl.pdf>
+<z2__field_8h__incl.pdf, id=6334, 459.7175pt x 365.365pt>
 File: z2__field_8h__incl.pdf Graphic file (type pdf)
 <use z2__field_8h__incl.pdf>
-Package pdftex.def Info: z2__field_8h__incl.pdf  used on input line 14.
+Package pdftex.def Info: z2__field_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 278.18204pt.
 )
 (./z2__field_8h_source.tex
 
-[122]) (./compute__chain__complex_8h.tex
+[138]) (./compute__chain__complex_8h.tex
 
-[123] <./compute__chain__complex_8h__incl.pdf>
-<compute__chain__complex_8h__incl.pdf, id=5906, 827.09pt x 496.85625pt>
+[139] <./compute__chain__complex_8h__incl.pdf>
+<compute__chain__complex_8h__incl.pdf, id=6452, 827.09pt x 496.85625pt>
 File: compute__chain__complex_8h__incl.pdf Graphic file (type pdf)
 <use compute__chain__complex_8h__incl.pdf>
 Package pdftex.def Info: compute__chain__complex_8h__incl.pdf  used on input li
-ne 19.
+ne 18.
 (pdftex.def)             Requested size: 350.0pt x 210.25513pt.
  <./compute__chain__complex_8h__dep__incl.pdf>
-<compute__chain__complex_8h__dep__incl.pdf, id=5914, 230.8625pt x 203.76125pt>
+<compute__chain__complex_8h__dep__incl.pdf, id=6460, 230.8625pt x 203.76125pt>
 File: compute__chain__complex_8h__dep__incl.pdf Graphic file (type pdf)
 <use compute__chain__complex_8h__dep__incl.pdf>
 Package pdftex.def Info: compute__chain__complex_8h__dep__incl.pdf  used on inp
-ut line 27.
+ut line 25.
 (pdftex.def)             Requested size: 230.0pt x 203.0021pt.
 
 
-[124]
+[140]
 > Step: init table outer spec.
 > Step: parse table options.
 > Step: split table.
@@ -2718,201 +2805,201 @@ ut line 27.
 > Step: calculate cell and line sizes.
 > Step: build the whole table.
 
-Underfull \hbox (badness 10000) detected at line 63
+Underfull \hbox (badness 10000) detected at line 61
 [][][]
  []
 
 ) (./compute__chain__complex_8h_source.tex
 
-[125]) (./cubical__complex_8h.tex <./cubical__complex_8h__incl.pdf>
-<cubical__complex_8h__incl.pdf, id=5970, 509.905pt x 189.70876pt>
+[141]) (./cubical__complex_8h.tex <./cubical__complex_8h__incl.pdf>
+<cubical__complex_8h__incl.pdf, id=6517, 509.905pt x 189.70876pt>
 File: cubical__complex_8h__incl.pdf Graphic file (type pdf)
 <use cubical__complex_8h__incl.pdf>
-Package pdftex.def Info: cubical__complex_8h__incl.pdf  used on input line 19.
+Package pdftex.def Info: cubical__complex_8h__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 350.0pt x 130.2218pt.
  <./cubical__complex_8h__dep__incl.pdf>
-<cubical__complex_8h__dep__incl.pdf, id=5978, 279.0425pt x 291.0875pt>
+<cubical__complex_8h__dep__incl.pdf, id=6525, 279.0425pt x 291.0875pt>
 File: cubical__complex_8h__dep__incl.pdf Graphic file (type pdf)
 <use cubical__complex_8h__dep__incl.pdf>
 Package pdftex.def Info: cubical__complex_8h__dep__incl.pdf  used on input line
- 27.
+ 25.
 (pdftex.def)             Requested size: 278.0pt x 290.00745pt.
 
 
-[126]) (./cubical__complex_8h_source.tex
+[142]) (./cubical__complex_8h_source.tex
 
-[127]
+[143]
 
-[128]) (./utils_8h.tex <./utils_8h__incl.pdf>
-<utils_8h__incl.pdf, id=6158, 217.81375pt x 175.65625pt>
+[144]) (./utils_8h.tex <./utils_8h__incl.pdf>
+<utils_8h__incl.pdf, id=6721, 217.81375pt x 175.65625pt>
 File: utils_8h__incl.pdf Graphic file (type pdf)
 <use utils_8h__incl.pdf>
-Package pdftex.def Info: utils_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: utils_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 217.0pt x 174.99913pt.
 
 
-[129]) (./utils_8h_source.tex) (./algebra__homology_8h.tex
+[145]) (./utils_8h_source.tex) (./algebra__homology_8h.tex
 
-[130] <./algebra__homology_8h__incl.pdf>
-<algebra__homology_8h__incl.pdf, id=6189, 880.28876pt x 496.85625pt>
+[146] <./algebra__homology_8h__incl.pdf>
+<algebra__homology_8h__incl.pdf, id=6752, 880.28876pt x 496.85625pt>
 File: algebra__homology_8h__incl.pdf Graphic file (type pdf)
 <use algebra__homology_8h__incl.pdf>
-Package pdftex.def Info: algebra__homology_8h__incl.pdf  used on input line 18.
+Package pdftex.def Info: algebra__homology_8h__incl.pdf  used on input line 17.
 
 (pdftex.def)             Requested size: 350.0pt x 197.54869pt.
  <./algebra__homology_8h__dep__incl.pdf>
-<algebra__homology_8h__dep__incl.pdf, id=6197, 223.83624pt x 189.70876pt>
+<algebra__homology_8h__dep__incl.pdf, id=6760, 223.83624pt x 189.70876pt>
 File: algebra__homology_8h__dep__incl.pdf Graphic file (type pdf)
 <use algebra__homology_8h__dep__incl.pdf>
 Package pdftex.def Info: algebra__homology_8h__dep__incl.pdf  used on input lin
-e 26.
+e 24.
 (pdftex.def)             Requested size: 223.0pt x 189.00485pt.
 ) (./algebra__homology_8h_source.tex
 
-[131]) (./complex_8h.tex <./complex_8h__incl.pdf>
-<complex_8h__incl.pdf, id=6241, 484.81125pt x 307.1475pt>
+[147]) (./complex_8h.tex <./complex_8h__incl.pdf>
+<complex_8h__incl.pdf, id=6813, 484.81125pt x 307.1475pt>
 File: complex_8h__incl.pdf Graphic file (type pdf)
 <use complex_8h__incl.pdf>
-Package pdftex.def Info: complex_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: complex_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 221.75061pt.
 
 
-[132] <./complex_8h__dep__incl.pdf>
-<complex_8h__dep__incl.pdf, id=6255, 381.425pt x 262.9825pt>
+[148] <./complex_8h__dep__incl.pdf>
+<complex_8h__dep__incl.pdf, id=6826, 381.425pt x 262.9825pt>
 File: complex_8h__dep__incl.pdf Graphic file (type pdf)
 <use complex_8h__dep__incl.pdf>
-Package pdftex.def Info: complex_8h__dep__incl.pdf  used on input line 23.
+Package pdftex.def Info: complex_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 350.0pt x 241.32483pt.
 ) (./complex_8h_source.tex
 
-[133]) (./cubical__complex__3d_8h.tex <./cubical__complex__3d_8h__incl.pdf>
-<cubical__complex__3d_8h__incl.pdf, id=6289, 1189.44376pt x 569.12625pt>
+[149]) (./cubical__complex__3d_8h.tex <./cubical__complex__3d_8h__incl.pdf>
+<cubical__complex__3d_8h__incl.pdf, id=6860, 1189.44376pt x 569.12625pt>
 File: cubical__complex__3d_8h__incl.pdf Graphic file (type pdf)
 <use cubical__complex__3d_8h__incl.pdf>
 Package pdftex.def Info: cubical__complex__3d_8h__incl.pdf  used on input line 
-17.
+16.
 (pdftex.def)             Requested size: 350.0pt x 167.46526pt.
 )
 (./cubical__complex__3d_8h_source.tex
 
-[134]) (./homology_8h.tex <./homology_8h__incl.pdf>
-<homology_8h__incl.pdf, id=6339, 479.7925pt x 247.92625pt>
+[150]) (./homology_8h.tex <./homology_8h__incl.pdf>
+<homology_8h__incl.pdf, id=6915, 479.7925pt x 247.92625pt>
 File: homology_8h__incl.pdf Graphic file (type pdf)
 <use homology_8h__incl.pdf>
-Package pdftex.def Info: homology_8h__incl.pdf  used on input line 17.
+Package pdftex.def Info: homology_8h__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 180.85982pt.
 
 
-[135] <./homology_8h__dep__incl.pdf>
-<homology_8h__dep__incl.pdf, id=6353, 381.425pt x 335.2525pt>
+[151] <./homology_8h__dep__incl.pdf>
+<homology_8h__dep__incl.pdf, id=6928, 381.425pt x 335.2525pt>
 File: homology_8h__dep__incl.pdf Graphic file (type pdf)
 <use homology_8h__dep__incl.pdf>
-Package pdftex.def Info: homology_8h__dep__incl.pdf  used on input line 25.
+Package pdftex.def Info: homology_8h__dep__incl.pdf  used on input line 23.
 (pdftex.def)             Requested size: 350.0pt x 307.64313pt.
 ) (./homology_8h_source.tex
 
-[136]) (./homology__printing__strategy_8h.tex <./homology__printing__strategy_8
+[152]) (./homology__printing__strategy_8h.tex <./homology__printing__strategy_8
 h__incl.pdf>
-<homology__printing__strategy_8h__incl.pdf, id=6394, 220.825pt x 189.70876pt>
+<homology__printing__strategy_8h__incl.pdf, id=6970, 220.825pt x 189.70876pt>
 File: homology__printing__strategy_8h__incl.pdf Graphic file (type pdf)
 <use homology__printing__strategy_8h__incl.pdf>
 Package pdftex.def Info: homology__printing__strategy_8h__incl.pdf  used on inp
-ut line 14.
+ut line 13.
 (pdftex.def)             Requested size: 220.0pt x 189.00775pt.
  <./homology__printing__strategy_8h__dep__incl.pdf>
-<homology__printing__strategy_8h__dep__incl.pdf, id=6402, 381.425pt x 422.57875
+<homology__printing__strategy_8h__dep__incl.pdf, id=6978, 381.425pt x 422.57875
 pt>
 File: homology__printing__strategy_8h__dep__incl.pdf Graphic file (type pdf)
 <use homology__printing__strategy_8h__dep__incl.pdf>
 Package pdftex.def Info: homology__printing__strategy_8h__dep__incl.pdf  used o
-n input line 22.
+n input line 20.
 (pdftex.def)             Requested size: 350.0pt x 387.77773pt.
 
 
-[137]) (./homology__printing__strategy_8h_source.tex
+[153]) (./homology__printing__strategy_8h_source.tex
 
-[138]) (./latex__wrapper_8h.tex <./latex__wrapper_8h__incl.pdf>
-<latex__wrapper_8h__incl.pdf, id=6460, 269.005pt x 233.87375pt>
+[154]) (./latex__wrapper_8h.tex <./latex__wrapper_8h__incl.pdf>
+<latex__wrapper_8h__incl.pdf, id=7041, 269.005pt x 233.87375pt>
 File: latex__wrapper_8h__incl.pdf Graphic file (type pdf)
 <use latex__wrapper_8h__incl.pdf>
-Package pdftex.def Info: latex__wrapper_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: latex__wrapper_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 268.0pt x 233.0024pt.
 
 
-[139]) (./latex__wrapper_8h_source.tex) (./manager_8h.tex <./manager_8h__incl.p
+[155]) (./latex__wrapper_8h_source.tex) (./manager_8h.tex <./manager_8h__incl.p
 df>
-<manager_8h__incl.pdf, id=6489, 495.8525pt x 423.5825pt>
+<manager_8h__incl.pdf, id=7075, 495.8525pt x 423.5825pt>
 File: manager_8h__incl.pdf Graphic file (type pdf)
 <use manager_8h__incl.pdf>
-Package pdftex.def Info: manager_8h__incl.pdf  used on input line 16.
+Package pdftex.def Info: manager_8h__incl.pdf  used on input line 15.
 (pdftex.def)             Requested size: 350.0pt x 298.98766pt.
 
 
-[140]) (./manager_8h_source.tex
+[156]) (./manager_8h_source.tex
 
-[141]) (./options_8h.tex <./options_8h__incl.pdf>
-<options_8h__incl.pdf, id=6538, 220.825pt x 175.65625pt>
+[157]) (./options_8h.tex <./options_8h__incl.pdf>
+<options_8h__incl.pdf, id=7126, 220.825pt x 175.65625pt>
 File: options_8h__incl.pdf Graphic file (type pdf)
 <use options_8h__incl.pdf>
-Package pdftex.def Info: options_8h__incl.pdf  used on input line 14.
+Package pdftex.def Info: options_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 220.0pt x 175.00717pt.
  <./options_8h__dep__incl.pdf>
-<options_8h__dep__incl.pdf, id=6553, 220.825pt x 189.70876pt>
+<options_8h__dep__incl.pdf, id=7141, 220.825pt x 189.70876pt>
 File: options_8h__dep__incl.pdf Graphic file (type pdf)
 <use options_8h__dep__incl.pdf>
-Package pdftex.def Info: options_8h__dep__incl.pdf  used on input line 22.
+Package pdftex.def Info: options_8h__dep__incl.pdf  used on input line 20.
 (pdftex.def)             Requested size: 220.0pt x 189.00775pt.
 
 
-[142]) (./options_8h_source.tex
+[158]) (./options_8h_source.tex
 
-[143]) (./parser_8h.tex <./parser_8h__incl.pdf>
-<parser_8h__incl.pdf, id=6629, 538.01pt x 365.365pt>
+[159]) (./parser_8h.tex <./parser_8h__incl.pdf>
+<parser_8h__incl.pdf, id=7233, 538.01pt x 365.365pt>
 File: parser_8h__incl.pdf Graphic file (type pdf)
 <use parser_8h__incl.pdf>
-Package pdftex.def Info: parser_8h__incl.pdf  used on input line 15.
+Package pdftex.def Info: parser_8h__incl.pdf  used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 237.68513pt.
  <./parser_8h__dep__incl.pdf>
-<parser_8h__dep__incl.pdf, id=6644, 220.825pt x 189.70876pt>
+<parser_8h__dep__incl.pdf, id=7248, 220.825pt x 189.70876pt>
 File: parser_8h__dep__incl.pdf Graphic file (type pdf)
 <use parser_8h__dep__incl.pdf>
-Package pdftex.def Info: parser_8h__dep__incl.pdf  used on input line 23.
+Package pdftex.def Info: parser_8h__dep__incl.pdf  used on input line 21.
 (pdftex.def)             Requested size: 220.0pt x 189.00775pt.
 
 
-[144]) (./parser_8h_source.tex) (./polymorphic_8h.tex <./polymorphic_8h__incl.p
+[160]) (./parser_8h_source.tex) (./polymorphic_8h.tex <./polymorphic_8h__incl.p
 df>
-<polymorphic_8h__incl.pdf, id=6698, 354.32375pt x 175.65625pt>
+<polymorphic_8h__incl.pdf, id=7302, 354.32375pt x 175.65625pt>
 File: polymorphic_8h__incl.pdf Graphic file (type pdf)
 <use polymorphic_8h__incl.pdf>
-Package pdftex.def Info: polymorphic_8h__incl.pdf  used on input line 17.
+Package pdftex.def Info: polymorphic_8h__incl.pdf  used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 173.51692pt.
 
 
-[145]) (./polymorphic_8h_source.tex
+[161]) (./polymorphic_8h_source.tex
 
-[146]
+[162]
 
-[147]) (./text__drawable_8h.tex <./text__drawable_8h__incl.pdf>
-<text__drawable_8h__incl.pdf, id=6778, 220.825pt x 175.65625pt>
+[163]) (./text__drawable_8h.tex <./text__drawable_8h__incl.pdf>
+<text__drawable_8h__incl.pdf, id=7453, 220.825pt x 175.65625pt>
 File: text__drawable_8h__incl.pdf Graphic file (type pdf)
 <use text__drawable_8h__incl.pdf>
-Package pdftex.def Info: text__drawable_8h__incl.pdf  used on input line 14.
+Package pdftex.def Info: text__drawable_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 220.0pt x 175.00717pt.
  <./text__drawable_8h__dep__incl.pdf>
-<text__drawable_8h__dep__incl.pdf, id=6786, 459.7175pt x 408.52625pt>
+<text__drawable_8h__dep__incl.pdf, id=7461, 459.7175pt x 408.52625pt>
 File: text__drawable_8h__dep__incl.pdf Graphic file (type pdf)
 <use text__drawable_8h__dep__incl.pdf>
 Package pdftex.def Info: text__drawable_8h__dep__incl.pdf  used on input line 2
-2.
+0.
 (pdftex.def)             Requested size: 350.0pt x 311.0442pt.
 
 
-[148]) (./text__drawable_8h_source.tex)
+[164]) (./text__drawable_8h_source.tex)
 
-[149]
+[165]
 
-[150
+[166
 
 ] (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
@@ -2921,91 +3008,96 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 
 
-[151
+[167
 
 
 ]
 
 
-Overfull \hbox (17.07048pt too wide) in paragraph at lines 207--209
+Overfull \hbox (17.07048pt too wide) in paragraph at lines 225--227
 []\T1/phv/m/n/10 mc-homology/algebra/include/algebra/algebraic_concepts.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 []\T1/phv/m/n/10 mc-homology/algebra/include/algebra/chain_complex.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
-[]\T1/phv/m/n/10 mc-homology/algebra/include/algebra/matrix.h, [][]102[][],
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+[]\T1/phv/m/n/10 mc-homology/algebra/include/algebra/integer.h, [][]115[][],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
+[]\T1/phv/m/n/10 mc-homology/algebra/include/algebra/matrix.h, [][]118[][],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 []\T1/phv/m/n/10 mc-homology/algebra/include/algebra/modulo_fields.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
 []\T1/phv/m/n/10 mc-homology/algebra/include/algebra/number_theory.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
-[]\T1/phv/m/n/10 mc-homology/algebra/include/algebra/z2_field.h, [][]122[][],
+Underfull \hbox (badness 10000) in paragraph at lines 239--241
+[]\T1/phv/m/n/10 mc-homology/algebra/include/algebra/z2_field.h, [][]138[][],
  []
 
 
-Overfull \hbox (64.1223pt too wide) in paragraph at lines 223--225
+Overfull \hbox (64.1223pt too wide) in paragraph at lines 241--243
 []\T1/phv/m/n/10 mc-homology/complexes/include/complexes/compute_chain_complex.
 h,
  []
 
 
-Overfull \hbox (31.10193pt too wide) in paragraph at lines 225--227
+Overfull \hbox (31.10193pt too wide) in paragraph at lines 243--245
 []\T1/phv/m/n/10 mc-homology/complexes/include/complexes/cubical_complex.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 245--247
 []\T1/phv/m/n/10 mc-homology/complexes/include/complexes/utils.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 []\T1/phv/m/n/10 mc-homology/core/include/core/algebra_homology.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+[168]
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 []\T1/phv/m/n/10 mc-homology/core/include/core/cubical_complex_3d.h,
  []
 
 
-Overfull \hbox (24.6121pt too wide) in paragraph at lines 237--239
+Overfull \hbox (24.6121pt too wide) in paragraph at lines 255--257
 []\T1/phv/m/n/10 mc-homology/core/include/core/homology_printing_strategy.h,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 239--241
-[]\T1/phv/m/n/10 mc-homology/core/include/core/latex_wrapper.h, [][]139[][],
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
+[]\T1/phv/m/n/10 mc-homology/core/include/core/latex_wrapper.h, [][]155[][],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--249
-[]\T1/phv/m/n/10 mc-homology/core/include/core/polymorphic.h, [][]145[][],
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
+[]\T1/phv/m/n/10 mc-homology/core/include/core/polymorphic.h, [][]161[][],
  []
 
 
-
-[152]
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
-[]\T1/phv/m/n/10 mc-homology/core/include/core/text_drawable.h, [][]148[][],
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
+[]\T1/phv/m/n/10 mc-homology/core/include/core/text_drawable.h, [][]164[][],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
+Underfull \hbox (badness 10000) in paragraph at lines 297--299
 []| \T1/phv/m/n/10 core::MinecraftSavefileParser_mcSavefileParsers,
  []
 
@@ -3013,7 +3105,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--281
 
 
 
-[153]) (./refman.aux)
+[169]) (./refman.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -3023,13 +3115,13 @@ L3 programming layer <2025-01-18>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 2D9C1FE2415F01B6DE4A139B83447378;69005.
+(rerunfilecheck)             Checksum: 5B2087EBB86DE7EE78389AA718524F57;71913.
  ) 
 Here is how much of TeX's memory you used:
- 23402 strings out of 475136
- 463215 string characters out of 5766292
- 882223 words of memory out of 5000000
- 44750 multiletter control sequences out of 15000+600000
+ 23615 strings out of 475136
+ 472963 string characters out of 5766292
+ 886048 words of memory out of 5000000
+ 44853 multiletter control sequences out of 15000+600000
  689769 words of font info for 335 fonts, out of 8000000 for 9000
  34 hyphenation exceptions out of 8191
  101i,16n,122p,1499b,813s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3045,10 +3137,10 @@ rw/courier/ucrb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
 ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/
 helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
 ></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (163 pages, 1281662 bytes).
+Output written on refman.pdf (179 pages, 1362118 bytes).
 PDF statistics:
- 7376 PDF objects out of 7423 (max. 8388607)
- 5356 compressed objects within 54 object streams
- 1099 named destinations out of 1200 (max. 500000)
- 2882 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 8083 PDF objects out of 8907 (max. 8388607)
+ 5807 compressed objects within 59 object streams
+ 1205 named destinations out of 1440 (max. 500000)
+ 2998 words of extra memory for PDF output out of 10000 (max. 10000000)
 

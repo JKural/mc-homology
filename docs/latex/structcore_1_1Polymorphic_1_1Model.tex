@@ -1,0 +1,114 @@
+\doxysection{core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}::\+Model\texorpdfstring{$<$}{<} Object \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structcore_1_1Polymorphic_1_1Model}{}\label{structcore_1_1Polymorphic_1_1Model}\index{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}}
+
+
+Concrete class used for type erasure.  
+
+
+
+
+Inheritance diagram for core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}::\+Model\texorpdfstring{$<$}{<} Object \texorpdfstring{$>$}{>}:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structcore_1_1Polymorphic_1_1Model__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}::\+Model\texorpdfstring{$<$}{<} Object \texorpdfstring{$>$}{>}:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{structcore_1_1Polymorphic_1_1Model__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcore_1_1Polymorphic_1_1Model_a87f8bcba3adc4030be836387d5429709}\label{structcore_1_1Polymorphic_1_1Model_a87f8bcba3adc4030be836387d5429709} 
+{\footnotesize template$<$class U = Object$>$ }\\constexpr {\bfseries Model} (U \&\&value)
+\begin{DoxyCompactList}\small\item\em Constructs a new object. \end{DoxyCompactList}\item 
+constexpr T const \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model_a50d9e1effae95ce02c48a33c68ea8fb6}{get\+\_\+address}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Returns address of the stored object. \end{DoxyCompactList}\item 
+constexpr T \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model_a2898b89e5b26d5d0f9e6c820f689c461}{get\+\_\+address}} () noexcept override
+\begin{DoxyCompactList}\small\item\em Returns address of the stored object. \end{DoxyCompactList}\item 
+constexpr std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept}{Concept}} $>$ \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model_afc3d28a31bd62ec00ff2801f7b2966b0}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Returns a copy of the stored object as a unique pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept}{core::\+\+Polymorphic$<$ T $>$::\+\+Concept}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual constexpr {\bfseries \texorpdfstring{$\sim$}{\string~}\+Concept} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structcore_1_1Polymorphic_1_1Model_a287f81958ea48647409cc379c7262ab0}\label{structcore_1_1Polymorphic_1_1Model_a287f81958ea48647409cc379c7262ab0} 
+Object {\bfseries m\+\_\+value}
+\begin{DoxyCompactList}\small\item\em The stored object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+template$<$class Object$>$\newline
+struct core::\+\+Polymorphic$<$ T $>$::\+\+Model$<$ Object $>$}
+Concrete class used for type erasure. 
+
+Since \doxylink{structcore_1_1Polymorphic_1_1Model}{Model} knows what type of Object it stores, it can correctly implement a \doxylink{structcore_1_1Polymorphic_1_1Model_afc3d28a31bd62ec00ff2801f7b2966b0}{clone()} method 
+
+\label{doc-func-members}
+\Hypertarget{structcore_1_1Polymorphic_1_1Model_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structcore_1_1Polymorphic_1_1Model_afc3d28a31bd62ec00ff2801f7b2966b0}\index{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}!clone@{clone}}
+\index{clone@{clone}!core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{structcore_1_1Polymorphic_1_1Model_afc3d28a31bd62ec00ff2801f7b2966b0} 
+template$<$class T$>$ \\
+template$<$class Object$>$ \\
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept}{Concept}} $>$ \doxymbox{\hyperlink{classcore_1_1Polymorphic}{core::\+\+Polymorphic}}$<$ T $>$\doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model_a87f8bcba3adc4030be836387d5429709}{::\+\+Model}}$<$ Object $>$::\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns a copy of the stored object as a unique pointer. 
+
+
+
+Implements \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept_a407fadca6a134953e46dde390a770a77}{core::\+\+Polymorphic$<$ T $>$::\+\+Concept}}.
+
+\Hypertarget{structcore_1_1Polymorphic_1_1Model_a50d9e1effae95ce02c48a33c68ea8fb6}\index{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}!get\_address@{get\_address}}
+\index{get\_address@{get\_address}!core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{get\_address()}{get\_address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{structcore_1_1Polymorphic_1_1Model_a50d9e1effae95ce02c48a33c68ea8fb6} 
+template$<$class T$>$ \\
+template$<$class Object$>$ \\
+T const  \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classcore_1_1Polymorphic}{core::\+\+Polymorphic}}$<$ T $>$\doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model_a87f8bcba3adc4030be836387d5429709}{::\+\+Model}}$<$ Object $>$::\+get\+\_\+address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Returns address of the stored object. 
+
+
+
+Implements \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept_afc6e04ceb480f25ea195a940e6bb7616}{core::\+\+Polymorphic$<$ T $>$::\+\+Concept}}.
+
+\Hypertarget{structcore_1_1Polymorphic_1_1Model_a2898b89e5b26d5d0f9e6c820f689c461}\index{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}!get\_address@{get\_address}}
+\index{get\_address@{get\_address}!core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{get\_address()}{get\_address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{structcore_1_1Polymorphic_1_1Model_a2898b89e5b26d5d0f9e6c820f689c461} 
+template$<$class T$>$ \\
+template$<$class Object$>$ \\
+T \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{classcore_1_1Polymorphic}{core::\+\+Polymorphic}}$<$ T $>$\doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model_a87f8bcba3adc4030be836387d5429709}{::\+\+Model}}$<$ Object $>$::\+get\+\_\+address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [noexcept]}}
+
+
+
+Returns address of the stored object. 
+
+
+
+Implements \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept_ab38a16639886fabff610e56d2f36099d}{core::\+\+Polymorphic$<$ T $>$::\+\+Concept}}.
+
+
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{polymorphic_8h}{polymorphic.\+h}}\end{DoxyCompactItemize}

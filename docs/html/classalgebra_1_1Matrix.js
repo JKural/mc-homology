@@ -43,5 +43,9 @@ var classalgebra_1_1Matrix =
     [ "rend", "classalgebra_1_1Matrix.html#a403d37deae4f8cc4acb46992bd76b838", null ],
     [ "size", "classalgebra_1_1Matrix.html#af7766a3f471894ece7be31dbc6e9687f", null ],
     [ "swap", "classalgebra_1_1Matrix.html#a54f9a88e32ef7ea844b4c7d1d9b9539d", null ],
-    [ "transpose", "classalgebra_1_1Matrix.html#ab297b9b3550d6fa60eb92cb47c44be8f", null ]
+    [ "to_underlying_index", "classalgebra_1_1Matrix.html#aa06635adf6783ea2d660cf61946e9097", null ],
+    [ "transpose", "classalgebra_1_1Matrix.html#ab297b9b3550d6fa60eb92cb47c44be8f", null ],
+    [ "m_data", "classalgebra_1_1Matrix.html#a090961126711bfbcdbccd9c2976b7266", null ],
+    [ "m_ncols", "classalgebra_1_1Matrix.html#ae05b02dfb3a6e9c057d20104b16716c3", null ],
+    [ "m_nrows", "classalgebra_1_1Matrix.html#a94ba6212665ccf78fecf810e6fba4e6d", null ]
 ];

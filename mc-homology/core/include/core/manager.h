@@ -30,7 +30,9 @@ public:
     int run();
 
 private:
+    /// \brief User options
     std::unique_ptr<Options> m_options;
+    /// \brief Parser used to parse the save file
     std::unique_ptr<MinecraftSavefileParser> m_parser;
 };
 

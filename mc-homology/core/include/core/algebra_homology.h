@@ -43,6 +43,7 @@ public:
     }
 
 private:
+    /// \brief The inner representation of the homology
     algebra::Homology<T> m_homology;
 };
 

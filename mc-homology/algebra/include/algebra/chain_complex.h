@@ -101,6 +101,7 @@ public:
     }
 
 private:
+    /// \brief A vector of boundary operators
     std::vector<Matrix<T>> m_boundaries;
 };
 

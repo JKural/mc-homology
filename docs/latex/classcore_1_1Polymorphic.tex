@@ -11,14 +11,20 @@ A polymorphic class wrapper with value semantics.
 
 
 
-Collaboration diagram for core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
-\nopagebreak
+Collaboration diagram for core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=205pt]{classcore_1_1Polymorphic__coll__graph}
+\includegraphics[height=550pt]{classcore_1_1Polymorphic__coll__graph}
 \end{center}
 \end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept}{Concept}}
+\begin{DoxyCompactList}\small\item\em Base class used for type erasure. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Model}{Model}}
+\begin{DoxyCompactList}\small\item\em Concrete class used for type erasure. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -61,6 +67,12 @@ constexpr bool {\bfseries valueless\+\_\+after\+\_\+move} () const noexcept
 \Hypertarget{classcore_1_1Polymorphic_adf56d4df87396595e28695d1a03c86c1}\label{classcore_1_1Polymorphic_adf56d4df87396595e28695d1a03c86c1} 
 constexpr void {\bfseries swap} (\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}} \&other) noexcept
 \begin{DoxyCompactList}\small\item\em Swaps two objects together. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1Polymorphic_acd4e0d05863ae02fa3025f66f233a42c}\label{classcore_1_1Polymorphic_acd4e0d05863ae02fa3025f66f233a42c} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{structcore_1_1Polymorphic_1_1Concept}{Concept}} $>$ {\bfseries m\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Pointer to the \doxylink{structcore_1_1Polymorphic_1_1Concept}{Concept} class, which in turn holds a \doxylink{structcore_1_1Polymorphic_1_1Model}{Model} with our object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

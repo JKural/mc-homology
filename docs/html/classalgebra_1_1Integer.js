@@ -10,5 +10,6 @@ var classalgebra_1_1Integer =
     [ "operator-", "classalgebra_1_1Integer.html#a78c524887f425d59ce01075034ff370c", null ],
     [ "operator-=", "classalgebra_1_1Integer.html#afd8e6a7633822b53bf3e7e74cbe1b462", null ],
     [ "operator<=>", "classalgebra_1_1Integer.html#a13bf034a5eb641f847e37d0c80ad8230", null ],
-    [ "operator==", "classalgebra_1_1Integer.html#a4ed4f79882bc6df70ae2a0eca936c1ed", null ]
+    [ "operator==", "classalgebra_1_1Integer.html#a4ed4f79882bc6df70ae2a0eca936c1ed", null ],
+    [ "m_inner_representation", "classalgebra_1_1Integer.html#a915cc78212634741d266c2cfdfdb669e", null ]
 ];

@@ -1,5 +1,7 @@
 var classcore_1_1Polymorphic =
 [
+    [ "Concept", "structcore_1_1Polymorphic_1_1Concept.html", "structcore_1_1Polymorphic_1_1Concept" ],
+    [ "Model", "structcore_1_1Polymorphic_1_1Model.html", "structcore_1_1Polymorphic_1_1Model" ],
     [ "Polymorphic", "classcore_1_1Polymorphic.html#aca4b76b305b2546ea43a3fa21d292e25", null ],
     [ "Polymorphic", "classcore_1_1Polymorphic.html#a78dcef8315873c965afd6690873caf46", null ],
     [ "Polymorphic", "classcore_1_1Polymorphic.html#af4e692f5a7d7d3a984be0b21c59f0089", null ],
@@ -12,5 +14,6 @@ var classcore_1_1Polymorphic =
     [ "operator=", "classcore_1_1Polymorphic.html#a0aba960ee37d068c9aebf190ebe601e9", null ],
     [ "operator=", "classcore_1_1Polymorphic.html#aea051a61486b38ec244c7be7b68f4677", null ],
     [ "swap", "classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1", null ],
-    [ "valueless_after_move", "classcore_1_1Polymorphic.html#abbad9a973d3d41a45d59c1624ef608c2", null ]
+    [ "valueless_after_move", "classcore_1_1Polymorphic.html#abbad9a973d3d41a45d59c1624ef608c2", null ],
+    [ "m_object", "classcore_1_1Polymorphic.html#acd4e0d05863ae02fa3025f66f233a42c", null ]
 ];

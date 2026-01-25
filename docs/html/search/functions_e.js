@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['select_5fstrategy_0',['select_strategy',['../classcore_1_1Homology.html#a621e1e3eaf695f64f55e081f0077f07c',1,'core::Homology']]],
-  ['set_5foptions_1',['set_options',['../classcore_1_1Manager.html#a5ae66884c6da04bd9103a68786c18a2d',1,'core::Manager']]],
-  ['set_5fparser_2',['set_parser',['../classcore_1_1Manager.html#a93b10a66323eb381e57f7cd40011264b',1,'core::Manager']]],
-  ['simplices_3',['simplices',['../classcomplexes_1_1CubicalComplex.html#a8925b5d3f0b7186a7b4c28079a46cceb',1,'complexes::CubicalComplex']]],
-  ['size_4',['size',['../classalgebra_1_1Matrix.html#af7766a3f471894ece7be31dbc6e9687f',1,'algebra::Matrix']]],
-  ['smith_5fform_5',['smith_form',['../matrix__algorithms_8h.html#a53476fe37031aed47bb3b38d5e4b6dbc',1,'algebra::smith_form(std::in_place_t, Matrix&lt; T &gt; &amp;matrix)'],['../matrix__algorithms_8h.html#ad04bf6b87ead16604eb2ed6d6c5eabc4',1,'algebra::smith_form(Matrix&lt; T &gt; matrix)']]],
-  ['swap_6',['swap',['../classalgebra_1_1Matrix.html#a54f9a88e32ef7ea844b4c7d1d9b9539d',1,'algebra::Matrix::swap()'],['../classcore_1_1Polymorphic.html#adf56d4df87396595e28695d1a03c86c1',1,'core::Polymorphic::swap()']]]
+  ['rbegin_0',['rbegin',['../classalgebra_1_1Matrix.html#ad75dc1d15559dab7d43b4af2d7cc16cb',1,'algebra::Matrix::rbegin() noexcept'],['../classalgebra_1_1Matrix.html#a0d705707bb29eb36fe6ddc3c53830d83',1,'algebra::Matrix::rbegin() const noexcept']]],
+  ['reduce_1',['reduce',['../classcore_1_1Complex.html#a08a753784c880e5a54ab77e032f04fd2',1,'core::Complex::reduce()'],['../classcore_1_1CubicalComplex3D.html#afb140e7fa736a2e6e77b928f252469f8',1,'core::CubicalComplex3D::reduce()']]],
+  ['remove_2',['remove',['../classcomplexes_1_1CubicalComplex.html#a735d830ba060f9cc25ee7ce70d7eaff6',1,'complexes::CubicalComplex']]],
+  ['rend_3',['rend',['../classalgebra_1_1Matrix.html#a403d37deae4f8cc4acb46992bd76b838',1,'algebra::Matrix::rend() noexcept'],['../classalgebra_1_1Matrix.html#a4b6fb86f09c92d84368aa3b82b570557',1,'algebra::Matrix::rend() const noexcept']]],
+  ['right_4',['right',['../classcomplexes_1_1BasicInterval.html#a9e188203135d550351057ed061d4db60',1,'complexes::BasicInterval']]],
+  ['row_5fechelon_5fform_5',['row_echelon_form',['../matrix__algorithms_8h.html#afda75107ba9ded61d0ae0c3d6a6281e3',1,'algebra::row_echelon_form(std::in_place_t, Matrix&lt; T &gt; &amp;matrix)'],['../matrix__algorithms_8h.html#a76489395a9dfe76e436a325e779e804a',1,'algebra::row_echelon_form(Matrix&lt; T &gt; matrix)']]],
+  ['run_6',['run',['../classcore_1_1Manager.html#a8920c10e92e28a3f8090d51edaa8ab01',1,'core::Manager']]]
 ];

@@ -1,3 +1,16 @@
 <map id="core::Manager" name="core::Manager">
-<area shape="rect" id="Node000001" title="Main manager for the program." alt="" coords="5,5,108,157"/>
+<area shape="rect" id="Node000001" title="Main manager for the program." alt="" coords="177,679,280,830"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="64,507,208,604"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,601,189,664,184,664,158,606"/>
+<area shape="rect" id="Node000003" href="$classcore_1_1Options.html" title="A class for storing user options." alt="" coords="5,159,179,407"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,404,88,445,96,482,99,491,93,491,91,483,83,446,83,410"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="220,244,354,322"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="243,336,212,381,180,433,164,470,151,508,146,506,159,468,176,430,208,378,246,331"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="233,507,410,604"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="290,334,296,406,306,482,311,508,306,506,301,483,291,407,288,339"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="278,5,296,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="288,81,290,227,284,226,286,86"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="301,602,273,665,269,662,297,606"/>
+<area shape="rect" id="Node000007" href="$classcore_1_1MinecraftSavefileParser.html" title="An interface for Minecraft savefile parser." alt="" coords="397,232,590,334"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="500,332,501,370,496,409,485,448,467,484,448,504,427,520,423,516,445,500,462,481,481,446,491,408,495,370,497,337"/>
 </map>

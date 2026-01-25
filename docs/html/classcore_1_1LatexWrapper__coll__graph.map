@@ -1,5 +1,16 @@
 <map id="core::LatexWrapper" name="core::LatexWrapper">
-<area shape="rect" id="Node000001" title="A decorator that wraps a text drawable object in a latex document." alt="" coords="5,156,138,259"/>
-<area shape="rect" id="Node000002" href="$classcore_1_1TextDrawable.html" title="Marks a class text drawable &#45; it can be represented as a string." alt="" coords="7,5,136,108"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,120,74,157,69,156,71,125"/>
+<area shape="rect" id="Node000001" title="A decorator that wraps a text drawable object in a latex document." alt="" coords="123,509,256,611"/>
+<area shape="rect" id="Node000002" href="$classcore_1_1TextDrawable.html" title="Marks a class text drawable &#45; it can be represented as a string." alt="" coords="5,159,134,261"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,273,86,352,95,393,108,433,128,472,152,509,147,509,123,475,103,435,90,395,81,353,72,278"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="118,336,262,434"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="104,259,150,322,145,323,104,264"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,431,192,493,187,491,188,436"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="158,171,293,249"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="213,261,210,286,200,337,195,336,204,285,211,266"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="217,5,234,84"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="226,81,228,154,223,153,225,86"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="310,346,384,424"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="315,422,260,486,249,498,245,494,256,483,311,425"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="318,161,435,259"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="367,271,356,347,351,345,364,276"/>
 </map>

@@ -44,7 +44,9 @@ public:
     std::string draw(Homology const& homology) const override;
 
 private:
+    /// \brief Name of the ring to print
     std::string m_ring_name;
+    /// \brief Name of the homology group
     std::string m_homology_name;
 };
 

@@ -1,0 +1,617 @@
+\doxysection{algebra Namespace Reference}
+\hypertarget{namespacealgebra}{}\label{namespacealgebra}\index{algebra@{algebra}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}}
+\begin{DoxyCompactList}\small\item\em Type to mark an overload of a function, that doesn\textquotesingle{}t perform optional correctness checks. Such overloads should only be used after manually ensuring, that other parameters guarantee correct output. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}
+\begin{DoxyCompactList}\small\item\em Class representing a chain complex with coefficients {\ttfamily T}. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}
+\begin{DoxyCompactList}\small\item\em \doxylink{structalgebra_1_1Homology}{Homology} of a chain complex. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}
+\begin{DoxyCompactList}\small\item\em Class of Integers. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}
+\begin{DoxyCompactList}\small\item\em A \doxylink{classalgebra_1_1Matrix}{Matrix} class. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1RowEchelonFormResult}{Row\+Echelon\+Form\+Result}}
+\begin{DoxyCompactList}\small\item\em Result struct for the row echelon algorithm. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1SmithFormResult}{Smith\+Form\+Result}}
+\begin{DoxyCompactList}\small\item\em Result struct for the smith algorithm. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}
+\begin{DoxyCompactList}\small\item\em \doxylink{conceptalgebra_1_1Field}{Field} of integers modulo P. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}
+\begin{DoxyCompactList}\small\item\em Result struct for the division operation. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{Extended\+GCDResult}}
+\begin{DoxyCompactList}\small\item\em Result struct for the extended gcd algorithm. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4}{ZMod\+P$<$ 2 $>$}}
+\begin{DoxyCompactList}\small\item\em Template specialization for P == 2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Concepts}
+\begin{DoxyCompactItemize}
+\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1Commutative}{Commutative}}
+\begin{DoxyCompactList}\small\item\em An abelian structure concept. \end{DoxyCompactList}\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1Group}{Group}}
+\begin{DoxyCompactList}\small\item\em A group concept. \end{DoxyCompactList}\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{Additive\+Group}}
+\begin{DoxyCompactList}\small\item\em An additive group concept. \end{DoxyCompactList}\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1Ring}{Ring}}
+\begin{DoxyCompactList}\small\item\em A ring concept. \end{DoxyCompactList}\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1CommutativeRing}{Commutative\+Ring}}
+\begin{DoxyCompactList}\small\item\em An commutative ring concept. \end{DoxyCompactList}\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1EuclideanDomain}{Euclidean\+Domain}}
+\begin{DoxyCompactList}\small\item\em An euclidean domain concept. \end{DoxyCompactList}\item 
+concept \doxymbox{\hyperlink{conceptalgebra_1_1Field}{Field}}
+\begin{DoxyCompactList}\small\item\em A field concept. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \doxymbox{\hyperlink{namespacealgebra_a1fa07827605fa9734220db771470424d}{Z2}} = \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$2$>$
+\begin{DoxyCompactList}\small\item\em Alias for \doxylink{classalgebra_1_1ZModP_3_012_01_4}{ZMod\+P$<$2$>$}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$Euclidean\+Domain T$>$ }\\\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_a3b6f25acf54da436f6f0e4e65d317158}{homology}} (\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}$<$ T $>$ const \&chain\+\_\+complex)
+\begin{DoxyCompactList}\small\item\em Computes homology of a chain complex with coefficients from an euclidean domain. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Field T$>$ }\\\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_a3b6f25acf54da436f6f0e4e65d317158}{homology}} (\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}$<$ T $>$ const \&chain\+\_\+complex)
+\begin{DoxyCompactList}\small\item\em Computes homology of a chain complex with coefficients from a field. \end{DoxyCompactList}\item 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\\doxymbox{\hyperlink{namespacealgebra_a1289f308542d523475a6610977fb0f09}{Chain\+Complex}} (\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}}, R \&\&) -\/$>$ Chain\+Complex$<$ typename std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$::\+value\+\_\+type $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide for the \doxylink{classalgebra_1_1ChainComplex}{Chain\+Complex}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\\doxymbox{\hyperlink{namespacealgebra_ae5a6158e073a7727781c1aecc8ee5afb}{Chain\+Complex}} (R \&\&) -\/$>$ Chain\+Complex$<$ typename std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$::\+value\+\_\+type $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide for the \doxylink{classalgebra_1_1ChainComplex}{Chain\+Complex}. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} \doxymbox{\hyperlink{namespacealgebra_ade04e6b8cc549a66f70769f8c44104f8}{operator+}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} lhs, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Adds two integers. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} \doxymbox{\hyperlink{namespacealgebra_acb08f898d9c1b3fd624ef42e41a605a1}{operator-\/}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} lhs, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Subtracts two integers. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} \doxymbox{\hyperlink{namespacealgebra_a442462c93fc9e0ebffcc6e517e9e3796}{operator\texorpdfstring{$\ast$}{*}}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} lhs, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplies two integers. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} \doxymbox{\hyperlink{namespacealgebra_a9cc47983d14c3338d843c8fe61f6d7ae}{abs}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} k) noexcept
+\begin{DoxyCompactList}\small\item\em Returns absolute value. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}$<$ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} $>$ \doxymbox{\hyperlink{namespacealgebra_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} a, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} b)
+\begin{DoxyCompactList}\small\item\em Returns the result of integer division for Integers a and b. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} \doxymbox{\hyperlink{namespacealgebra_a7557df3e0d51e921d301661b095a8ccf}{modulo}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} a, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} n)
+\begin{DoxyCompactList}\small\item\em Returns the remainder of division of a by n. \end{DoxyCompactList}\item 
+std::\+ostream \& \doxymbox{\hyperlink{namespacealgebra_a33030836db242b656162529d27fc5ffd}{operator$<$$<$}} (std::\+ostream \&output, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} k)
+\begin{DoxyCompactList}\small\item\em Outputs an integer to a stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Additive\+Group T$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_a195973a6e4664deb9f404a54d2c04d1b}{operator+}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&rhs)
+\begin{DoxyCompactList}\small\item\em Adds two matrices. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Additive\+Group T$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_a04836ac6e8513865e36e05ceaa77c356}{operator-\/}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&rhs)
+\begin{DoxyCompactList}\small\item\em Subtracts two matrices. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Ring T$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_a730f43d3ab3095a9a724122b2af5926e}{operator\texorpdfstring{$\ast$}{*}}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&lhs, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&rhs)
+\begin{DoxyCompactList}\small\item\em Multiplies two matrices. \end{DoxyCompactList}\item 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\\doxymbox{\hyperlink{namespacealgebra_abed0b66c149933f74c933def897afa3c}{Matrix}} (R \&\&, std::\+size\+\_\+t, std::\+size\+\_\+t) -\/$>$ Matrix$<$ std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$ $>$
+\begin{DoxyCompactList}\small\item\em Deduce matrix value type from the submitted range. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T$>$ }\\std::\+ostream \& \doxymbox{\hyperlink{namespacealgebra_ab537d2f6e9272715838b5eada4cb13ce}{operator$<$$<$}} (std::\+ostream \&output, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&matrix)
+\begin{DoxyCompactList}\small\item\em Outputs a matrix to a stream. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Field T$>$ }\\constexpr std::\+size\+\_\+t \doxymbox{\hyperlink{namespacealgebra_afda75107ba9ded61d0ae0c3d6a6281e3}{row\+\_\+echelon\+\_\+form}} (std::\+in\+\_\+place\+\_\+t, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a row echolon form in place. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Field T$>$ }\\constexpr \doxymbox{\hyperlink{structalgebra_1_1RowEchelonFormResult}{Row\+Echelon\+Form\+Result}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_a76489395a9dfe76e436a325e779e804a}{row\+\_\+echelon\+\_\+form}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a row echelon form. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Euclidean\+Domain T$>$ }\\constexpr std::\+size\+\_\+t \doxymbox{\hyperlink{namespacealgebra_a53476fe37031aed47bb3b38d5e4b6dbc}{smith\+\_\+form}} (std::\+in\+\_\+place\+\_\+t, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a Smith form in place. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Euclidean\+Domain T$>$ }\\constexpr \doxymbox{\hyperlink{structalgebra_1_1SmithFormResult}{Smith\+Form\+Result}}$<$ T $>$ \doxymbox{\hyperlink{namespacealgebra_ad04bf6b87ead16604eb2ed6d6c5eabc4}{smith\+\_\+form}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a Smith form. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ \doxymbox{\hyperlink{namespacealgebra_a30e2cd1441a13b4316f9d045cd13dd28}{operator+}} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Adds two integers mod P. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ \doxymbox{\hyperlink{namespacealgebra_abfee0c147692465af6f24e1bebf3253e}{operator-\/}} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Subtracts two integers mod P. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ \doxymbox{\hyperlink{namespacealgebra_a305ca3e73277d0540d8fd0b941aab959}{operator\texorpdfstring{$\ast$}{*}}} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplies two integers mod P. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ \doxymbox{\hyperlink{namespacealgebra_ac31949c2c329ea54f19224c671cf935d}{operator/\+}} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs)
+\begin{DoxyCompactList}\small\item\em Divides two integers mod P. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int P$>$ }\\std::\+ostream \& \doxymbox{\hyperlink{namespacealgebra_a1b9022ec41069b03b873f9e47d3f846b}{operator$<$$<$}} (std::\+ostream \&output, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ x)
+\begin{DoxyCompactList}\small\item\em Outputs an integer mod P to a stream. \end{DoxyCompactList}\item 
+constexpr bool \doxymbox{\hyperlink{namespacealgebra_a74f5dd881b3d2aaa24108f1763c9ec72}{is\+\_\+prime}} (int n) noexcept
+\begin{DoxyCompactList}\small\item\em Primality test. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}$<$ int $>$ \doxymbox{\hyperlink{namespacealgebra_a27f271d9eb3292298bfd5f662309e248}{divide}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Calculates quotient and remainder of two numbers. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{namespacealgebra_a35001d3da463f1cabac1ab9756ff8826}{modulo}} (int a, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the remainder of a by n. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{Extended\+GCDResult}} \doxymbox{\hyperlink{namespacealgebra_a5e24a9dee2493b919da91a1fd295e8a0}{extended\+\_\+gcd}} (int a, int b) noexcept
+\begin{DoxyCompactList}\small\item\em Extended Euclidean algorithm. \end{DoxyCompactList}\item 
+constexpr std::\+optional$<$ int $>$ \doxymbox{\hyperlink{namespacealgebra_a958499eaf6c9db8e9ee8576a9f77062b}{inverse\+\_\+mod}} (int a, int n) noexcept
+\begin{DoxyCompactList}\small\item\em Inverse modulo n. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T$>$ }\\constexpr bool \doxymbox{\hyperlink{namespacealgebra_af8da1be8b84633acd35c16535d5b41ec}{is\+\_\+commutative\+\_\+v}} = false
+\begin{DoxyCompactList}\small\item\em Helper variable template that can be used as a mark that class\textquotesingle{} main operation (addition or multiplication) is abelian. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}} \doxymbox{\hyperlink{namespacealgebra_ac548cb6b55744bb48d4c003f49840cb6}{skip\+\_\+correctness\+\_\+check}} \{\}
+\begin{DoxyCompactList}\small\item\em Helper value of that \doxylink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}. \end{DoxyCompactList}\item 
+template$<$$>$ constexpr bool \doxymbox{\hyperlink{namespacealgebra_a10eac0910d2c54aebc2b263729b3ee80}{is\+\_\+commutative\+\_\+v$<$ Integer $>$}} = true
+\begin{DoxyCompactList}\small\item\em A marker that multiplying the integers is commutative. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int P$>$ }\\constexpr bool \doxymbox{\hyperlink{namespacealgebra_a2dac3b8ee50dc72992c1865808e707c3}{is\+\_\+commutative\+\_\+v$<$ ZMod\+P$<$ P $>$ $>$}} = true
+\begin{DoxyCompactList}\small\item\em A marker that multiplying integers mod P is commutative. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-typedef-members}
+\Hypertarget{namespacealgebra_doc-typedef-members}
+\doxysubsection{Typedef Documentation}
+\Hypertarget{namespacealgebra_a1fa07827605fa9734220db771470424d}\index{algebra@{algebra}!Z2@{Z2}}
+\index{Z2@{Z2}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{Z2}{Z2}}
+{\footnotesize\ttfamily \label{namespacealgebra_a1fa07827605fa9734220db771470424d} 
+using \doxymbox{\hyperlink{namespacealgebra_a1fa07827605fa9734220db771470424d}{algebra::\+\+Z2}} = \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$2$>$}
+
+
+
+Alias for \doxylink{classalgebra_1_1ZModP_3_012_01_4}{ZMod\+P$<$2$>$}. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{namespacealgebra_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacealgebra_a9cc47983d14c3338d843c8fe61f6d7ae}\index{algebra@{algebra}!abs@{abs}}
+\index{abs@{abs}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{abs()}{abs()}}
+{\footnotesize\ttfamily \label{namespacealgebra_a9cc47983d14c3338d843c8fe61f6d7ae} 
+\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} algebra::\+abs (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{k}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Returns absolute value. 
+
+\Hypertarget{namespacealgebra_ae5a6158e073a7727781c1aecc8ee5afb}\index{algebra@{algebra}!ChainComplex@{ChainComplex}}
+\index{ChainComplex@{ChainComplex}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{ChainComplex()}{ChainComplex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_ae5a6158e073a7727781c1aecc8ee5afb} 
+template$<$std::\+ranges::\+sized\+\_\+range R$>$ \\
+algebra::\+\+Chain\+Complex (\begin{DoxyParamCaption}\item[{R \&\&}]{}{}\end{DoxyParamCaption}) -\/$>$  Chain\+Complex$<$ typename std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$::\+value\+\_\+type $>$}
+
+
+
+Deduction guide for the \doxylink{classalgebra_1_1ChainComplex}{Chain\+Complex}. 
+
+\Hypertarget{namespacealgebra_a1289f308542d523475a6610977fb0f09}\index{algebra@{algebra}!ChainComplex@{ChainComplex}}
+\index{ChainComplex@{ChainComplex}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{ChainComplex()}{ChainComplex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a1289f308542d523475a6610977fb0f09} 
+template$<$std::\+ranges::\+sized\+\_\+range R$>$ \\
+algebra::\+\+Chain\+Complex (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}}}]{}{, }\item[{R \&\&}]{}{}\end{DoxyParamCaption}) -\/$>$  Chain\+Complex$<$ typename std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$::\+value\+\_\+type $>$}
+
+
+
+Deduction guide for the \doxylink{classalgebra_1_1ChainComplex}{Chain\+Complex}. 
+
+\Hypertarget{namespacealgebra_a27f271d9eb3292298bfd5f662309e248}\index{algebra@{algebra}!divide@{divide}}
+\index{divide@{divide}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a27f271d9eb3292298bfd5f662309e248} 
+\doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}$<$ int $>$ algebra::\+divide (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Calculates quotient and remainder of two numbers. 
+
+A function calculating numbers {\ttfamily quotient} and {\ttfamily remainder} satisfying {\ttfamily a == quotient \texorpdfstring{$\ast$}{*} n + remainder} and 0 \texorpdfstring{$<$}{<}= remainder \texorpdfstring{$<$}{<} abs(n)
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & An integer \\
+\hline
+{\em b} & An integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct holding three numbers:\+ {\ttfamily quotient}:\+ the quotient {\ttfamily remainder}:\+ the remainder 
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_a9d5f1816c22b13d7a8a6a9a93aaa0258}\index{algebra@{algebra}!divide@{divide}}
+\index{divide@{divide}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a9d5f1816c22b13d7a8a6a9a93aaa0258} 
+\doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}$<$ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} $>$ algebra::\+divide (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{a}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Returns the result of integer division for Integers a and b. 
+
+Returns unique {\ttfamily q} and {\ttfamily r} satisfying
+\begin{DoxyEnumerate}
+\item {\ttfamily a == q \texorpdfstring{$\ast$}{*} b + r}
+\item {\ttfamily 0 \texorpdfstring{$<$}{<}= r \texorpdfstring{$<$}{<} b.\+euclidean\+\_\+function()} 
+\end{DoxyEnumerate}\Hypertarget{namespacealgebra_a5e24a9dee2493b919da91a1fd295e8a0}\index{algebra@{algebra}!extended\_gcd@{extended\_gcd}}
+\index{extended\_gcd@{extended\_gcd}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{extended\_gcd()}{extended\_gcd()}}
+{\footnotesize\ttfamily \label{namespacealgebra_a5e24a9dee2493b919da91a1fd295e8a0} 
+\doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{Extended\+GCDResult}} algebra::\+extended\+\_\+gcd (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Extended Euclidean algorithm. 
+
+Calculates the greatest common divisor {\ttfamily g} and integers {\ttfamily x}, {\ttfamily y} such that {\ttfamily a\texorpdfstring{$\ast$}{*}x + b\texorpdfstring{$\ast$}{*}y == g}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & An integer \\
+\hline
+{\em b} & An integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct holding three numbers:\+ {\ttfamily g}:\+ the gcd {\ttfamily x}:\+ first coefficient {\ttfamily y}:\+ second coefficient 
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_a3b6f25acf54da436f6f0e4e65d317158}\index{algebra@{algebra}!homology@{homology}}
+\index{homology@{homology}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{homology()}{homology()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a3b6f25acf54da436f6f0e4e65d317158} 
+template$<$Field T$>$ \\
+\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}$<$ T $>$ algebra::\+homology (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}$<$ T $>$ const \&}]{chain\+\_\+complex}{}\end{DoxyParamCaption})}
+
+
+
+Computes homology of a chain complex with coefficients from a field. 
+
+\Hypertarget{namespacealgebra_a3b6f25acf54da436f6f0e4e65d317158}\index{algebra@{algebra}!homology@{homology}}
+\index{homology@{homology}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{homology()}{homology()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a3b6f25acf54da436f6f0e4e65d317158} 
+template$<$Euclidean\+Domain T$>$ \\
+\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}$<$ T $>$ algebra::\+homology (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}$<$ T $>$ const \&}]{chain\+\_\+complex}{}\end{DoxyParamCaption})}
+
+
+
+Computes homology of a chain complex with coefficients from an euclidean domain. 
+
+\Hypertarget{namespacealgebra_a958499eaf6c9db8e9ee8576a9f77062b}\index{algebra@{algebra}!inverse\_mod@{inverse\_mod}}
+\index{inverse\_mod@{inverse\_mod}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{inverse\_mod()}{inverse\_mod()}}
+{\footnotesize\ttfamily \label{namespacealgebra_a958499eaf6c9db8e9ee8576a9f77062b} 
+std::\+optional$<$ int $>$ algebra::\+inverse\+\_\+mod (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Inverse modulo n. 
+
+Calculates inverse of {\ttfamily a} mod {\ttfamily n}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Inverted number \\
+\hline
+{\em n} & The modulus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If {\ttfamily a} is invertible mod {\ttfamily n}, returns the inverse, {\ttfamily nullopt} otherwize 
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_a74f5dd881b3d2aaa24108f1763c9ec72}\index{algebra@{algebra}!is\_prime@{is\_prime}}
+\index{is\_prime@{is\_prime}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{is\_prime()}{is\_prime()}}
+{\footnotesize\ttfamily \label{namespacealgebra_a74f5dd881b3d2aaa24108f1763c9ec72} 
+bool algebra::\+is\+\_\+prime (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Primality test. 
+
+Tests, if a given number is prime, that is divisible only by 1 and by itself
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if the number is prime, otherwise {\ttfamily false} 
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_abed0b66c149933f74c933def897afa3c}\index{algebra@{algebra}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily \label{namespacealgebra_abed0b66c149933f74c933def897afa3c} 
+template$<$std::\+ranges::\+sized\+\_\+range R$>$ \\
+algebra::\+\+Matrix (\begin{DoxyParamCaption}\item[{R \&\&}]{}{, }\item[{std::\+size\+\_\+t}]{}{, }\item[{std::\+size\+\_\+t}]{}{}\end{DoxyParamCaption}) -\/$>$  Matrix$<$ std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$ $>$}
+
+
+
+Deduce matrix value type from the submitted range. 
+
+\Hypertarget{namespacealgebra_a35001d3da463f1cabac1ab9756ff8826}\index{algebra@{algebra}!modulo@{modulo}}
+\index{modulo@{modulo}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{modulo()}{modulo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a35001d3da463f1cabac1ab9756ff8826} 
+int algebra::\+modulo (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Calculates the remainder of a by n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & An integer \\
+\hline
+{\em n} & an integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remainder 
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_a7557df3e0d51e921d301661b095a8ccf}\index{algebra@{algebra}!modulo@{modulo}}
+\index{modulo@{modulo}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{modulo()}{modulo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a7557df3e0d51e921d301661b095a8ccf} 
+\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} algebra::\+modulo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{a}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Returns the remainder of division of a by n. 
+
+Returns an integer r, 0 \texorpdfstring{$<$}{<}= r \texorpdfstring{$<$}{<} n satisfying {\ttfamily a == q \texorpdfstring{$\ast$}{*} n + r} \Hypertarget{namespacealgebra_a442462c93fc9e0ebffcc6e517e9e3796}\index{algebra@{algebra}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a442462c93fc9e0ebffcc6e517e9e3796} 
+\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} algebra::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Multiplies two integers. 
+
+\Hypertarget{namespacealgebra_a730f43d3ab3095a9a724122b2af5926e}\index{algebra@{algebra}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a730f43d3ab3095a9a724122b2af5926e} 
+template$<$Ring T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ algebra::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Multiplies two matrices. 
+
+Multiplies two matrices using the usual matrix multiplication. \Hypertarget{namespacealgebra_a305ca3e73277d0540d8fd0b941aab959}\index{algebra@{algebra}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a305ca3e73277d0540d8fd0b941aab959} 
+template$<$int P$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ algebra::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Multiplies two integers mod P. 
+
+\Hypertarget{namespacealgebra_ade04e6b8cc549a66f70769f8c44104f8}\index{algebra@{algebra}!operator+@{operator+}}
+\index{operator+@{operator+}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_ade04e6b8cc549a66f70769f8c44104f8} 
+\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} algebra::\+operator+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Adds two integers. 
+
+\Hypertarget{namespacealgebra_a195973a6e4664deb9f404a54d2c04d1b}\index{algebra@{algebra}!operator+@{operator+}}
+\index{operator+@{operator+}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a195973a6e4664deb9f404a54d2c04d1b} 
+template$<$Additive\+Group T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ algebra::\+operator+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Adds two matrices. 
+
+\Hypertarget{namespacealgebra_a30e2cd1441a13b4316f9d045cd13dd28}\index{algebra@{algebra}!operator+@{operator+}}
+\index{operator+@{operator+}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a30e2cd1441a13b4316f9d045cd13dd28} 
+template$<$int P$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ algebra::\+operator+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Adds two integers mod P. 
+
+\Hypertarget{namespacealgebra_acb08f898d9c1b3fd624ef42e41a605a1}\index{algebra@{algebra}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_acb08f898d9c1b3fd624ef42e41a605a1} 
+\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} algebra::\+operator-\/ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Subtracts two integers. 
+
+\Hypertarget{namespacealgebra_a04836ac6e8513865e36e05ceaa77c356}\index{algebra@{algebra}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a04836ac6e8513865e36e05ceaa77c356} 
+template$<$Additive\+Group T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ algebra::\+operator-\/ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Subtracts two matrices. 
+
+\Hypertarget{namespacealgebra_abfee0c147692465af6f24e1bebf3253e}\index{algebra@{algebra}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_abfee0c147692465af6f24e1bebf3253e} 
+template$<$int P$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ algebra::\+operator-\/ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Subtracts two integers mod P. 
+
+\Hypertarget{namespacealgebra_ac31949c2c329ea54f19224c671cf935d}\index{algebra@{algebra}!operator/@{operator/}}
+\index{operator/@{operator/}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \label{namespacealgebra_ac31949c2c329ea54f19224c671cf935d} 
+template$<$int P$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ algebra::\+operator/\+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Divides two integers mod P. 
+
+\Hypertarget{namespacealgebra_a33030836db242b656162529d27fc5ffd}\index{algebra@{algebra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a33030836db242b656162529d27fc5ffd} 
+std::\+ostream \& algebra::\+operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{output}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{k}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Outputs an integer to a stream. 
+
+\Hypertarget{namespacealgebra_ab537d2f6e9272715838b5eada4cb13ce}\index{algebra@{algebra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_ab537d2f6e9272715838b5eada4cb13ce} 
+template$<$class T$>$ \\
+std::\+ostream \& algebra::\+operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{output}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Outputs a matrix to a stream. 
+
+\Hypertarget{namespacealgebra_a1b9022ec41069b03b873f9e47d3f846b}\index{algebra@{algebra}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a1b9022ec41069b03b873f9e47d3f846b} 
+template$<$int P$>$ \\
+std::\+ostream \& algebra::\+operator$<$$<$ (\begin{DoxyParamCaption}\item[{std::\+ostream \&}]{output}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Outputs an integer mod P to a stream. 
+
+\Hypertarget{namespacealgebra_a76489395a9dfe76e436a325e779e804a}\index{algebra@{algebra}!row\_echelon\_form@{row\_echelon\_form}}
+\index{row\_echelon\_form@{row\_echelon\_form}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{row\_echelon\_form()}{row\_echelon\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a76489395a9dfe76e436a325e779e804a} 
+template$<$Field T$>$ \\
+\doxymbox{\hyperlink{structalgebra_1_1RowEchelonFormResult}{Row\+Echelon\+Form\+Result}}$<$ T $>$ algebra::\+row\+\_\+echelon\+\_\+form (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a row echelon form. 
+
+Transforms a matrix into a row echelon form and returns the number of non-\/zero rows.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & \doxylink{classalgebra_1_1Matrix}{Matrix} to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct containing two fields
+\begin{DoxyEnumerate}
+\item row\+\_\+echelon\+\_\+form The transformed matrix
+\item non\+\_\+empty\+\_\+rows the number of non-\/zero rows 
+\end{DoxyEnumerate}
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_afda75107ba9ded61d0ae0c3d6a6281e3}\index{algebra@{algebra}!row\_echelon\_form@{row\_echelon\_form}}
+\index{row\_echelon\_form@{row\_echelon\_form}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{row\_echelon\_form()}{row\_echelon\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_afda75107ba9ded61d0ae0c3d6a6281e3} 
+template$<$Field T$>$ \\
+std::\+size\+\_\+t algebra::\+row\+\_\+echelon\+\_\+form (\begin{DoxyParamCaption}\item[{std::\+in\+\_\+place\+\_\+t}]{}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a row echolon form in place. 
+
+Transforms a matrix into a row echelon form in place and returns the number of non-\/zero rows.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in,out}}  & {\em matrix} & \doxylink{classalgebra_1_1Matrix}{Matrix} to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of non-\/zero rows 
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_ad04bf6b87ead16604eb2ed6d6c5eabc4}\index{algebra@{algebra}!smith\_form@{smith\_form}}
+\index{smith\_form@{smith\_form}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{smith\_form()}{smith\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_ad04bf6b87ead16604eb2ed6d6c5eabc4} 
+template$<$Euclidean\+Domain T$>$ \\
+\doxymbox{\hyperlink{structalgebra_1_1SmithFormResult}{Smith\+Form\+Result}}$<$ T $>$ algebra::\+smith\+\_\+form (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a Smith form. 
+
+Transforms a matrix into a Smith form and returns the smaller of non-\/zero rows or columns
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & \doxylink{classalgebra_1_1Matrix}{Matrix} to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct containing two fields
+\begin{DoxyEnumerate}
+\item smith\+\_\+form The transformed matrix
+\item non\+\_\+empty The number of non-\/zero rows or columns 
+\end{DoxyEnumerate}
+\end{DoxyReturn}
+\Hypertarget{namespacealgebra_a53476fe37031aed47bb3b38d5e4b6dbc}\index{algebra@{algebra}!smith\_form@{smith\_form}}
+\index{smith\_form@{smith\_form}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{smith\_form()}{smith\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespacealgebra_a53476fe37031aed47bb3b38d5e4b6dbc} 
+template$<$Euclidean\+Domain T$>$ \\
+std::\+size\+\_\+t algebra::\+smith\+\_\+form (\begin{DoxyParamCaption}\item[{std::\+in\+\_\+place\+\_\+t}]{}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a Smith form in place. 
+
+Transforms a matrix into a Smith form in place and returns the smaller of non-\/zero rows or columns
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in,out}}  & {\em matrix} & \doxylink{classalgebra_1_1Matrix}{Matrix} to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of non-\/zero rows or columns 
+\end{DoxyReturn}
+
+
+\label{doc-var-members}
+\Hypertarget{namespacealgebra_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacealgebra_af8da1be8b84633acd35c16535d5b41ec}\index{algebra@{algebra}!is\_commutative\_v@{is\_commutative\_v}}
+\index{is\_commutative\_v@{is\_commutative\_v}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{is\_commutative\_v}{is\_commutative\_v}}
+{\footnotesize\ttfamily \label{namespacealgebra_af8da1be8b84633acd35c16535d5b41ec} 
+template$<$class T$>$ \\
+bool algebra::\+is\+\_\+commutative\+\_\+v = false\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Helper variable template that can be used as a mark that class\textquotesingle{} main operation (addition or multiplication) is abelian. 
+
+\Hypertarget{namespacealgebra_a10eac0910d2c54aebc2b263729b3ee80}\index{algebra@{algebra}!is\_commutative\_v$<$ Integer $>$@{is\_commutative\_v$<$ Integer $>$}}
+\index{is\_commutative\_v$<$ Integer $>$@{is\_commutative\_v$<$ Integer $>$}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{is\_commutative\_v$<$ Integer $>$}{is\_commutative\_v< Integer >}}
+{\footnotesize\ttfamily \label{namespacealgebra_a10eac0910d2c54aebc2b263729b3ee80} 
+template$<$$>$ \\
+bool \doxymbox{\hyperlink{namespacealgebra_af8da1be8b84633acd35c16535d5b41ec}{algebra::\+is\+\_\+commutative\+\_\+v}}$<$ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} $>$ = true\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+A marker that multiplying the integers is commutative. 
+
+\Hypertarget{namespacealgebra_a2dac3b8ee50dc72992c1865808e707c3}\index{algebra@{algebra}!is\_commutative\_v$<$ ZModP$<$ P $>$ $>$@{is\_commutative\_v$<$ ZModP$<$ P $>$ $>$}}
+\index{is\_commutative\_v$<$ ZModP$<$ P $>$ $>$@{is\_commutative\_v$<$ ZModP$<$ P $>$ $>$}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{is\_commutative\_v$<$ ZModP$<$ P $>$ $>$}{is\_commutative\_v< ZModP< P > >}}
+{\footnotesize\ttfamily \label{namespacealgebra_a2dac3b8ee50dc72992c1865808e707c3} 
+template$<$int P$>$ \\
+bool \doxymbox{\hyperlink{namespacealgebra_af8da1be8b84633acd35c16535d5b41ec}{algebra::\+is\+\_\+commutative\+\_\+v}}$<$ \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ $>$ = true\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+A marker that multiplying integers mod P is commutative. 
+
+\Hypertarget{namespacealgebra_ac548cb6b55744bb48d4c003f49840cb6}\index{algebra@{algebra}!skip\_correctness\_check@{skip\_correctness\_check}}
+\index{skip\_correctness\_check@{skip\_correctness\_check}!algebra@{algebra}}
+\doxysubsubsection{\texorpdfstring{skip\_correctness\_check}{skip\_correctness\_check}}
+{\footnotesize\ttfamily \label{namespacealgebra_ac548cb6b55744bb48d4c003f49840cb6} 
+\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}} algebra::\+skip\+\_\+correctness\+\_\+check \{\}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Helper value of that \doxylink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}. 
+

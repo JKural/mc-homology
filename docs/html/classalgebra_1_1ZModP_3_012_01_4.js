@@ -10,5 +10,6 @@ var classalgebra_1_1ZModP_3_012_01_4 =
     [ "operator-", "classalgebra_1_1ZModP_3_012_01_4.html#a2b813fd3bd960ee9f2021ab7f302b746", null ],
     [ "operator-=", "classalgebra_1_1ZModP_3_012_01_4.html#a8ac53677ed023966b51e94e035addffb", null ],
     [ "operator/=", "classalgebra_1_1ZModP_3_012_01_4.html#a55052dc35208a239076b5de6be290ee8", null ],
-    [ "operator==", "classalgebra_1_1ZModP_3_012_01_4.html#a5943d0b9fb049b575ce3dc683dcea605", null ]
+    [ "operator==", "classalgebra_1_1ZModP_3_012_01_4.html#a5943d0b9fb049b575ce3dc683dcea605", null ],
+    [ "m_inner_representation", "classalgebra_1_1ZModP_3_012_01_4.html#ac42332029c5d0f5015e5698f7de373ae", null ]
 ];

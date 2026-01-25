@@ -102,34 +102,51 @@ public:
     }
 
 private:
+    /// \brief Base class used for type erasure
     struct Concept {
+        /// \brief Returns address of the stored object
         constexpr virtual T const* get_address() const noexcept = 0;
+        /// \brief Returns address of the stored object
         constexpr virtual T* get_address() noexcept = 0;
+        /// \brief Returns a copy of the stored object
         constexpr virtual std::unique_ptr<Concept> clone() const = 0;
+        /// \brief Virtual destructor
         constexpr virtual ~Concept() = default;
     };
 
+    /// \brief Concrete class used for type erasure
+    ///
+    /// Since Model knows what type of Object it stores, it can
+    /// correctly implement a clone() method
     template<class Object>
     struct Model: public Concept {
+        /// \brief Constructs a new object
         template<class U = Object>
         constexpr Model(U&& value) : m_value(std::forward<U>(value)) {}
 
+        /// \brief Returns address of the stored object
         constexpr T const* get_address() const noexcept override {
             return std::addressof(m_value);
         }
 
+        /// \brief Returns address of the stored object
         constexpr T* get_address() noexcept override {
             return std::addressof(m_value);
         }
 
+        /// \brief Returns a copy of the stored object as a unique
+        ///        pointer
         constexpr std::unique_ptr<Concept> clone() const override {
             return std::make_unique<Model<Object>>(m_value);
         }
 
     private:
+        /// \brief The stored object
         Object m_value;
     };
 
+    /// \brief Pointer to the Concept class, which in turn holds a
+    ///        Model with our object
     std::unique_ptr<Concept> m_object;
 };
 

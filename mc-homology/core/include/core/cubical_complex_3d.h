@@ -38,6 +38,7 @@ public:
     void reduce() override;
 
 private:
+    /// \brief Inner representation of the cubical complex
     complexes::CubicalComplex m_inner;
 };
 

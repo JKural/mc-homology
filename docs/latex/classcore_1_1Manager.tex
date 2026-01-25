@@ -11,12 +11,11 @@ Main manager for the program.
 
 
 
-Collaboration diagram for core::\+Manager:\+
-\nopagebreak
+Collaboration diagram for core::\+Manager:\+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=157pt]{classcore_1_1Manager__coll__graph}
+\includegraphics[width=350pt]{classcore_1_1Manager__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -33,6 +32,15 @@ void {\bfseries set\+\_\+parser} (std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink
 \begin{DoxyCompactList}\small\item\em Select parser. \end{DoxyCompactList}\item 
 int \doxymbox{\hyperlink{classcore_1_1Manager_a8920c10e92e28a3f8090d51edaa8ab01}{run}} ()
 \begin{DoxyCompactList}\small\item\em Start the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1Manager_a552ac8d00ee81c7337f69ca8e2ec3271}\label{classcore_1_1Manager_a552ac8d00ee81c7337f69ca8e2ec3271} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Options}{Options}} $>$ {\bfseries m\+\_\+options}
+\begin{DoxyCompactList}\small\item\em User options. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Manager_a09acbd47ef8935c83ae08983cdf870c9}\label{classcore_1_1Manager_a09acbd47ef8935c83ae08983cdf870c9} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser}{Minecraft\+Savefile\+Parser}} $>$ {\bfseries m\+\_\+parser}
+\begin{DoxyCompactList}\small\item\em Parser used to parse the save file. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}

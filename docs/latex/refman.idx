@@ -13,238 +13,252 @@
 \indexentry{complexes::BasicInterval@{complexes::BasicInterval}|hyperpage}{19}
 \indexentry{complexes::BasicInterval@{complexes::BasicInterval}!interval@{interval}|hyperpage}{20}
 \indexentry{interval@{interval}!complexes::BasicInterval@{complexes::BasicInterval}|hyperpage}{20}
-\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{20}
-\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!ChainComplex@{ChainComplex}|hyperpage}{21}
-\indexentry{ChainComplex@{ChainComplex}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{21}
-\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!ChainComplex@{ChainComplex}|hyperpage}{21}
-\indexentry{ChainComplex@{ChainComplex}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{21}
-\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!boundary@{boundary}|hyperpage}{22}
-\indexentry{boundary@{boundary}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{22}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{22}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!filename@{filename}|hyperpage}{25}
-\indexentry{filename@{filename}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{25}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!help@{help}|hyperpage}{25}
-\indexentry{help@{help}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{25}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!homology\_to\_compute@{homology\_to\_compute}|hyperpage}{25}
-\indexentry{homology\_to\_compute@{homology\_to\_compute}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{25}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!latex@{latex}|hyperpage}{25}
-\indexentry{latex@{latex}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{25}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!x\_bounds@{x\_bounds}|hyperpage}{26}
-\indexentry{x\_bounds@{x\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{26}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!y\_bounds@{y\_bounds}|hyperpage}{26}
-\indexentry{y\_bounds@{y\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{26}
-\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!z\_bounds@{z\_bounds}|hyperpage}{26}
-\indexentry{z\_bounds@{z\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{26}
-\indexentry{core::Complex@{core::Complex}|hyperpage}{27}
-\indexentry{core::Complex@{core::Complex}!reduce@{reduce}|hyperpage}{28}
-\indexentry{reduce@{reduce}!core::Complex@{core::Complex}|hyperpage}{28}
-\indexentry{core::Complex@{core::Complex}!z2\_homology@{z2\_homology}|hyperpage}{28}
-\indexentry{z2\_homology@{z2\_homology}!core::Complex@{core::Complex}|hyperpage}{28}
-\indexentry{core::Complex@{core::Complex}!z3\_homology@{z3\_homology}|hyperpage}{29}
-\indexentry{z3\_homology@{z3\_homology}!core::Complex@{core::Complex}|hyperpage}{29}
-\indexentry{core::Complex@{core::Complex}!z\_homology@{z\_homology}|hyperpage}{29}
-\indexentry{z\_homology@{z\_homology}!core::Complex@{core::Complex}|hyperpage}{29}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{29}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!CubicalComplex@{CubicalComplex}|hyperpage}{30}
-\indexentry{CubicalComplex@{CubicalComplex}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{30}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!add@{add}|hyperpage}{30}
-\indexentry{add@{add}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{30}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!add\_recursive@{add\_recursive}|hyperpage}{30}
-\indexentry{add\_recursive@{add\_recursive}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{30}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!contains@{contains}|hyperpage}{31}
-\indexentry{contains@{contains}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{31}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!remove@{remove}|hyperpage}{31}
-\indexentry{remove@{remove}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{31}
-\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!simplices@{simplices}|hyperpage}{31}
-\indexentry{simplices@{simplices}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{31}
-\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{32}
-\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!reduce@{reduce}|hyperpage}{34}
-\indexentry{reduce@{reduce}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{34}
-\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!z2\_homology@{z2\_homology}|hyperpage}{34}
-\indexentry{z2\_homology@{z2\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{34}
-\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!z3\_homology@{z3\_homology}|hyperpage}{34}
-\indexentry{z3\_homology@{z3\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{34}
-\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!z\_homology@{z\_homology}|hyperpage}{34}
-\indexentry{z\_homology@{z\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{34}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{35}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!CubicalSimplex@{CubicalSimplex}|hyperpage}{36}
-\indexentry{CubicalSimplex@{CubicalSimplex}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{36}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!boundary@{boundary}|hyperpage}{36}
-\indexentry{boundary@{boundary}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{36}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!interval@{interval}|hyperpage}{36}
-\indexentry{interval@{interval}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{36}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!operator$<$=$>$@{operator$<$=$>$}|hyperpage}{37}
-\indexentry{operator$<$=$>$@{operator$<$=$>$}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{37}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!point@{point}|hyperpage}{37}
-\indexentry{point@{point}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{37}
-\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!product@{product}|hyperpage}{37}
-\indexentry{product@{product}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{37}
-\indexentry{algebra::DivResult$<$ T $>$@{algebra::DivResult$<$ T $>$}|hyperpage}{38}
-\indexentry{algebra::ExtendedGCDResult@{algebra::ExtendedGCDResult}|hyperpage}{39}
-\indexentry{std::formatter$<$ algebra::Integer $>$@{std::formatter$<$ algebra::Integer $>$}|hyperpage}{40}
-\indexentry{std::formatter$<$ algebra::Integer $>$@{std::formatter$<$ algebra::Integer $>$}!format@{format}|hyperpage}{41}
-\indexentry{format@{format}!std::formatter$<$ algebra::Integer $>$@{std::formatter$<$ algebra::Integer $>$}|hyperpage}{41}
-\indexentry{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}|hyperpage}{41}
-\indexentry{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}!format@{format}|hyperpage}{42}
-\indexentry{format@{format}!std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}|hyperpage}{42}
-\indexentry{std::formatter$<$ algebra::ZModP$<$ P $>$ $>$@{std::formatter$<$ algebra::ZModP$<$ P $>$ $>$}|hyperpage}{43}
-\indexentry{std::formatter$<$ complexes::BasicInterval $>$@{std::formatter$<$ complexes::BasicInterval $>$}|hyperpage}{44}
-\indexentry{std::formatter$<$ complexes::BasicInterval $>$@{std::formatter$<$ complexes::BasicInterval $>$}!format@{format}|hyperpage}{45}
-\indexentry{format@{format}!std::formatter$<$ complexes::BasicInterval $>$@{std::formatter$<$ complexes::BasicInterval $>$}|hyperpage}{45}
-\indexentry{std::formatter$<$ complexes::CubicalSimplex $>$@{std::formatter$<$ complexes::CubicalSimplex $>$}|hyperpage}{46}
-\indexentry{std::formatter$<$ complexes::CubicalSimplex $>$@{std::formatter$<$ complexes::CubicalSimplex $>$}!format@{format}|hyperpage}{48}
-\indexentry{format@{format}!std::formatter$<$ complexes::CubicalSimplex $>$@{std::formatter$<$ complexes::CubicalSimplex $>$}|hyperpage}{48}
-\indexentry{std::hash$<$ complexes::BasicInterval $>$@{std::hash$<$ complexes::BasicInterval $>$}|hyperpage}{48}
-\indexentry{std::hash$<$ complexes::CubicalSimplex $>$@{std::hash$<$ complexes::CubicalSimplex $>$}|hyperpage}{49}
-\indexentry{algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}|hyperpage}{49}
-\indexentry{algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}!torsion@{torsion}|hyperpage}{51}
-\indexentry{torsion@{torsion}!algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}|hyperpage}{51}
-\indexentry{core::Homology@{core::Homology}|hyperpage}{51}
-\indexentry{core::Homology@{core::Homology}!Homology@{Homology}|hyperpage}{54}
-\indexentry{Homology@{Homology}!core::Homology@{core::Homology}|hyperpage}{54}
-\indexentry{core::Homology@{core::Homology}!betti\_numbers@{betti\_numbers}|hyperpage}{54}
-\indexentry{betti\_numbers@{betti\_numbers}!core::Homology@{core::Homology}|hyperpage}{54}
-\indexentry{core::Homology@{core::Homology}!select\_strategy@{select\_strategy}|hyperpage}{54}
-\indexentry{select\_strategy@{select\_strategy}!core::Homology@{core::Homology}|hyperpage}{54}
-\indexentry{core::Homology@{core::Homology}!text@{text}|hyperpage}{54}
-\indexentry{text@{text}!core::Homology@{core::Homology}|hyperpage}{54}
-\indexentry{core::Homology@{core::Homology}!torsion@{torsion}|hyperpage}{54}
-\indexentry{torsion@{torsion}!core::Homology@{core::Homology}|hyperpage}{54}
-\indexentry{core::HomologyLatexPrint@{core::HomologyLatexPrint}|hyperpage}{55}
-\indexentry{core::HomologyLatexPrint@{core::HomologyLatexPrint}!HomologyLatexPrint@{HomologyLatexPrint}|hyperpage}{57}
-\indexentry{HomologyLatexPrint@{HomologyLatexPrint}!core::HomologyLatexPrint@{core::HomologyLatexPrint}|hyperpage}{57}
-\indexentry{core::HomologyLatexPrint@{core::HomologyLatexPrint}!draw@{draw}|hyperpage}{58}
-\indexentry{draw@{draw}!core::HomologyLatexPrint@{core::HomologyLatexPrint}|hyperpage}{58}
-\indexentry{core::HomologyPrintingStrategy@{core::HomologyPrintingStrategy}|hyperpage}{58}
-\indexentry{core::HomologyPrintingStrategy@{core::HomologyPrintingStrategy}!draw@{draw}|hyperpage}{59}
-\indexentry{draw@{draw}!core::HomologyPrintingStrategy@{core::HomologyPrintingStrategy}|hyperpage}{59}
-\indexentry{core::HomologyRawPrint@{core::HomologyRawPrint}|hyperpage}{60}
-\indexentry{core::HomologyRawPrint@{core::HomologyRawPrint}!draw@{draw}|hyperpage}{61}
-\indexentry{draw@{draw}!core::HomologyRawPrint@{core::HomologyRawPrint}|hyperpage}{61}
-\indexentry{algebra::Integer@{algebra::Integer}|hyperpage}{61}
-\indexentry{algebra::Integer@{algebra::Integer}!euclidean\_function@{euclidean\_function}|hyperpage}{63}
-\indexentry{euclidean\_function@{euclidean\_function}!algebra::Integer@{algebra::Integer}|hyperpage}{63}
-\indexentry{core::LatexWrapper@{core::LatexWrapper}|hyperpage}{63}
-\indexentry{core::LatexWrapper@{core::LatexWrapper}!text@{text}|hyperpage}{65}
-\indexentry{text@{text}!core::LatexWrapper@{core::LatexWrapper}|hyperpage}{65}
-\indexentry{core::Manager@{core::Manager}|hyperpage}{65}
-\indexentry{core::Manager@{core::Manager}!run@{run}|hyperpage}{66}
-\indexentry{run@{run}!core::Manager@{core::Manager}|hyperpage}{66}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{66}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!Matrix@{Matrix}|hyperpage}{70}
-\indexentry{Matrix@{Matrix}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{70}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!at@{at}|hyperpage}{70}
-\indexentry{at@{at}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{70}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!at@{at}|hyperpage}{70}
-\indexentry{at@{at}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{70}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}|hyperpage}{71}
-\indexentry{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{71}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\+[]\+@{operator[]}|hyperpage}{71}
-\indexentry{operator\+[]\+@{operator[]}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{71}
-\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\+[]\+@{operator[]}|hyperpage}{71}
-\indexentry{operator\+[]\+@{operator[]}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{71}
-\indexentry{core::MinecraftCoordinates@{core::MinecraftCoordinates}|hyperpage}{72}
-\indexentry{core::MinecraftSavefileParser@{core::MinecraftSavefileParser}|hyperpage}{73}
-\indexentry{core::MinecraftSavefileParser@{core::MinecraftSavefileParser}!parse@{parse}|hyperpage}{74}
-\indexentry{parse@{parse}!core::MinecraftSavefileParser@{core::MinecraftSavefileParser}|hyperpage}{74}
-\indexentry{core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}|hyperpage}{74}
-\indexentry{core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}!parse@{parse}|hyperpage}{76}
-\indexentry{parse@{parse}!core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}|hyperpage}{76}
-\indexentry{core::Options@{core::Options}|hyperpage}{76}
-\indexentry{core::Options@{core::Options}!filename@{filename}|hyperpage}{79}
-\indexentry{filename@{filename}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Options@{core::Options}!help@{help}|hyperpage}{79}
-\indexentry{help@{help}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Options@{core::Options}!homology\_to\_compute@{homology\_to\_compute}|hyperpage}{79}
-\indexentry{homology\_to\_compute@{homology\_to\_compute}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Options@{core::Options}!latex@{latex}|hyperpage}{79}
-\indexentry{latex@{latex}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Options@{core::Options}!x\_bounds@{x\_bounds}|hyperpage}{79}
-\indexentry{x\_bounds@{x\_bounds}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Options@{core::Options}!y\_bounds@{y\_bounds}|hyperpage}{79}
-\indexentry{y\_bounds@{y\_bounds}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Options@{core::Options}!z\_bounds@{z\_bounds}|hyperpage}{79}
-\indexentry{z\_bounds@{z\_bounds}!core::Options@{core::Options}|hyperpage}{79}
-\indexentry{core::Polymorphic$<$ T $>$@{core::Polymorphic$<$ T $>$}|hyperpage}{80}
-\indexentry{algebra::RowEchelonFormResult$<$ T $>$@{algebra::RowEchelonFormResult$<$ T $>$}|hyperpage}{82}
-\indexentry{algebra::SkipCorrectnessCheckT@{algebra::SkipCorrectnessCheckT}|hyperpage}{83}
-\indexentry{algebra::SmithFormResult$<$ T $>$@{algebra::SmithFormResult$<$ T $>$}|hyperpage}{83}
-\indexentry{core::TextDrawable@{core::TextDrawable}|hyperpage}{84}
-\indexentry{core::TextDrawable@{core::TextDrawable}!text@{text}|hyperpage}{86}
-\indexentry{text@{text}!core::TextDrawable@{core::TextDrawable}|hyperpage}{86}
-\indexentry{algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}|hyperpage}{87}
-\indexentry{algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}!euclidean\_function@{euclidean\_function}|hyperpage}{89}
-\indexentry{euclidean\_function@{euclidean\_function}!algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}|hyperpage}{89}
-\indexentry{algebra::ZModP$<$ 2 $>$@{algebra::ZModP$<$ 2 $>$}|hyperpage}{90}
-\indexentry{algebra::ZModP$<$ 2 $>$@{algebra::ZModP$<$ 2 $>$}!euclidean\_function@{euclidean\_function}|hyperpage}{92}
-\indexentry{euclidean\_function@{euclidean\_function}!algebra::ZModP$<$ 2 $>$@{algebra::ZModP$<$ 2 $>$}|hyperpage}{92}
-\indexentry{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h@{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h}|hyperpage}{93}
-\indexentry{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h@{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h}|hyperpage}{95}
-\indexentry{mc-\/homology/algebra/include/algebra/chain\_complex.h@{mc-\/homology/algebra/include/algebra/chain\_complex.h}|hyperpage}{95}
-\indexentry{mc-\/homology/algebra/include/algebra/chain\_complex.h@{mc-\/homology/algebra/include/algebra/chain\_complex.h}|hyperpage}{97}
-\indexentry{mc-\/homology/algebra/include/algebra/integer.h@{mc-\/homology/algebra/include/algebra/integer.h}|hyperpage}{99}
-\indexentry{integer.h@{integer.h}!divide@{divide}|hyperpage}{100}
-\indexentry{divide@{divide}!integer.h@{integer.h}|hyperpage}{100}
-\indexentry{integer.h@{integer.h}!modulo@{modulo}|hyperpage}{100}
-\indexentry{modulo@{modulo}!integer.h@{integer.h}|hyperpage}{100}
-\indexentry{mc-\/homology/algebra/include/algebra/integer.h@{mc-\/homology/algebra/include/algebra/integer.h}|hyperpage}{101}
-\indexentry{mc-\/homology/algebra/include/algebra/matrix.h@{mc-\/homology/algebra/include/algebra/matrix.h}|hyperpage}{102}
-\indexentry{matrix.h@{matrix.h}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}|hyperpage}{104}
-\indexentry{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!matrix.h@{matrix.h}|hyperpage}{104}
-\indexentry{mc-\/homology/algebra/include/algebra/matrix.h@{mc-\/homology/algebra/include/algebra/matrix.h}|hyperpage}{104}
-\indexentry{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h@{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h}|hyperpage}{108}
-\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!row\_echelon\_form@{row\_echelon\_form}|hyperpage}{110}
-\indexentry{row\_echelon\_form@{row\_echelon\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{110}
-\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!row\_echelon\_form@{row\_echelon\_form}|hyperpage}{110}
-\indexentry{row\_echelon\_form@{row\_echelon\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{110}
-\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!smith\_form@{smith\_form}|hyperpage}{111}
-\indexentry{smith\_form@{smith\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{111}
-\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!smith\_form@{smith\_form}|hyperpage}{111}
-\indexentry{smith\_form@{smith\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{111}
-\indexentry{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h@{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h}|hyperpage}{112}
-\indexentry{mc-\/homology/algebra/include/algebra/modulo\_fields.h@{mc-\/homology/algebra/include/algebra/modulo\_fields.h}|hyperpage}{113}
-\indexentry{mc-\/homology/algebra/include/algebra/modulo\_fields.h@{mc-\/homology/algebra/include/algebra/modulo\_fields.h}|hyperpage}{115}
-\indexentry{mc-\/homology/algebra/include/algebra/number\_theory.h@{mc-\/homology/algebra/include/algebra/number\_theory.h}|hyperpage}{116}
-\indexentry{number\_theory.h@{number\_theory.h}!divide@{divide}|hyperpage}{119}
-\indexentry{divide@{divide}!number\_theory.h@{number\_theory.h}|hyperpage}{119}
-\indexentry{number\_theory.h@{number\_theory.h}!extended\_gcd@{extended\_gcd}|hyperpage}{119}
-\indexentry{extended\_gcd@{extended\_gcd}!number\_theory.h@{number\_theory.h}|hyperpage}{119}
-\indexentry{number\_theory.h@{number\_theory.h}!inverse\_mod@{inverse\_mod}|hyperpage}{119}
-\indexentry{inverse\_mod@{inverse\_mod}!number\_theory.h@{number\_theory.h}|hyperpage}{119}
-\indexentry{number\_theory.h@{number\_theory.h}!is\_prime@{is\_prime}|hyperpage}{120}
-\indexentry{is\_prime@{is\_prime}!number\_theory.h@{number\_theory.h}|hyperpage}{120}
-\indexentry{number\_theory.h@{number\_theory.h}!modulo@{modulo}|hyperpage}{120}
-\indexentry{modulo@{modulo}!number\_theory.h@{number\_theory.h}|hyperpage}{120}
-\indexentry{mc-\/homology/algebra/include/algebra/number\_theory.h@{mc-\/homology/algebra/include/algebra/number\_theory.h}|hyperpage}{121}
-\indexentry{mc-\/homology/algebra/include/algebra/z2\_field.h@{mc-\/homology/algebra/include/algebra/z2\_field.h}|hyperpage}{122}
-\indexentry{mc-\/homology/algebra/include/algebra/z2\_field.h@{mc-\/homology/algebra/include/algebra/z2\_field.h}|hyperpage}{123}
-\indexentry{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h@{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}|hyperpage}{124}
-\indexentry{compute\_chain\_complex.h@{compute\_chain\_complex.h}!compute\_chain\_complex@{compute\_chain\_complex}|hyperpage}{125}
-\indexentry{compute\_chain\_complex@{compute\_chain\_complex}!compute\_chain\_complex.h@{compute\_chain\_complex.h}|hyperpage}{125}
-\indexentry{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h@{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}|hyperpage}{125}
-\indexentry{mc-\/homology/complexes/include/complexes/cubical\_complex.h@{mc-\/homology/complexes/include/complexes/cubical\_complex.h}|hyperpage}{126}
-\indexentry{mc-\/homology/complexes/include/complexes/cubical\_complex.h@{mc-\/homology/complexes/include/complexes/cubical\_complex.h}|hyperpage}{128}
-\indexentry{mc-\/homology/complexes/include/complexes/utils.h@{mc-\/homology/complexes/include/complexes/utils.h}|hyperpage}{129}
-\indexentry{mc-\/homology/complexes/include/complexes/utils.h@{mc-\/homology/complexes/include/complexes/utils.h}|hyperpage}{130}
-\indexentry{mc-\/homology/core/include/core/algebra\_homology.h@{mc-\/homology/core/include/core/algebra\_homology.h}|hyperpage}{131}
-\indexentry{mc-\/homology/core/include/core/algebra\_homology.h@{mc-\/homology/core/include/core/algebra\_homology.h}|hyperpage}{132}
-\indexentry{mc-\/homology/core/include/core/complex.h@{mc-\/homology/core/include/core/complex.h}|hyperpage}{132}
-\indexentry{mc-\/homology/core/include/core/complex.h@{mc-\/homology/core/include/core/complex.h}|hyperpage}{134}
-\indexentry{mc-\/homology/core/include/core/cubical\_complex\_3d.h@{mc-\/homology/core/include/core/cubical\_complex\_3d.h}|hyperpage}{134}
-\indexentry{mc-\/homology/core/include/core/cubical\_complex\_3d.h@{mc-\/homology/core/include/core/cubical\_complex\_3d.h}|hyperpage}{135}
-\indexentry{mc-\/homology/core/include/core/homology.h@{mc-\/homology/core/include/core/homology.h}|hyperpage}{135}
-\indexentry{mc-\/homology/core/include/core/homology.h@{mc-\/homology/core/include/core/homology.h}|hyperpage}{137}
-\indexentry{mc-\/homology/core/include/core/homology\_printing\_strategy.h@{mc-\/homology/core/include/core/homology\_printing\_strategy.h}|hyperpage}{137}
-\indexentry{mc-\/homology/core/include/core/homology\_printing\_strategy.h@{mc-\/homology/core/include/core/homology\_printing\_strategy.h}|hyperpage}{139}
-\indexentry{mc-\/homology/core/include/core/latex\_wrapper.h@{mc-\/homology/core/include/core/latex\_wrapper.h}|hyperpage}{139}
-\indexentry{mc-\/homology/core/include/core/latex\_wrapper.h@{mc-\/homology/core/include/core/latex\_wrapper.h}|hyperpage}{140}
-\indexentry{mc-\/homology/core/include/core/manager.h@{mc-\/homology/core/include/core/manager.h}|hyperpage}{140}
-\indexentry{mc-\/homology/core/include/core/manager.h@{mc-\/homology/core/include/core/manager.h}|hyperpage}{141}
-\indexentry{mc-\/homology/core/include/core/options.h@{mc-\/homology/core/include/core/options.h}|hyperpage}{142}
-\indexentry{mc-\/homology/core/include/core/options.h@{mc-\/homology/core/include/core/options.h}|hyperpage}{143}
-\indexentry{mc-\/homology/core/include/core/parser.h@{mc-\/homology/core/include/core/parser.h}|hyperpage}{144}
-\indexentry{mc-\/homology/core/include/core/parser.h@{mc-\/homology/core/include/core/parser.h}|hyperpage}{145}
-\indexentry{mc-\/homology/core/include/core/polymorphic.h@{mc-\/homology/core/include/core/polymorphic.h}|hyperpage}{145}
-\indexentry{mc-\/homology/core/include/core/polymorphic.h@{mc-\/homology/core/include/core/polymorphic.h}|hyperpage}{146}
-\indexentry{mc-\/homology/core/include/core/text\_drawable.h@{mc-\/homology/core/include/core/text\_drawable.h}|hyperpage}{148}
-\indexentry{mc-\/homology/core/include/core/text\_drawable.h@{mc-\/homology/core/include/core/text\_drawable.h}|hyperpage}{149}
+\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{21}
+\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!ChainComplex@{ChainComplex}|hyperpage}{22}
+\indexentry{ChainComplex@{ChainComplex}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{22}
+\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!ChainComplex@{ChainComplex}|hyperpage}{22}
+\indexentry{ChainComplex@{ChainComplex}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{22}
+\indexentry{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!boundary@{boundary}|hyperpage}{23}
+\indexentry{boundary@{boundary}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}|hyperpage}{23}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{23}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!filename@{filename}|hyperpage}{26}
+\indexentry{filename@{filename}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{26}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!help@{help}|hyperpage}{26}
+\indexentry{help@{help}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{26}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!homology\_to\_compute@{homology\_to\_compute}|hyperpage}{27}
+\indexentry{homology\_to\_compute@{homology\_to\_compute}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{27}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!latex@{latex}|hyperpage}{27}
+\indexentry{latex@{latex}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{27}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!x\_bounds@{x\_bounds}|hyperpage}{27}
+\indexentry{x\_bounds@{x\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{27}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!y\_bounds@{y\_bounds}|hyperpage}{27}
+\indexentry{y\_bounds@{y\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{27}
+\indexentry{core::CommandlineOptions@{core::CommandlineOptions}!z\_bounds@{z\_bounds}|hyperpage}{27}
+\indexentry{z\_bounds@{z\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}|hyperpage}{27}
+\indexentry{core::Complex@{core::Complex}|hyperpage}{28}
+\indexentry{core::Complex@{core::Complex}!reduce@{reduce}|hyperpage}{29}
+\indexentry{reduce@{reduce}!core::Complex@{core::Complex}|hyperpage}{29}
+\indexentry{core::Complex@{core::Complex}!z2\_homology@{z2\_homology}|hyperpage}{29}
+\indexentry{z2\_homology@{z2\_homology}!core::Complex@{core::Complex}|hyperpage}{29}
+\indexentry{core::Complex@{core::Complex}!z3\_homology@{z3\_homology}|hyperpage}{30}
+\indexentry{z3\_homology@{z3\_homology}!core::Complex@{core::Complex}|hyperpage}{30}
+\indexentry{core::Complex@{core::Complex}!z\_homology@{z\_homology}|hyperpage}{30}
+\indexentry{z\_homology@{z\_homology}!core::Complex@{core::Complex}|hyperpage}{30}
+\indexentry{core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}|hyperpage}{30}
+\indexentry{core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}!clone@{clone}|hyperpage}{32}
+\indexentry{clone@{clone}!core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}|hyperpage}{32}
+\indexentry{core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}!get\_address@{get\_address}|hyperpage}{32}
+\indexentry{get\_address@{get\_address}!core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}|hyperpage}{32}
+\indexentry{core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}!get\_address@{get\_address}|hyperpage}{32}
+\indexentry{get\_address@{get\_address}!core::Polymorphic$<$ T $>$::Concept@{core::Polymorphic$<$ T $>$::Concept}|hyperpage}{32}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{33}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!CubicalComplex@{CubicalComplex}|hyperpage}{34}
+\indexentry{CubicalComplex@{CubicalComplex}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{34}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!add@{add}|hyperpage}{35}
+\indexentry{add@{add}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{35}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!add\_recursive@{add\_recursive}|hyperpage}{35}
+\indexentry{add\_recursive@{add\_recursive}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{35}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!contains@{contains}|hyperpage}{35}
+\indexentry{contains@{contains}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{35}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!remove@{remove}|hyperpage}{35}
+\indexentry{remove@{remove}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{35}
+\indexentry{complexes::CubicalComplex@{complexes::CubicalComplex}!simplices@{simplices}|hyperpage}{36}
+\indexentry{simplices@{simplices}!complexes::CubicalComplex@{complexes::CubicalComplex}|hyperpage}{36}
+\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{36}
+\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!reduce@{reduce}|hyperpage}{39}
+\indexentry{reduce@{reduce}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{39}
+\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!z2\_homology@{z2\_homology}|hyperpage}{39}
+\indexentry{z2\_homology@{z2\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{39}
+\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!z3\_homology@{z3\_homology}|hyperpage}{39}
+\indexentry{z3\_homology@{z3\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{39}
+\indexentry{core::CubicalComplex3D@{core::CubicalComplex3D}!z\_homology@{z\_homology}|hyperpage}{39}
+\indexentry{z\_homology@{z\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}|hyperpage}{39}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{40}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!CubicalSimplex@{CubicalSimplex}|hyperpage}{43}
+\indexentry{CubicalSimplex@{CubicalSimplex}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{43}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!boundary@{boundary}|hyperpage}{43}
+\indexentry{boundary@{boundary}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{43}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!interval@{interval}|hyperpage}{43}
+\indexentry{interval@{interval}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{43}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!operator$<$=$>$@{operator$<$=$>$}|hyperpage}{43}
+\indexentry{operator$<$=$>$@{operator$<$=$>$}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{43}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!point@{point}|hyperpage}{43}
+\indexentry{point@{point}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{43}
+\indexentry{complexes::CubicalSimplex@{complexes::CubicalSimplex}!product@{product}|hyperpage}{44}
+\indexentry{product@{product}!complexes::CubicalSimplex@{complexes::CubicalSimplex}|hyperpage}{44}
+\indexentry{algebra::DivResult$<$ T $>$@{algebra::DivResult$<$ T $>$}|hyperpage}{44}
+\indexentry{algebra::ExtendedGCDResult@{algebra::ExtendedGCDResult}|hyperpage}{46}
+\indexentry{std::formatter$<$ algebra::Integer $>$@{std::formatter$<$ algebra::Integer $>$}|hyperpage}{47}
+\indexentry{std::formatter$<$ algebra::Integer $>$@{std::formatter$<$ algebra::Integer $>$}!format@{format}|hyperpage}{48}
+\indexentry{format@{format}!std::formatter$<$ algebra::Integer $>$@{std::formatter$<$ algebra::Integer $>$}|hyperpage}{48}
+\indexentry{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}|hyperpage}{48}
+\indexentry{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}!format@{format}|hyperpage}{50}
+\indexentry{format@{format}!std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}|hyperpage}{50}
+\indexentry{std::formatter$<$ algebra::ZModP$<$ P $>$ $>$@{std::formatter$<$ algebra::ZModP$<$ P $>$ $>$}|hyperpage}{50}
+\indexentry{std::formatter$<$ complexes::BasicInterval $>$@{std::formatter$<$ complexes::BasicInterval $>$}|hyperpage}{51}
+\indexentry{std::formatter$<$ complexes::BasicInterval $>$@{std::formatter$<$ complexes::BasicInterval $>$}!format@{format}|hyperpage}{53}
+\indexentry{format@{format}!std::formatter$<$ complexes::BasicInterval $>$@{std::formatter$<$ complexes::BasicInterval $>$}|hyperpage}{53}
+\indexentry{std::formatter$<$ complexes::CubicalSimplex $>$@{std::formatter$<$ complexes::CubicalSimplex $>$}|hyperpage}{53}
+\indexentry{std::formatter$<$ complexes::CubicalSimplex $>$@{std::formatter$<$ complexes::CubicalSimplex $>$}!format@{format}|hyperpage}{56}
+\indexentry{format@{format}!std::formatter$<$ complexes::CubicalSimplex $>$@{std::formatter$<$ complexes::CubicalSimplex $>$}|hyperpage}{56}
+\indexentry{std::hash$<$ complexes::BasicInterval $>$@{std::hash$<$ complexes::BasicInterval $>$}|hyperpage}{56}
+\indexentry{std::hash$<$ complexes::CubicalSimplex $>$@{std::hash$<$ complexes::CubicalSimplex $>$}|hyperpage}{57}
+\indexentry{algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}|hyperpage}{57}
+\indexentry{algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}!torsion@{torsion}|hyperpage}{59}
+\indexentry{torsion@{torsion}!algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}|hyperpage}{59}
+\indexentry{core::Homology@{core::Homology}|hyperpage}{59}
+\indexentry{core::Homology@{core::Homology}!Homology@{Homology}|hyperpage}{62}
+\indexentry{Homology@{Homology}!core::Homology@{core::Homology}|hyperpage}{62}
+\indexentry{core::Homology@{core::Homology}!betti\_numbers@{betti\_numbers}|hyperpage}{62}
+\indexentry{betti\_numbers@{betti\_numbers}!core::Homology@{core::Homology}|hyperpage}{62}
+\indexentry{core::Homology@{core::Homology}!select\_strategy@{select\_strategy}|hyperpage}{62}
+\indexentry{select\_strategy@{select\_strategy}!core::Homology@{core::Homology}|hyperpage}{62}
+\indexentry{core::Homology@{core::Homology}!text@{text}|hyperpage}{63}
+\indexentry{text@{text}!core::Homology@{core::Homology}|hyperpage}{63}
+\indexentry{core::Homology@{core::Homology}!torsion@{torsion}|hyperpage}{63}
+\indexentry{torsion@{torsion}!core::Homology@{core::Homology}|hyperpage}{63}
+\indexentry{core::HomologyLatexPrint@{core::HomologyLatexPrint}|hyperpage}{63}
+\indexentry{core::HomologyLatexPrint@{core::HomologyLatexPrint}!HomologyLatexPrint@{HomologyLatexPrint}|hyperpage}{66}
+\indexentry{HomologyLatexPrint@{HomologyLatexPrint}!core::HomologyLatexPrint@{core::HomologyLatexPrint}|hyperpage}{66}
+\indexentry{core::HomologyLatexPrint@{core::HomologyLatexPrint}!draw@{draw}|hyperpage}{66}
+\indexentry{draw@{draw}!core::HomologyLatexPrint@{core::HomologyLatexPrint}|hyperpage}{66}
+\indexentry{core::HomologyPrintingStrategy@{core::HomologyPrintingStrategy}|hyperpage}{67}
+\indexentry{core::HomologyPrintingStrategy@{core::HomologyPrintingStrategy}!draw@{draw}|hyperpage}{68}
+\indexentry{draw@{draw}!core::HomologyPrintingStrategy@{core::HomologyPrintingStrategy}|hyperpage}{68}
+\indexentry{core::HomologyRawPrint@{core::HomologyRawPrint}|hyperpage}{68}
+\indexentry{core::HomologyRawPrint@{core::HomologyRawPrint}!draw@{draw}|hyperpage}{69}
+\indexentry{draw@{draw}!core::HomologyRawPrint@{core::HomologyRawPrint}|hyperpage}{69}
+\indexentry{algebra::Integer@{algebra::Integer}|hyperpage}{70}
+\indexentry{algebra::Integer@{algebra::Integer}!euclidean\_function@{euclidean\_function}|hyperpage}{71}
+\indexentry{euclidean\_function@{euclidean\_function}!algebra::Integer@{algebra::Integer}|hyperpage}{71}
+\indexentry{core::LatexWrapper@{core::LatexWrapper}|hyperpage}{72}
+\indexentry{core::LatexWrapper@{core::LatexWrapper}!text@{text}|hyperpage}{74}
+\indexentry{text@{text}!core::LatexWrapper@{core::LatexWrapper}|hyperpage}{74}
+\indexentry{core::Manager@{core::Manager}|hyperpage}{74}
+\indexentry{core::Manager@{core::Manager}!run@{run}|hyperpage}{76}
+\indexentry{run@{run}!core::Manager@{core::Manager}|hyperpage}{76}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{76}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!Matrix@{Matrix}|hyperpage}{80}
+\indexentry{Matrix@{Matrix}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{80}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!at@{at}|hyperpage}{80}
+\indexentry{at@{at}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{80}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!at@{at}|hyperpage}{80}
+\indexentry{at@{at}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{80}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}|hyperpage}{82}
+\indexentry{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{82}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\+[]\+@{operator[]}|hyperpage}{82}
+\indexentry{operator\+[]\+@{operator[]}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{82}
+\indexentry{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\+[]\+@{operator[]}|hyperpage}{82}
+\indexentry{operator\+[]\+@{operator[]}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}|hyperpage}{82}
+\indexentry{core::MinecraftCoordinates@{core::MinecraftCoordinates}|hyperpage}{83}
+\indexentry{core::MinecraftSavefileParser@{core::MinecraftSavefileParser}|hyperpage}{84}
+\indexentry{core::MinecraftSavefileParser@{core::MinecraftSavefileParser}!parse@{parse}|hyperpage}{85}
+\indexentry{parse@{parse}!core::MinecraftSavefileParser@{core::MinecraftSavefileParser}|hyperpage}{85}
+\indexentry{core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}|hyperpage}{85}
+\indexentry{core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}!parse@{parse}|hyperpage}{87}
+\indexentry{parse@{parse}!core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}|hyperpage}{87}
+\indexentry{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}|hyperpage}{87}
+\indexentry{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}!clone@{clone}|hyperpage}{90}
+\indexentry{clone@{clone}!core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}|hyperpage}{90}
+\indexentry{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}!get\_address@{get\_address}|hyperpage}{90}
+\indexentry{get\_address@{get\_address}!core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}|hyperpage}{90}
+\indexentry{core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}!get\_address@{get\_address}|hyperpage}{90}
+\indexentry{get\_address@{get\_address}!core::Polymorphic$<$ T $>$::Model$<$ Object $>$@{core::Polymorphic$<$ T $>$::Model$<$ Object $>$}|hyperpage}{90}
+\indexentry{core::Options@{core::Options}|hyperpage}{91}
+\indexentry{core::Options@{core::Options}!filename@{filename}|hyperpage}{93}
+\indexentry{filename@{filename}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Options@{core::Options}!help@{help}|hyperpage}{93}
+\indexentry{help@{help}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Options@{core::Options}!homology\_to\_compute@{homology\_to\_compute}|hyperpage}{93}
+\indexentry{homology\_to\_compute@{homology\_to\_compute}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Options@{core::Options}!latex@{latex}|hyperpage}{93}
+\indexentry{latex@{latex}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Options@{core::Options}!x\_bounds@{x\_bounds}|hyperpage}{93}
+\indexentry{x\_bounds@{x\_bounds}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Options@{core::Options}!y\_bounds@{y\_bounds}|hyperpage}{93}
+\indexentry{y\_bounds@{y\_bounds}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Options@{core::Options}!z\_bounds@{z\_bounds}|hyperpage}{93}
+\indexentry{z\_bounds@{z\_bounds}!core::Options@{core::Options}|hyperpage}{93}
+\indexentry{core::Polymorphic$<$ T $>$@{core::Polymorphic$<$ T $>$}|hyperpage}{94}
+\indexentry{algebra::RowEchelonFormResult$<$ T $>$@{algebra::RowEchelonFormResult$<$ T $>$}|hyperpage}{97}
+\indexentry{algebra::SkipCorrectnessCheckT@{algebra::SkipCorrectnessCheckT}|hyperpage}{98}
+\indexentry{algebra::SmithFormResult$<$ T $>$@{algebra::SmithFormResult$<$ T $>$}|hyperpage}{98}
+\indexentry{core::TextDrawable@{core::TextDrawable}|hyperpage}{99}
+\indexentry{core::TextDrawable@{core::TextDrawable}!text@{text}|hyperpage}{101}
+\indexentry{text@{text}!core::TextDrawable@{core::TextDrawable}|hyperpage}{101}
+\indexentry{algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}|hyperpage}{102}
+\indexentry{algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}!euclidean\_function@{euclidean\_function}|hyperpage}{104}
+\indexentry{euclidean\_function@{euclidean\_function}!algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}|hyperpage}{104}
+\indexentry{algebra::ZModP$<$ 2 $>$@{algebra::ZModP$<$ 2 $>$}|hyperpage}{105}
+\indexentry{algebra::ZModP$<$ 2 $>$@{algebra::ZModP$<$ 2 $>$}!euclidean\_function@{euclidean\_function}|hyperpage}{107}
+\indexentry{euclidean\_function@{euclidean\_function}!algebra::ZModP$<$ 2 $>$@{algebra::ZModP$<$ 2 $>$}|hyperpage}{107}
+\indexentry{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h@{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h}|hyperpage}{109}
+\indexentry{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h@{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h}|hyperpage}{111}
+\indexentry{mc-\/homology/algebra/include/algebra/chain\_complex.h@{mc-\/homology/algebra/include/algebra/chain\_complex.h}|hyperpage}{111}
+\indexentry{mc-\/homology/algebra/include/algebra/chain\_complex.h@{mc-\/homology/algebra/include/algebra/chain\_complex.h}|hyperpage}{113}
+\indexentry{mc-\/homology/algebra/include/algebra/integer.h@{mc-\/homology/algebra/include/algebra/integer.h}|hyperpage}{115}
+\indexentry{integer.h@{integer.h}!divide@{divide}|hyperpage}{116}
+\indexentry{divide@{divide}!integer.h@{integer.h}|hyperpage}{116}
+\indexentry{integer.h@{integer.h}!modulo@{modulo}|hyperpage}{116}
+\indexentry{modulo@{modulo}!integer.h@{integer.h}|hyperpage}{116}
+\indexentry{mc-\/homology/algebra/include/algebra/integer.h@{mc-\/homology/algebra/include/algebra/integer.h}|hyperpage}{117}
+\indexentry{mc-\/homology/algebra/include/algebra/matrix.h@{mc-\/homology/algebra/include/algebra/matrix.h}|hyperpage}{118}
+\indexentry{matrix.h@{matrix.h}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}|hyperpage}{120}
+\indexentry{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!matrix.h@{matrix.h}|hyperpage}{120}
+\indexentry{mc-\/homology/algebra/include/algebra/matrix.h@{mc-\/homology/algebra/include/algebra/matrix.h}|hyperpage}{120}
+\indexentry{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h@{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h}|hyperpage}{124}
+\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!row\_echelon\_form@{row\_echelon\_form}|hyperpage}{126}
+\indexentry{row\_echelon\_form@{row\_echelon\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{126}
+\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!row\_echelon\_form@{row\_echelon\_form}|hyperpage}{126}
+\indexentry{row\_echelon\_form@{row\_echelon\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{126}
+\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!smith\_form@{smith\_form}|hyperpage}{127}
+\indexentry{smith\_form@{smith\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{127}
+\indexentry{matrix\_algorithms.h@{matrix\_algorithms.h}!smith\_form@{smith\_form}|hyperpage}{127}
+\indexentry{smith\_form@{smith\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}|hyperpage}{127}
+\indexentry{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h@{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h}|hyperpage}{128}
+\indexentry{mc-\/homology/algebra/include/algebra/modulo\_fields.h@{mc-\/homology/algebra/include/algebra/modulo\_fields.h}|hyperpage}{129}
+\indexentry{mc-\/homology/algebra/include/algebra/modulo\_fields.h@{mc-\/homology/algebra/include/algebra/modulo\_fields.h}|hyperpage}{131}
+\indexentry{mc-\/homology/algebra/include/algebra/number\_theory.h@{mc-\/homology/algebra/include/algebra/number\_theory.h}|hyperpage}{132}
+\indexentry{number\_theory.h@{number\_theory.h}!divide@{divide}|hyperpage}{135}
+\indexentry{divide@{divide}!number\_theory.h@{number\_theory.h}|hyperpage}{135}
+\indexentry{number\_theory.h@{number\_theory.h}!extended\_gcd@{extended\_gcd}|hyperpage}{135}
+\indexentry{extended\_gcd@{extended\_gcd}!number\_theory.h@{number\_theory.h}|hyperpage}{135}
+\indexentry{number\_theory.h@{number\_theory.h}!inverse\_mod@{inverse\_mod}|hyperpage}{135}
+\indexentry{inverse\_mod@{inverse\_mod}!number\_theory.h@{number\_theory.h}|hyperpage}{135}
+\indexentry{number\_theory.h@{number\_theory.h}!is\_prime@{is\_prime}|hyperpage}{136}
+\indexentry{is\_prime@{is\_prime}!number\_theory.h@{number\_theory.h}|hyperpage}{136}
+\indexentry{number\_theory.h@{number\_theory.h}!modulo@{modulo}|hyperpage}{136}
+\indexentry{modulo@{modulo}!number\_theory.h@{number\_theory.h}|hyperpage}{136}
+\indexentry{mc-\/homology/algebra/include/algebra/number\_theory.h@{mc-\/homology/algebra/include/algebra/number\_theory.h}|hyperpage}{137}
+\indexentry{mc-\/homology/algebra/include/algebra/z2\_field.h@{mc-\/homology/algebra/include/algebra/z2\_field.h}|hyperpage}{138}
+\indexentry{mc-\/homology/algebra/include/algebra/z2\_field.h@{mc-\/homology/algebra/include/algebra/z2\_field.h}|hyperpage}{139}
+\indexentry{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h@{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}|hyperpage}{140}
+\indexentry{compute\_chain\_complex.h@{compute\_chain\_complex.h}!compute\_chain\_complex@{compute\_chain\_complex}|hyperpage}{141}
+\indexentry{compute\_chain\_complex@{compute\_chain\_complex}!compute\_chain\_complex.h@{compute\_chain\_complex.h}|hyperpage}{141}
+\indexentry{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h@{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}|hyperpage}{141}
+\indexentry{mc-\/homology/complexes/include/complexes/cubical\_complex.h@{mc-\/homology/complexes/include/complexes/cubical\_complex.h}|hyperpage}{142}
+\indexentry{mc-\/homology/complexes/include/complexes/cubical\_complex.h@{mc-\/homology/complexes/include/complexes/cubical\_complex.h}|hyperpage}{144}
+\indexentry{mc-\/homology/complexes/include/complexes/utils.h@{mc-\/homology/complexes/include/complexes/utils.h}|hyperpage}{145}
+\indexentry{mc-\/homology/complexes/include/complexes/utils.h@{mc-\/homology/complexes/include/complexes/utils.h}|hyperpage}{146}
+\indexentry{mc-\/homology/core/include/core/algebra\_homology.h@{mc-\/homology/core/include/core/algebra\_homology.h}|hyperpage}{147}
+\indexentry{mc-\/homology/core/include/core/algebra\_homology.h@{mc-\/homology/core/include/core/algebra\_homology.h}|hyperpage}{148}
+\indexentry{mc-\/homology/core/include/core/complex.h@{mc-\/homology/core/include/core/complex.h}|hyperpage}{148}
+\indexentry{mc-\/homology/core/include/core/complex.h@{mc-\/homology/core/include/core/complex.h}|hyperpage}{150}
+\indexentry{mc-\/homology/core/include/core/cubical\_complex\_3d.h@{mc-\/homology/core/include/core/cubical\_complex\_3d.h}|hyperpage}{150}
+\indexentry{mc-\/homology/core/include/core/cubical\_complex\_3d.h@{mc-\/homology/core/include/core/cubical\_complex\_3d.h}|hyperpage}{151}
+\indexentry{mc-\/homology/core/include/core/homology.h@{mc-\/homology/core/include/core/homology.h}|hyperpage}{151}
+\indexentry{mc-\/homology/core/include/core/homology.h@{mc-\/homology/core/include/core/homology.h}|hyperpage}{153}
+\indexentry{mc-\/homology/core/include/core/homology\_printing\_strategy.h@{mc-\/homology/core/include/core/homology\_printing\_strategy.h}|hyperpage}{153}
+\indexentry{mc-\/homology/core/include/core/homology\_printing\_strategy.h@{mc-\/homology/core/include/core/homology\_printing\_strategy.h}|hyperpage}{155}
+\indexentry{mc-\/homology/core/include/core/latex\_wrapper.h@{mc-\/homology/core/include/core/latex\_wrapper.h}|hyperpage}{155}
+\indexentry{mc-\/homology/core/include/core/latex\_wrapper.h@{mc-\/homology/core/include/core/latex\_wrapper.h}|hyperpage}{156}
+\indexentry{mc-\/homology/core/include/core/manager.h@{mc-\/homology/core/include/core/manager.h}|hyperpage}{156}
+\indexentry{mc-\/homology/core/include/core/manager.h@{mc-\/homology/core/include/core/manager.h}|hyperpage}{157}
+\indexentry{mc-\/homology/core/include/core/options.h@{mc-\/homology/core/include/core/options.h}|hyperpage}{158}
+\indexentry{mc-\/homology/core/include/core/options.h@{mc-\/homology/core/include/core/options.h}|hyperpage}{159}
+\indexentry{mc-\/homology/core/include/core/parser.h@{mc-\/homology/core/include/core/parser.h}|hyperpage}{160}
+\indexentry{mc-\/homology/core/include/core/parser.h@{mc-\/homology/core/include/core/parser.h}|hyperpage}{161}
+\indexentry{mc-\/homology/core/include/core/polymorphic.h@{mc-\/homology/core/include/core/polymorphic.h}|hyperpage}{161}
+\indexentry{mc-\/homology/core/include/core/polymorphic.h@{mc-\/homology/core/include/core/polymorphic.h}|hyperpage}{162}
+\indexentry{mc-\/homology/core/include/core/text\_drawable.h@{mc-\/homology/core/include/core/text\_drawable.h}|hyperpage}{164}
+\indexentry{mc-\/homology/core/include/core/text\_drawable.h@{mc-\/homology/core/include/core/text\_drawable.h}|hyperpage}{165}

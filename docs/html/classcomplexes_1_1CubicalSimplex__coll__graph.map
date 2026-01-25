@@ -1,3 +1,11 @@
 <map id="complexes::CubicalSimplex" name="complexes::CubicalSimplex">
-<area shape="rect" id="Node000001" title="A class representing a single cubical simplex in a complex." alt="" coords="5,5,179,303"/>
+<area shape="rect" id="Node000001" title="A class representing a single cubical simplex in a complex." alt="" coords="52,679,226,1001"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="62,507,216,604"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,601,142,662,137,662,139,606"/>
+<area shape="rect" id="Node000003" href="$classcomplexes_1_1BasicInterval.html" title="A struct representing an interval of length 0 or 1." alt="" coords="5,159,169,432"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,429,118,482,120,490,115,490,113,483,105,434"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="192,256,299,334"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="236,347,219,415,192,484,178,508,173,506,187,482,214,413,234,352"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="237,5,255,84"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="246,81,248,239,243,239,245,86"/>
 </map>

@@ -22,7 +22,9 @@ public:
     std::string text() const override;
 
 private:
+    /// \brief Wrapped (decorated) value
     std::unique_ptr<TextDrawable> m_inner;
+    /// \brief Document class of the latex file
     std::string m_documentclass;
 };
 
