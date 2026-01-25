@@ -83,12 +83,12 @@ int Manager::run() {
             }
             case HomologyChoice::Z2: {
                 printing_strategy =
-                    std::make_unique<HomologyLatexPrint>("\\mathbb{Z_{2}}");
+                    std::make_unique<HomologyLatexPrint>("\\mathbb{Z}_{2}");
                 break;
             }
             case HomologyChoice::Z3: {
                 printing_strategy =
-                    std::make_unique<HomologyLatexPrint>("\\mathbb{Z_{3}}");
+                    std::make_unique<HomologyLatexPrint>("\\mathbb{Z}_{3}");
                 break;
             }
         }
