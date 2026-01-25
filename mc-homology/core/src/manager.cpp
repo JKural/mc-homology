@@ -42,7 +42,26 @@ void Manager::set_parser(std::unique_ptr<MinecraftSavefileParser> parser) {
 
 int Manager::run() {
     if (m_options->help()) {
-        std::println("TODO: Help");
+        std::println("Usage:");
+        std::println(
+            "mc-homology [-h | --help] [--Z | --Z2 | --Z3] [--latex | --no-latex] \\\n"
+            "  [--x <x1> <x2>] [--y <y1> <y2>] [--z <z1> <z2>] <path-to-region-directory>"
+        );
+        std::println("Options:");
+        std::println("-h | --help");
+        std::println("  Print help and exit.");
+        std::println("--Z | --Z2 | --Z3");
+        std::println("  Choose coefficients of the chain complex");
+        std::println("--latex | --no-latex");
+        std::println("  Choose, whether to print the output in .tex syntax");
+        std::println("--x <x1> <x2>");
+        std::println("  Choose x bounds of the save file. x1 <= x < x2");
+        std::println("--y <y1> <y2>");
+        std::println("  Choose y bounds of the save file. y1 <= y < y2");
+        std::println("--z <z1> <z2>");
+        std::println("  Choose z bounds of the save file. z1 <= z < z2");
+        std::println("<path-to-region-directory");
+        std::println("Path to the region directory of a minecraft save.");
         return 0;
     }
     auto parser = std::make_unique<MinecraftSavefileParser_mcSavefileParsers>();
