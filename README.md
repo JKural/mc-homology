@@ -12,6 +12,7 @@ Next, type in the following commands:
 
 ```bash
 git clone https://github.com/JKural/mc-homology.git
+cd mc-homology
 cmake --preset release
 cmake --build build
 cmake --install build [--prefix <install-prefix>]
