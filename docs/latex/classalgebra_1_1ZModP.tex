@@ -1,0 +1,113 @@
+\doxysection{algebra::\+ZModP\texorpdfstring{$<$}{<} P \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classalgebra_1_1ZModP}{}\label{classalgebra_1_1ZModP}\index{algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}}
+
+
+\doxylink{conceptalgebra_1_1Field}{Field} of integers modulo P.  
+
+
+
+
+{\ttfamily \+\#include $<$modulo\+\_\+fields.\+h$>$}
+
+
+
+Inheritance diagram for algebra::\+ZModP\texorpdfstring{$<$}{<} P \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classalgebra_1_1ZModP__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for algebra::\+ZModP\texorpdfstring{$<$}{<} P \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classalgebra_1_1ZModP__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}\label{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b} 
+constexpr {\bfseries ZModP} ()=default
+\begin{DoxyCompactList}\small\item\em Returns 0. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a4f09bc2c8708adbef0db654a08213097}\label{classalgebra_1_1ZModP_a4f09bc2c8708adbef0db654a08213097} 
+constexpr {\bfseries ZModP} (int n) noexcept
+\begin{DoxyCompactList}\small\item\em Returns n mod P. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a44251cd7bf25a65636053156b574c165}\label{classalgebra_1_1ZModP_a44251cd7bf25a65636053156b574c165} 
+constexpr {\bfseries operator int} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns the underlying integer. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a85dff397d46cb7843f8058634c7e043d}\label{classalgebra_1_1ZModP_a85dff397d46cb7843f8058634c7e043d} 
+constexpr bool {\bfseries operator==} (\doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} const \&) const =default
+\begin{DoxyCompactList}\small\item\em Equality comparison. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a0d95e205cfa35145b766244fa6288b0d}\label{classalgebra_1_1ZModP_a0d95e205cfa35145b766244fa6288b0d} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} \& {\bfseries operator+=} (\doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Adds rhs to itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a68801c63b831da32475636cb238f423f}\label{classalgebra_1_1ZModP_a68801c63b831da32475636cb238f423f} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} \& {\bfseries operator-\/=} (\doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Subtracts rhs from itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_abd7dd424daded7aa867cd2f8af1f3440}\label{classalgebra_1_1ZModP_abd7dd424daded7aa867cd2f8af1f3440} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} {\bfseries operator+} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns a copy of itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a65eae21764df80848eb9ef6f9998b1c0}\label{classalgebra_1_1ZModP_a65eae21764df80848eb9ef6f9998b1c0} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} {\bfseries operator-\/} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns a negation of itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a4eff4e173fbce1d17da8851fffad9a27}\label{classalgebra_1_1ZModP_a4eff4e173fbce1d17da8851fffad9a27} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} \& {\bfseries operator\texorpdfstring{$\ast$}{*}=} (\doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplies itself by rhs. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{classalgebra_1_1ZModP_a624f939bdb828567816caf9dfe2d4bb2}{euclidean\+\_\+function}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Euclidean function for a field. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a65666a408e9fbc3b41d58e47cb2756cc}\label{classalgebra_1_1ZModP_a65666a408e9fbc3b41d58e47cb2756cc} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} \& {\bfseries operator/\+=} (\doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} rhs)
+\begin{DoxyCompactList}\small\item\em Divides itself by rhs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1ZModP_a67d100babbe74f5295d204a4bf1f9d42}\label{classalgebra_1_1ZModP_a67d100babbe74f5295d204a4bf1f9d42} 
+static constexpr int {\bfseries p} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns the modulus P. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_ade9c80aa8dba7eb8f02a7bc2b10ee81a}\label{classalgebra_1_1ZModP_ade9c80aa8dba7eb8f02a7bc2b10ee81a} 
+static constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} {\bfseries zero} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns 0. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ZModP_a556da230d0dd25e7d6a110a6cfc46945}\label{classalgebra_1_1ZModP_a556da230d0dd25e7d6a110a6cfc46945} 
+static constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}} {\bfseries one} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$int P$>$\newline
+class algebra::\+\+ZMod\+P$<$ P $>$}
+\doxylink{conceptalgebra_1_1Field}{Field} of integers modulo P. 
+
+A class modeling fields of integers modulo P, where P is a prime number.
+
+
+\begin{DoxyParams}{Parameters}
+{\em P} & A prime number \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classalgebra_1_1ZModP_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classalgebra_1_1ZModP_a624f939bdb828567816caf9dfe2d4bb2}\index{algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}!euclidean\_function@{euclidean\_function}}
+\index{euclidean\_function@{euclidean\_function}!algebra::ZModP$<$ P $>$@{algebra::ZModP$<$ P $>$}}
+\doxysubsubsection{\texorpdfstring{euclidean\_function()}{euclidean\_function()}}
+{\footnotesize\ttfamily \label{classalgebra_1_1ZModP_a624f939bdb828567816caf9dfe2d4bb2} 
+template$<$int P$>$ \\
+int \doxymbox{\hyperlink{classalgebra_1_1ZModP}{algebra::\+\+ZModP}}$<$ P $>$::\+euclidean\+\_\+function (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Euclidean function for a field. 
+
+Euclidean function for fields is constantly equal to 1. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+algebra/\+include/\+algebra/\+\doxymbox{\hyperlink{modulo__fields_8h}{modulo\+\_\+fields.\+h}}\end{DoxyCompactItemize}

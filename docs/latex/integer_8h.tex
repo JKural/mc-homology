@@ -1,0 +1,90 @@
+\doxysection{mc-\/homology/\+algebra/\+include/\+algebra/\+integer.h File Reference}
+\hypertarget{integer_8h}{}\label{integer_8h}\index{mc-\/homology/algebra/include/algebra/integer.h@{mc-\/homology/algebra/include/algebra/integer.h}}
+
+
+A file containing Integer implementation satisfying algebraic concepts.  
+
+
+{\ttfamily \+\#include $<$compare$>$}\newline
+{\ttfamily \+\#include $<$cstdlib$>$}\newline
+{\ttfamily \+\#include $<$format$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include "{}algebra/\+algebraic\+\_\+concepts.\+h"{}}\newline
+Include dependency graph for integer.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{integer_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classalgebra_1_1Integer}{algebra::\+\+Integer}}
+\begin{DoxyCompactList}\small\item\em Class of Integers. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Integer_01_4}{std::\+formatter$<$ algebra::\+\+Integer $>$}}
+\begin{DoxyCompactList}\small\item\em Formatter for Integer type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{integer_8h_ade04e6b8cc549a66f70769f8c44104f8}\label{integer_8h_ade04e6b8cc549a66f70769f8c44104f8} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} {\bfseries algebra::\+operator+} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} lhs, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Adds two integers. \end{DoxyCompactList}\item 
+\Hypertarget{integer_8h_acb08f898d9c1b3fd624ef42e41a605a1}\label{integer_8h_acb08f898d9c1b3fd624ef42e41a605a1} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} {\bfseries algebra::\+operator-\/} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} lhs, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Subtracts two integers. \end{DoxyCompactList}\item 
+\Hypertarget{integer_8h_a442462c93fc9e0ebffcc6e517e9e3796}\label{integer_8h_a442462c93fc9e0ebffcc6e517e9e3796} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} {\bfseries algebra::\+operator\texorpdfstring{$\ast$}{*}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} lhs, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplies two integers. \end{DoxyCompactList}\item 
+\Hypertarget{integer_8h_a9cc47983d14c3338d843c8fe61f6d7ae}\label{integer_8h_a9cc47983d14c3338d843c8fe61f6d7ae} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} {\bfseries algebra::\+abs} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} k) noexcept
+\begin{DoxyCompactList}\small\item\em Returns absolute value. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}$<$ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} $>$ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{algebra::\+divide}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} a, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} b)
+\begin{DoxyCompactList}\small\item\em Returns the result of integer division for Integers a and b. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} \doxymbox{\hyperlink{integer_8h_a7557df3e0d51e921d301661b095a8ccf}{algebra::\+modulo}} (\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} a, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} n)
+\begin{DoxyCompactList}\small\item\em Returns the remainder of division of a by n. \end{DoxyCompactList}\item 
+\Hypertarget{integer_8h_a33030836db242b656162529d27fc5ffd}\label{integer_8h_a33030836db242b656162529d27fc5ffd} 
+std::\+ostream \& {\bfseries algebra::\+operator$<$$<$} (std::\+ostream \&output, \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}} k)
+\begin{DoxyCompactList}\small\item\em Outputs an integer to a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{integer_8h_a10eac0910d2c54aebc2b263729b3ee80}\label{integer_8h_a10eac0910d2c54aebc2b263729b3ee80} 
+template$<$$>$ constexpr bool {\bfseries algebra::\+is\+\_\+commutative\+\_\+v$<$ Integer $>$} = true
+\begin{DoxyCompactList}\small\item\em A marker that multiplying the integers is commutative. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing Integer implementation satisfying algebraic concepts. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{integer_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}\index{integer.h@{integer.h}!divide@{divide}}
+\index{divide@{divide}!integer.h@{integer.h}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily \label{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258} 
+Div\+Result$<$ Integer $>$ algebra::\+divide (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{a}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Returns the result of integer division for Integers a and b. 
+
+Returns unique {\ttfamily q} and {\ttfamily r} satisfying
+\begin{DoxyEnumerate}
+\item {\ttfamily a == q \texorpdfstring{$\ast$}{*} b + r}
+\item {\ttfamily 0 \texorpdfstring{$<$}{<}= r \texorpdfstring{$<$}{<} b.\+euclidean\+\_\+function()} 
+\end{DoxyEnumerate}\Hypertarget{integer_8h_a7557df3e0d51e921d301661b095a8ccf}\index{integer.h@{integer.h}!modulo@{modulo}}
+\index{modulo@{modulo}!integer.h@{integer.h}}
+\doxysubsubsection{\texorpdfstring{modulo()}{modulo()}}
+{\footnotesize\ttfamily \label{integer_8h_a7557df3e0d51e921d301661b095a8ccf} 
+Integer algebra::\+modulo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{a}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Returns the remainder of division of a by n. 
+
+Returns an integer r, 0 \texorpdfstring{$<$}{<}= r \texorpdfstring{$<$}{<} n satisfying {\ttfamily a == q \texorpdfstring{$\ast$}{*} n + r} 

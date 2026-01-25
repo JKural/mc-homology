@@ -1,0 +1,76 @@
+\doxysection{mc-\/homology/\+algebra/\+include/\+algebra/\+matrix.h File Reference}
+\hypertarget{matrix_8h}{}\label{matrix_8h}\index{mc-\/homology/algebra/include/algebra/matrix.h@{mc-\/homology/algebra/include/algebra/matrix.h}}
+
+
+A file containing matrix implementation.  
+
+
+{\ttfamily \+\#include $<$algorithm$>$}\newline
+{\ttfamily \+\#include $<$format$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$ranges$>$}\newline
+{\ttfamily \+\#include $<$utility$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include "{}algebra/\+algebraic\+\_\+concepts.\+h"{}}\newline
+Include dependency graph for matrix.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{matrix_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{matrix_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em A \doxylink{classalgebra_1_1Matrix}{Matrix} class. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4}{std::\+formatter$<$ algebra::\+\+Matrix$<$ T $>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Formatter for the {\ttfamily Matrix} type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{matrix_8h_a195973a6e4664deb9f404a54d2c04d1b}\label{matrix_8h_a195973a6e4664deb9f404a54d2c04d1b} 
+{\footnotesize template$<$Additive\+Group T$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ {\bfseries algebra::\+operator+} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&rhs)
+\begin{DoxyCompactList}\small\item\em Adds two matrices. \end{DoxyCompactList}\item 
+\Hypertarget{matrix_8h_a04836ac6e8513865e36e05ceaa77c356}\label{matrix_8h_a04836ac6e8513865e36e05ceaa77c356} 
+{\footnotesize template$<$Additive\+Group T$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ {\bfseries algebra::\+operator-\/} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&rhs)
+\begin{DoxyCompactList}\small\item\em Subtracts two matrices. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Ring T$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \doxymbox{\hyperlink{matrix_8h_a730f43d3ab3095a9a724122b2af5926e}{algebra::\+operator\texorpdfstring{$\ast$}{*}}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&lhs, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&rhs)
+\begin{DoxyCompactList}\small\item\em Multiplies two matrices. \end{DoxyCompactList}\item 
+\Hypertarget{matrix_8h_abed0b66c149933f74c933def897afa3c}\label{matrix_8h_abed0b66c149933f74c933def897afa3c} 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\{\bfseries algebra::\+\+Matrix} (R \&\&, std::\+size\+\_\+t, std::\+size\+\_\+t) -\/$>$ Matrix$<$ std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$ $>$
+\begin{DoxyCompactList}\small\item\em Deduce matrix value type from the submitted range. \end{DoxyCompactList}\item 
+\Hypertarget{matrix_8h_ab537d2f6e9272715838b5eada4cb13ce}\label{matrix_8h_ab537d2f6e9272715838b5eada4cb13ce} 
+{\footnotesize template$<$class T$>$ }\\std::\+ostream \& {\bfseries algebra::\+operator$<$$<$} (std::\+ostream \&output, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&matrix)
+\begin{DoxyCompactList}\small\item\em Outputs a matrix to a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing matrix implementation. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{matrix_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{matrix_8h_a730f43d3ab3095a9a724122b2af5926e}\index{matrix.h@{matrix.h}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!matrix.h@{matrix.h}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily \label{matrix_8h_a730f43d3ab3095a9a724122b2af5926e} 
+template$<$Ring T$>$ \\
+Matrix$<$ T $>$ algebra::\+operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{lhs}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Multiplies two matrices. 
+
+Multiplies two matrices using the usual matrix multiplication. 

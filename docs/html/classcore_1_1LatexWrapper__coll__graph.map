@@ -1,0 +1,5 @@
+<map id="core::LatexWrapper" name="core::LatexWrapper">
+<area shape="rect" id="Node000001" title="A decorator that wraps a text drawable object in a latex document." alt="" coords="5,156,138,259"/>
+<area shape="rect" id="Node000002" href="$classcore_1_1TextDrawable.html" title="Marks a class text drawable &#45; it can be represented as a string." alt="" coords="7,5,136,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,120,74,157,69,156,71,125"/>
+</map>

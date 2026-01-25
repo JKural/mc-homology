@@ -1,0 +1,123 @@
+\doxysection{core::\+Cubical\+Complex3D Class Reference}
+\hypertarget{classcore_1_1CubicalComplex3D}{}\label{classcore_1_1CubicalComplex3D}\index{core::CubicalComplex3D@{core::CubicalComplex3D}}
+
+
+A class representing a cubical complex in 3D space.  
+
+
+
+
+{\ttfamily \+\#include $<$cubical\+\_\+complex\+\_\+3d.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Cubical\+Complex3D:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classcore_1_1CubicalComplex3D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Cubical\+Complex3D:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classcore_1_1CubicalComplex3D__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1CubicalComplex3D_aa6213db16aeb8c91aed9319c1fd7db65}\label{classcore_1_1CubicalComplex3D_aa6213db16aeb8c91aed9319c1fd7db65} 
+void {\bfseries add\+\_\+cube} (int x, int y, int z)
+\begin{DoxyCompactList}\small\item\em Adds a cube to the complex. \end{DoxyCompactList}\item 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_aa3353005e19d5eafc53dcf603872e86b}{z2\+\_\+homology}} () const override
+\begin{DoxyCompactList}\small\item\em Computes Z2 homology of the complex. \end{DoxyCompactList}\item 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_a33cc149bfe11d904ab7f2223e91af1e3}{z3\+\_\+homology}} () const override
+\begin{DoxyCompactList}\small\item\em Computes Z3 homology of the complex. \end{DoxyCompactList}\item 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_accd6d910e146075ef5dff976d3960883}{z\+\_\+homology}} () const override
+\begin{DoxyCompactList}\small\item\em Computes Z homology of the complex. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1CubicalComplex3D_ad5ba18ec40537728421e9618a503cfb1}\label{classcore_1_1CubicalComplex3D_ad5ba18ec40537728421e9618a503cfb1} 
+{\footnotesize template$<$class T$>$ }\\std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology}{Algebra\+Homology}}$<$ T $>$ $>$ {\bfseries homology} () const
+\begin{DoxyCompactList}\small\item\em Computes homology of the complex for coefficients of type T. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_afb140e7fa736a2e6e77b928f252469f8}{reduce}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the complex\textquotesingle{}s size without changing its homology. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classcore_1_1Complex}{core::\+\+Complex}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Complex} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a cubical complex in 3D space. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1CubicalComplex3D_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1CubicalComplex3D_afb140e7fa736a2e6e77b928f252469f8}\index{core::CubicalComplex3D@{core::CubicalComplex3D}!reduce@{reduce}}
+\index{reduce@{reduce}!core::CubicalComplex3D@{core::CubicalComplex3D}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily \label{classcore_1_1CubicalComplex3D_afb140e7fa736a2e6e77b928f252469f8} 
+void core::\+\+Cubical\+Complex3\+D::\+reduce (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the complex\textquotesingle{}s size without changing its homology. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Complex_a08a753784c880e5a54ab77e032f04fd2}{core::\+\+Complex}}.
+
+\Hypertarget{classcore_1_1CubicalComplex3D_aa3353005e19d5eafc53dcf603872e86b}\index{core::CubicalComplex3D@{core::CubicalComplex3D}!z2\_homology@{z2\_homology}}
+\index{z2\_homology@{z2\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}}
+\doxysubsubsection{\texorpdfstring{z2\_homology()}{z2\_homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1CubicalComplex3D_aa3353005e19d5eafc53dcf603872e86b} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ core::\+\+Cubical\+Complex3\+D::\+z2\+\_\+homology (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Computes Z2 homology of the complex. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Complex_a847e6c2a985f5aaa45934cfc60ce3578}{core::\+\+Complex}}.
+
+\Hypertarget{classcore_1_1CubicalComplex3D_a33cc149bfe11d904ab7f2223e91af1e3}\index{core::CubicalComplex3D@{core::CubicalComplex3D}!z3\_homology@{z3\_homology}}
+\index{z3\_homology@{z3\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}}
+\doxysubsubsection{\texorpdfstring{z3\_homology()}{z3\_homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1CubicalComplex3D_a33cc149bfe11d904ab7f2223e91af1e3} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ core::\+\+Cubical\+Complex3\+D::\+z3\+\_\+homology (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Computes Z3 homology of the complex. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Complex_a9745165d7cfa1c607d0777d511676ba1}{core::\+\+Complex}}.
+
+\Hypertarget{classcore_1_1CubicalComplex3D_accd6d910e146075ef5dff976d3960883}\index{core::CubicalComplex3D@{core::CubicalComplex3D}!z\_homology@{z\_homology}}
+\index{z\_homology@{z\_homology}!core::CubicalComplex3D@{core::CubicalComplex3D}}
+\doxysubsubsection{\texorpdfstring{z\_homology()}{z\_homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1CubicalComplex3D_accd6d910e146075ef5dff976d3960883} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ core::\+\+Cubical\+Complex3\+D::\+z\+\_\+homology (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Computes Z homology of the complex. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Complex_a91e62ebdacdc7448d815aae323138f30}{core::\+\+Complex}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{cubical__complex__3d_8h}{cubical\+\_\+complex\+\_\+3d.\+h}}\item 
+mc-\/homology/\+core/\+src/\+cubical\+\_\+complex\+\_\+3d.\+cpp\end{DoxyCompactItemize}

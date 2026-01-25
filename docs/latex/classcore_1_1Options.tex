@@ -1,0 +1,163 @@
+\doxysection{core::\+Options Class Reference}
+\hypertarget{classcore_1_1Options}{}\label{classcore_1_1Options}\index{core::Options@{core::Options}}
+
+
+A class for storing user options.  
+
+
+
+
+{\ttfamily \+\#include $<$options.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Options:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcore_1_1Options__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Options:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classcore_1_1Options__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::\+filesystem::\+path \doxymbox{\hyperlink{classcore_1_1Options_a29f80cd50c80c6c88fe0c38950143e44}{filename}} () const =0
+\begin{DoxyCompactList}\small\item\em Path to the region directory. \end{DoxyCompactList}\item 
+virtual std::\+pair$<$ int, int $>$ \doxymbox{\hyperlink{classcore_1_1Options_a07d4e34344a0704c6802a4b33ebdcaf0}{x\+\_\+bounds}} () const =0
+\begin{DoxyCompactList}\small\item\em Bounds on x axis. \end{DoxyCompactList}\item 
+virtual std::\+pair$<$ int, int $>$ \doxymbox{\hyperlink{classcore_1_1Options_a69e87c9ead19a45c6a8d5ff90abe5929}{y\+\_\+bounds}} () const =0
+\begin{DoxyCompactList}\small\item\em Bounds on y axis. \end{DoxyCompactList}\item 
+virtual std::\+pair$<$ int, int $>$ \doxymbox{\hyperlink{classcore_1_1Options_a7dd91904095a217ea2f9d054820ded86}{z\+\_\+bounds}} () const =0
+\begin{DoxyCompactList}\small\item\em Bounds on y axis. \end{DoxyCompactList}\item 
+virtual \doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{Homology\+Choice}} \doxymbox{\hyperlink{classcore_1_1Options_ae24040c2a59a4dfec735edfda52458bd}{homology\+\_\+to\+\_\+compute}} () const =0
+\begin{DoxyCompactList}\small\item\em Type of homology to compute. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{classcore_1_1Options_a5b998ab1c70c3663c2e5a941ae4ef984}{latex}} () const =0
+\begin{DoxyCompactList}\small\item\em Whether to print latex output. \end{DoxyCompactList}\item 
+virtual bool \doxymbox{\hyperlink{classcore_1_1Options_ab18bea57cce91fb16c89464deeddd197}{help}} () const =0
+\begin{DoxyCompactList}\small\item\em Whether the user requested help. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Options_ae6a550eec2c0d7007054e9883fdde627}\label{classcore_1_1Options_ae6a550eec2c0d7007054e9883fdde627} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Options} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for storing user options. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1Options_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1Options_a29f80cd50c80c6c88fe0c38950143e44}\index{core::Options@{core::Options}!filename@{filename}}
+\index{filename@{filename}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_a29f80cd50c80c6c88fe0c38950143e44} 
+virtual std::\+filesystem::\+path core::\+\+Options::\+filename (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Path to the region directory. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_af2cbca7c9c8102c7439b24ff9f383853}{core::\+\+Commandline\+Options}}.
+
+\Hypertarget{classcore_1_1Options_ab18bea57cce91fb16c89464deeddd197}\index{core::Options@{core::Options}!help@{help}}
+\index{help@{help}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_ab18bea57cce91fb16c89464deeddd197} 
+virtual bool core::\+\+Options::\+help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Whether the user requested help. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1abcf70b97e1e6f8008f900d98b72da0}{core::\+\+Commandline\+Options}}.
+
+\Hypertarget{classcore_1_1Options_ae24040c2a59a4dfec735edfda52458bd}\index{core::Options@{core::Options}!homology\_to\_compute@{homology\_to\_compute}}
+\index{homology\_to\_compute@{homology\_to\_compute}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{homology\_to\_compute()}{homology\_to\_compute()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_ae24040c2a59a4dfec735edfda52458bd} 
+virtual \doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{Homology\+Choice}} core::\+\+Options::\+homology\+\_\+to\+\_\+compute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Type of homology to compute. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_ad53f66f036ce75733151562c8d80a331}{core::\+\+Commandline\+Options}}.
+
+\Hypertarget{classcore_1_1Options_a5b998ab1c70c3663c2e5a941ae4ef984}\index{core::Options@{core::Options}!latex@{latex}}
+\index{latex@{latex}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{latex()}{latex()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_a5b998ab1c70c3663c2e5a941ae4ef984} 
+virtual bool core::\+\+Options::\+latex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Whether to print latex output. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a8a0803d8df5a8e844dddef0f72742e01}{core::\+\+Commandline\+Options}}.
+
+\Hypertarget{classcore_1_1Options_a07d4e34344a0704c6802a4b33ebdcaf0}\index{core::Options@{core::Options}!x\_bounds@{x\_bounds}}
+\index{x\_bounds@{x\_bounds}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{x\_bounds()}{x\_bounds()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_a07d4e34344a0704c6802a4b33ebdcaf0} 
+virtual std::\+pair$<$ int, int $>$ core::\+\+Options::\+x\+\_\+bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bounds on x axis. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_ad53567040795ff9cc2d3a6b77a7a2169}{core::\+\+Commandline\+Options}}.
+
+\Hypertarget{classcore_1_1Options_a69e87c9ead19a45c6a8d5ff90abe5929}\index{core::Options@{core::Options}!y\_bounds@{y\_bounds}}
+\index{y\_bounds@{y\_bounds}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{y\_bounds()}{y\_bounds()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_a69e87c9ead19a45c6a8d5ff90abe5929} 
+virtual std::\+pair$<$ int, int $>$ core::\+\+Options::\+y\+\_\+bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bounds on y axis. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1c4ee3c4697dc9cf4d80a028f6959119}{core::\+\+Commandline\+Options}}.
+
+\Hypertarget{classcore_1_1Options_a7dd91904095a217ea2f9d054820ded86}\index{core::Options@{core::Options}!z\_bounds@{z\_bounds}}
+\index{z\_bounds@{z\_bounds}!core::Options@{core::Options}}
+\doxysubsubsection{\texorpdfstring{z\_bounds()}{z\_bounds()}}
+{\footnotesize\ttfamily \label{classcore_1_1Options_a7dd91904095a217ea2f9d054820ded86} 
+virtual std::\+pair$<$ int, int $>$ core::\+\+Options::\+z\+\_\+bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bounds on y axis. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a7dfbe2d863331b80b0c172fb89a7128c}{core::\+\+Commandline\+Options}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{options_8h}{options.\+h}}\item 
+mc-\/homology/\+core/\+src/\+options.\+cpp\end{DoxyCompactItemize}

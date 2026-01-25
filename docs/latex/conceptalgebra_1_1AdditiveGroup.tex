@@ -1,0 +1,40 @@
+\doxysection{algebra::\+Additive\+Group Concept Reference}
+\hypertarget{conceptalgebra_1_1AdditiveGroup}{}\label{conceptalgebra_1_1AdditiveGroup}\index{algebra::AdditiveGroup@{algebra::AdditiveGroup}}
+
+
+An additive group concept.  
+
+
+
+
+{\ttfamily \+\#include $<$algebraic\+\_\+concepts.\+h$>$}
+
+\doxysubsection{Concept definition}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{\textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{AdditiveGroup}}\ =\ std::regular<T>\ \&\&\ std::default\_initializable<T>}
+\DoxyCodeLine{\ \ \ \ \&\&\ \doxymbox{\hyperlink{conceptalgebra_1_1Commutative}{Commutative<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ x\ +\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ x\ -\/\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ x\ +=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ x\ -\/=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ +x\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ -\/x\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \{\ T::zero()\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Detailed Description}
+An additive group concept. 
+
+{\ttfamily Additive\+Group} concept declares that a type models a mathematical definition of an additive group, that is an abelian group that, in which the group operation is expressed with \textquotesingle{}+\textquotesingle{}.\hypertarget{conceptalgebra_1_1AdditiveGroup_autotoc_md2}{}\doxysubsection{\texorpdfstring{Semantic requirements}{Semantic requirements}}\label{conceptalgebra_1_1AdditiveGroup_autotoc_md2}
+For {\ttfamily x}, {\ttfamily y}, {\ttfamily z} of type {\ttfamily T}
+\begin{DoxyEnumerate}
+\item {\ttfamily (x + y) + z == x + (y + z)}
+\item {\ttfamily x + T::\+zero() == T::\+zero() + x == x}
+\item {\ttfamily x + (-\/x) == (-\/x) + x == T::\+zero()}
+\item {\ttfamily x + y == y + x} 
+\end{DoxyEnumerate}

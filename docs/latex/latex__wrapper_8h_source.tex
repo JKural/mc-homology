@@ -1,0 +1,30 @@
+\doxysection{latex\+\_\+wrapper.\+h}
+\hypertarget{latex__wrapper_8h_source}{}\label{latex__wrapper_8h_source}\index{mc-\/homology/core/include/core/latex\_wrapper.h@{mc-\/homology/core/include/core/latex\_wrapper.h}}
+\doxymbox{\hyperlink{latex__wrapper_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{text__drawable_8h}{core/text\_drawable.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1LatexWrapper_a6b4e35964c253ec9d4ba83d2e6fc883c}{LatexWrapper}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1TextDrawable}{TextDrawable}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1LatexWrapper_a6b4e35964c253ec9d4ba83d2e6fc883c}{LatexWrapper}}(}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::unique\_ptr<TextDrawable>\ inner,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::string\ documentclass\ =\ \textcolor{stringliteral}{"{}article"{}}}
+\DoxyCodeLine{00019\ \ \ \ \ );}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classcore_1_1LatexWrapper_a40394c81503ff7ce5e5e6b8e8b8ddc87}{text}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ std::unique\_ptr<TextDrawable>\ m\_inner;}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ m\_documentclass;}
+\DoxyCodeLine{00027\ \};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

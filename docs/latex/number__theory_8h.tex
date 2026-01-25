@@ -1,0 +1,162 @@
+\doxysection{mc-\/homology/\+algebra/\+include/\+algebra/\+number\+\_\+theory.h File Reference}
+\hypertarget{number__theory_8h}{}\label{number__theory_8h}\index{mc-\/homology/algebra/include/algebra/number\_theory.h@{mc-\/homology/algebra/include/algebra/number\_theory.h}}
+
+
+A file containing implementations of selected number theoretic algorithms.  
+
+
+{\ttfamily \+\#include $<$cmath$>$}\newline
+{\ttfamily \+\#include $<$optional$>$}\newline
+{\ttfamily \+\#include $<$stdexcept$>$}\newline
+Include dependency graph for number\+\_\+theory.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{number__theory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{number__theory_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1DivResult}{algebra::\+\+Div\+Result$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Result struct for the division operation. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{algebra::\+\+Extended\+GCDResult}}
+\begin{DoxyCompactList}\small\item\em Result struct for the extended gcd algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+constexpr bool \doxymbox{\hyperlink{number__theory_8h_a74f5dd881b3d2aaa24108f1763c9ec72}{algebra::\+is\+\_\+prime}} (int n) noexcept
+\begin{DoxyCompactList}\small\item\em Primality test. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1DivResult}{Div\+Result}}$<$ int $>$ \doxymbox{\hyperlink{number__theory_8h_a27f271d9eb3292298bfd5f662309e248}{algebra::\+divide}} (int a, int b)
+\begin{DoxyCompactList}\small\item\em Calculates quotient and remainder of two numbers. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{number__theory_8h_a35001d3da463f1cabac1ab9756ff8826}{algebra::\+modulo}} (int a, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the remainder of a by n. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{Extended\+GCDResult}} \doxymbox{\hyperlink{number__theory_8h_a5e24a9dee2493b919da91a1fd295e8a0}{algebra::\+extended\+\_\+gcd}} (int a, int b) noexcept
+\begin{DoxyCompactList}\small\item\em Extended Euclidean algorithm. \end{DoxyCompactList}\item 
+constexpr std::\+optional$<$ int $>$ \doxymbox{\hyperlink{number__theory_8h_a958499eaf6c9db8e9ee8576a9f77062b}{algebra::\+inverse\+\_\+mod}} (int a, int n) noexcept
+\begin{DoxyCompactList}\small\item\em Inverse modulo n. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing implementations of selected number theoretic algorithms. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{number__theory_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{number__theory_8h_a27f271d9eb3292298bfd5f662309e248}\index{number\_theory.h@{number\_theory.h}!divide@{divide}}
+\index{divide@{divide}!number\_theory.h@{number\_theory.h}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily \label{number__theory_8h_a27f271d9eb3292298bfd5f662309e248} 
+Div\+Result$<$ int $>$ algebra::\+divide (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Calculates quotient and remainder of two numbers. 
+
+A function calculating numbers {\ttfamily quotient} and {\ttfamily remainder} satisfying {\ttfamily a == quotient \texorpdfstring{$\ast$}{*} n + remainder} and 0 \texorpdfstring{$<$}{<}= remainder \texorpdfstring{$<$}{<} abs(n)
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & An integer \\
+\hline
+{\em b} & An integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct holding three numbers:\+ {\ttfamily quotient}:\+ the quotient {\ttfamily remainder}:\+ the remainder 
+\end{DoxyReturn}
+\Hypertarget{number__theory_8h_a5e24a9dee2493b919da91a1fd295e8a0}\index{number\_theory.h@{number\_theory.h}!extended\_gcd@{extended\_gcd}}
+\index{extended\_gcd@{extended\_gcd}!number\_theory.h@{number\_theory.h}}
+\doxysubsubsection{\texorpdfstring{extended\_gcd()}{extended\_gcd()}}
+{\footnotesize\ttfamily \label{number__theory_8h_a5e24a9dee2493b919da91a1fd295e8a0} 
+Extended\+GCDResult algebra::\+extended\+\_\+gcd (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Extended Euclidean algorithm. 
+
+Calculates the greatest common divisor {\ttfamily g} and integers {\ttfamily x}, {\ttfamily y} such that {\ttfamily a\texorpdfstring{$\ast$}{*}x + b\texorpdfstring{$\ast$}{*}y == g}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & An integer \\
+\hline
+{\em b} & An integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct holding three numbers:\+ {\ttfamily g}:\+ the gcd {\ttfamily x}:\+ first coefficient {\ttfamily y}:\+ second coefficient 
+\end{DoxyReturn}
+\Hypertarget{number__theory_8h_a958499eaf6c9db8e9ee8576a9f77062b}\index{number\_theory.h@{number\_theory.h}!inverse\_mod@{inverse\_mod}}
+\index{inverse\_mod@{inverse\_mod}!number\_theory.h@{number\_theory.h}}
+\doxysubsubsection{\texorpdfstring{inverse\_mod()}{inverse\_mod()}}
+{\footnotesize\ttfamily \label{number__theory_8h_a958499eaf6c9db8e9ee8576a9f77062b} 
+std::\+optional$<$ int $>$ algebra::\+inverse\+\_\+mod (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Inverse modulo n. 
+
+Calculates inverse of {\ttfamily a} mod {\ttfamily n}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Inverted number \\
+\hline
+{\em n} & The modulus\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If {\ttfamily a} is invertible mod {\ttfamily n}, returns the inverse, {\ttfamily nullopt} otherwize 
+\end{DoxyReturn}
+\Hypertarget{number__theory_8h_a74f5dd881b3d2aaa24108f1763c9ec72}\index{number\_theory.h@{number\_theory.h}!is\_prime@{is\_prime}}
+\index{is\_prime@{is\_prime}!number\_theory.h@{number\_theory.h}}
+\doxysubsubsection{\texorpdfstring{is\_prime()}{is\_prime()}}
+{\footnotesize\ttfamily \label{number__theory_8h_a74f5dd881b3d2aaa24108f1763c9ec72} 
+bool algebra::\+is\+\_\+prime (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Primality test. 
+
+Tests, if a given number is prime, that is divisible only by 1 and by itself
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Number to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true}, if the number is prime, otherwise {\ttfamily false} 
+\end{DoxyReturn}
+\Hypertarget{number__theory_8h_a35001d3da463f1cabac1ab9756ff8826}\index{number\_theory.h@{number\_theory.h}!modulo@{modulo}}
+\index{modulo@{modulo}!number\_theory.h@{number\_theory.h}}
+\doxysubsubsection{\texorpdfstring{modulo()}{modulo()}}
+{\footnotesize\ttfamily \label{number__theory_8h_a35001d3da463f1cabac1ab9756ff8826} 
+int algebra::\+modulo (\begin{DoxyParamCaption}\item[{int}]{a}{, }\item[{int}]{n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Calculates the remainder of a by n. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & An integer \\
+\hline
+{\em n} & an integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remainder 
+\end{DoxyReturn}

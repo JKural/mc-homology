@@ -1,0 +1,75 @@
+\doxysection{core::\+Minecraft\+Savefile\+Parser\+\_\+mc\+Savefile\+Parsers Class Reference}
+\hypertarget{classcore_1_1MinecraftSavefileParser__mcSavefileParsers}{}\label{classcore_1_1MinecraftSavefileParser__mcSavefileParsers}\index{core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}}
+
+
+A Minecraft savefile parser based on \href{https://github.com/TCA166/mcSavefileParsers.git}{\texttt{https:\+/\+/\+github.\+com/\+\+TCA166/\+mc\+Savefile\+Parsers.\+git}}.  
+
+
+
+
+{\ttfamily \+\#include $<$parser.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Minecraft\+Savefile\+Parser\+\_\+mc\+Savefile\+Parsers:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classcore_1_1MinecraftSavefileParser__mcSavefileParsers__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Minecraft\+Savefile\+Parser\+\_\+mc\+Savefile\+Parsers:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classcore_1_1MinecraftSavefileParser__mcSavefileParsers__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Complex}{Complex}} $>$ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser__mcSavefileParsers_a6fe67e3a5ab872c253c9671d3df10561}{parse}} (std::\+filesystem::\+path const \&path, \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}} lower\+\_\+corner, \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}} upper\+\_\+corner) override
+\begin{DoxyCompactList}\small\item\em Parses a Minecraft savefile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Minecraft savefile parser based on \href{https://github.com/TCA166/mcSavefileParsers.git}{\texttt{https:\+/\+/\+github.\+com/\+\+TCA166/\+mc\+Savefile\+Parsers.\+git}}. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1MinecraftSavefileParser__mcSavefileParsers_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1MinecraftSavefileParser__mcSavefileParsers_a6fe67e3a5ab872c253c9671d3df10561}\index{core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}!parse@{parse}}
+\index{parse@{parse}!core::MinecraftSavefileParser\_mcSavefileParsers@{core::MinecraftSavefileParser\_mcSavefileParsers}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classcore_1_1MinecraftSavefileParser__mcSavefileParsers_a6fe67e3a5ab872c253c9671d3df10561} 
+std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Complex}{Complex}} $>$ core::\+\+Minecraft\+Savefile\+Parser\+\_\+mc\+Savefile\+Parsers::\+parse (\begin{DoxyParamCaption}\item[{std::\+filesystem::\+path const \&}]{path}{, }\item[{\doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}}}]{lower\+\_\+corner}{, }\item[{\doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}}}]{upper\+\_\+corner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parses a Minecraft savefile. 
+
+Parses a Minecraft savefile within given bounds. lower\+\_\+corner.\+x \texorpdfstring{$<$}{<}= upper\+\_\+corner.\+x lower\+\_\+corner.\+y \texorpdfstring{$<$}{<}= upper\+\_\+corner.\+y lower\+\_\+corner.\+z \texorpdfstring{$<$}{<}= upper\+\_\+corner.\+z
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the save file region directory \\
+\hline
+{\em lower\+\_\+corner} & Lower bounds on the studied cube \\
+\hline
+{\em upper\+\_\+corner} & Upper bounds on the studied cube \\
+\hline
+\end{DoxyParams}
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser_a27148eb0686230aa7e1a3ff513786655}{core::\+\+Minecraft\+Savefile\+Parser}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{parser_8h}{parser.\+h}}\item 
+mc-\/homology/\+core/\+src/\+parser.\+cpp\end{DoxyCompactItemize}

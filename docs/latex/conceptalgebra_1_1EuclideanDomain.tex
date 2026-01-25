@@ -1,0 +1,38 @@
+\doxysection{algebra::\+Euclidean\+Domain Concept Reference}
+\hypertarget{conceptalgebra_1_1EuclideanDomain}{}\label{conceptalgebra_1_1EuclideanDomain}\index{algebra::EuclideanDomain@{algebra::EuclideanDomain}}
+
+
+An euclidean domain concept.  
+
+
+
+
+{\ttfamily \+\#include $<$algebraic\+\_\+concepts.\+h$>$}
+
+\doxysubsection{Concept definition}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{\textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1EuclideanDomain}{EuclideanDomain}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1CommutativeRing}{CommutativeRing<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ a,\ T\ b,\ T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{\ \ \ \ \{\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(x,\ y)\ \}\ -\/>\ std::same\_as<DivResult<T>>;}
+\DoxyCodeLine{\ \ \ \ \{\ x.euclidean\_function()\ \}\ -\/>\ std::same\_as<int>;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Detailed Description}
+An euclidean domain concept. 
+
+{\ttfamily Euclidean\+Domain} concept declares that a type models a mathematical definition of an Euclidean domain, that is a commutative ring, where we can define an euclidean function f, that satisfies two conditions:\+
+\begin{DoxyEnumerate}
+\item For a and nonzero b there exist q and r satisfying a = q \texorpdfstring{$\ast$}{*} b + r and f(r) \texorpdfstring{$<$}{<} f(b)
+\item For a and b nonzero we have f(a) \texorpdfstring{$<$}{<}= f(b)
+\end{DoxyEnumerate}
+
+Additionally, we require function {\ttfamily divide}, which returns the numbers q and r.\hypertarget{conceptalgebra_1_1EuclideanDomain_autotoc_md5}{}\doxysubsection{\texorpdfstring{Semantic requirements}{Semantic requirements}}\label{conceptalgebra_1_1EuclideanDomain_autotoc_md5}
+Type \textquotesingle{}T\textquotesingle{} satisfies all semantic requirements for {\ttfamily Commutative\+Ring} and additionally, for {\ttfamily x} and {\ttfamily y != T::\+zero()}
+\begin{DoxyEnumerate}
+\item {\ttfamily x = divide(x, y).quotient \texorpdfstring{$\ast$}{*} y + divide(x, y).remainder}
+\item {\ttfamily x.\+euclidean\+\_\+function() \texorpdfstring{$<$}{<}= (x \texorpdfstring{$\ast$}{*} y).euclidean\+\_\+function()} 
+\end{DoxyEnumerate}

@@ -1,0 +1,50 @@
+<map id="mc&#45;homology/complexes/include/complexes/compute_chain_complex.h" name="mc&#45;homology/complexes/include/complexes/compute_chain_complex.h">
+<area shape="rect" id="Node000001" title="A file containing algorithms for transforming complexes into chain complexes." alt="" coords="337,5,538,73"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="142,373,205,403"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="382,75,336,111,282,158,231,214,210,245,192,277,180,318,176,358,171,357,175,317,187,275,205,242,227,211,278,154,332,107,385,72"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="679,121,799,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="538,69,682,115,677,117,538,75"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="416,373,478,403"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="421,71,404,122,389,179,381,224,382,269,397,324,408,343,422,363,417,362,403,346,392,326,377,270,375,224,384,177,399,120,418,76"/>
+<area shape="rect" id="Node000005" href="$chain__complex_8h.html" title="A file containing chain complex and homology implementations." alt="" coords="414,121,587,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="460,71,485,108,480,108,459,76"/>
+<area shape="rect" id="Node000008" href="$matrix_8h.html" title="A file containing matrix implementation." alt="" coords="582,286,706,316"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="537,71,572,92,601,119,623,156,637,197,644,237,646,272,642,269,638,237,631,198,618,158,597,123,569,96,537,76"/>
+<area shape="rect" id="Node000019" href="$cubical__complex_8h.html" title="A file containing the CubicalComplex class." alt="" coords="201,286,332,316"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="394,75,374,98,353,123,329,161,308,201,279,272,274,270,303,199,324,158,349,119,370,94,398,71"/>
+<area shape="rect" id="Node000006" href="$matrix__algorithms_8h.html" title="A file containing selected matrix algorithms." alt="" coords="407,199,604,228"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="502,149,506,184,501,182,500,154"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="407,276,558,325"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="503,227,495,263,491,260,500,231"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="529,226,611,277,605,278,528,231"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="601,317,571,328,475,345,398,352,320,359,221,375,219,370,319,354,397,347,474,339,570,322,606,315"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="614,315,493,370,491,365,609,317"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="905,373,986,403"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="695,313,893,371,887,371,694,319"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="328,373,392,403"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="597,317,572,328,408,375,406,370,570,322,602,315"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="501,373,576,403"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="629,315,569,366,566,361,624,317"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="600,373,656,403"/>
+<area shape="poly" id="edge12_Node000008_Node000012" title=" " alt="" coords="643,314,636,360,631,357,640,318"/>
+<area shape="rect" id="Node000013" href="$algebraic__concepts_8h.html" title="A file defining multiple concepts for algebraic structures." alt="" coords="680,373,880,403"/>
+<area shape="poly" id="edge14_Node000008_Node000013" title=" " alt="" coords="667,313,748,365,742,364,666,319"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="665,451,741,480"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="768,402,729,442,727,437,763,404"/>
+<area shape="rect" id="Node000015" href="$number__theory_8h.html" title="A file containing implementations of selected number theoretic algorithms." alt="" coords="766,451,947,480"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="795,401,834,440,829,439,794,406"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="737,528,796,558"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="842,480,796,521,794,516,837,482"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="820,528,892,558"/>
+<area shape="poly" id="edge18_Node000015_Node000017" title=" " alt="" coords="858,479,858,514,854,511,854,483"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="916,528,997,558"/>
+<area shape="poly" id="edge19_Node000015_Node000018" title=" " alt="" coords="876,478,928,520,923,518,874,483"/>
+<area shape="poly" id="edge25_Node000019_Node000002" title=" " alt="" coords="250,318,202,365,198,361,253,314"/>
+<area shape="poly" id="edge27_Node000019_Node000004" title=" " alt="" coords="297,313,406,365,401,367,297,319"/>
+<area shape="poly" id="edge23_Node000019_Node000010" title=" " alt="" coords="283,313,336,362,331,363,282,319"/>
+<area shape="poly" id="edge24_Node000019_Node000011" title=" " alt="" coords="312,313,489,369,484,371,312,319"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="229,373,304,403"/>
+<area shape="poly" id="edge22_Node000019_Node000020" title=" " alt="" coords="268,314,269,359,264,357,266,318"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="5,373,118,403"/>
+<area shape="poly" id="edge26_Node000019_Node000021" title=" " alt="" coords="231,318,111,369,108,365,234,314"/>
+</map>

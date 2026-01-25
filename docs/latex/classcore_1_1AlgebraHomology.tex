@@ -1,0 +1,100 @@
+\doxysection{core::\+Algebra\+Homology\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classcore_1_1AlgebraHomology}{}\label{classcore_1_1AlgebraHomology}\index{core::AlgebraHomology$<$ T $>$@{core::AlgebraHomology$<$ T $>$}}
+
+
+Concrete subclass of \doxylink{classcore_1_1Homology}{Homology}, based on algebra library.  
+
+
+
+
+{\ttfamily \+\#include $<$algebra\+\_\+homology.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Algebra\+Homology\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcore_1_1AlgebraHomology__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Algebra\+Homology\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcore_1_1AlgebraHomology__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1AlgebraHomology_a162a8f0fa2f67ea136e0da5adf297687}\label{classcore_1_1AlgebraHomology_a162a8f0fa2f67ea136e0da5adf297687} 
+{\bfseries Algebra\+Homology} (\doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::\+\+Homology}}$<$ T $>$ homology, std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$ printing\+\_\+strategy=std::\+make\+\_\+unique$<$ \doxymbox{\hyperlink{classcore_1_1HomologyRawPrint}{Homology\+Raw\+Print}} $>$())
+\begin{DoxyCompactList}\small\item\em Constructs homology and stores printing strategy. \end{DoxyCompactList}\item 
+std::\+vector$<$ std::\+size\+\_\+t $>$ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a30a40b1690bdf4b1bbee2805f4d3c50e}{betti\+\_\+numbers}} () const override
+\begin{DoxyCompactList}\small\item\em Returns text representation of the betti numbers. \end{DoxyCompactList}\item 
+std::\+vector$<$ std::\+vector$<$ std::\+string $>$ $>$ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a7023d347b18e85655d412a19d4cfb342}{torsion}} () const override
+\begin{DoxyCompactList}\small\item\em Returns text represetnation of torsion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classcore_1_1Homology}{core::\+\+Homology}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd}{Homology}} (std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$ printing\+\_\+strategy=std::\+make\+\_\+unique$<$ \doxymbox{\hyperlink{classcore_1_1HomologyRawPrint}{Homology\+Raw\+Print}} $>$())
+\begin{DoxyCompactList}\small\item\em Constructs a new homology instance. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classcore_1_1Homology_a621e1e3eaf695f64f55e081f0077f07c}{select\+\_\+strategy}} (std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$ printing\+\_\+strategy)
+\begin{DoxyCompactList}\small\item\em Select a new printing\+\_\+strategy. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{classcore_1_1Homology_a10b2a3199bd9f98f58610ee309201acd}{text}} () const override
+\begin{DoxyCompactList}\small\item\em Outputs the test form of the homology using given strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classcore_1_1TextDrawable}{core::\+\+Text\+Drawable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Text\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class core::\+\+Algebra\+Homology$<$ T $>$}
+Concrete subclass of \doxylink{classcore_1_1Homology}{Homology}, based on algebra library. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1AlgebraHomology_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1AlgebraHomology_a30a40b1690bdf4b1bbee2805f4d3c50e}\index{core::AlgebraHomology$<$ T $>$@{core::AlgebraHomology$<$ T $>$}!betti\_numbers@{betti\_numbers}}
+\index{betti\_numbers@{betti\_numbers}!core::AlgebraHomology$<$ T $>$@{core::AlgebraHomology$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{betti\_numbers()}{betti\_numbers()}}
+{\footnotesize\ttfamily \label{classcore_1_1AlgebraHomology_a30a40b1690bdf4b1bbee2805f4d3c50e} 
+template$<$class T$>$ \\
+std::\+vector$<$ std::\+size\+\_\+t $>$ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology}{core::\+\+Algebra\+Homology}}$<$ T $>$::\+betti\+\_\+numbers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns text representation of the betti numbers. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Homology_a693dc7200c9a31dd61c25f08702694ae}{core::\+\+Homology}}.
+
+\Hypertarget{classcore_1_1AlgebraHomology_a7023d347b18e85655d412a19d4cfb342}\index{core::AlgebraHomology$<$ T $>$@{core::AlgebraHomology$<$ T $>$}!torsion@{torsion}}
+\index{torsion@{torsion}!core::AlgebraHomology$<$ T $>$@{core::AlgebraHomology$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{torsion()}{torsion()}}
+{\footnotesize\ttfamily \label{classcore_1_1AlgebraHomology_a7023d347b18e85655d412a19d4cfb342} 
+template$<$class T$>$ \\
+std::\+vector$<$ std::\+vector$<$ std::\+string $>$ $>$ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology}{core::\+\+Algebra\+Homology}}$<$ T $>$::\+torsion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns text represetnation of torsion. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Homology_ae89535d4e6050b68e21bcc6b806ab454}{core::\+\+Homology}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{algebra__homology_8h}{algebra\+\_\+homology.\+h}}\end{DoxyCompactItemize}

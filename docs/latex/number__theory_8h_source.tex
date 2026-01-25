@@ -1,0 +1,83 @@
+\doxysection{number\+\_\+theory.\+h}
+\hypertarget{number__theory_8h_source}{}\label{number__theory_8h_source}\index{mc-\/homology/algebra/include/algebra/number\_theory.h@{mc-\/homology/algebra/include/algebra/number\_theory.h}}
+\doxymbox{\hyperlink{number__theory_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <optional>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{namespace\ }algebra\ \{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{number__theory_8h_a74f5dd881b3d2aaa24108f1763c9ec72}{is\_prime}}(\textcolor{keywordtype}{int}\ n)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{if}\ (n\ <\ 2)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 2;\ i\ *\ i\ <=\ n;\ ++i)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (n\ \%\ i\ ==\ 0)\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00035\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structalgebra_1_1DivResult}{DivResult}}\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ T\ \doxymbox{\hyperlink{structalgebra_1_1DivResult_a1b018497cfead613108f82edf5420726}{quotient}}\ =\ \{\};}
+\DoxyCodeLine{00039\ \ \ \ \ T\ \doxymbox{\hyperlink{structalgebra_1_1DivResult_ad0e36befefbc995df5c7e0cd8b5f4c5b}{remainder}}\ =\ \{\};}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{structalgebra_1_1DivResult}{DivResult<int>}}\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b)\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{if}\ (b\ !=\ 0)\ [[likely]]\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ [q,\ r]\ =\ std::div(a,\ b);}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (r\ <\ 0)\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ q\ -\/=\ b\ >\ 0\ ?\ 1\ :\ -\/1;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ r\ +=\ b\ >\ 0\ ?\ b\ :\ -\/b;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \{.quotient\ =\ q,\ .remainder\ =\ r\};}
+\DoxyCodeLine{00061\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ [[unlikely]]\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(\textcolor{stringliteral}{"{}Division\ by\ 0"{}});}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{integer_8h_a7557df3e0d51e921d301661b095a8ccf}{modulo}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ n)\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(a,\ n).remainder;}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00080\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{ExtendedGCDResult}}\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult_aaaf987aa5c626bb3ae99e379386657ac}{g}}\ =\ 0;}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult_a83b1e929831938b8eb810e8763280f06}{x}}\ =\ 0;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult_a8be60af9b101eb37359d1e7fd401fa8b}{y}}\ =\ 0;}
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{structalgebra_1_1ExtendedGCDResult}{ExtendedGCDResult}}\ \doxymbox{\hyperlink{number__theory_8h_a5e24a9dee2493b919da91a1fd295e8a0}{extended\_gcd}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ a\ =\ std::abs(a);}
+\DoxyCodeLine{00103\ \ \ \ \ b\ =\ std::abs(b);}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{int}\ x1\ =\ 1;}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{int}\ x2\ =\ 0;}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{int}\ y1\ =\ 0;}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{int}\ y2\ =\ 1;}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordflow}{while}\ (b\ >\ 0)\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ [q,\ r]\ =\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(a,\ b);}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ std::tie(a,\ b)\ =\ std::pair\ \{b,\ r\};}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ std::tie(x1,\ x2)\ =\ std::pair\ \{x2,\ x1\ -\/\ q\ *\ x2\};}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ std::tie(y1,\ y2)\ =\ std::pair\ \{y2,\ y1\ -\/\ q\ *\ y2\};}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordflow}{return}\ \{.g\ =\ a,\ .x\ =\ x1,\ .y\ =\ y1\};}
+\DoxyCodeLine{00115\ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00125\ \textcolor{keyword}{constexpr}\ std::optional<int>\ \doxymbox{\hyperlink{number__theory_8h_a958499eaf6c9db8e9ee8576a9f77062b}{inverse\_mod}}(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ n)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keyword}{auto}\ [g,\ x,\ \_]\ =\ \doxymbox{\hyperlink{number__theory_8h_a5e24a9dee2493b919da91a1fd295e8a0}{extended\_gcd}}(a,\ n);}
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordflow}{if}\ (g\ ==\ 1)\ [[likely]]\ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ x;}
+\DoxyCodeLine{00129\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ [[unlikely]]\ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::nullopt;}
+\DoxyCodeLine{00131\ \ \ \ \ \}}
+\DoxyCodeLine{00132\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
+
+\end{DoxyCode}

@@ -1,0 +1,67 @@
+\doxysection{algebraic\+\_\+concepts.\+h}
+\hypertarget{algebraic__concepts_8h_source}{}\label{algebraic__concepts_8h_source}\index{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h@{mc-\/homology/algebra/include/algebra/algebraic\_concepts.h}}
+\doxymbox{\hyperlink{algebraic__concepts_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <concepts>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{number__theory_8h}{algebra/number\_theory.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }algebra\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00015\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{algebraic__concepts_8h_af8da1be8b84633acd35c16535d5b41ec}{is\_commutative\_v}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00028\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1Commutative}{Commutative}}\ =\ \doxymbox{\hyperlink{algebraic__concepts_8h_af8da1be8b84633acd35c16535d5b41ec}{is\_commutative\_v<T>}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00042\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00043\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1Group}{Group}}\ =}
+\DoxyCodeLine{00044\ \ \ \ \ std::regular<T>\ \&\&\ std::default\_initializable<T>\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \{\ x\ *\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \{\ x\ /\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \{\ x\ *=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \{\ x\ /=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \{\ T::one()\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00050\ \ \ \ \ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00066\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{AdditiveGroup}}\ =\ std::regular<T>\ \&\&\ std::default\_initializable<T>}
+\DoxyCodeLine{00067\ \ \ \ \ \&\&\ \doxymbox{\hyperlink{conceptalgebra_1_1Commutative}{Commutative<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \{\ x\ +\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \{\ x\ -\/\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \{\ x\ +=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \{\ x\ -\/=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \{\ +x\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \{\ -\/x\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \{\ T::zero()\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00092\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1Ring}{Ring}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{AdditiveGroup<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \{\ x\ *\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00094\ \ \ \ \ \{\ x\ *=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{00095\ \ \ \ \ \{\ T::one()\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00096\ \};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00109\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00110\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1CommutativeRing}{CommutativeRing}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1Ring}{Ring<T>}}\ \&\&\ \doxymbox{\hyperlink{conceptalgebra_1_1Commutative}{Commutative<T>}};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00131\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00132\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1EuclideanDomain}{EuclideanDomain}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1CommutativeRing}{CommutativeRing<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ a,\ T\ b,\ T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \{\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(x,\ y)\ \}\ -\/>\ std::same\_as<DivResult<T>>;}
+\DoxyCodeLine{00134\ \ \ \ \ \{\ x.euclidean\_function()\ \}\ -\/>\ std::same\_as<int>;}
+\DoxyCodeLine{00135\ \};}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00149\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00150\ \textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1Field}{Field}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1CommutativeRing}{CommutativeRing<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \{\ x\ /\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{00152\ \ \ \ \ \{\ x\ /=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{00153\ \};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
+
+\end{DoxyCode}

@@ -1,0 +1,12 @@
+<map id="mc&#45;homology/algebra/include/algebra/matrix_algorithms.h" name="mc&#45;homology/algebra/include/algebra/matrix_algorithms.h">
+<area shape="rect" id="Node000001" title="A file containing selected matrix algorithms." alt="" coords="130,5,297,73"/>
+<area shape="rect" id="Node000002" href="$chain__complex_8h.html" title="A file containing chain complex and homology implementations." alt="" coords="134,121,293,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,86,216,121,211,120,213,91"/>
+<area shape="rect" id="Node000003" href="$compute__chain__complex_8h.html" title="A file containing algorithms for transforming complexes into chain complexes." alt="" coords="5,237,206,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="170,202,139,238,135,234,174,198"/>
+<area shape="rect" id="Node000005" href="$algebra__homology_8h.html" title="File containing concrete classes deriving from Homology." alt="" coords="230,246,416,295"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="256,197,303,245,297,246,255,202"/>
+<area shape="rect" id="Node000004" href="$cubical__complex__3d_8h.html" title="A file containing a concrete class CubicalComplex3D." alt="" coords="118,352,309,401"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="151,312,192,352,186,352,150,317"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="289,305,240,354,237,350,284,307"/>
+</map>

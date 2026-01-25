@@ -1,0 +1,145 @@
+\doxysection{mc-\/homology/\+algebra/\+include/\+algebra/\+matrix\+\_\+algorithms.h File Reference}
+\hypertarget{matrix__algorithms_8h}{}\label{matrix__algorithms_8h}\index{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h@{mc-\/homology/algebra/include/algebra/matrix\_algorithms.h}}
+
+
+A file containing selected matrix algorithms.  
+
+
+{\ttfamily \+\#include "{}algebra/\+detail/\+matrix\+\_\+utils.\+h"{}}\newline
+{\ttfamily \+\#include "{}algebra/\+matrix.\+h"{}}\newline
+Include dependency graph for matrix\+\_\+algorithms.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{matrix__algorithms_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{matrix__algorithms_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1RowEchelonFormResult}{algebra::\+\+Row\+Echelon\+Form\+Result$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Result struct for the row echelon algorithm. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1SmithFormResult}{algebra::\+\+Smith\+Form\+Result$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Result struct for the smith algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$Field T$>$ }\\constexpr std::\+size\+\_\+t \doxymbox{\hyperlink{matrix__algorithms_8h_afda75107ba9ded61d0ae0c3d6a6281e3}{algebra::\+row\+\_\+echelon\+\_\+form}} (std::\+in\+\_\+place\+\_\+t, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a row echolon form in place. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Field T$>$ }\\constexpr \doxymbox{\hyperlink{structalgebra_1_1RowEchelonFormResult}{Row\+Echelon\+Form\+Result}}$<$ T $>$ \doxymbox{\hyperlink{matrix__algorithms_8h_a76489395a9dfe76e436a325e779e804a}{algebra::\+row\+\_\+echelon\+\_\+form}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a row echelon form. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Euclidean\+Domain T$>$ }\\constexpr std::\+size\+\_\+t \doxymbox{\hyperlink{matrix__algorithms_8h_a53476fe37031aed47bb3b38d5e4b6dbc}{algebra::\+smith\+\_\+form}} (std::\+in\+\_\+place\+\_\+t, \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a Smith form in place. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Euclidean\+Domain T$>$ }\\constexpr \doxymbox{\hyperlink{structalgebra_1_1SmithFormResult}{Smith\+Form\+Result}}$<$ T $>$ \doxymbox{\hyperlink{matrix__algorithms_8h_ad04bf6b87ead16604eb2ed6d6c5eabc4}{algebra::\+smith\+\_\+form}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ matrix)
+\begin{DoxyCompactList}\small\item\em Transforms a matrix into a Smith form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing selected matrix algorithms. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{matrix__algorithms_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{matrix__algorithms_8h_a76489395a9dfe76e436a325e779e804a}\index{matrix\_algorithms.h@{matrix\_algorithms.h}!row\_echelon\_form@{row\_echelon\_form}}
+\index{row\_echelon\_form@{row\_echelon\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}}
+\doxysubsubsection{\texorpdfstring{row\_echelon\_form()}{row\_echelon\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{matrix__algorithms_8h_a76489395a9dfe76e436a325e779e804a} 
+template$<$Field T$>$ \\
+Row\+Echelon\+Form\+Result$<$ T $>$ algebra::\+row\+\_\+echelon\+\_\+form (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a row echelon form. 
+
+Transforms a matrix into a row echelon form and returns the number of non-\/zero rows.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Matrix to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct containing two fields
+\begin{DoxyEnumerate}
+\item row\+\_\+echelon\+\_\+form The transformed matrix
+\item non\+\_\+empty\+\_\+rows the number of non-\/zero rows 
+\end{DoxyEnumerate}
+\end{DoxyReturn}
+\Hypertarget{matrix__algorithms_8h_afda75107ba9ded61d0ae0c3d6a6281e3}\index{matrix\_algorithms.h@{matrix\_algorithms.h}!row\_echelon\_form@{row\_echelon\_form}}
+\index{row\_echelon\_form@{row\_echelon\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}}
+\doxysubsubsection{\texorpdfstring{row\_echelon\_form()}{row\_echelon\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{matrix__algorithms_8h_afda75107ba9ded61d0ae0c3d6a6281e3} 
+template$<$Field T$>$ \\
+std::\+size\+\_\+t algebra::\+row\+\_\+echelon\+\_\+form (\begin{DoxyParamCaption}\item[{std::\+in\+\_\+place\+\_\+t}]{}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a row echolon form in place. 
+
+Transforms a matrix into a row echelon form in place and returns the number of non-\/zero rows.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in,out}}  & {\em matrix} & Matrix to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of non-\/zero rows 
+\end{DoxyReturn}
+\Hypertarget{matrix__algorithms_8h_ad04bf6b87ead16604eb2ed6d6c5eabc4}\index{matrix\_algorithms.h@{matrix\_algorithms.h}!smith\_form@{smith\_form}}
+\index{smith\_form@{smith\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}}
+\doxysubsubsection{\texorpdfstring{smith\_form()}{smith\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{matrix__algorithms_8h_ad04bf6b87ead16604eb2ed6d6c5eabc4} 
+template$<$Euclidean\+Domain T$>$ \\
+Smith\+Form\+Result$<$ T $>$ algebra::\+smith\+\_\+form (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a Smith form. 
+
+Transforms a matrix into a Smith form and returns the smaller of non-\/zero rows or columns
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Matrix to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A struct containing two fields
+\begin{DoxyEnumerate}
+\item smith\+\_\+form The transformed matrix
+\item non\+\_\+empty The number of non-\/zero rows or columns 
+\end{DoxyEnumerate}
+\end{DoxyReturn}
+\Hypertarget{matrix__algorithms_8h_a53476fe37031aed47bb3b38d5e4b6dbc}\index{matrix\_algorithms.h@{matrix\_algorithms.h}!smith\_form@{smith\_form}}
+\index{smith\_form@{smith\_form}!matrix\_algorithms.h@{matrix\_algorithms.h}}
+\doxysubsubsection{\texorpdfstring{smith\_form()}{smith\_form()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{matrix__algorithms_8h_a53476fe37031aed47bb3b38d5e4b6dbc} 
+template$<$Euclidean\+Domain T$>$ \\
+std::\+size\+\_\+t algebra::\+smith\+\_\+form (\begin{DoxyParamCaption}\item[{std::\+in\+\_\+place\+\_\+t}]{}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ \&}]{matrix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+
+
+Transforms a matrix into a Smith form in place. 
+
+Transforms a matrix into a Smith form in place and returns the smaller of non-\/zero rows or columns
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxymbox{\texttt{in,out}}  & {\em matrix} & Matrix to be transformed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of non-\/zero rows or columns 
+\end{DoxyReturn}

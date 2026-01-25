@@ -1,0 +1,39 @@
+\doxysection{homology\+\_\+printing\+\_\+strategy.\+h}
+\hypertarget{homology__printing__strategy_8h_source}{}\label{homology__printing__strategy_8h_source}\index{mc-\/homology/core/include/core/homology\_printing\_strategy.h@{mc-\/homology/core/include/core/homology\_printing\_strategy.h}}
+\doxymbox{\hyperlink{homology__printing__strategy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1Homology}{Homology}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{HomologyPrintingStrategy}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy_a7d502201cdece2abec6683c58cd62ef4}{draw}}(\doxymbox{\hyperlink{classcore_1_1Homology}{Homology}}\ \textcolor{keyword}{const}\&\ homology)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy_a8447703b8778387f4b0d4e0387903b2d}{\string~HomologyPrintingStrategy}}();}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1HomologyRawPrint}{HomologyRawPrint}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{HomologyPrintingStrategy}}\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classcore_1_1HomologyRawPrint_a0664ec1b5c7b8ebefc8111b732e8fa02}{draw}}(\doxymbox{\hyperlink{classcore_1_1Homology}{Homology}}\ \textcolor{keyword}{const}\&\ homology)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1HomologyLatexPrint_a19dcd881fd918b1fc797a182e79a0291}{HomologyLatexPrint}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{HomologyPrintingStrategy}}\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1HomologyLatexPrint_a19dcd881fd918b1fc797a182e79a0291}{HomologyLatexPrint}}(std::string\ ring\_name,\ std::string\ homology\_name\ =\ \textcolor{stringliteral}{"{}H"{}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ \doxymbox{\hyperlink{classcore_1_1HomologyLatexPrint_a16dbb3181e1acf706230585d4e27f684}{draw}}(\doxymbox{\hyperlink{classcore_1_1Homology}{Homology}}\ \textcolor{keyword}{const}\&\ homology)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ \ \ \ \ std::string\ m\_ring\_name;}
+\DoxyCodeLine{00048\ \ \ \ \ std::string\ m\_homology\_name;}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

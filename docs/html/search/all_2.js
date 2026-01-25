@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['cbegin_0',['cbegin',['../classalgebra_1_1Matrix.html#ae435b62c30e5cff213667ed27acdb70c',1,'algebra::Matrix']]],
+  ['cend_1',['cend',['../classalgebra_1_1Matrix.html#a608a81e0abf75d0df279ae3ab915f6f5',1,'algebra::Matrix']]],
+  ['chain_5fcomplex_2eh_2',['chain_complex.h',['../chain__complex_8h.html',1,'']]],
+  ['chaincomplex_3',['ChainComplex',['../classalgebra_1_1ChainComplex.html',1,'algebra::ChainComplex&lt; T &gt;'],['../classalgebra_1_1ChainComplex.html#aaf433ba840c5e07e90aef149a8a2b3e4',1,'algebra::ChainComplex::ChainComplex(R &amp;&amp;boundaries)'],['../classalgebra_1_1ChainComplex.html#a568dc017eb66322d30346aa75ae99769',1,'algebra::ChainComplex::ChainComplex(SkipCorrectnessCheckT, R &amp;&amp;boundaries)'],['../chain__complex_8h.html#a1289f308542d523475a6610977fb0f09',1,'algebra::ChainComplex(SkipCorrectnessCheckT, R &amp;&amp;) -&gt; ChainComplex&lt; typename std::ranges::range_value_t&lt; R &gt;::value_type &gt;'],['../chain__complex_8h.html#ae5a6158e073a7727781c1aecc8ee5afb',1,'algebra::ChainComplex(R &amp;&amp;) -&gt; ChainComplex&lt; typename std::ranges::range_value_t&lt; R &gt;::value_type &gt;']]],
+  ['check_5fboundary_5fcorrectness_4',['check_boundary_correctness',['../classalgebra_1_1ChainComplex.html#ac08f2ba67ea48f3c2590554c8baa2d36',1,'algebra::ChainComplex']]],
+  ['combine_5fhashes_5',['combine_hashes',['../utils_8h.html#a9fbd1dfd22ddd5cb51607ade69c84fa9',1,'complexes::utils']]],
+  ['commandlineoptions_6',['CommandlineOptions',['../classcore_1_1CommandlineOptions.html',1,'core::CommandlineOptions'],['../classcore_1_1CommandlineOptions.html#af0fc729457a0df68b94249f0a95ed26a',1,'core::CommandlineOptions::CommandlineOptions()']]],
+  ['commutative_7',['Commutative',['../conceptalgebra_1_1Commutative.html',1,'algebra']]],
+  ['commutativering_8',['CommutativeRing',['../conceptalgebra_1_1CommutativeRing.html',1,'algebra']]],
+  ['complex_9',['Complex',['../classcore_1_1Complex.html',1,'core']]],
+  ['complex_2eh_10',['complex.h',['../complex_8h.html',1,'']]],
+  ['compute_5fchain_5fcomplex_11',['compute_chain_complex',['../compute__chain__complex_8h.html#aef7f4e0ba88dfb188a3410804a5096e5',1,'complexes']]],
+  ['compute_5fchain_5fcomplex_2eh_12',['compute_chain_complex.h',['../compute__chain__complex_8h.html',1,'']]],
+  ['const_5fiterator_13',['const_iterator',['../classalgebra_1_1Matrix.html#aceb5d9b7faca14810fa72204956a3980',1,'algebra::Matrix']]],
+  ['const_5fpointer_14',['const_pointer',['../classalgebra_1_1Matrix.html#a07cde08261d88294eb6f4ea0f783b36d',1,'algebra::Matrix']]],
+  ['const_5freference_15',['const_reference',['../classalgebra_1_1Matrix.html#a88a80d3222718bbd9bf6dad2b8a75b1c',1,'algebra::Matrix']]],
+  ['const_5freverse_5fiterator_16',['const_reverse_iterator',['../classalgebra_1_1Matrix.html#a0ac6dae2274437254585694983304480',1,'algebra::Matrix']]],
+  ['contains_17',['contains',['../classcomplexes_1_1CubicalComplex.html#a9436031888683e97f8e65753f1209f26',1,'complexes::CubicalComplex']]],
+  ['crbegin_18',['crbegin',['../classalgebra_1_1Matrix.html#afc976da3d25ea9ac8946e7d314e04556',1,'algebra::Matrix']]],
+  ['crend_19',['crend',['../classalgebra_1_1Matrix.html#a6f13f0d64aeb38072a8a4261244e25d1',1,'algebra::Matrix']]],
+  ['cubical_5fcomplex_2eh_20',['cubical_complex.h',['../cubical__complex_8h.html',1,'']]],
+  ['cubical_5fcomplex_5f3d_2eh_21',['cubical_complex_3d.h',['../cubical__complex__3d_8h.html',1,'']]],
+  ['cubicalcomplex_22',['CubicalComplex',['../classcomplexes_1_1CubicalComplex.html',1,'complexes::CubicalComplex'],['../classcomplexes_1_1CubicalComplex.html#a28609fba1a9947e3217109bc6b15834d',1,'complexes::CubicalComplex::CubicalComplex()']]],
+  ['cubicalcomplex3d_23',['CubicalComplex3D',['../classcore_1_1CubicalComplex3D.html',1,'core']]],
+  ['cubicalsimplex_24',['CubicalSimplex',['../classcomplexes_1_1CubicalSimplex.html',1,'complexes::CubicalSimplex'],['../classcomplexes_1_1CubicalSimplex.html#a15277ee3720ad35eaef28df0c560202a',1,'complexes::CubicalSimplex::CubicalSimplex()']]]
+];

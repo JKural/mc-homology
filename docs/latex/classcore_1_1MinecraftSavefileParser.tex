@@ -1,0 +1,75 @@
+\doxysection{core::\+Minecraft\+Savefile\+Parser Class Reference}
+\hypertarget{classcore_1_1MinecraftSavefileParser}{}\label{classcore_1_1MinecraftSavefileParser}\index{core::MinecraftSavefileParser@{core::MinecraftSavefileParser}}
+
+
+An interface for Minecraft savefile parser.  
+
+
+
+
+{\ttfamily \+\#include $<$parser.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Minecraft\+Savefile\+Parser:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classcore_1_1MinecraftSavefileParser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Minecraft\+Savefile\+Parser:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classcore_1_1MinecraftSavefileParser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Complex}{Complex}} $>$ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser_a27148eb0686230aa7e1a3ff513786655}{parse}} (std::\+filesystem::\+path const \&path, \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}} lower\+\_\+corner, \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}} upper\+\_\+corner)=0
+\begin{DoxyCompactList}\small\item\em Parses a Minecraft savefile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An interface for Minecraft savefile parser. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1MinecraftSavefileParser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1MinecraftSavefileParser_a27148eb0686230aa7e1a3ff513786655}\index{core::MinecraftSavefileParser@{core::MinecraftSavefileParser}!parse@{parse}}
+\index{parse@{parse}!core::MinecraftSavefileParser@{core::MinecraftSavefileParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classcore_1_1MinecraftSavefileParser_a27148eb0686230aa7e1a3ff513786655} 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Complex}{Complex}} $>$ core::\+\+Minecraft\+Savefile\+Parser::\+parse (\begin{DoxyParamCaption}\item[{std::\+filesystem::\+path const \&}]{path}{, }\item[{\doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}}}]{lower\+\_\+corner}{, }\item[{\doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{Minecraft\+Coordinates}}}]{upper\+\_\+corner}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Parses a Minecraft savefile. 
+
+Parses a Minecraft savefile within given bounds. lower\+\_\+corner.\+x \texorpdfstring{$<$}{<}= upper\+\_\+corner.\+x lower\+\_\+corner.\+y \texorpdfstring{$<$}{<}= upper\+\_\+corner.\+y lower\+\_\+corner.\+z \texorpdfstring{$<$}{<}= upper\+\_\+corner.\+z
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the save file region directory \\
+\hline
+{\em lower\+\_\+corner} & Lower bounds on the studied cube \\
+\hline
+{\em upper\+\_\+corner} & Upper bounds on the studied cube \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser__mcSavefileParsers_a6fe67e3a5ab872c253c9671d3df10561}{core::\+\+Minecraft\+Savefile\+Parser\+\_\+mc\+Savefile\+Parsers}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{parser_8h}{parser.\+h}}\item 
+mc-\/homology/\+core/\+src/\+parser.\+cpp\end{DoxyCompactItemize}

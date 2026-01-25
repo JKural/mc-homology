@@ -1,0 +1,51 @@
+\doxysection{compute\+\_\+chain\+\_\+complex.\+h}
+\hypertarget{compute__chain__complex_8h_source}{}\label{compute__chain__complex_8h_source}\index{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h@{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}}
+\doxymbox{\hyperlink{compute__chain__complex_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <ranges>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{chain__complex_8h}{algebra/chain\_complex.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{matrix_8h}{algebra/matrix.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{cubical__complex_8h}{cubical\_complex.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }complexes\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00024\ algebra::ChainComplex<T>}
+\DoxyCodeLine{00025\ \doxymbox{\hyperlink{compute__chain__complex_8h_aef7f4e0ba88dfb188a3410804a5096e5}{compute\_chain\_complex}}(\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{CubicalComplex}}\ \textcolor{keyword}{const}\&\ cubical\_complex)\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ simplices\ =\ cubical\_complex.\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a8925b5d3f0b7186a7b4c28079a46cceb}{simplices}}();}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{if}\ (simplices.empty())\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::ChainComplex<T>}}\ \{\};}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \ \ \ \ std::vector<algebra::Matrix<T>>\ boundaries(simplices.size());}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ 0'th\ dimensional\ matrix\ is\ empty,\ we\ are\ computing\ non-\/reduced}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ homology}}
+\DoxyCodeLine{00034\ \ \ \ \ boundaries[0]\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}{algebra::Matrix<T>::zero}}(0,\ simplices[0].size());}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ dim\ =\ 1;\ dim\ <\ simplices.size();\ ++dim)\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ boundaries[dim]\ =\ \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}{algebra::Matrix<T>::zero}}(}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ simplices[dim\ -\/\ 1].size(),}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ simplices[dim].size()}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::unordered\_map<CubicalSimplex,\ std::size\_t>\ assigned\_rows;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ [s,\ i]\ :\ vs::zip(simplices[dim\ -\/\ 1],\ vs::iota(0)))\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ assigned\_rows.emplace(s,\ i);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ [j,\ simplex]\ :\ simplices[dim]\ |\ vs::enumerate)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ std::array\ sgn\ =\ \{1,\ -\/1,\ -\/1,\ 1\};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ [k,\ bd]\ :\ simplex.boundary()\ |\ vs::enumerate)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ boundaries[dim][assigned\_rows[bd],\ j]\ =\ sgn[k\ \%\ sgn.size()];}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::ChainComplex<T>}}\ \{std::move(boundaries)\};}
+\DoxyCodeLine{00052\ \}}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \}\ \textcolor{comment}{//\ namespace\ complexes}}
+
+\end{DoxyCode}

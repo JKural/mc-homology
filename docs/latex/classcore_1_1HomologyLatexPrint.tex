@@ -1,0 +1,97 @@
+\doxysection{core::\+Homology\+Latex\+Print Class Reference}
+\hypertarget{classcore_1_1HomologyLatexPrint}{}\label{classcore_1_1HomologyLatexPrint}\index{core::HomologyLatexPrint@{core::HomologyLatexPrint}}
+
+
+Prints a homology group in Latex syntax.  
+
+
+
+
+{\ttfamily \+\#include $<$homology\+\_\+printing\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Homology\+Latex\+Print:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classcore_1_1HomologyLatexPrint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Homology\+Latex\+Print:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classcore_1_1HomologyLatexPrint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcore_1_1HomologyLatexPrint_a19dcd881fd918b1fc797a182e79a0291}{Homology\+Latex\+Print}} (std::\+string ring\+\_\+name, std::\+string homology\+\_\+name="{}H"{})
+\begin{DoxyCompactList}\small\item\em Constructor for the strategy. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{classcore_1_1HomologyLatexPrint_a16dbb3181e1acf706230585d4e27f684}{draw}} (\doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} const \&homology) const override
+\begin{DoxyCompactList}\small\item\em Returns the homology description in latex syntax. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{core::\+\+Homology\+Printing\+Strategy}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Homology\+Printing\+Strategy} ()
+\begin{DoxyCompactList}\small\item\em A virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prints a homology group in Latex syntax. 
+
+Prints a homology group in Latex syntax, making it easily embeddable into a Latex file. 
+
+\label{doc-constructors}
+\Hypertarget{classcore_1_1HomologyLatexPrint_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcore_1_1HomologyLatexPrint_a19dcd881fd918b1fc797a182e79a0291}\index{core::HomologyLatexPrint@{core::HomologyLatexPrint}!HomologyLatexPrint@{HomologyLatexPrint}}
+\index{HomologyLatexPrint@{HomologyLatexPrint}!core::HomologyLatexPrint@{core::HomologyLatexPrint}}
+\doxysubsubsection{\texorpdfstring{HomologyLatexPrint()}{HomologyLatexPrint()}}
+{\footnotesize\ttfamily \label{classcore_1_1HomologyLatexPrint_a19dcd881fd918b1fc797a182e79a0291} 
+core::\+\+Homology\+Latex\+Print::\+\+Homology\+Latex\+Print (\begin{DoxyParamCaption}\item[{std::\+string}]{ring\+\_\+name}{, }\item[{std::\+string}]{homology\+\_\+name}{ = {\ttfamily "{}H"{}}}\end{DoxyParamCaption})}
+
+
+
+Constructor for the strategy. 
+
+Constructor for the strategy, allows to select names for the homology and torsion groups
+
+
+\begin{DoxyParams}{Parameters}
+{\em ring\+\_\+name} & Name for the coefficient ring \\
+\hline
+{\em homology\+\_\+name} & Name for the homology group \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1HomologyLatexPrint_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1HomologyLatexPrint_a16dbb3181e1acf706230585d4e27f684}\index{core::HomologyLatexPrint@{core::HomologyLatexPrint}!draw@{draw}}
+\index{draw@{draw}!core::HomologyLatexPrint@{core::HomologyLatexPrint}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classcore_1_1HomologyLatexPrint_a16dbb3181e1acf706230585d4e27f684} 
+std::\+string core::\+\+Homology\+Latex\+Print::\+draw (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} const \&}]{homology}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the homology description in latex syntax. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy_a7d502201cdece2abec6683c58cd62ef4}{core::\+\+Homology\+Printing\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{homology__printing__strategy_8h}{homology\+\_\+printing\+\_\+strategy.\+h}}\item 
+mc-\/homology/\+core/\+src/\+homology\+\_\+printing\+\_\+strategy.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,126 @@
+\doxysection{polymorphic.\+h}
+\hypertarget{polymorphic_8h_source}{}\label{polymorphic_8h_source}\index{mc-\/homology/core/include/core/polymorphic.h@{mc-\/homology/core/include/core/polymorphic.h}}
+\doxymbox{\hyperlink{polymorphic_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <concepts>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifdef\ \_\_cpp\_lib\_polymorphic}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00018\ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{classcore_1_1Polymorphic}{Polymorphic}}\ =\ std::polymorphic<T>}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}()}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ std::default\_initializable<T>\ \&\&\ std::copy\_constructible<T>}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ :\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}(T\ \{\})\ \{\}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ U\ =\ T>}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ std::derived\_from<std::remove\_cvref\_t<U>,\ T>}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \&\&\ std::copy\_constructible<std::remove\_cvref\_t<U>>}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \&\&\ std::constructible\_from<std::remove\_cvref\_t<U>,\ U>}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_a78dcef8315873c965afd6690873caf46}{Polymorphic}}(U\&\&\ u)\ :}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ m\_object(}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ std::make\_unique<Model<std::remove\_cvref\_t<U>>>(std::forward<U>(u))}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ )\ \{\}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class\ }U,\ \textcolor{keyword}{class}...\ Args>}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ std::derived\_from<std::remove\_cvref\_t<U>,\ T>}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \&\&\ std::copy\_constructible<std::remove\_cvref\_t<U>>}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \&\&\ std::constructible\_from<std::remove\_cvref\_t<U>,\ Args...>}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \&\&\ std::same\_as<std::remove\_cvref\_t<U>,\ U>}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{explicit}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_af4e692f5a7d7d3a984be0b21c59f0089}{Polymorphic}}(std::in\_place\_type\_t<U>,\ Args\&\&...\ args)\ :}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ m\_object(}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ std::make\_unique<Model<std::remove\_cvref\_t<U>>>(}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::forward<Args>(args)...}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ )\ \{\}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_a729f9c6bd67e34e4d4e3ce070c3d7994}{Polymorphic}}(\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\ \textcolor{keyword}{const}\&\ other)\ :}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ m\_object(other.m\_object-\/>clone())\ \{\}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_af5bf398b45f412dc8347da431844102a}{Polymorphic}}(\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\&\&\ other)\ noexcept\ :}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ m\_object(std::move(other.m\_object))\ \{\}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\&\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_aea051a61486b38ec244c7be7b68f4677}{operator=}}(\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\ \textcolor{keyword}{const}\&\ other)\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ m\_object\ =\ other.m\_object-\/>clone();}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\&\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_a0aba960ee37d068c9aebf190ebe601e9}{operator=}}(\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\&\&\ other)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ m\_object\ =\ std::move(other.m\_object);}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{constexpr}\ T\ \textcolor{keyword}{const}*\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_abb62e69bc83f5adc4cd43e3fd2861d21}{operator-\/>}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_object-\/>get\_address();}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{constexpr}\ T*\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_a54a1b80a57d7240ac304b7da4cef5ca4}{operator-\/>}}()\ noexcept\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_object-\/>get\_address();}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{constexpr}\ T\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_a8a7f4b6a3c6e2aa90c1e66c7123791d1}{operator*}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *m\_object-\/>get\_address();}
+\DoxyCodeLine{00086\ \ \ \ \ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keyword}{constexpr}\ T\&\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_ae8b6a22c3161fcb04f636e52be471274}{operator*}}()\ noexcept\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *m\_object-\/>get\_address();}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_abbad9a973d3d41a45d59c1624ef608c2}{valueless\_after\_move}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_object\ ==\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcore_1_1Polymorphic_adf56d4df87396595e28695d1a03c86c1}{swap}}(\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}}\&\ other)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }std::swap;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1Polymorphic_adf56d4df87396595e28695d1a03c86c1}{swap}}(m\_object,\ other.m\_object);}
+\DoxyCodeLine{00102\ \ \ \ \ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{struct\ }Concept\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{virtual}\ T\ \textcolor{keyword}{const}*\ get\_address()\ const\ noexcept\ =\ 0;}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ constexpr\ virtual\ T*\ get\_address()\ noexcept\ =\ 0;}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ constexpr\ virtual\ std::unique\_ptr<Concept>\ clone()\ const\ =\ 0;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ constexpr\ virtual\ \string~Concept()\ =\ default;}
+\DoxyCodeLine{00110\ \ \ \ \ \};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \ \ \ \ template<class\ Object>}
+\DoxyCodeLine{00113\ \ \ \ \ struct\ Model:\ public\ Concept\ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ U\ =\ Object>}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ Model(U\&\&\ value)\ :\ m\_value(std::forward<U>(value))\ \{\}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ T\ \textcolor{keyword}{const}*\ get\_address()\ const\ noexcept\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::addressof(m\_value);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ T*\ get\_address()\ noexcept\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::addressof(m\_value);}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{constexpr}\ std::unique\_ptr<Concept>\ clone()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<Model<Object>>(m\_value);}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ Object\ m\_value;}
+\DoxyCodeLine{00131\ \ \ \ \ \};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \ \ \ \ std::unique\_ptr<Concept>\ m\_object;}
+\DoxyCodeLine{00134\ \};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

@@ -1,0 +1,35 @@
+\doxysection{algebra::\+Ring Concept Reference}
+\hypertarget{conceptalgebra_1_1Ring}{}\label{conceptalgebra_1_1Ring}\index{algebra::Ring@{algebra::Ring}}
+
+
+A ring concept.  
+
+
+
+
+{\ttfamily \+\#include $<$algebraic\+\_\+concepts.\+h$>$}
+
+\doxysubsection{Concept definition}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{\textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1Ring}{Ring}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1AdditiveGroup}{AdditiveGroup<T>}}\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{\ \ \ \ \{\ x\ *\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \{\ x\ *=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{\ \ \ \ \{\ T::one()\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Detailed Description}
+A ring concept. 
+
+{\ttfamily Ring} concept declares that a type models a mathematical definition of a ring, where addition is denoted by {\ttfamily +} and multiplication by {\ttfamily \texorpdfstring{$\ast$}{*}}.\hypertarget{conceptalgebra_1_1Ring_autotoc_md3}{}\doxysubsection{\texorpdfstring{Sematic requirements}{Sematic requirements}}\label{conceptalgebra_1_1Ring_autotoc_md3}
+Type {\ttfamily T} satisfies all semantic requirements for {\ttfamily Additive\+Group} and additionally, for {\ttfamily x}, {\ttfamily y}, {\ttfamily z} of type {\ttfamily T}
+\begin{DoxyEnumerate}
+\item {\ttfamily (x \texorpdfstring{$\ast$}{*} y) \texorpdfstring{$\ast$}{*} z == x \texorpdfstring{$\ast$}{*} (y \texorpdfstring{$\ast$}{*} z)}
+\item {\ttfamily x \texorpdfstring{$\ast$}{*} (y + z) == x \texorpdfstring{$\ast$}{*} y + x \texorpdfstring{$\ast$}{*} z}
+\item {\ttfamily (x + y) \texorpdfstring{$\ast$}{*} z == x \texorpdfstring{$\ast$}{*} z + y \texorpdfstring{$\ast$}{*} z}
+\item {\ttfamily T::\+one() \texorpdfstring{$\ast$}{*} x == x \texorpdfstring{$\ast$}{*} T::\+one() == x} 
+\end{DoxyEnumerate}

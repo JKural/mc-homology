@@ -1,0 +1,168 @@
+\doxysection{core::\+Commandline\+Options Class Reference}
+\hypertarget{classcore_1_1CommandlineOptions}{}\label{classcore_1_1CommandlineOptions}\index{core::CommandlineOptions@{core::CommandlineOptions}}
+
+
+A class for storing user\textquotesingle{}s options from the commandline.  
+
+
+
+
+{\ttfamily \+\#include $<$options.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Commandline\+Options:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcore_1_1CommandlineOptions__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Commandline\+Options:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classcore_1_1CommandlineOptions__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1CommandlineOptions_af0fc729457a0df68b94249f0a95ed26a}\label{classcore_1_1CommandlineOptions_af0fc729457a0df68b94249f0a95ed26a} 
+{\bfseries Commandline\+Options} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Parse commandline arguments. \end{DoxyCompactList}\item 
+std::\+filesystem::\+path \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_af2cbca7c9c8102c7439b24ff9f383853}{filename}} () const override
+\begin{DoxyCompactList}\small\item\em Path to the region directory. \end{DoxyCompactList}\item 
+std::\+pair$<$ int, int $>$ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_ad53567040795ff9cc2d3a6b77a7a2169}{x\+\_\+bounds}} () const override
+\begin{DoxyCompactList}\small\item\em Bounds on x axis. \end{DoxyCompactList}\item 
+std::\+pair$<$ int, int $>$ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1c4ee3c4697dc9cf4d80a028f6959119}{y\+\_\+bounds}} () const override
+\begin{DoxyCompactList}\small\item\em Bounds on y axis. \end{DoxyCompactList}\item 
+std::\+pair$<$ int, int $>$ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a7dfbe2d863331b80b0c172fb89a7128c}{z\+\_\+bounds}} () const override
+\begin{DoxyCompactList}\small\item\em Bounds on y axis. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{Homology\+Choice}} \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_ad53f66f036ce75733151562c8d80a331}{homology\+\_\+to\+\_\+compute}} () const override
+\begin{DoxyCompactList}\small\item\em Type of homology to compute. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a8a0803d8df5a8e844dddef0f72742e01}{latex}} () const override
+\begin{DoxyCompactList}\small\item\em Whether to print latex output. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1abcf70b97e1e6f8008f900d98b72da0}{help}} () const override
+\begin{DoxyCompactList}\small\item\em Whether the user requested help. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classcore_1_1Options}{core::\+\+Options}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Options} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for storing user\textquotesingle{}s options from the commandline. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1CommandlineOptions_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1CommandlineOptions_af2cbca7c9c8102c7439b24ff9f383853}\index{core::CommandlineOptions@{core::CommandlineOptions}!filename@{filename}}
+\index{filename@{filename}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{filename()}{filename()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_af2cbca7c9c8102c7439b24ff9f383853} 
+std::\+filesystem::\+path core::\+\+Commandline\+Options::\+filename (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Path to the region directory. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_a29f80cd50c80c6c88fe0c38950143e44}{core::\+\+Options}}.
+
+\Hypertarget{classcore_1_1CommandlineOptions_a1abcf70b97e1e6f8008f900d98b72da0}\index{core::CommandlineOptions@{core::CommandlineOptions}!help@{help}}
+\index{help@{help}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_a1abcf70b97e1e6f8008f900d98b72da0} 
+bool core::\+\+Commandline\+Options::\+help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Whether the user requested help. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_ab18bea57cce91fb16c89464deeddd197}{core::\+\+Options}}.
+
+\Hypertarget{classcore_1_1CommandlineOptions_ad53f66f036ce75733151562c8d80a331}\index{core::CommandlineOptions@{core::CommandlineOptions}!homology\_to\_compute@{homology\_to\_compute}}
+\index{homology\_to\_compute@{homology\_to\_compute}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{homology\_to\_compute()}{homology\_to\_compute()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_ad53f66f036ce75733151562c8d80a331} 
+\doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{Homology\+Choice}} core::\+\+Commandline\+Options::\+homology\+\_\+to\+\_\+compute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Type of homology to compute. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_ae24040c2a59a4dfec735edfda52458bd}{core::\+\+Options}}.
+
+\Hypertarget{classcore_1_1CommandlineOptions_a8a0803d8df5a8e844dddef0f72742e01}\index{core::CommandlineOptions@{core::CommandlineOptions}!latex@{latex}}
+\index{latex@{latex}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{latex()}{latex()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_a8a0803d8df5a8e844dddef0f72742e01} 
+bool core::\+\+Commandline\+Options::\+latex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Whether to print latex output. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_a5b998ab1c70c3663c2e5a941ae4ef984}{core::\+\+Options}}.
+
+\Hypertarget{classcore_1_1CommandlineOptions_ad53567040795ff9cc2d3a6b77a7a2169}\index{core::CommandlineOptions@{core::CommandlineOptions}!x\_bounds@{x\_bounds}}
+\index{x\_bounds@{x\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{x\_bounds()}{x\_bounds()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_ad53567040795ff9cc2d3a6b77a7a2169} 
+std::\+pair$<$ int, int $>$ core::\+\+Commandline\+Options::\+x\+\_\+bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bounds on x axis. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_a07d4e34344a0704c6802a4b33ebdcaf0}{core::\+\+Options}}.
+
+\Hypertarget{classcore_1_1CommandlineOptions_a1c4ee3c4697dc9cf4d80a028f6959119}\index{core::CommandlineOptions@{core::CommandlineOptions}!y\_bounds@{y\_bounds}}
+\index{y\_bounds@{y\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{y\_bounds()}{y\_bounds()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_a1c4ee3c4697dc9cf4d80a028f6959119} 
+std::\+pair$<$ int, int $>$ core::\+\+Commandline\+Options::\+y\+\_\+bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bounds on y axis. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_a69e87c9ead19a45c6a8d5ff90abe5929}{core::\+\+Options}}.
+
+\Hypertarget{classcore_1_1CommandlineOptions_a7dfbe2d863331b80b0c172fb89a7128c}\index{core::CommandlineOptions@{core::CommandlineOptions}!z\_bounds@{z\_bounds}}
+\index{z\_bounds@{z\_bounds}!core::CommandlineOptions@{core::CommandlineOptions}}
+\doxysubsubsection{\texorpdfstring{z\_bounds()}{z\_bounds()}}
+{\footnotesize\ttfamily \label{classcore_1_1CommandlineOptions_a7dfbe2d863331b80b0c172fb89a7128c} 
+std::\+pair$<$ int, int $>$ core::\+\+Commandline\+Options::\+z\+\_\+bounds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bounds on y axis. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1Options_a7dd91904095a217ea2f9d054820ded86}{core::\+\+Options}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{options_8h}{options.\+h}}\item 
+mc-\/homology/\+core/\+src/\+options.\+cpp\end{DoxyCompactItemize}

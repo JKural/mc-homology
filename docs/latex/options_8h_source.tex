@@ -1,0 +1,67 @@
+\doxysection{options.\+h}
+\hypertarget{options_8h_source}{}\label{options_8h_source}\index{mc-\/homology/core/include/core/options.h@{mc-\/homology/core/include/core/options.h}}
+\doxymbox{\hyperlink{options_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{enum\ class}\ \doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{HomologyChoice}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ Z,}
+\DoxyCodeLine{00012\ \ \ \ \ Z2,}
+\DoxyCodeLine{00013\ \ \ \ \ Z3,}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1Options}{Options}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ std::filesystem::path\ \doxymbox{\hyperlink{classcore_1_1Options_a29f80cd50c80c6c88fe0c38950143e44}{filename}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ std::pair<int,\ int>\ \doxymbox{\hyperlink{classcore_1_1Options_a07d4e34344a0704c6802a4b33ebdcaf0}{x\_bounds}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ std::pair<int,\ int>\ \doxymbox{\hyperlink{classcore_1_1Options_a69e87c9ead19a45c6a8d5ff90abe5929}{y\_bounds}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ std::pair<int,\ int>\ \doxymbox{\hyperlink{classcore_1_1Options_a7dd91904095a217ea2f9d054820ded86}{z\_bounds}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{HomologyChoice}}\ \doxymbox{\hyperlink{classcore_1_1Options_ae24040c2a59a4dfec735edfda52458bd}{homology\_to\_compute}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcore_1_1Options_a5b998ab1c70c3663c2e5a941ae4ef984}{latex}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcore_1_1Options_ab18bea57cce91fb16c89464deeddd197}{help}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{classcore_1_1Options_ae6a550eec2c0d7007054e9883fdde627}{\string~Options}}();}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1CommandlineOptions_af0fc729457a0df68b94249f0a95ed26a}{CommandlineOptions}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1Options}{Options}}\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_af0fc729457a0df68b94249f0a95ed26a}{CommandlineOptions}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}**\ argv);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::filesystem::path\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_af2cbca7c9c8102c7439b24ff9f383853}{filename}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00055\ \ \ \ \ std::pair<int,\ int>\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_ad53567040795ff9cc2d3a6b77a7a2169}{x\_bounds}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ std::pair<int,\ int>\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1c4ee3c4697dc9cf4d80a028f6959119}{y\_bounds}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ std::pair<int,\ int>\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a7dfbe2d863331b80b0c172fb89a7128c}{z\_bounds}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00064\ \ \ \ \ \doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{HomologyChoice}}\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_ad53f66f036ce75733151562c8d80a331}{homology\_to\_compute}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a8a0803d8df5a8e844dddef0f72742e01}{latex}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classcore_1_1CommandlineOptions_a1abcf70b97e1e6f8008f900d98b72da0}{help}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00073\ \ \ \ \ std::filesystem::path\ m\_filename\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00074\ \ \ \ \ std::pair<int,\ int>\ m\_x\_bounds\ =\ \{0,\ 0\};}
+\DoxyCodeLine{00075\ \ \ \ \ std::pair<int,\ int>\ m\_y\_bounds\ =\ \{0,\ 0\};}
+\DoxyCodeLine{00076\ \ \ \ \ std::pair<int,\ int>\ m\_z\_bounds\ =\ \{0,\ 0\};}
+\DoxyCodeLine{00077\ \ \ \ \ \doxymbox{\hyperlink{options_8h_ad6f3cd1c61b752713405b33f07f081ae}{HomologyChoice}}\ m\_homology\_to\_compute\ =\ HomologyChoice::Z2;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_latex\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_help\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00080\ \};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

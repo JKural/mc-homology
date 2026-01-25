@@ -1,0 +1,37 @@
+\doxysection{algebra::\+Group Concept Reference}
+\hypertarget{conceptalgebra_1_1Group}{}\label{conceptalgebra_1_1Group}\index{algebra::Group@{algebra::Group}}
+
+
+A group concept.  
+
+
+
+
+{\ttfamily \+\#include $<$algebraic\+\_\+concepts.\+h$>$}
+
+\doxysubsection{Concept definition}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{\textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1Group}{Group}}\ =}
+\DoxyCodeLine{\ \ \ \ std::regular<T>\ \&\&\ std::default\_initializable<T>\ \&\&\ \textcolor{keyword}{requires}(T\ x,\ T\ y)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ x\ *\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ x\ /\ y\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ x\ *=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ x\ /=\ y\ \}\ -\/>\ std::same\_as<T\&>;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\ T::one()\ \}\ -\/>\ std::convertible\_to<T>;}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Detailed Description}
+A group concept. 
+
+{\ttfamily Group} concept declares that a type models a mathematical definition of a group, that is an abelian group that, in which the group operation is expressed with \textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}.\hypertarget{conceptalgebra_1_1Group_autotoc_md1}{}\doxysubsection{\texorpdfstring{Semantic requirements}{Semantic requirements}}\label{conceptalgebra_1_1Group_autotoc_md1}
+For {\ttfamily x}, {\ttfamily y}, {\ttfamily z} of type {\ttfamily T}
+\begin{DoxyEnumerate}
+\item {\ttfamily (x \texorpdfstring{$\ast$}{*} y) \texorpdfstring{$\ast$}{*} z == x \texorpdfstring{$\ast$}{*} (y \texorpdfstring{$\ast$}{*} z)}
+\item {\ttfamily x \texorpdfstring{$\ast$}{*} T::\+one() == T::\+one() \texorpdfstring{$\ast$}{*} x == x}
+\item {\ttfamily x \texorpdfstring{$\ast$}{*} (T::\+one() /\+ x) == (T::\+one() /\+ x) \texorpdfstring{$\ast$}{*} x == T::\+one()} 
+\end{DoxyEnumerate}

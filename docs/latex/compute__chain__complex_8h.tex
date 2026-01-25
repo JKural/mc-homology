@@ -1,0 +1,65 @@
+\doxysection{mc-\/homology/\+complexes/\+include/\+complexes/\+compute\+\_\+chain\+\_\+complex.h File Reference}
+\hypertarget{compute__chain__complex_8h}{}\label{compute__chain__complex_8h}\index{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h@{mc-\/homology/complexes/include/complexes/compute\_chain\_complex.h}}
+
+
+A file containing algorithms for transforming complexes into chain complexes.  
+
+
+{\ttfamily \+\#include $<$ranges$>$}\newline
+{\ttfamily \+\#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+{\ttfamily \+\#include "{}algebra/\+chain\+\_\+complex.\+h"{}}\newline
+{\ttfamily \+\#include "{}algebra/\+matrix.\+h"{}}\newline
+{\ttfamily \+\#include "{}cubical\+\_\+complex.\+h"{}}\newline
+Include dependency graph for compute\+\_\+chain\+\_\+complex.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{compute__chain__complex_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{compute__chain__complex_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T$>$ }\\\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$ \doxymbox{\hyperlink{compute__chain__complex_8h_aef7f4e0ba88dfb188a3410804a5096e5}{complexes::\+compute\+\_\+chain\+\_\+complex}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}} const \&cubical\+\_\+complex)
+\begin{DoxyCompactList}\small\item\em Computes a chain complex from a cubical complex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing algorithms for transforming complexes into chain complexes. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{compute__chain__complex_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{compute__chain__complex_8h_aef7f4e0ba88dfb188a3410804a5096e5}\index{compute\_chain\_complex.h@{compute\_chain\_complex.h}!compute\_chain\_complex@{compute\_chain\_complex}}
+\index{compute\_chain\_complex@{compute\_chain\_complex}!compute\_chain\_complex.h@{compute\_chain\_complex.h}}
+\doxysubsubsection{\texorpdfstring{compute\_chain\_complex()}{compute\_chain\_complex()}}
+{\footnotesize\ttfamily \label{compute__chain__complex_8h_aef7f4e0ba88dfb188a3410804a5096e5} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$ complexes::\+compute\+\_\+chain\+\_\+complex (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}} const \&}]{cubical\+\_\+complex}{}\end{DoxyParamCaption})}
+
+
+
+Computes a chain complex from a cubical complex. 
+
+Transforms relationships between faces into boundary operators
+
+
+\begin{DoxyParams}{Parameters}
+{\em cubical\+\_\+complex} & Complex to transorm\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A chain complex 
+\end{DoxyReturn}

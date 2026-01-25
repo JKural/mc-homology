@@ -1,0 +1,293 @@
+\doxysection{algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classalgebra_1_1Matrix}{}\label{classalgebra_1_1Matrix}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+
+
+A \doxylink{classalgebra_1_1Matrix}{Matrix} class.  
+
+
+
+
+{\ttfamily \+\#include $<$matrix.\+h$>$}
+
+
+
+Collaboration diagram for algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classalgebra_1_1Matrix__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01}\label{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01} 
+using {\bfseries storage\+\_\+type} = std::\+vector$<$T$>$
+\begin{DoxyCompactList}\small\item\em Underlying storage type. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a18362e68ebc12955711eea138f4d169f}\label{classalgebra_1_1Matrix_a18362e68ebc12955711eea138f4d169f} 
+using {\bfseries value\+\_\+type} = std::\+vector$<$T$>$::\+value\+\_\+type
+\begin{DoxyCompactList}\small\item\em Type of the stored values. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_aebdc210a8b98fe28ea822ed93742e7cc}\label{classalgebra_1_1Matrix_aebdc210a8b98fe28ea822ed93742e7cc} 
+using {\bfseries allocator\+\_\+type} = std::\+vector$<$T$>$::\+allocator\+\_\+type
+\begin{DoxyCompactList}\small\item\em Type of the used allocator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}\label{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b} 
+using {\bfseries size\+\_\+type} = std::\+vector$<$T$>$::\+size\+\_\+type
+\begin{DoxyCompactList}\small\item\em Size type used by the underlying storage. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a9873cc501e6d4e07b171b4a8ec11ab9e}\label{classalgebra_1_1Matrix_a9873cc501e6d4e07b171b4a8ec11ab9e} 
+using {\bfseries difference\+\_\+type} = std::\+vector$<$T$>$::\+difference\+\_\+type
+\begin{DoxyCompactList}\small\item\em Difference type used by the underlying storage. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}\label{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d} 
+using {\bfseries reference} = std::\+vector$<$T$>$::\+reference
+\begin{DoxyCompactList}\small\item\em Reference type to the stored values. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}\label{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c} 
+using {\bfseries const\+\_\+reference} = std::\+vector$<$T$>$::\+const\+\_\+reference
+\begin{DoxyCompactList}\small\item\em Const reference type to the stored values. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a0544c85bb1b8bc3c28663b6ac196e5a5}\label{classalgebra_1_1Matrix_a0544c85bb1b8bc3c28663b6ac196e5a5} 
+using {\bfseries pointer} = std::\+vector$<$T$>$::\+pointer
+\begin{DoxyCompactList}\small\item\em Pointer type to the stored values. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a07cde08261d88294eb6f4ea0f783b36d}\label{classalgebra_1_1Matrix_a07cde08261d88294eb6f4ea0f783b36d} 
+using {\bfseries const\+\_\+pointer} = std::\+vector$<$T$>$::\+const\+\_\+pointer
+\begin{DoxyCompactList}\small\item\em Const pointer type to the stored values. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a90e2f25e23b866f1f4ec3b1597caaa28}\label{classalgebra_1_1Matrix_a90e2f25e23b866f1f4ec3b1597caaa28} 
+using {\bfseries iterator} = std::\+vector$<$T$>$::\+iterator
+\begin{DoxyCompactList}\small\item\em Iterator over the underlying storage. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}\label{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980} 
+using {\bfseries const\+\_\+iterator} = std::\+vector$<$T$>$::\+const\+\_\+iterator
+\begin{DoxyCompactList}\small\item\em Const iterator over the underlying storage. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a021b66dd476946b3c91890448e13fe50}\label{classalgebra_1_1Matrix_a021b66dd476946b3c91890448e13fe50} 
+using {\bfseries reverse\+\_\+iterator} = std::\+vector$<$T$>$::\+reverse\+\_\+iterator
+\begin{DoxyCompactList}\small\item\em Reverse iterator over the underlying storage. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}\label{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480} 
+using {\bfseries const\+\_\+reverse\+\_\+iterator} = std::\+vector$<$T$>$::\+const\+\_\+reverse\+\_\+iterator
+\begin{DoxyCompactList}\small\item\em Const reverse iterator over the underlying storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_aeed32f6526fd494cbc25646f539caa98}{Matrix}} (R \&\&\doxymbox{\hyperlink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}}, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} \doxymbox{\hyperlink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}}, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} \doxymbox{\hyperlink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}})
+\begin{DoxyCompactList}\small\item\em Construct a matrix from a range. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a711ce3ddc1e3fe6eda7f913861d57ff2}\label{classalgebra_1_1Matrix_a711ce3ddc1e3fe6eda7f913861d57ff2} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a90e2f25e23b866f1f4ec3b1597caaa28}{iterator}} {\bfseries begin} () noexcept
+\begin{DoxyCompactList}\small\item\em Iterator over the coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a1514c8d9a5a3a0f2945c8a8adbb239c1}\label{classalgebra_1_1Matrix_a1514c8d9a5a3a0f2945c8a8adbb239c1} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\+\_\+iterator}} {\bfseries begin} () const noexcept
+\begin{DoxyCompactList}\small\item\em Iterator over the coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ae435b62c30e5cff213667ed27acdb70c}\label{classalgebra_1_1Matrix_ae435b62c30e5cff213667ed27acdb70c} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\+\_\+iterator}} {\bfseries cbegin} () const noexcept
+\begin{DoxyCompactList}\small\item\em Const iterator over the coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a3eee82886269c289a4508bb01f32c1e9}\label{classalgebra_1_1Matrix_a3eee82886269c289a4508bb01f32c1e9} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a90e2f25e23b866f1f4ec3b1597caaa28}{iterator}} {\bfseries end} () noexcept
+\begin{DoxyCompactList}\small\item\em Sentinel for the coefficients iterator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a8099c0ff19aaeaa7ebdd67f5b664ce22}\label{classalgebra_1_1Matrix_a8099c0ff19aaeaa7ebdd67f5b664ce22} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\+\_\+iterator}} {\bfseries end} () const noexcept
+\begin{DoxyCompactList}\small\item\em Sentinel for the coefficients iterator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a608a81e0abf75d0df279ae3ab915f6f5}\label{classalgebra_1_1Matrix_a608a81e0abf75d0df279ae3ab915f6f5} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_aceb5d9b7faca14810fa72204956a3980}{const\+\_\+iterator}} {\bfseries cend} () const noexcept
+\begin{DoxyCompactList}\small\item\em Sentinel for the coefficients const iterator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ad75dc1d15559dab7d43b4af2d7cc16cb}\label{classalgebra_1_1Matrix_ad75dc1d15559dab7d43b4af2d7cc16cb} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a021b66dd476946b3c91890448e13fe50}{reverse\+\_\+iterator}} {\bfseries rbegin} () noexcept
+\begin{DoxyCompactList}\small\item\em Reverse iterator over the coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a0d705707bb29eb36fe6ddc3c53830d83}\label{classalgebra_1_1Matrix_a0d705707bb29eb36fe6ddc3c53830d83} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\+\_\+reverse\+\_\+iterator}} {\bfseries rbegin} () const noexcept
+\begin{DoxyCompactList}\small\item\em Reverse iterator over the coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_afc976da3d25ea9ac8946e7d314e04556}\label{classalgebra_1_1Matrix_afc976da3d25ea9ac8946e7d314e04556} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\+\_\+reverse\+\_\+iterator}} {\bfseries crbegin} () const noexcept
+\begin{DoxyCompactList}\small\item\em Const reverse iterator over the coefficients. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a403d37deae4f8cc4acb46992bd76b838}\label{classalgebra_1_1Matrix_a403d37deae4f8cc4acb46992bd76b838} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a021b66dd476946b3c91890448e13fe50}{reverse\+\_\+iterator}} {\bfseries rend} () noexcept
+\begin{DoxyCompactList}\small\item\em Sentinel for the coefficients reverse iterator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a4b6fb86f09c92d84368aa3b82b570557}\label{classalgebra_1_1Matrix_a4b6fb86f09c92d84368aa3b82b570557} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\+\_\+reverse\+\_\+iterator}} {\bfseries rend} () const noexcept
+\begin{DoxyCompactList}\small\item\em Sentinel for the coefficients reverse iterator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a6f13f0d64aeb38072a8a4261244e25d1}\label{classalgebra_1_1Matrix_a6f13f0d64aeb38072a8a4261244e25d1} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0ac6dae2274437254585694983304480}{const\+\_\+reverse\+\_\+iterator}} {\bfseries crend} () const noexcept
+\begin{DoxyCompactList}\small\item\em Sentinel for the coefficients const reverse iterator. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_af3a54e29cbd467362cc44d3524f04702}\label{classalgebra_1_1Matrix_af3a54e29cbd467362cc44d3524f04702} 
+constexpr bool {\bfseries empty} () const noexcept
+\begin{DoxyCompactList}\small\item\em Test, if the matrix is empty. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_af7766a3f471894ece7be31dbc6e9687f}\label{classalgebra_1_1Matrix_af7766a3f471894ece7be31dbc6e9687f} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} {\bfseries size} () const noexcept
+\begin{DoxyCompactList}\small\item\em Number of elements in the matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a54f9a88e32ef7ea844b4c7d1d9b9539d}\label{classalgebra_1_1Matrix_a54f9a88e32ef7ea844b4c7d1d9b9539d} 
+constexpr void {\bfseries swap} (Matrix \&other) noexcept(m\+\_\+data.\+swap(std::\+declval$<$ std::\+vector$<$ \doxymbox{\hyperlink{classalgebra_1_1Matrix_a18362e68ebc12955711eea138f4d169f}{value\+\_\+type}} $>$ $>$()))
+\begin{DoxyCompactList}\small\item\em Specialized swap algorithm for the matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}\label{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} {\bfseries nrows} () const noexcept
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}\label{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} {\bfseries ncols} () const noexcept
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a5e0c8d73345a610e75f40c191de39cad}\label{classalgebra_1_1Matrix_a5e0c8d73345a610e75f40c191de39cad} 
+constexpr bool {\bfseries operator==} (Matrix const \&) const =default
+\begin{DoxyCompactList}\small\item\em Equality comparison for matrices. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}{reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix_a916be7ee40b9b3e1bb67094dddb1a707}{operator\+[$\,$]\+}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} row, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} col)
+\begin{DoxyCompactList}\small\item\em Access element at row {\ttfamily row} and columns {\ttfamily col}. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}{const\+\_\+reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix_a29b8dda21386e9a763ae13b72be89610}{operator\+[$\,$]\+}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} row, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} col) const
+\begin{DoxyCompactList}\small\item\em Access element at row {\ttfamily row} and columns {\ttfamily col}. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}{reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix_adfcf4e7bcb8e66e723de6715679953b4}{at}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} row, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} col)
+\begin{DoxyCompactList}\small\item\em Access element at row {\ttfamily row} and columns {\ttfamily col}. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}{const\+\_\+reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix_a857d525ad0d5aa3bc1abbc2b3cac1040}{at}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} row, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} col) const
+\begin{DoxyCompactList}\small\item\em Access element at row {\ttfamily row} and columns {\ttfamily col}. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}\label{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix_a867496e2042a95c2eb98762ed0c4ca01}{storage\+\_\+type}} const \& {\bfseries data} () const noexcept
+\begin{DoxyCompactList}\small\item\em Direct to underlying storage. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ab297b9b3550d6fa60eb92cb47c44be8f}\label{classalgebra_1_1Matrix_ab297b9b3550d6fa60eb92cb47c44be8f} 
+constexpr Matrix {\bfseries transpose} () const
+\begin{DoxyCompactList}\small\item\em The transpose of the matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ae2deb66304cd4e6e2789e1b9950813ad}\label{classalgebra_1_1Matrix_ae2deb66304cd4e6e2789e1b9950813ad} 
+constexpr Matrix \& {\bfseries operator+=} (Matrix const \&rhs)
+\begin{DoxyCompactList}\small\item\em Adds rhs to itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_af2ee162099ab953825da002e0f608337}\label{classalgebra_1_1Matrix_af2ee162099ab953825da002e0f608337} 
+constexpr Matrix \& {\bfseries operator-\/=} (Matrix const \&rhs)
+\begin{DoxyCompactList}\small\item\em Subtracts rhs from itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a2e4a32eb1a088760580da40373623d3f}\label{classalgebra_1_1Matrix_a2e4a32eb1a088760580da40373623d3f} 
+constexpr Matrix {\bfseries operator+} () const
+\begin{DoxyCompactList}\small\item\em Returns a copy of itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ac0ec22f54466461e8fa1ecdb820d75a3}\label{classalgebra_1_1Matrix_ac0ec22f54466461e8fa1ecdb820d75a3} 
+constexpr Matrix {\bfseries operator-\/} () const
+\begin{DoxyCompactList}\small\item\em Returns a negation of itself. \end{DoxyCompactList}\item 
+constexpr Matrix \doxymbox{\hyperlink{classalgebra_1_1Matrix_a404fc25e2cc52f3b21b62fa579e1296c}{operator\texorpdfstring{$\ast$}{*}=}} (Matrix const \&rhs)
+\begin{DoxyCompactList}\small\item\em Multiplies itself by rhs. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a15d67c83373391984d674444e135e36b}\label{classalgebra_1_1Matrix_a15d67c83373391984d674444e135e36b} 
+constexpr bool {\bfseries is\+\_\+zero} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns true if matrix is zero, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1}\label{classalgebra_1_1Matrix_ae95cd52be13866e7999aaeacef4c70e1} 
+static constexpr Matrix {\bfseries zero} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} n)
+\begin{DoxyCompactList}\small\item\em Return a square zero matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_ae2ce7039457417adea3ff855a154738a}\label{classalgebra_1_1Matrix_ae2ce7039457417adea3ff855a154738a} 
+static constexpr Matrix {\bfseries zero} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} n, \doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} m)
+\begin{DoxyCompactList}\small\item\em Return a rectangle zero matrix. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Matrix_a83ecbb0e3450c094d2b956ed82a0f0c4}\label{classalgebra_1_1Matrix_a83ecbb0e3450c094d2b956ed82a0f0c4} 
+static constexpr Matrix {\bfseries id} (\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}} n)
+\begin{DoxyCompactList}\small\item\em Return an identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class algebra::\+\+Matrix$<$ T $>$}
+A \doxylink{classalgebra_1_1Matrix}{Matrix} class. 
+
+A two-\/dimensional array representing a mathematical matrix. 
+
+\label{doc-constructors}
+\Hypertarget{classalgebra_1_1Matrix_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classalgebra_1_1Matrix_aeed32f6526fd494cbc25646f539caa98}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Matrix_aeed32f6526fd494cbc25646f539caa98} 
+template$<$class T$>$ \\
+template$<$std::\+ranges::\+sized\+\_\+range R$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$::\+\+Matrix (\begin{DoxyParamCaption}\item[{R \&\&}]{data}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{nrows}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{ncols}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}, {\ttfamily [constexpr]}}
+
+
+
+Construct a matrix from a range. 
+
+Create a matrix with coefficients taken from the range and with the specified number of rows and columns. Size of the range has be equal to the product of nrows and ncols.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classalgebra_1_1Matrix_ac8a1bdeb15e1cef74423997d2f3ab8e5}{data}} & Range with the coefficients \\
+\hline
+{\em \doxylink{classalgebra_1_1Matrix_a8d5a07bb90a17ce4491e2be0b5f344dd}{nrows}} & Number of rows \\
+\hline
+{\em \doxylink{classalgebra_1_1Matrix_ae66e2f560a82437bc52c50a06e8b80bf}{ncols}} & Number of colums \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classalgebra_1_1Matrix_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classalgebra_1_1Matrix_adfcf4e7bcb8e66e723de6715679953b4}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!at@{at}}
+\index{at@{at}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Matrix_adfcf4e7bcb8e66e723de6715679953b4} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}{reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$::\+at (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{row}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Access element at row {\ttfamily row} and columns {\ttfamily col}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Accessed row \\
+\hline
+{\em col} & Accessed column \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classalgebra_1_1Matrix_a857d525ad0d5aa3bc1abbc2b3cac1040}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!at@{at}}
+\index{at@{at}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Matrix_a857d525ad0d5aa3bc1abbc2b3cac1040} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}{const\+\_\+reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$::\+at (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{row}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{col}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Access element at row {\ttfamily row} and columns {\ttfamily col}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Accessed row \\
+\hline
+{\em col} & Accessed column \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classalgebra_1_1Matrix_a404fc25e2cc52f3b21b62fa579e1296c}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}}
+\index{operator\texorpdfstring{$\ast$}{*}=@{operator\texorpdfstring{$\ast$}{*}=}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}=()}{operator*=()}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Matrix_a404fc25e2cc52f3b21b62fa579e1296c} 
+template$<$class T$>$ \\
+Matrix \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$::\+operator\texorpdfstring{$\ast$}{*}= (\begin{DoxyParamCaption}\item[{Matrix$<$ T $>$ const \&}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Multiplies itself by rhs. 
+
+\doxylink{classalgebra_1_1Matrix}{Matrix} multiplies itself from the right-\/hand side by rhs. \Hypertarget{classalgebra_1_1Matrix_a916be7ee40b9b3e1bb67094dddb1a707}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Matrix_a916be7ee40b9b3e1bb67094dddb1a707} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_a0168baafc5e78e94857527e952a3ae0d}{reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{row}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Access element at row {\ttfamily row} and columns {\ttfamily col}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Accessed row \\
+\hline
+{\em col} & Accessed column \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classalgebra_1_1Matrix_a29b8dda21386e9a763ae13b72be89610}\index{algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}!operator\+[]\+@{operator[]}}
+\index{operator\+[]\+@{operator[]}!algebra::Matrix$<$ T $>$@{algebra::Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Matrix_a29b8dda21386e9a763ae13b72be89610} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix_a88a80d3222718bbd9bf6dad2b8a75b1c}{const\+\_\+reference}} \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$::\+operator\+[$\,$]\+ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{row}{, }\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix_ad75a0102abd605971362aa86ef74596b}{size\+\_\+type}}}]{col}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Access element at row {\ttfamily row} and columns {\ttfamily col}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & Accessed row \\
+\hline
+{\em col} & Accessed column \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+algebra/\+include/\+algebra/\+\doxymbox{\hyperlink{matrix_8h}{matrix.\+h}}\end{DoxyCompactItemize}

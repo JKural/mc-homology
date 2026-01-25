@@ -1,0 +1,120 @@
+\doxysection{algebra::\+Chain\+Complex\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classalgebra_1_1ChainComplex}{}\label{classalgebra_1_1ChainComplex}\index{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}}
+
+
+Class representing a chain complex with coefficients {\ttfamily T}.  
+
+
+
+
+{\ttfamily \+\#include $<$chain\+\_\+complex.\+h$>$}
+
+
+
+Collaboration diagram for algebra::\+Chain\+Complex\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classalgebra_1_1ChainComplex__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_aaf433ba840c5e07e90aef149a8a2b3e4}{Chain\+Complex}} (R \&\&\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}})
+\begin{DoxyCompactList}\small\item\em Constructs the chain complex from boundary matrices and checks, if they satisfy the chain complex condition. \end{DoxyCompactList}\item 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_a568dc017eb66322d30346aa75ae99769}{Chain\+Complex}} (\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}}, R \&\&\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}})
+\begin{DoxyCompactList}\small\item\em Constructs the chain complex from the boundary matrices without checking the chain complex condition. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ChainComplex_ac08f2ba67ea48f3c2590554c8baa2d36}\label{classalgebra_1_1ChainComplex_ac08f2ba67ea48f3c2590554c8baa2d36} 
+constexpr bool {\bfseries check\+\_\+boundary\+\_\+correctness} () const
+\begin{DoxyCompactList}\small\item\em Checks, if the boundaries satisfy the chain complex condition. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ChainComplex_a24d8cdaef406d0fca304d97ef256ab59}\label{classalgebra_1_1ChainComplex_a24d8cdaef406d0fca304d97ef256ab59} 
+constexpr std::\+size\+\_\+t {\bfseries dimension} () const noexcept
+\begin{DoxyCompactList}\small\item\em Return the dimension (the number of boundary matrices minus 1) of the chain complex. \end{DoxyCompactList}\item 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const \& \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_a33518dc90fa5e3b067197111d65873dd}{boundary}} (std::\+size\+\_\+t dim) const
+\begin{DoxyCompactList}\small\item\em Return the boundary operator at dimension {\ttfamily dim}. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}\label{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b} 
+constexpr std::\+vector$<$ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ $>$ const \& {\bfseries boundaries} () const noexcept
+\begin{DoxyCompactList}\small\item\em Return the vector of boundary operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class algebra::\+\+Chain\+Complex$<$ T $>$}
+Class representing a chain complex with coefficients {\ttfamily T}. 
+
+Chain complex is a free module over T with submodules {\ttfamily (C\+\_\+d, ..., C\+\_\+2, C\+\_\+1, C\+\_\+0, C\+\_\+(-\/1))} and linear operators {\ttfamily B\+\_\+n :\+ C\+\_\+n -\/\texorpdfstring{$>$}{>} C\+\_\+(n-\/1)} satisfying B\+\_\+n\texorpdfstring{$\ast$}{*}\+B\+\_\+(n+1) == 0 (the chain complex condidition).
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Class of the coefficients \\
+\hline
+\end{DoxyTemplParams}
+
+
+\label{doc-constructors}
+\Hypertarget{classalgebra_1_1ChainComplex_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classalgebra_1_1ChainComplex_aaf433ba840c5e07e90aef149a8a2b3e4}\index{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!ChainComplex@{ChainComplex}}
+\index{ChainComplex@{ChainComplex}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ChainComplex()}{ChainComplex()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classalgebra_1_1ChainComplex_aaf433ba840c5e07e90aef149a8a2b3e4} 
+template$<$class T$>$ \\
+template$<$std::\+ranges::\+sized\+\_\+range R$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$::\+\+Chain\+Complex (\begin{DoxyParamCaption}\item[{R \&\&}]{boundaries}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Constructs the chain complex from boundary matrices and checks, if they satisfy the chain complex condition. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}} & The range containing the boundary opeartors \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classalgebra_1_1ChainComplex_a568dc017eb66322d30346aa75ae99769}\index{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!ChainComplex@{ChainComplex}}
+\index{ChainComplex@{ChainComplex}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{ChainComplex()}{ChainComplex()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classalgebra_1_1ChainComplex_a568dc017eb66322d30346aa75ae99769} 
+template$<$class T$>$ \\
+template$<$std::\+ranges::\+sized\+\_\+range R$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$::\+\+Chain\+Complex (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}}}]{}{, }\item[{R \&\&}]{boundaries}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Constructs the chain complex from the boundary matrices without checking the chain complex condition. 
+
+Use with caution!
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}} & The range containing the boundary opeartors \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classalgebra_1_1ChainComplex_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classalgebra_1_1ChainComplex_a33518dc90fa5e3b067197111d65873dd}\index{algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}!boundary@{boundary}}
+\index{boundary@{boundary}!algebra::ChainComplex$<$ T $>$@{algebra::ChainComplex$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{boundary()}{boundary()}}
+{\footnotesize\ttfamily \label{classalgebra_1_1ChainComplex_a33518dc90fa5e3b067197111d65873dd} 
+template$<$class T$>$ \\
+\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}$<$ T $>$ const  \& \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex}}$<$ T $>$::\+boundary (\begin{DoxyParamCaption}\item[{std::\+size\+\_\+t}]{dim}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}}
+
+
+
+Return the boundary operator at dimension {\ttfamily dim}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dim} & Dimension of the boundary operator \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+algebra/\+include/\+algebra/\+\doxymbox{\hyperlink{chain__complex_8h}{chain\+\_\+complex.\+h}}\end{DoxyCompactItemize}

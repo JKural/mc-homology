@@ -1,0 +1,73 @@
+\doxysection{core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{classcore_1_1Polymorphic}{}\label{classcore_1_1Polymorphic}\index{core::Polymorphic$<$ T $>$@{core::Polymorphic$<$ T $>$}}
+
+
+A polymorphic class wrapper with value semantics.  
+
+
+
+
+{\ttfamily \+\#include $<$polymorphic.\+h$>$}
+
+
+
+Collaboration diagram for core::\+Polymorphic\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classcore_1_1Polymorphic__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}\label{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25} 
+constexpr {\bfseries Polymorphic} ()
+\begin{DoxyCompactList}\small\item\em Constructs a default initialized object. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_a78dcef8315873c965afd6690873caf46}\label{classcore_1_1Polymorphic_a78dcef8315873c965afd6690873caf46} 
+{\footnotesize template$<$class U = T$>$ }\\constexpr {\bfseries Polymorphic} (U \&\&u)
+\begin{DoxyCompactList}\small\item\em Constructs the object from the object u. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_af4e692f5a7d7d3a984be0b21c59f0089}\label{classcore_1_1Polymorphic_af4e692f5a7d7d3a984be0b21c59f0089} 
+{\footnotesize template$<$class U, class... Args$>$ }\\constexpr {\bfseries Polymorphic} (std::\+in\+\_\+place\+\_\+type\+\_\+t$<$ U $>$, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Constructs the object in place. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_a729f9c6bd67e34e4d4e3ce070c3d7994}\label{classcore_1_1Polymorphic_a729f9c6bd67e34e4d4e3ce070c3d7994} 
+constexpr {\bfseries Polymorphic} (Polymorphic const \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_af5bf398b45f412dc8347da431844102a}\label{classcore_1_1Polymorphic_af5bf398b45f412dc8347da431844102a} 
+constexpr {\bfseries Polymorphic} (Polymorphic \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_aea051a61486b38ec244c7be7b68f4677}\label{classcore_1_1Polymorphic_aea051a61486b38ec244c7be7b68f4677} 
+constexpr \doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}} \& {\bfseries operator=} (\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}} const \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_a0aba960ee37d068c9aebf190ebe601e9}\label{classcore_1_1Polymorphic_a0aba960ee37d068c9aebf190ebe601e9} 
+constexpr \doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}} \& {\bfseries operator=} (\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}} \&\&other) noexcept
+\begin{DoxyCompactList}\small\item\em Move assignment. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_abb62e69bc83f5adc4cd43e3fd2861d21}\label{classcore_1_1Polymorphic_abb62e69bc83f5adc4cd43e3fd2861d21} 
+constexpr T const \texorpdfstring{$\ast$}{*} {\bfseries operator-\/$>$} () const noexcept
+\begin{DoxyCompactList}\small\item\em Arrow operator. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_a54a1b80a57d7240ac304b7da4cef5ca4}\label{classcore_1_1Polymorphic_a54a1b80a57d7240ac304b7da4cef5ca4} 
+constexpr T \texorpdfstring{$\ast$}{*} {\bfseries operator-\/$>$} () noexcept
+\begin{DoxyCompactList}\small\item\em Arrow operator. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_a8a7f4b6a3c6e2aa90c1e66c7123791d1}\label{classcore_1_1Polymorphic_a8a7f4b6a3c6e2aa90c1e66c7123791d1} 
+constexpr T const \& {\bfseries operator\texorpdfstring{$\ast$}{*}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Dereference operator. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_ae8b6a22c3161fcb04f636e52be471274}\label{classcore_1_1Polymorphic_ae8b6a22c3161fcb04f636e52be471274} 
+constexpr T \& {\bfseries operator\texorpdfstring{$\ast$}{*}} () noexcept
+\begin{DoxyCompactList}\small\item\em Dereference operator. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_abbad9a973d3d41a45d59c1624ef608c2}\label{classcore_1_1Polymorphic_abbad9a973d3d41a45d59c1624ef608c2} 
+constexpr bool {\bfseries valueless\+\_\+after\+\_\+move} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns true, if the object has been moved out of. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Polymorphic_adf56d4df87396595e28695d1a03c86c1}\label{classcore_1_1Polymorphic_adf56d4df87396595e28695d1a03c86c1} 
+constexpr void {\bfseries swap} (\doxymbox{\hyperlink{classcore_1_1Polymorphic_aca4b76b305b2546ea43a3fa21d292e25}{Polymorphic}} \&other) noexcept
+\begin{DoxyCompactList}\small\item\em Swaps two objects together. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class core::\+\+Polymorphic$<$ T $>$}
+A polymorphic class wrapper with value semantics. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{polymorphic_8h}{polymorphic.\+h}}\end{DoxyCompactItemize}

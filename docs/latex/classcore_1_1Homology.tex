@@ -1,0 +1,144 @@
+\doxysection{core::\+Homology Class Reference}
+\hypertarget{classcore_1_1Homology}{}\label{classcore_1_1Homology}\index{core::Homology@{core::Homology}}
+
+
+A homology interface.  
+
+
+
+
+{\ttfamily \+\#include $<$homology.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Homology:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classcore_1_1Homology__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Homology:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{classcore_1_1Homology__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd}{Homology}} (std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$ printing\+\_\+strategy=std::\+make\+\_\+unique$<$ \doxymbox{\hyperlink{classcore_1_1HomologyRawPrint}{Homology\+Raw\+Print}} $>$())
+\begin{DoxyCompactList}\small\item\em Constructs a new homology instance. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classcore_1_1Homology_a621e1e3eaf695f64f55e081f0077f07c}{select\+\_\+strategy}} (std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$ printing\+\_\+strategy)
+\begin{DoxyCompactList}\small\item\em Select a new printing\+\_\+strategy. \end{DoxyCompactList}\item 
+std::\+string \doxymbox{\hyperlink{classcore_1_1Homology_a10b2a3199bd9f98f58610ee309201acd}{text}} () const override
+\begin{DoxyCompactList}\small\item\em Outputs the test form of the homology using given strategy. \end{DoxyCompactList}\item 
+virtual std::\+vector$<$ std::\+size\+\_\+t $>$ \doxymbox{\hyperlink{classcore_1_1Homology_a693dc7200c9a31dd61c25f08702694ae}{betti\+\_\+numbers}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns text representations of stored betti numbers. \end{DoxyCompactList}\item 
+virtual std::\+vector$<$ std::\+vector$<$ std::\+string $>$ $>$ \doxymbox{\hyperlink{classcore_1_1Homology_ae89535d4e6050b68e21bcc6b806ab454}{torsion}} () const =0
+\begin{DoxyCompactList}\small\item\em Returns text representations of stored torsion as the non-\/trivial part of the Smith\textquotesingle{}s form diagonal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classcore_1_1TextDrawable}{core::\+\+Text\+Drawable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Text\+Drawable} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A homology interface. 
+
+Creates a common interface for various homology implementations. Additionally handles printing the result. 
+
+\label{doc-constructors}
+\Hypertarget{classcore_1_1Homology_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd}\index{core::Homology@{core::Homology}!Homology@{Homology}}
+\index{Homology@{Homology}!core::Homology@{core::Homology}}
+\doxysubsubsection{\texorpdfstring{Homology()}{Homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd} 
+core::\+\+Homology::\+\+Homology (\begin{DoxyParamCaption}\item[{std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$}]{printing\+\_\+strategy}{ = {\ttfamily std:\+:\+make\+\_\+unique$<$\doxymbox{\hyperlink{classcore_1_1HomologyRawPrint}{Homology\+Raw\+Print}}$>$()}}\end{DoxyParamCaption})}
+
+
+
+Constructs a new homology instance. 
+
+Constructs a new homology object with a specified printing strategy
+
+
+\begin{DoxyParams}{Parameters}
+{\em printing\+\_\+strategy} & A strategy used with printing \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1Homology_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1Homology_a693dc7200c9a31dd61c25f08702694ae}\index{core::Homology@{core::Homology}!betti\_numbers@{betti\_numbers}}
+\index{betti\_numbers@{betti\_numbers}!core::Homology@{core::Homology}}
+\doxysubsubsection{\texorpdfstring{betti\_numbers()}{betti\_numbers()}}
+{\footnotesize\ttfamily \label{classcore_1_1Homology_a693dc7200c9a31dd61c25f08702694ae} 
+virtual std::\+vector$<$ std::\+size\+\_\+t $>$ core::\+\+Homology::\+betti\+\_\+numbers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns text representations of stored betti numbers. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a30a40b1690bdf4b1bbee2805f4d3c50e}{core::\+\+Algebra\+Homology$<$ T $>$}}.
+
+\Hypertarget{classcore_1_1Homology_a621e1e3eaf695f64f55e081f0077f07c}\index{core::Homology@{core::Homology}!select\_strategy@{select\_strategy}}
+\index{select\_strategy@{select\_strategy}!core::Homology@{core::Homology}}
+\doxysubsubsection{\texorpdfstring{select\_strategy()}{select\_strategy()}}
+{\footnotesize\ttfamily \label{classcore_1_1Homology_a621e1e3eaf695f64f55e081f0077f07c} 
+void core::\+\+Homology::\+select\+\_\+strategy (\begin{DoxyParamCaption}\item[{std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1HomologyPrintingStrategy}{Homology\+Printing\+Strategy}} $>$}]{printing\+\_\+strategy}{}\end{DoxyParamCaption})}
+
+
+
+Select a new printing\+\_\+strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em printing\+\_\+strategy} & A strategy used with printing \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcore_1_1Homology_a10b2a3199bd9f98f58610ee309201acd}\index{core::Homology@{core::Homology}!text@{text}}
+\index{text@{text}!core::Homology@{core::Homology}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{classcore_1_1Homology_a10b2a3199bd9f98f58610ee309201acd} 
+std::\+string core::\+\+Homology::\+text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Outputs the test form of the homology using given strategy. 
+
+
+
+Implements \doxymbox{\hyperlink{classcore_1_1TextDrawable_ae05d4fd67c0d4cbc84210e6ecbd473cf}{core::\+\+Text\+Drawable}}.
+
+\Hypertarget{classcore_1_1Homology_ae89535d4e6050b68e21bcc6b806ab454}\index{core::Homology@{core::Homology}!torsion@{torsion}}
+\index{torsion@{torsion}!core::Homology@{core::Homology}}
+\doxysubsubsection{\texorpdfstring{torsion()}{torsion()}}
+{\footnotesize\ttfamily \label{classcore_1_1Homology_ae89535d4e6050b68e21bcc6b806ab454} 
+virtual std::\+vector$<$ std::\+vector$<$ std::\+string $>$ $>$ core::\+\+Homology::\+torsion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns text representations of stored torsion as the non-\/trivial part of the Smith\textquotesingle{}s form diagonal. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a7023d347b18e85655d412a19d4cfb342}{core::\+\+Algebra\+Homology$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{homology_8h}{homology.\+h}}\item 
+mc-\/homology/\+core/\+src/\+homology.\+cpp\end{DoxyCompactItemize}

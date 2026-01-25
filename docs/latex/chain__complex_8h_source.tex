@@ -1,0 +1,145 @@
+\doxysection{chain\+\_\+complex.\+h}
+\hypertarget{chain__complex_8h_source}{}\label{chain__complex_8h_source}\index{mc-\/homology/algebra/include/algebra/chain\_complex.h@{mc-\/homology/algebra/include/algebra/chain\_complex.h}}
+\doxymbox{\hyperlink{chain__complex_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{matrix__algorithms_8h}{algebra/matrix\_algorithms.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }algebra\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{SkipCorrectnessCheckT}}\ \{\};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{SkipCorrectnessCheckT}}\ \doxymbox{\hyperlink{chain__complex_8h_ac548cb6b55744bb48d4c003f49840cb6}{skip\_correctness\_check}}\ \{\};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }ChainComplex\ \{}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{constexpr}\ ChainComplex()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ std::convertible\_to<std::ranges::range\_value\_t<R>,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}>}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_aaf433ba840c5e07e90aef149a8a2b3e4}{ChainComplex}}(R\&\&\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}})\ :}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ ChainComplex(\doxymbox{\hyperlink{chain__complex_8h_ac548cb6b55744bb48d4c003f49840cb6}{skip\_correctness\_check}},\ std::forward<R>(\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}}))\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_ac08f2ba67ea48f3c2590554c8baa2d36}{check\_boundary\_correctness}}())\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ boundary\ matrices\ do\ not\ satisfy\ chain\ complex\ condition"{}}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{requires}\ std::convertible\_to<std::ranges::range\_value\_t<R>,\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}>}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_a568dc017eb66322d30346aa75ae99769}{ChainComplex}}(\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{SkipCorrectnessCheckT}},\ R\&\&\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}})\ :}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ m\_boundaries(}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ std::ranges::to<std::vector<\doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix}}<T>>>(std::forward<R>(\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}}))}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ )\ \{\}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_ac08f2ba67ea48f3c2590554c8baa2d36}{check\_boundary\_correctness}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m\_boundaries.size()\ <\ 2)\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ b\_n\_plus\_1\_view\ =\ m\_boundaries\ |\ vs::drop(1);}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ b\_n\_view\ =\ m\_boundaries\ |\ vs::take(m\_boundaries.size()\ -\/\ 1);}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rs::all\_of(}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ vs::zip(b\_n\_plus\_1\_view,\ b\_n\_view),}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ [](\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}})\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ [b\_n\_plus\_1,\ b\_n]\ =\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (b\_n\ *\ b\_n\_plus\_1).is\_zero();}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (std::domain\_error\&)\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::size\_t\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_a24d8cdaef406d0fca304d97ef256ab59}{dimension}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_boundaries.size();}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{Matrix<T>}}\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_a33518dc90fa5e3b067197111d65873dd}{boundary}}(std::size\_t\ dim)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_boundaries.at(dim);}
+\DoxyCodeLine{00096\ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::vector<Matrix<T>>\ \textcolor{keyword}{const}\&\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_boundaries;}
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00104\ \ \ \ \ std::vector<Matrix<T>>\ m\_boundaries;}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00113\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00114\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ std::vector<std::size\_t>\ \doxymbox{\hyperlink{structalgebra_1_1Homology_a47962bd1e6263153d3505578e909f63c}{betti\_numbers}}\ \{\};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00123\ \ \ \ \ std::vector<std::vector<T>>\ \doxymbox{\hyperlink{structalgebra_1_1Homology_af541ef3c066a661ffb8d320e128a1d3c}{torsion}}\ \{\};}
+\DoxyCodeLine{00124\ \};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00128\ \textcolor{keyword}{template}<Eucl\textcolor{keywordtype}{id}eanDomain\ T>}
+\DoxyCodeLine{00129\ \doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology<T>}}\ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}(\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{ChainComplex<T>}}\ \textcolor{keyword}{const}\&\ chain\_complex)\ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ boundaries\ =\ chain\_complex.\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}}();}
+\DoxyCodeLine{00133\ \ \ \ \ \doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology<T>}}\ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}};}
+\DoxyCodeLine{00134\ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.betti\_numbers.resize(boundaries.size());}
+\DoxyCodeLine{00135\ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.torsion.resize(boundaries.size());}
+\DoxyCodeLine{00136\ \ \ \ \ std::size\_t\ prev\_smith\_units\_count\ =\ 0;}
+\DoxyCodeLine{00137\ \ \ \ \ std::vector<T>\ prev\_smith\_diagonal\_without\_units\ \{\};}
+\DoxyCodeLine{00138\ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ k\ =\ boundaries.size();\ k\ >\ 0;\ -\/-\/k)\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\ n\ =\ k\ -\/\ 1;}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ boundary\ =\ boundaries[n];}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ [smith,\ rank]\ =\ \doxymbox{\hyperlink{matrix__algorithms_8h_a53476fe37031aed47bb3b38d5e4b6dbc}{smith\_form}}(boundary);}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ nullity\ =\ boundary.ncols()\ -\/\ rank;}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ smith\_diagonal\_without\_units\ =\ rs::to<std::vector>(}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ vs::iota(0u,\ rank)}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ |\ vs::transform([\&smith](std::size\_t\ n)\ \{\ \textcolor{keywordflow}{return}\ smith[n,\ n];\ \})}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ |\ vs::drop\_while([](T\ \textcolor{keyword}{const}\&\ x)\ \{}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ x.euclidean\_function()\ ==\ 1;}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \})}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ smith\_units\ =\ rank\ -\/\ smith\_diagonal\_without\_units.size();}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.betti\_numbers[n]\ =\ nullity\ -\/\ prev\_smith\_units\_count}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ -\/\ prev\_smith\_diagonal\_without\_units.size();}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.torsion[n]\ =\ std::move(prev\_smith\_diagonal\_without\_units);}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ prev\_smith\_units\_count\ =\ smith\_units;}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ prev\_smith\_diagonal\_without\_units\ =}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ std::move(smith\_diagonal\_without\_units);}
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}};}
+\DoxyCodeLine{00159\ \}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00163\ \textcolor{keyword}{template}<Field\ T>}
+\DoxyCodeLine{00164\ \doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology<T>}}\ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}(\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{ChainComplex<T>}}\ \textcolor{keyword}{const}\&\ chain\_complex)\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ boundaries\ =\ chain\_complex.\doxymbox{\hyperlink{classalgebra_1_1ChainComplex_afa621836db0f8e71bf8e88e59d1aad0b}{boundaries}}();}
+\DoxyCodeLine{00166\ \ \ \ \ \doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology<T>}}\ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}};}
+\DoxyCodeLine{00167\ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.betti\_numbers.resize(boundaries.size());}
+\DoxyCodeLine{00168\ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.torsion.resize(boundaries.size());}
+\DoxyCodeLine{00169\ \ \ \ \ std::size\_t\ prev\_rank\ =\ 0;}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordflow}{for}\ (std::size\_t\ k\ =\ boundaries.size();\ k\ >\ 0;\ -\/-\/k)\ \{}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\ n\ =\ k\ -\/\ 1;}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ boundary\ =\ boundaries[n];}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ [\_,\ rank]\ =\ \doxymbox{\hyperlink{matrix__algorithms_8h_afda75107ba9ded61d0ae0c3d6a6281e3}{row\_echelon\_form}}(boundary);}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ nullity\ =\ boundary.ncols()\ -\/\ rank;}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}}.betti\_numbers[n]\ =\ nullity\ -\/\ prev\_rank;}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ prev\_rank\ =\ rank;}
+\DoxyCodeLine{00177\ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{homology}};}
+\DoxyCodeLine{00179\ \}}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00182\ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
+\DoxyCodeLine{00183\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{ChainComplex}}(\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{SkipCorrectnessCheckT}},\ R\&\&)}
+\DoxyCodeLine{00184\ \ \ \ \ -\/>\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{ChainComplex<typename\ std::ranges::range\_value\_t<R>::value\_type}}>;}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00187\ \textcolor{keyword}{template}<std::ranges::sized\_range\ R>}
+\DoxyCodeLine{00188\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{ChainComplex}}(R\&\&)}
+\DoxyCodeLine{00189\ \ \ \ \ -\/>\ \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{ChainComplex<typename\ std::ranges::range\_value\_t<R>::value\_type}}>;}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
+
+\end{DoxyCode}

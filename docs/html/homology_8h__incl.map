@@ -1,0 +1,14 @@
+<map id="mc&#45;homology/core/include/core/homology.h" name="mc&#45;homology/core/include/core/homology.h">
+<area shape="rect" id="Node000001" title="A file containing a Homology interface." alt="" coords="111,5,297,54"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,80,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="162,57,81,105,78,101,165,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,112,165,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,52,156,101,152,97,185,56"/>
+<area shape="rect" id="Node000004" href="$homology__printing__strategy_8h.html" title="File containing strategies for printing homology." alt="" coords="189,102,360,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="222,52,250,89,245,89,221,57"/>
+<area shape="rect" id="Node000006" href="$text__drawable_8h.html" title="A file containing a TextDrawable interface, for classes that can be drawn on screen in the form of te..." alt="" coords="384,112,536,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="268,52,410,105,405,107,267,57"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="338,199,395,228"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="301,149,343,188,337,187,299,154"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="447,141,394,191,392,186,442,143"/>
+</map>

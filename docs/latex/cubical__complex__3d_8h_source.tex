@@ -1,0 +1,40 @@
+\doxysection{cubical\+\_\+complex\+\_\+3d.\+h}
+\hypertarget{cubical__complex__3d_8h_source}{}\label{cubical__complex__3d_8h_source}\index{mc-\/homology/core/include/core/cubical\_complex\_3d.h@{mc-\/homology/core/include/core/cubical\_complex\_3d.h}}
+\doxymbox{\hyperlink{cubical__complex__3d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{compute__chain__complex_8h}{complexes/compute\_chain\_complex.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{cubical__complex_8h}{complexes/cubical\_complex.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{algebra__homology_8h}{core/algebra\_homology.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{complex_8h}{core/complex.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1CubicalComplex3D}{CubicalComplex3D}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1Complex}{Complex}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_aa6213db16aeb8c91aed9319c1fd7db65}{add\_cube}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ z);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00019\ \ \ \ \ std::unique\_ptr<Homology>\ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_aa3353005e19d5eafc53dcf603872e86b}{z2\_homology}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ std::unique\_ptr<Homology>\ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_a33cc149bfe11d904ab7f2223e91af1e3}{z3\_homology}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ std::unique\_ptr<Homology>\ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_accd6d910e146075ef5dff976d3960883}{z\_homology}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00030\ \ \ \ \ std::unique\_ptr<AlgebraHomology<T>>\ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_ad5ba18ec40537728421e9618a503cfb1}{homology}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<AlgebraHomology<T>>(}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}{algebra::homology}}(\doxymbox{\hyperlink{compute__chain__complex_8h_aef7f4e0ba88dfb188a3410804a5096e5}{complexes::compute\_chain\_complex<T>}}(m\_inner))}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_afb140e7fa736a2e6e77b928f252469f8}{reduce}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{complexes::CubicalComplex}}\ m\_inner;}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

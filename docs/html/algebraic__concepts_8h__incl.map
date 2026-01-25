@@ -1,0 +1,13 @@
+<map id="mc&#45;homology/algebra/include/algebra/algebraic_concepts.h" name="mc&#45;homology/algebra/include/algebra/algebraic_concepts.h">
+<area shape="rect" id="Node000001" title="A file defining multiple concepts for algebraic structures." alt="" coords="29,5,210,73"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,121,82,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,76,67,110,62,107,94,71"/>
+<area shape="rect" id="Node000003" href="$number__theory_8h.html" title="A file containing implementations of selected number theoretic algorithms." alt="" coords="106,121,288,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="147,71,178,108,173,109,146,76"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="78,199,137,228"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="183,150,137,191,134,186,178,152"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="161,199,232,228"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="199,149,199,184,195,182,195,153"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="256,199,338,228"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="216,149,269,189,264,189,215,154"/>
+</map>

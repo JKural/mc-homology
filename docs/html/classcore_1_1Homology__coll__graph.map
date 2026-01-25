@@ -1,0 +1,5 @@
+<map id="core::Homology" name="core::Homology">
+<area shape="rect" id="Node000001" title="A homology interface." alt="" coords="7,156,132,356"/>
+<area shape="rect" id="Node000002" href="$classcore_1_1TextDrawable.html" title="Marks a class text drawable &#45; it can be represented as a string." alt="" coords="5,5,134,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,120,72,157,67,156,69,125"/>
+</map>

@@ -1,0 +1,50 @@
+\doxysection{algebra\+\_\+homology.\+h}
+\hypertarget{algebra__homology_8h_source}{}\label{algebra__homology_8h_source}\index{mc-\/homology/core/include/core/algebra\_homology.h@{mc-\/homology/core/include/core/algebra\_homology.h}}
+\doxymbox{\hyperlink{algebra__homology_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <ranges>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{chain__complex_8h}{algebra/chain\_complex.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{homology_8h}{core/homology.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{homology__printing__strategy_8h}{core/homology\_printing\_strategy.h}}"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a162a8f0fa2f67ea136e0da5adf297687}{AlgebraHomology}}:\ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd}{Homology}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a162a8f0fa2f67ea136e0da5adf297687}{AlgebraHomology}}(}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::Homology<T>}}\ homology,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ std::unique\_ptr<HomologyPrintingStrategy>\ printing\_strategy\ =}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ std::make\_unique<HomologyRawPrint>()}
+\DoxyCodeLine{00023\ \ \ \ \ )\ :}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1Homology_a4c3dc2b89498346f54a68b3366c3f9dd}{Homology}}(std::move(printing\_strategy)),}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ m\_homology(std::move(homology))\ \{\}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ std::vector<std::size\_t>\ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a30a40b1690bdf4b1bbee2805f4d3c50e}{betti\_numbers}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_homology.betti\_numbers;}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00033\ \ \ \ \ std::vector<std::vector<std::string>>\ \doxymbox{\hyperlink{classcore_1_1AlgebraHomology_a7023d347b18e85655d412a19d4cfb342}{torsion}}()\textcolor{keyword}{\ const\ override\ }\{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }rs\ =\ std::ranges;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{namespace\ }vs\ =\ std::views;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rs::to<std::vector>(}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ m\_homology.torsion\ |\ vs::transform([](\textcolor{keyword}{auto}\ \textcolor{keyword}{const}\&\ tor)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ rs::to<std::vector>(tor\ |\ vs::transform([](auto\ x)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ std::format(\textcolor{stringliteral}{"{}\{\}"{}},\ x);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}));}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \})}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ \ \ \doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::Homology<T>}}\ m\_homology;}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

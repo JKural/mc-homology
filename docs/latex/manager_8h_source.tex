@@ -1,0 +1,35 @@
+\doxysection{manager.\+h}
+\hypertarget{manager_8h_source}{}\label{manager_8h_source}\index{mc-\/homology/core/include/core/manager.h@{mc-\/homology/core/include/core/manager.h}}
+\doxymbox{\hyperlink{manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{options_8h}{core/options.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{parser_8h}{core/parser.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1Manager_a4a83c61b398d08833df2e13391095118}{Manager}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \doxymbox{\hyperlink{classcore_1_1Manager_a4a83c61b398d08833df2e13391095118}{Manager}}(}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ std::unique\_ptr<Options>\ options,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ std::unique\_ptr<MinecraftSavefileParser>\ parser}
+\DoxyCodeLine{00019\ \ \ \ \ );}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcore_1_1Manager_a5ae66884c6da04bd9103a68786c18a2d}{set\_options}}(std::unique\_ptr<Options>\ options);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classcore_1_1Manager_a93b10a66323eb381e57f7cd40011264b}{set\_parser}}(std::unique\_ptr<MinecraftSavefileParser>\ parser);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classcore_1_1Manager_a8920c10e92e28a3f8090d51edaa8ab01}{run}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00033\ \ \ \ \ std::unique\_ptr<Options>\ m\_options;}
+\DoxyCodeLine{00034\ \ \ \ \ std::unique\_ptr<MinecraftSavefileParser>\ m\_parser;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

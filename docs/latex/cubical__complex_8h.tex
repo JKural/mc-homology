@@ -1,0 +1,60 @@
+\doxysection{mc-\/homology/\+complexes/\+include/\+complexes/\+cubical\+\_\+complex.h File Reference}
+\hypertarget{cubical__complex_8h}{}\label{cubical__complex_8h}\index{mc-\/homology/complexes/include/complexes/cubical\_complex.h@{mc-\/homology/complexes/include/complexes/cubical\_complex.h}}
+
+
+A file containing the Cubical\+Complex class.  
+
+
+{\ttfamily \+\#include $<$compare$>$}\newline
+{\ttfamily \+\#include $<$format$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$ranges$>$}\newline
+{\ttfamily \+\#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \+\#include $<$vector$>$}\newline
+Include dependency graph for cubical\+\_\+complex.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cubical__complex_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{cubical__complex_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{complexes::\+\+Basic\+Interval}}
+\begin{DoxyCompactList}\small\item\em A struct representing an interval of length 0 or 1. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{complexes::\+\+Cubical\+Simplex}}
+\begin{DoxyCompactList}\small\item\em A class representing a single cubical simplex in a complex. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex}{complexes::\+\+Cubical\+Complex}}
+\begin{DoxyCompactList}\small\item\em Class representing a cubical complex. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1hash_3_01complexes_1_1BasicInterval_01_4}{std::\+hash$<$ complexes::\+\+Basic\+Interval $>$}}
+\begin{DoxyCompactList}\small\item\em std::\+hash specialization for Interval \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1hash_3_01complexes_1_1CubicalSimplex_01_4}{std::\+hash$<$ complexes::\+\+Cubical\+Simplex $>$}}
+\begin{DoxyCompactList}\small\item\em std::\+hash specialization for Cubical\+Simplex \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1formatter_3_01complexes_1_1BasicInterval_01_4}{std::\+formatter$<$ complexes::\+\+Basic\+Interval $>$}}
+\begin{DoxyCompactList}\small\item\em Formatter for Basic\+Interval type. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1formatter_3_01complexes_1_1CubicalSimplex_01_4}{std::\+formatter$<$ complexes::\+\+Cubical\+Simplex $>$}}
+\begin{DoxyCompactList}\small\item\em Formatter for Cubical\+Simplex type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{cubical__complex_8h_ad65e88e91768aa7accb7367d15795d22}\label{cubical__complex_8h_ad65e88e91768aa7accb7367d15795d22} 
+std::\+ostream \& {\bfseries complexes::\+operator$<$$<$} (std::\+ostream \&output, \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}} i)
+\begin{DoxyCompactList}\small\item\em Prints an interval to output. \end{DoxyCompactList}\item 
+\Hypertarget{cubical__complex_8h_aac6269f844faccd3c9b9c155030a92be}\label{cubical__complex_8h_aac6269f844faccd3c9b9c155030a92be} 
+std::\+ostream \& {\bfseries complexes::\+operator$<$$<$} (std::\+ostream \&output, \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&s)
+\begin{DoxyCompactList}\small\item\em Prints a cubical simplex to output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing the Cubical\+Complex class. 
+

@@ -1,0 +1,62 @@
+\doxysection{mc-\/homology/\+algebra/\+include/\+algebra/\+modulo\+\_\+fields.h File Reference}
+\hypertarget{modulo__fields_8h}{}\label{modulo__fields_8h}\index{mc-\/homology/algebra/include/algebra/modulo\_fields.h@{mc-\/homology/algebra/include/algebra/modulo\_fields.h}}
+
+
+A file containing implementation of fields of integers mod P.  
+
+
+{\ttfamily \+\#include $<$format$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include "{}algebra/\+algebraic\+\_\+concepts.\+h"{}}\newline
+Include dependency graph for modulo\+\_\+fields.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{modulo__fields_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{modulo__fields_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classalgebra_1_1ZModP}{algebra::\+\+ZMod\+P$<$ P $>$}}
+\begin{DoxyCompactList}\small\item\em \doxylink{conceptalgebra_1_1Field}{Field} of integers modulo P. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1ZModP_3_01P_01_4_01_4}{std::\+formatter$<$ algebra::\+\+ZMod\+P$<$ P $>$ $>$}}
+\begin{DoxyCompactList}\small\item\em Formatter for ZModP type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{modulo__fields_8h_a30e2cd1441a13b4316f9d045cd13dd28}\label{modulo__fields_8h_a30e2cd1441a13b4316f9d045cd13dd28} 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ {\bfseries algebra::\+operator+} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Adds two integers mod P. \end{DoxyCompactList}\item 
+\Hypertarget{modulo__fields_8h_abfee0c147692465af6f24e1bebf3253e}\label{modulo__fields_8h_abfee0c147692465af6f24e1bebf3253e} 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ {\bfseries algebra::\+operator-\/} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Subtracts two integers mod P. \end{DoxyCompactList}\item 
+\Hypertarget{modulo__fields_8h_a305ca3e73277d0540d8fd0b941aab959}\label{modulo__fields_8h_a305ca3e73277d0540d8fd0b941aab959} 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ {\bfseries algebra::\+operator\texorpdfstring{$\ast$}{*}} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplies two integers mod P. \end{DoxyCompactList}\item 
+\Hypertarget{modulo__fields_8h_ac31949c2c329ea54f19224c671cf935d}\label{modulo__fields_8h_ac31949c2c329ea54f19224c671cf935d} 
+{\footnotesize template$<$int P$>$ }\\constexpr \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ {\bfseries algebra::\+operator/\+} (\doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ lhs, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ rhs)
+\begin{DoxyCompactList}\small\item\em Divides two integers mod P. \end{DoxyCompactList}\item 
+\Hypertarget{modulo__fields_8h_a1b9022ec41069b03b873f9e47d3f846b}\label{modulo__fields_8h_a1b9022ec41069b03b873f9e47d3f846b} 
+{\footnotesize template$<$int P$>$ }\\std::\+ostream \& {\bfseries algebra::\+operator$<$$<$} (std::\+ostream \&output, \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP}}$<$ P $>$ x)
+\begin{DoxyCompactList}\small\item\em Outputs an integer mod P to a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{modulo__fields_8h_a2dac3b8ee50dc72992c1865808e707c3}\label{modulo__fields_8h_a2dac3b8ee50dc72992c1865808e707c3} 
+{\footnotesize template$<$int P$>$ }\\constexpr bool {\bfseries algebra::\+is\+\_\+commutative\+\_\+v$<$ ZMod\+P$<$ P $>$ $>$} = true
+\begin{DoxyCompactList}\small\item\em A marker that multiplying integers mod P is commutative. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing implementation of fields of integers mod P. 
+

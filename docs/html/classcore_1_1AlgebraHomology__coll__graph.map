@@ -1,0 +1,7 @@
+<map id="core::AlgebraHomology&lt; T &gt;" name="core::AlgebraHomology&lt; T &gt;">
+<area shape="rect" id="Node000001" title="Concrete subclass of Homology, based on algebra library." alt="" coords="5,404,192,531"/>
+<area shape="rect" id="Node000002" href="$classcore_1_1Homology.html" title="A homology interface." alt="" coords="36,156,161,356"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,368,101,405,96,404,98,373"/>
+<area shape="rect" id="Node000003" href="$classcore_1_1TextDrawable.html" title="Marks a class text drawable &#45; it can be represented as a string." alt="" coords="34,5,163,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,120,101,157,96,156,98,126"/>
+</map>

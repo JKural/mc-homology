@@ -1,0 +1,179 @@
+\doxysection{complexes::\+Cubical\+Simplex Class Reference}
+\hypertarget{classcomplexes_1_1CubicalSimplex}{}\label{classcomplexes_1_1CubicalSimplex}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+
+
+A class representing a single cubical simplex in a complex.  
+
+
+
+
+{\ttfamily \+\#include $<$cubical\+\_\+complex.\+h$>$}
+
+
+
+Collaboration diagram for complexes::\+Cubical\+Simplex:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classcomplexes_1_1CubicalSimplex__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} (std::\+vector$<$ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}} $>$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}})
+\begin{DoxyCompactList}\small\item\em Constructs a simplex from a vector of intervals. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a9395e2d026503ab0dd0d2d0fa2a5e740}\label{classcomplexes_1_1CubicalSimplex_a9395e2d026503ab0dd0d2d0fa2a5e740} 
+std::\+size\+\_\+t {\bfseries dimension} () const
+\begin{DoxyCompactList}\small\item\em Returns the dimension of the simplex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_ab7ce13739aa5ad8a5d99f17ad9b0e471}\label{classcomplexes_1_1CubicalSimplex_ab7ce13739aa5ad8a5d99f17ad9b0e471} 
+std::\+size\+\_\+t {\bfseries ambient\+\_\+dimension} () const
+\begin{DoxyCompactList}\small\item\em Returns the ambient dimension of the simplex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a32733f12bf86572def6ca11cbc7e5333}\label{classcomplexes_1_1CubicalSimplex_a32733f12bf86572def6ca11cbc7e5333} 
+std::\+size\+\_\+t {\bfseries hash} () const
+\begin{DoxyCompactList}\small\item\em Computes a hash of the simplex. \end{DoxyCompactList}\item 
+std::\+vector$<$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} $>$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a90efd82d26a8ff98e18d30931a0ca0c7}{boundary}} () const
+\begin{DoxyCompactList}\small\item\em Returns the boundary of a simplex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_ac49fe0025a81b7cfc8a65db052aaea33}\label{classcomplexes_1_1CubicalSimplex_ac49fe0025a81b7cfc8a65db052aaea33} 
+bool {\bfseries operator==} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&) const
+\begin{DoxyCompactList}\small\item\em Compares two simplices. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}\label{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c} 
+std::\+vector$<$ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}} $>$ const \& {\bfseries intervals} () const
+\begin{DoxyCompactList}\small\item\em Returns the underlying intervals. \end{DoxyCompactList}\item 
+std::\+strong\+\_\+ordering \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a7cd9afadd14d1694d7ca480772944956}{operator$<$=$>$}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&simplex) const
+\begin{DoxyCompactList}\small\item\em Comparison operator for simplices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a275bac48352687fca93c9f85bbfae4ad}{point}} (int p)
+\begin{DoxyCompactList}\small\item\em Creates a cubical simplex out of a single 1d point. \end{DoxyCompactList}\item 
+static \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a80c0fda0b9a8f84afce1ce9f35a7e8a4}{interval}} (int left)
+\begin{DoxyCompactList}\small\item\em Creates a cubical simplex out of a single 1d interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_ab4c234208aa3a0aa935a6fb56fbfa871}{product}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&s1, \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&s2)
+\begin{DoxyCompactList}\small\item\em Creates a cubical simplex by joining together two simplices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a single cubical simplex in a complex. 
+
+A cubical simplex is a product of basic intervals. The number of intervals is equal to the ambient dimension, while the number of non trivial intervals is equal to the dimension of the simplex. 
+
+\label{doc-constructors}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}!CubicalSimplex@{CubicalSimplex}}
+\index{CubicalSimplex@{CubicalSimplex}!complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+\doxysubsubsection{\texorpdfstring{CubicalSimplex()}{CubicalSimplex()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a} 
+complexes::\+\+Cubical\+Simplex::\+\+Cubical\+Simplex (\begin{DoxyParamCaption}\item[{std::\+vector$<$ \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval}{Basic\+Interval}} $>$}]{intervals}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a simplex from a vector of intervals. 
+
+Constructs a simplex from a vector of intervals. The interval must have at least one value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classcomplexes_1_1CubicalSimplex_a278dddcda448abe5aad6b54123fec54c}{intervals}} & A nonempty vector of intervals \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a90efd82d26a8ff98e18d30931a0ca0c7}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}!boundary@{boundary}}
+\index{boundary@{boundary}!complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+\doxysubsubsection{\texorpdfstring{boundary()}{boundary()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalSimplex_a90efd82d26a8ff98e18d30931a0ca0c7} 
+std::\+vector$<$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} $>$ complexes::\+\+Cubical\+Simplex::\+boundary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns the boundary of a simplex. 
+
+The returned boundary is decresing in the sense of operator\texorpdfstring{$<$}{<}=\texorpdfstring{$>$}{>}. \Hypertarget{classcomplexes_1_1CubicalSimplex_a80c0fda0b9a8f84afce1ce9f35a7e8a4}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}!interval@{interval}}
+\index{interval@{interval}!complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+\doxysubsubsection{\texorpdfstring{interval()}{interval()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalSimplex_a80c0fda0b9a8f84afce1ce9f35a7e8a4} 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} complexes::\+\+Cubical\+Simplex::\+interval (\begin{DoxyParamCaption}\item[{int}]{left}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a cubical simplex out of a single 1d interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & Left bound of the interval \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_a7cd9afadd14d1694d7ca480772944956}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}!operator$<$=$>$@{operator$<$=$>$}}
+\index{operator$<$=$>$@{operator$<$=$>$}!complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+\doxysubsubsection{\texorpdfstring{operator$<$=$>$()}{operator<=>()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalSimplex_a7cd9afadd14d1694d7ca480772944956} 
+std::\+strong\+\_\+ordering complexes::\+\+Cubical\+Simplex::\+operator$<$=$>$ (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&}]{simplex}{}\end{DoxyParamCaption}) const}
+
+
+
+Comparison operator for simplices. 
+
+Comparison operator for simplices. A simplex A compares smaller than simplex B if and only if it has smaller dimension or the dimensions are equal and its interval vector is lexicographically smaller with order on intervals given by:\+
+\begin{DoxyEnumerate}
+\item {\ttfamily \+[a, a + 1]\+ \texorpdfstring{$<$}{<} \+[b]\+}
+\item {\ttfamily \+[a, a + 1]\+ \texorpdfstring{$<$}{<} \+[b, b + 1]\+}
+\item {\ttfamily \+[a]\+ \texorpdfstring{$<$}{<} \+[b]\+}
+\end{DoxyEnumerate}
+
+for any {\ttfamily a \texorpdfstring{$<$}{<} b} \Hypertarget{classcomplexes_1_1CubicalSimplex_a275bac48352687fca93c9f85bbfae4ad}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}!point@{point}}
+\index{point@{point}!complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+\doxysubsubsection{\texorpdfstring{point()}{point()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalSimplex_a275bac48352687fca93c9f85bbfae4ad} 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} complexes::\+\+Cubical\+Simplex::\+point (\begin{DoxyParamCaption}\item[{int}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a cubical simplex out of a single 1d point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The point \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-related-members}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_doc-related-members}
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classcomplexes_1_1CubicalSimplex_ab4c234208aa3a0aa935a6fb56fbfa871}\index{complexes::CubicalSimplex@{complexes::CubicalSimplex}!product@{product}}
+\index{product@{product}!complexes::CubicalSimplex@{complexes::CubicalSimplex}}
+\doxysubsubsection{\texorpdfstring{product}{product}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalSimplex_ab4c234208aa3a0aa935a6fb56fbfa871} 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} product (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&}]{s1}{, }\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex_a15277ee3720ad35eaef28df0c560202a}{Cubical\+Simplex}} const \&}]{s2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Creates a cubical simplex by joining together two simplices. 
+
+Creates a simplex in a higher dimension by taking a cartesian product and concatenating them
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & First simplex \\
+\hline
+{\em s2} & Second simplex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of concatenation 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+complexes/\+include/\+complexes/\+\doxymbox{\hyperlink{cubical__complex_8h}{cubical\+\_\+complex.\+h}}\item 
+mc-\/homology/\+complexes/\+src/\+cubical\+\_\+complex.\+cpp\end{DoxyCompactItemize}

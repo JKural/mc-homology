@@ -1,0 +1,9 @@
+<map id="mc&#45;homology/core/include/core/latex_wrapper.h" name="mc&#45;homology/core/include/core/latex_wrapper.h">
+<area shape="rect" id="Node000001" title="Turns a TextDrawable into a simple latex document." alt="" coords="17,5,204,54"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,102,80,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,57,65,91,61,88,93,52"/>
+<area shape="rect" id="Node000003" href="$text__drawable_8h.html" title="A file containing a TextDrawable interface, for classes that can be drawn on screen in the form of te..." alt="" coords="104,102,256,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,52,161,89,156,90,129,57"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="151,180,208,209"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="182,130,182,165,178,163,178,134"/>
+</map>

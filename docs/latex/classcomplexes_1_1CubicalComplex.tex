@@ -1,0 +1,159 @@
+\doxysection{complexes::\+Cubical\+Complex Class Reference}
+\hypertarget{classcomplexes_1_1CubicalComplex}{}\label{classcomplexes_1_1CubicalComplex}\index{complexes::CubicalComplex@{complexes::CubicalComplex}}
+
+
+Class representing a cubical complex.  
+
+
+
+
+{\ttfamily \+\#include $<$cubical\+\_\+complex.\+h$>$}
+
+
+
+Collaboration diagram for complexes::\+Cubical\+Complex:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classcomplexes_1_1CubicalComplex__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{Cubical\+Complex}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_ad68054531d9085fa03e07be0ae427760}{add}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} simplex)
+\begin{DoxyCompactList}\small\item\em Adds a cubical simplex to the complex. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_af719c39a3cdb84fffd3680333bd014e0}{add\+\_\+recursive}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} simplex)
+\begin{DoxyCompactList}\small\item\em Adds a cubical simplex to the complex together with its boundary. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a735d830ba060f9cc25ee7ce70d7eaff6}{remove}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&simplex)
+\begin{DoxyCompactList}\small\item\em Removes a cubical simplex from the complex. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a9436031888683e97f8e65753f1209f26}{contains}} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&simplex) const
+\begin{DoxyCompactList}\small\item\em Checks, if a cubical complex contains simplex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalComplex_a5a10a22c6a0ce7066dd17bc7327c60bc}\label{classcomplexes_1_1CubicalComplex_a5a10a22c6a0ce7066dd17bc7327c60bc} 
+bool {\bfseries operator==} (\doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}{Cubical\+Complex}} const \&) const
+\begin{DoxyCompactList}\small\item\em Equality comparison operator. \end{DoxyCompactList}\item 
+std::\+vector$<$ std::\+unordered\+\_\+set$<$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} $>$ $>$ const \& \doxymbox{\hyperlink{classcomplexes_1_1CubicalComplex_a8925b5d3f0b7186a7b4c28079a46cceb}{simplices}} () const
+\begin{DoxyCompactList}\small\item\em Grants access to the simplexes of the complex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalComplex_a24b21e409d32ade91bfa638996f662c3}\label{classcomplexes_1_1CubicalComplex_a24b21e409d32ade91bfa638996f662c3} 
+std::\+size\+\_\+t {\bfseries dimension} () const
+\begin{DoxyCompactList}\small\item\em Returns the dimension of the simplex. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1CubicalComplex_abea459ade96857a9ffc8e2914f4245e8}\label{classcomplexes_1_1CubicalComplex_abea459ade96857a9ffc8e2914f4245e8} 
+std::\+size\+\_\+t {\bfseries ambient\+\_\+dimension} () const
+\begin{DoxyCompactList}\small\item\em Returns the ambient dimension of the simplex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a cubical complex. 
+
+A class representing a topological space constructed from cubical simplexes. 
+
+\label{doc-constructors}
+\Hypertarget{classcomplexes_1_1CubicalComplex_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d}\index{complexes::CubicalComplex@{complexes::CubicalComplex}!CubicalComplex@{CubicalComplex}}
+\index{CubicalComplex@{CubicalComplex}!complexes::CubicalComplex@{complexes::CubicalComplex}}
+\doxysubsubsection{\texorpdfstring{CubicalComplex()}{CubicalComplex()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalComplex_a28609fba1a9947e3217109bc6b15834d} 
+complexes::\+\+Cubical\+Complex::\+\+Cubical\+Complex (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor for the \doxylink{classcomplexes_1_1CubicalComplex}{Cubical\+Complex}. 
+
+Creates an empty complex 
+
+\label{doc-func-members}
+\Hypertarget{classcomplexes_1_1CubicalComplex_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcomplexes_1_1CubicalComplex_ad68054531d9085fa03e07be0ae427760}\index{complexes::CubicalComplex@{complexes::CubicalComplex}!add@{add}}
+\index{add@{add}!complexes::CubicalComplex@{complexes::CubicalComplex}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalComplex_ad68054531d9085fa03e07be0ae427760} 
+bool complexes::\+\+Cubical\+Complex::\+add (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}}}]{simplex}{}\end{DoxyParamCaption})}
+
+
+
+Adds a cubical simplex to the complex. 
+
+In order to add a cubical simplex to the complex, all elements of its boundary must already be part of the complex. 0 dimensional simplices can always be added.
+
+
+\begin{DoxyParams}{Parameters}
+{\em simplex} & Simplex to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if simplex has been successfully added, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classcomplexes_1_1CubicalComplex_af719c39a3cdb84fffd3680333bd014e0}\index{complexes::CubicalComplex@{complexes::CubicalComplex}!add\_recursive@{add\_recursive}}
+\index{add\_recursive@{add\_recursive}!complexes::CubicalComplex@{complexes::CubicalComplex}}
+\doxysubsubsection{\texorpdfstring{add\_recursive()}{add\_recursive()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalComplex_af719c39a3cdb84fffd3680333bd014e0} 
+void complexes::\+\+Cubical\+Complex::\+add\+\_\+recursive (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}}}]{simplex}{}\end{DoxyParamCaption})}
+
+
+
+Adds a cubical simplex to the complex together with its boundary. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simplex} & Simplex to add \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classcomplexes_1_1CubicalComplex_a9436031888683e97f8e65753f1209f26}\index{complexes::CubicalComplex@{complexes::CubicalComplex}!contains@{contains}}
+\index{contains@{contains}!complexes::CubicalComplex@{complexes::CubicalComplex}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalComplex_a9436031888683e97f8e65753f1209f26} 
+bool complexes::\+\+Cubical\+Complex::\+contains (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&}]{simplex}{}\end{DoxyParamCaption}) const}
+
+
+
+Checks, if a cubical complex contains simplex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em simplex} & simplex to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if simplex is a part of the complex, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classcomplexes_1_1CubicalComplex_a735d830ba060f9cc25ee7ce70d7eaff6}\index{complexes::CubicalComplex@{complexes::CubicalComplex}!remove@{remove}}
+\index{remove@{remove}!complexes::CubicalComplex@{complexes::CubicalComplex}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalComplex_a735d830ba060f9cc25ee7ce70d7eaff6} 
+bool complexes::\+\+Cubical\+Complex::\+remove (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} const \&}]{simplex}{}\end{DoxyParamCaption})}
+
+
+
+Removes a cubical simplex from the complex. 
+
+In order to remove a cubical complex, it has to have an empty coboundary, that is, it cannot be a part of the boundary of any other simplex
+
+
+\begin{DoxyParams}{Parameters}
+{\em simplex} & Simplex to remove\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, if removal was successfull, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{classcomplexes_1_1CubicalComplex_a8925b5d3f0b7186a7b4c28079a46cceb}\index{complexes::CubicalComplex@{complexes::CubicalComplex}!simplices@{simplices}}
+\index{simplices@{simplices}!complexes::CubicalComplex@{complexes::CubicalComplex}}
+\doxysubsubsection{\texorpdfstring{simplices()}{simplices()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1CubicalComplex_a8925b5d3f0b7186a7b4c28079a46cceb} 
+std::\+vector$<$ std::\+unordered\+\_\+set$<$ \doxymbox{\hyperlink{classcomplexes_1_1CubicalSimplex}{Cubical\+Simplex}} $>$ $>$ const  \& complexes::\+\+Cubical\+Complex::\+simplices (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Grants access to the simplexes of the complex. 
+
+The simplices are returned in a vector, where {\ttfamily n}\textquotesingle{}th element is a unordered set containing simplices of dimension {\ttfamily n}. 
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+complexes/\+include/\+complexes/\+\doxymbox{\hyperlink{cubical__complex_8h}{cubical\+\_\+complex.\+h}}\item 
+mc-\/homology/\+complexes/\+src/\+cubical\+\_\+complex.\+cpp\end{DoxyCompactItemize}

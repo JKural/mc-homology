@@ -1,0 +1,42 @@
+\doxysection{parser.\+h}
+\hypertarget{parser_8h_source}{}\label{parser_8h_source}\index{mc-\/homology/core/include/core/parser.h@{mc-\/homology/core/include/core/parser.h}}
+\doxymbox{\hyperlink{parser_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <filesystem>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{complex_8h}{core/complex.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }core\ \{}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{MinecraftCoordinates}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates_adc49a06fe50744ab4f3eda41c3ad6202}{x}}\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates_a29733d13c74c1a5ecd4f15c6aaee9997}{y}}\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates_a932284b3974a44cfe668939d3a4bb575}{z}}\ =\ 0;}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser}{MinecraftSavefileParser}}\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ std::unique\_ptr<Complex>\ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser_a27148eb0686230aa7e1a3ff513786655}{parse}}(}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::filesystem::path\ \textcolor{keyword}{const}\&\ path,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{MinecraftCoordinates}}\ lower\_corner,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{MinecraftCoordinates}}\ upper\_corner}
+\DoxyCodeLine{00040\ \ \ \ \ )\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser}{\string~MinecraftSavefileParser}}();}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser__mcSavefileParsers}{MinecraftSavefileParser\_mcSavefileParsers}}:}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{public}\ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser}{MinecraftSavefileParser}}\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00059\ \ \ \ \ std::unique\_ptr<Complex>\ \doxymbox{\hyperlink{classcore_1_1MinecraftSavefileParser__mcSavefileParsers_a6fe67e3a5ab872c253c9671d3df10561}{parse}}(}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ std::filesystem::path\ \textcolor{keyword}{const}\&\ path,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{MinecraftCoordinates}}\ lower\_corner,}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{structcore_1_1MinecraftCoordinates}{MinecraftCoordinates}}\ upper\_corner}
+\DoxyCodeLine{00063\ \ \ \ \ )\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \}\ \textcolor{comment}{//\ namespace\ core}}
+
+\end{DoxyCode}

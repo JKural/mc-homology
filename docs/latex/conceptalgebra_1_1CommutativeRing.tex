@@ -1,0 +1,28 @@
+\doxysection{algebra::\+Commutative\+Ring Concept Reference}
+\hypertarget{conceptalgebra_1_1CommutativeRing}{}\label{conceptalgebra_1_1CommutativeRing}\index{algebra::CommutativeRing@{algebra::CommutativeRing}}
+
+
+An commutative ring concept.  
+
+
+
+
+{\ttfamily \+\#include $<$algebraic\+\_\+concepts.\+h$>$}
+
+\doxysubsection{Concept definition}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{\textcolor{keyword}{concept\ }\doxymbox{\hyperlink{conceptalgebra_1_1CommutativeRing}{CommutativeRing}}\ =\ \doxymbox{\hyperlink{conceptalgebra_1_1Ring}{Ring<T>}}\ \&\&\ \doxymbox{\hyperlink{conceptalgebra_1_1Commutative}{Commutative<T>}}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Detailed Description}
+An commutative ring concept. 
+
+{\ttfamily Commutative\+Ring} concept declares that a type models a mathematical definition of a commutative ring, where addition is denoted by {\ttfamily +} and multiplication by {\ttfamily \texorpdfstring{$\ast$}{*}}.\hypertarget{conceptalgebra_1_1CommutativeRing_autotoc_md4}{}\doxysubsection{\texorpdfstring{Sematic requirements}{Sematic requirements}}\label{conceptalgebra_1_1CommutativeRing_autotoc_md4}
+Type {\ttfamily T} satisfies all semantic requirements for {\ttfamily Ring} and additionally, for {\ttfamily x}, {\ttfamily y} of type {\ttfamily T}
+\begin{DoxyEnumerate}
+\item {\ttfamily x \texorpdfstring{$\ast$}{*} y == y \texorpdfstring{$\ast$}{*} x} 
+\end{DoxyEnumerate}

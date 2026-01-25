@@ -1,0 +1,117 @@
+\doxysection{integer.\+h}
+\hypertarget{integer_8h_source}{}\label{integer_8h_source}\index{mc-\/homology/algebra/include/algebra/integer.h@{mc-\/homology/algebra/include/algebra/integer.h}}
+\doxymbox{\hyperlink{integer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <compare>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <format>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{algebraic__concepts_8h}{algebra/algebraic\_concepts.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }algebra\ \{}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_ab91d27e1998589274e32c44351620b0a}{Integer}}(\textcolor{keywordtype}{int}\ k)\ noexcept\ :\ m\_inner\_representation(k)\ \{\}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_aa9c10a75406f3eaefa9b5218aecb5471}{zero}}()\ noexcept\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}(0);}
+\DoxyCodeLine{00031\ \ \ \ \ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_ac2f26306c67caa5e46c38b721580df54}{one}}()\ noexcept\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}(1);}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{explicit}\ \textcolor{keyword}{operator}\ int()\ noexcept\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_inner\_representation;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a4ed4f79882bc6df70ae2a0eca936c1ed}{operator==}}(\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{constexpr}\ std::strong\_ordering\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a13bf034a5eb641f847e37d0c80ad8230}{operator<=>}}(\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\&\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a5adae683620c32ab66a4b5af36050f11}{operator+=}}(\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ m\_inner\_representation\ +=\ rhs.m\_inner\_representation;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\&\ \doxymbox{\hyperlink{classalgebra_1_1Integer_afd8e6a7633822b53bf3e7e74cbe1b462}{operator-\/=}}(\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ m\_inner\_representation\ -\/=\ rhs.m\_inner\_representation;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_aee31d8c41c2f11ec68f6efaafa471a04}{operator+}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a78c524887f425d59ce01075034ff370c}{operator-\/}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}(-\/m\_inner\_representation);}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\&\ \doxymbox{\hyperlink{classalgebra_1_1Integer_a4e9009346d7e20f46adfa06535d98485}{operator*=}}(\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ m\_inner\_representation\ *=\ rhs.m\_inner\_representation;}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00075\ \ \ \ \ \}}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classalgebra_1_1Integer_aee93f545f02d49014648ea7d93a33984}{euclidean\_function}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keyword}{using\ }std::abs;}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{integer_8h_a9cc47983d14c3338d843c8fe61f6d7ae}{abs}}(m\_inner\_representation);}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_inner\_representation\ =\ 0;}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ \doxymbox{\hyperlink{integer_8h_ade04e6b8cc549a66f70769f8c44104f8}{operator+}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ +=\ rhs;}
+\DoxyCodeLine{00093\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00096\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ \doxymbox{\hyperlink{integer_8h_acb08f898d9c1b3fd624ef42e41a605a1}{operator-\/}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ -\/=\ rhs;}
+\DoxyCodeLine{00098\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00101\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ \doxymbox{\hyperlink{integer_8h_a442462c93fc9e0ebffcc6e517e9e3796}{operator*}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ lhs,\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{return}\ lhs\ *=\ rhs;}
+\DoxyCodeLine{00103\ \}}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00106\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ \doxymbox{\hyperlink{integer_8h_a9cc47983d14c3338d843c8fe61f6d7ae}{abs}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ k)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordflow}{return}\ std::abs(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(k));}
+\DoxyCodeLine{00108\ \}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{structalgebra_1_1DivResult}{DivResult<Integer>}}\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ a,\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ b)\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{auto}\ div\_result\ =\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(a),\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(b));}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{structalgebra_1_1DivResult}{DivResult<Integer>}}\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ .quotient\ =\ div\_result.quotient,}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ .remainder\ =\ div\_result.remainder}
+\DoxyCodeLine{00120\ \ \ \ \ \};}
+\DoxyCodeLine{00121\ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ \doxymbox{\hyperlink{integer_8h_a7557df3e0d51e921d301661b095a8ccf}{modulo}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ a,\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ n)\ \{}
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{integer_8h_a9d5f1816c22b13d7a8a6a9a93aaa0258}{divide}}(a,\ n).remainder;}
+\DoxyCodeLine{00129\ \}}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00132\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00133\ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{algebraic__concepts_8h_af8da1be8b84633acd35c16535d5b41ec}{is\_commutative\_v<Integer>}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00136\ \textcolor{keyword}{inline}\ std::ostream\&\ \doxymbox{\hyperlink{integer_8h_a33030836db242b656162529d27fc5ffd}{operator<<}}(std::ostream\&\ output,\ \doxymbox{\hyperlink{classalgebra_1_1Integer}{Integer}}\ k)\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \textcolor{keywordflow}{return}\ output\ <<\ static\_cast<int>(k);}
+\DoxyCodeLine{00138\ \}}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00146\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00147\ \textcolor{keyword}{struct\ }std::formatter<algebra::Integer>:\ \textcolor{keyword}{public}\ std::formatter<int>\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ FmtContext>}
+\DoxyCodeLine{00152\ \ \ \ \ FmtContext::iterator\ \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Integer_01_4_a30b77cbf31a98e425126ddfb0850686e}{format}}(\doxymbox{\hyperlink{classalgebra_1_1Integer}{algebra::Integer}}\ k,\ FmtContext\&\ ctx)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::formatter<int>::format(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(k),\ ctx);}
+\DoxyCodeLine{00154\ \ \ \ \ \}}
+\DoxyCodeLine{00155\ \};}
+
+\end{DoxyCode}

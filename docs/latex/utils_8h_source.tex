@@ -1,0 +1,37 @@
+\doxysection{utils.\+h}
+\hypertarget{utils_8h_source}{}\label{utils_8h_source}\index{mc-\/homology/complexes/include/complexes/utils.h@{mc-\/homology/complexes/include/complexes/utils.h}}
+\doxymbox{\hyperlink{utils_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <concepts>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <ranges>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }complexes\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }utils\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00011\ std::size\_t\ \doxymbox{\hyperlink{utils_8h_a9fbd1dfd22ddd5cb51607ade69c84fa9}{combine\_hashes}}(std::size\_t\ hash1,\ std::size\_t\ hash2);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{template}<std::ranges::range\ R>}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{requires}\ \textcolor{keyword}{requires}(std::ranges::range\_value\_t<R>\ x)\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ std::hash<std::ranges::range\_value\_t<R>>\ \{\}(x)}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \}\ -\/>\ std::convertible\_to<std::size\_t>;}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ std::size\_t\ \doxymbox{\hyperlink{utils_8h_a7ad911feda175857e1a6ac2eba69f81c}{hash\_range}}(R\&\&\ r)\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ std::size\_t\ hash\ =\ std::hash<std::size\_t>\ \{\}(0);}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\&\ x\ :\ std::forward<R>(r))\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ hash\ =\ \doxymbox{\hyperlink{utils_8h_a9fbd1dfd22ddd5cb51607ade69c84fa9}{combine\_hashes}}(}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ hash,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ std::hash<std::ranges::range\_value\_t<R>>\ \{\}(}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::forward<decltype(x)>(x)}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{00029\ \ \ \ \ \}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{return}\ hash;}
+\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \}\ \textcolor{comment}{//\ namespace\ utils}}
+\DoxyCodeLine{00034\ \}\ \textcolor{comment}{//\ namespace\ complexes}}
+
+\end{DoxyCode}

@@ -1,0 +1,80 @@
+\doxysection{z2\+\_\+field.\+h}
+\hypertarget{z2__field_8h_source}{}\label{z2__field_8h_source}\index{mc-\/homology/algebra/include/algebra/z2\_field.h@{mc-\/homology/algebra/include/algebra/z2\_field.h}}
+\doxymbox{\hyperlink{z2__field_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{modulo__fields_8h}{algebra/modulo\_fields.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }algebra\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}<2>\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_af5d1d12822a294266e9378b7cf86ef48}{ZModP}}(\textcolor{keywordtype}{int}\ n)\ noexcept\ :\ m\_inner\_representation(\doxymbox{\hyperlink{integer_8h_a7557df3e0d51e921d301661b095a8ccf}{modulo}}(n,\ 2))\ \{\}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_ae66228cccd28f03b5f235dce1353199e}{p}}()\ noexcept\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 2;}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a93ed74a47dc94ad6dd40898b8c34fe5f}{zero}}()\ noexcept\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}}(0);}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{static}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_aec693f712e1b27b6457d6b8fc003f8bf}{one}}()\ noexcept\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_ac70865dda4f6764e2e5b13a9d72cef7b}{ZModP}}(1);}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keyword}{explicit}\ \textcolor{keyword}{operator}\ int()\ const\ noexcept\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_inner\_representation;}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a5943d0b9fb049b575ce3dc683dcea605}{operator==}}(\doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ \textcolor{keyword}{const}\&)\ \textcolor{keyword}{const}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\&\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a345acec651025f682c22b30ef0fe0616}{operator+=}}(\doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ m\_inner\_representation\ \string^=\ rhs.m\_inner\_representation;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\&\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a8ac53677ed023966b51e94e035addffb}{operator-\/=}}(\doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ m\_inner\_representation\ \string^=\ rhs.m\_inner\_representation;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a36a87d66e790519a3fea271e3db88a24}{operator+}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00058\ \ \ \ \ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a2b813fd3bd960ee9f2021ab7f302b746}{operator-\/}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\&\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_aa402317036aa05c7dabd0608bf408394}{operator*=}}(\doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ rhs)\ \textcolor{keyword}{noexcept}\ \{}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ m\_inner\_representation\ \&=\ rhs.m\_inner\_representation;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00069\ \ \ \ \ \}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{constexpr}\ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a9a50440181054553536295f77b78cefe}{euclidean\_function}}()\ const\ noexcept\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 1;}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keyword}{constexpr}\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\&\ \doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a55052dc35208a239076b5de6be290ee8}{operator/=}}(\doxymbox{\hyperlink{classalgebra_1_1ZModP_3_012_01_4_a00c4ed3cdf7a164a60e1992191e8244e}{ZModP}}\ rhs)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!rhs.m\_inner\_representation)\ [[unlikely]]\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::domain\_error(\textcolor{stringliteral}{"{}Division\ by\ 0"{}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00084\ \ \ \ \ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_inner\_representation\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{using\ }\doxymbox{\hyperlink{z2__field_8h_a1fa07827605fa9734220db771470424d}{Z2}}\ =\ \doxymbox{\hyperlink{classalgebra_1_1ZModP}{ZModP<2>}};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \}\ \textcolor{comment}{//\ namespace\ algebra}}
+
+\end{DoxyCode}

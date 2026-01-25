@@ -1,0 +1,25 @@
+<map id="mc&#45;homology/algebra/include/algebra/number_theory.h" name="mc&#45;homology/algebra/include/algebra/number_theory.h">
+<area shape="rect" id="Node000001" title="A file containing implementations of selected number theoretic algorithms." alt="" coords="212,5,388,73"/>
+<area shape="rect" id="Node000002" href="$algebraic__concepts_8h.html" title="A file defining multiple concepts for algebraic structures." alt="" coords="209,121,391,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,86,303,121,297,120,299,91"/>
+<area shape="rect" id="Node000003" href="$integer_8h.html" title="A file containing Integer implementation satisfying algebraic concepts." alt="" coords="5,246,187,295"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,199,140,248,137,244,229,194"/>
+<area shape="rect" id="Node000004" href="$matrix_8h.html" title="A file containing matrix implementation." alt="" coords="211,246,389,295"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="301,201,303,246,297,245,299,207"/>
+<area shape="rect" id="Node000010" href="$modulo__fields_8h.html" title="A file containing implementation of fields of integers mod P." alt="" coords="413,237,587,304"/>
+<area shape="poly" id="edge11_Node000002_Node000010" title=" " alt="" coords="371,194,444,235,439,237,372,199"/>
+<area shape="rect" id="Node000005" href="$matrix__algorithms_8h.html" title="A file containing selected matrix algorithms." alt="" coords="138,352,304,420"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="274,310,246,353,242,351,277,305"/>
+<area shape="rect" id="Node000007" href="$compute__chain__complex_8h.html" title="A file containing algorithms for transforming complexes into chain complexes." alt="" coords="241,584,442,651"/>
+<area shape="poly" id="edge10_Node000004_Node000007" title=" " alt="" coords="309,307,319,352,334,480,342,584,337,582,328,480,313,353,308,313"/>
+<area shape="rect" id="Node000006" href="$chain__complex_8h.html" title="A file containing chain complex and homology implementations." alt="" coords="142,468,300,536"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="222,433,224,468,219,467,220,438"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="268,544,309,583,304,583,267,549"/>
+<area shape="rect" id="Node000009" href="$algebra__homology_8h.html" title="File containing concrete classes deriving from Homology." alt="" coords="31,593,217,642"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="185,545,146,594,142,591,182,549"/>
+<area shape="rect" id="Node000008" href="$cubical__complex__3d_8h.html" title="A file containing a concrete class CubicalComplex3D." alt="" coords="137,699,327,748"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="298,661,258,701,255,697,293,663"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="160,650,210,699,205,699,158,655"/>
+<area shape="rect" id="Node000011" href="$z2__field_8h.html" title="A file containing optimized implementation of Z2 field." alt="" coords="422,352,578,420"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="501,317,502,353,498,351,499,322"/>
+</map>

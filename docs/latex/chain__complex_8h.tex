@@ -1,0 +1,59 @@
+\doxysection{mc-\/homology/\+algebra/\+include/\+algebra/\+chain\+\_\+complex.h File Reference}
+\hypertarget{chain__complex_8h}{}\label{chain__complex_8h}\index{mc-\/homology/algebra/include/algebra/chain\_complex.h@{mc-\/homology/algebra/include/algebra/chain\_complex.h}}
+
+
+A file containing chain complex and homology implementations.  
+
+
+{\ttfamily \+\#include "{}algebra/\+matrix\+\_\+algorithms.\+h"{}}\newline
+Include dependency graph for chain\+\_\+complex.\+h:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{chain__complex_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{chain__complex_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{algebra::\+\+Skip\+Correctness\+CheckT}}
+\begin{DoxyCompactList}\small\item\em Type to mark an overload of a function, that doesn\textquotesingle{}t perform optional correctness checks. Such overloads should only be used after manually ensuring, that other parameters guarantee correct output. \end{DoxyCompactList}\item 
+class \doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{algebra::\+\+Chain\+Complex$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Class representing a chain complex with coefficients {\ttfamily T}. \end{DoxyCompactList}\item 
+struct \doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::\+\+Homology$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em \doxylink{structalgebra_1_1Homology}{Homology} of a chain complex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}\label{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158} 
+{\footnotesize template$<$Euclidean\+Domain T$>$ }\\\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}$<$ T $>$ {\bfseries algebra::\+homology} (\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}$<$ T $>$ const \&chain\+\_\+complex)
+\begin{DoxyCompactList}\small\item\em Computes homology of a chain complex with coefficients from an euclidean domain. \end{DoxyCompactList}\item 
+\Hypertarget{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158}\label{chain__complex_8h_a3b6f25acf54da436f6f0e4e65d317158} 
+{\footnotesize template$<$Field T$>$ }\\\doxymbox{\hyperlink{structalgebra_1_1Homology}{Homology}}$<$ T $>$ {\bfseries algebra::\+homology} (\doxymbox{\hyperlink{classalgebra_1_1ChainComplex}{Chain\+Complex}}$<$ T $>$ const \&chain\+\_\+complex)
+\begin{DoxyCompactList}\small\item\em Computes homology of a chain complex with coefficients from a field. \end{DoxyCompactList}\item 
+\Hypertarget{chain__complex_8h_a1289f308542d523475a6610977fb0f09}\label{chain__complex_8h_a1289f308542d523475a6610977fb0f09} 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\{\bfseries algebra::\+\+Chain\+Complex} (\doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}}, R \&\&) -\/$>$ Chain\+Complex$<$ typename std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$::\+value\+\_\+type $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide for the \doxylink{classalgebra_1_1ChainComplex}{Chain\+Complex}. \end{DoxyCompactList}\item 
+\Hypertarget{chain__complex_8h_ae5a6158e073a7727781c1aecc8ee5afb}\label{chain__complex_8h_ae5a6158e073a7727781c1aecc8ee5afb} 
+{\footnotesize template$<$std::\+ranges::\+sized\+\_\+range R$>$ }\\{\bfseries algebra::\+\+Chain\+Complex} (R \&\&) -\/$>$ Chain\+Complex$<$ typename std::\+ranges::\+range\+\_\+value\+\_\+t$<$ R $>$::\+value\+\_\+type $>$
+\begin{DoxyCompactList}\small\item\em Deduction guide for the \doxylink{classalgebra_1_1ChainComplex}{Chain\+Complex}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{chain__complex_8h_ac548cb6b55744bb48d4c003f49840cb6}\label{chain__complex_8h_ac548cb6b55744bb48d4c003f49840cb6} 
+constexpr \doxymbox{\hyperlink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}} {\bfseries algebra::\+skip\+\_\+correctness\+\_\+check} \{\}
+\begin{DoxyCompactList}\small\item\em Helper value of that \doxylink{structalgebra_1_1SkipCorrectnessCheckT}{Skip\+Correctness\+CheckT}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file containing chain complex and homology implementations. 
+

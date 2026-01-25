@@ -1,0 +1,10 @@
+<map id="mc&#45;homology/algebra/include/algebra/chain_complex.h" name="mc&#45;homology/algebra/include/algebra/chain_complex.h">
+<area shape="rect" id="Node000001" title="A file containing chain complex and homology implementations." alt="" coords="134,5,293,73"/>
+<area shape="rect" id="Node000002" href="$compute__chain__complex_8h.html" title="A file containing algorithms for transforming complexes into chain complexes." alt="" coords="5,121,206,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,86,139,122,135,119,174,82"/>
+<area shape="rect" id="Node000004" href="$algebra__homology_8h.html" title="File containing concrete classes deriving from Homology." alt="" coords="230,130,416,179"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,82,303,130,297,130,255,87"/>
+<area shape="rect" id="Node000003" href="$cubical__complex__3d_8h.html" title="A file containing a concrete class CubicalComplex3D." alt="" coords="118,237,309,285"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,197,192,236,186,236,150,202"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="289,189,240,239,237,234,284,191"/>
+</map>

@@ -1,0 +1,90 @@
+\doxysection{algebra::\+Integer Class Reference}
+\hypertarget{classalgebra_1_1Integer}{}\label{classalgebra_1_1Integer}\index{algebra::Integer@{algebra::Integer}}
+
+
+Class of Integers.  
+
+
+
+
+{\ttfamily \+\#include $<$integer.\+h$>$}
+
+
+
+Collaboration diagram for algebra::\+Integer:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classalgebra_1_1Integer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}\label{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5} 
+constexpr {\bfseries Integer} ()=default
+\begin{DoxyCompactList}\small\item\em Returns 0. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_ab91d27e1998589274e32c44351620b0a}\label{classalgebra_1_1Integer_ab91d27e1998589274e32c44351620b0a} 
+constexpr {\bfseries Integer} (int k) noexcept
+\begin{DoxyCompactList}\small\item\em Returns k. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_ae94db6dc5a4691010e9ddc70dfa2b8d4}\label{classalgebra_1_1Integer_ae94db6dc5a4691010e9ddc70dfa2b8d4} 
+constexpr {\bfseries operator int} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns the underlying integer. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_a4ed4f79882bc6df70ae2a0eca936c1ed}\label{classalgebra_1_1Integer_a4ed4f79882bc6df70ae2a0eca936c1ed} 
+constexpr bool {\bfseries operator==} (\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} const \&) const =default
+\begin{DoxyCompactList}\small\item\em Compares two integers for equality. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_a13bf034a5eb641f847e37d0c80ad8230}\label{classalgebra_1_1Integer_a13bf034a5eb641f847e37d0c80ad8230} 
+constexpr std::\+strong\+\_\+ordering {\bfseries operator$<$=$>$} (\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} const \&) const =default
+\begin{DoxyCompactList}\small\item\em Compares two integers and returns their ordering. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_a5adae683620c32ab66a4b5af36050f11}\label{classalgebra_1_1Integer_a5adae683620c32ab66a4b5af36050f11} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} \& {\bfseries operator+=} (\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Adds rhs to itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_afd8e6a7633822b53bf3e7e74cbe1b462}\label{classalgebra_1_1Integer_afd8e6a7633822b53bf3e7e74cbe1b462} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} \& {\bfseries operator-\/=} (\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Subtracts rhs from itself. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_aee31d8c41c2f11ec68f6efaafa471a04}\label{classalgebra_1_1Integer_aee31d8c41c2f11ec68f6efaafa471a04} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} {\bfseries operator+} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns a copy of self. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_a78c524887f425d59ce01075034ff370c}\label{classalgebra_1_1Integer_a78c524887f425d59ce01075034ff370c} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} {\bfseries operator-\/} () const noexcept
+\begin{DoxyCompactList}\small\item\em Returns a negation of self. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_a4e9009346d7e20f46adfa06535d98485}\label{classalgebra_1_1Integer_a4e9009346d7e20f46adfa06535d98485} 
+constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} \& {\bfseries operator\texorpdfstring{$\ast$}{*}=} (\doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} rhs) noexcept
+\begin{DoxyCompactList}\small\item\em Multiplies itself by rhs. \end{DoxyCompactList}\item 
+constexpr int \doxymbox{\hyperlink{classalgebra_1_1Integer_aee93f545f02d49014648ea7d93a33984}{euclidean\+\_\+function}} () const noexcept
+\begin{DoxyCompactList}\small\item\em Euclidean function for integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classalgebra_1_1Integer_aa9c10a75406f3eaefa9b5218aecb5471}\label{classalgebra_1_1Integer_aa9c10a75406f3eaefa9b5218aecb5471} 
+static constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} {\bfseries zero} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns 0. \end{DoxyCompactList}\item 
+\Hypertarget{classalgebra_1_1Integer_ac2f26306c67caa5e46c38b721580df54}\label{classalgebra_1_1Integer_ac2f26306c67caa5e46c38b721580df54} 
+static constexpr \doxymbox{\hyperlink{classalgebra_1_1Integer_a074d75facb3d7ff33c2b26c546f0b0f5}{Integer}} {\bfseries one} () noexcept
+\begin{DoxyCompactList}\small\item\em Returns 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of Integers. 
+
+A class implementing integers, while additionally satisfying \doxylink{conceptalgebra_1_1EuclideanDomain}{Euclidean\+Domain} constraint 
+
+\label{doc-func-members}
+\Hypertarget{classalgebra_1_1Integer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classalgebra_1_1Integer_aee93f545f02d49014648ea7d93a33984}\index{algebra::Integer@{algebra::Integer}!euclidean\_function@{euclidean\_function}}
+\index{euclidean\_function@{euclidean\_function}!algebra::Integer@{algebra::Integer}}
+\doxysubsubsection{\texorpdfstring{euclidean\_function()}{euclidean\_function()}}
+{\footnotesize\ttfamily \label{classalgebra_1_1Integer_aee93f545f02d49014648ea7d93a33984} 
+int algebra::\+\+Integer::\+euclidean\+\_\+function (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+Euclidean function for integers. 
+
+Euclidean function for integers, in this case the absolute value. 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+algebra/\+include/\+algebra/\+\doxymbox{\hyperlink{integer_8h}{integer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,57 @@
+\doxysection{algebra::\+Homology\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structalgebra_1_1Homology}{}\label{structalgebra_1_1Homology}\index{algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}}
+
+
+\doxylink{structalgebra_1_1Homology}{Homology} of a chain complex.  
+
+
+
+
+{\ttfamily \+\#include $<$chain\+\_\+complex.\+h$>$}
+
+
+
+Collaboration diagram for algebra::\+Homology\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structalgebra_1_1Homology__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structalgebra_1_1Homology_a47962bd1e6263153d3505578e909f63c}\label{structalgebra_1_1Homology_a47962bd1e6263153d3505578e909f63c} 
+std::\+vector$<$ std::\+size\+\_\+t $>$ {\bfseries betti\+\_\+numbers} \{\}
+\begin{DoxyCompactList}\small\item\em Betti numbers of a chain complex. \end{DoxyCompactList}\item 
+std::\+vector$<$ std::\+vector$<$ T $>$ $>$ \doxymbox{\hyperlink{structalgebra_1_1Homology_af541ef3c066a661ffb8d320e128a1d3c}{torsion}} \{\}
+\begin{DoxyCompactList}\small\item\em Torsion of a chain complex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+struct algebra::\+\+Homology$<$ T $>$}
+\doxylink{structalgebra_1_1Homology}{Homology} of a chain complex. 
+
+A struct containing homology information of a chain complex -\/ its betti numbers and torsion group. The data is stored increasingly in dimension:\+ dim(\+H\+\_\+0) = betti\+\_\+numbers\+[0]\+, dim(\+H\+\_\+1) = betti\+\_\+numbers\+[1]\+ itd. 
+
+\label{doc-variable-members}
+\Hypertarget{structalgebra_1_1Homology_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structalgebra_1_1Homology_af541ef3c066a661ffb8d320e128a1d3c}\index{algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}!torsion@{torsion}}
+\index{torsion@{torsion}!algebra::Homology$<$ T $>$@{algebra::Homology$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{torsion}{torsion}}
+{\footnotesize\ttfamily \label{structalgebra_1_1Homology_af541ef3c066a661ffb8d320e128a1d3c} 
+template$<$class T$>$ \\
+std::\+vector$<$std::\+vector$<$T$>$ $>$ \doxymbox{\hyperlink{structalgebra_1_1Homology}{algebra::\+\+Homology}}$<$ T $>$::\+torsion \{\}}
+
+
+
+Torsion of a chain complex. 
+
+Information about the torsion group is stored in the following way:\+ torsion\+[n]\+ contains an array of elements such that torsion is equal to the simple sum of T/\+aT for a in the array. 
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+algebra/\+include/\+algebra/\+\doxymbox{\hyperlink{chain__complex_8h}{chain\+\_\+complex.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\doxysection{std::\+formatter\texorpdfstring{$<$}{<} algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>} Struct Template Reference}
+\hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4}{}\label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4}\index{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}}
+
+
+Formatter for the {\ttfamily Matrix} type.  
+
+
+
+
+{\ttfamily \+\#include $<$matrix.\+h$>$}
+
+
+
+Collaboration diagram for std::\+formatter\texorpdfstring{$<$}{<} algebra::\+Matrix\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} \texorpdfstring{$>$}{>}:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a50df22ad9226751053c9533c48173f7d}\label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a50df22ad9226751053c9533c48173f7d} 
+{\footnotesize template$<$class Parse\+Context$>$ }\\constexpr Parse\+Context::\+iterator {\bfseries parse} (Parse\+Context \&ctx)
+\begin{DoxyCompactList}\small\item\em Parses a context string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Fmt\+Context$>$ }\\Fmt\+Context::\+iterator \doxymbox{\hyperlink{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a49efc46f70b6de0f7ecc0bf8eaa77920}{format}} (\doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$ const \&matrix, Fmt\+Context \&ctx) const
+\begin{DoxyCompactList}\small\item\em Formats a matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+requires std::\+formattable$<$T, char$>$\newline
+struct std::\+formatter$<$ algebra::\+\+Matrix$<$ T $>$ $>$}
+Formatter for the {\ttfamily Matrix} type. 
+
+Impletementation of the formatter for the {\ttfamily Matrix} type.\hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_autotoc_md7}{}\doxysubsection{\texorpdfstring{Format syntax}{Format syntax}}\label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_autotoc_md7}
+
+\begin{DoxyEnumerate}
+\item :\+\+[-\/\texorpdfstring{$\vert$}{|}\#]\+\+[\&ltcofficient\+\_\+format\+\_\+string\&gt]\+
+\end{DoxyEnumerate}
+
+where \&ltcoefficient\+\_\+format\+\_\+string\&gt is the format string for the coefficient type. {\ttfamily -\/} or no specifier means that the matrix will be printed in a single line, {\ttfamily \#} will print the matrix in multiple lines, making it easier to read.\hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_autotoc_md8}{}\doxysubsection{\texorpdfstring{Example}{Example}}\label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_autotoc_md8}
+For {\ttfamily Matrix\texorpdfstring{$<$}{<}Integer\texorpdfstring{$>$}{>} matrix}
+\begin{DoxyEnumerate}
+\item {\ttfamily std::\+format("{}\{\}"{}, matrix)} outputs a single line matrix
+\item {\ttfamily std::\+format("{}\{:\+-\/\}"{}, matrix)} also outputs a single line matrix
+\item {\ttfamily std::\+format("{}\{:\+\#\}"{}, matrix)} output a multi-\/line matrix
+\item {\ttfamily std::\+format("{}\{::\+b\}"{}, matrix)} output a single line matrix of integers in binary representation
+\item {\ttfamily std::\+format("{}\{:\+\#:\+x\}"{}, matrix)} output a multi-\/line matrix of integers in hexadecimal representation 
+\end{DoxyEnumerate}
+
+\label{doc-func-members}
+\Hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a49efc46f70b6de0f7ecc0bf8eaa77920}\index{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}!format@{format}}
+\index{format@{format}!std::formatter$<$ algebra::Matrix$<$ T $>$ $>$@{std::formatter$<$ algebra::Matrix$<$ T $>$ $>$}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{structstd_1_1formatter_3_01algebra_1_1Matrix_3_01T_01_4_01_4_a49efc46f70b6de0f7ecc0bf8eaa77920} 
+template$<$class T$>$ \\
+template$<$class Fmt\+Context$>$ \\
+Fmt\+Context::\+iterator std::\+formatter$<$ \doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$ $>$::\+format (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classalgebra_1_1Matrix}{algebra::\+\+Matrix}}$<$ T $>$ const \&}]{matrix}{, }\item[{Fmt\+Context \&}]{ctx}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Formats a matrix. 
+
+Formats a matrix. Rules for the format string are specified in the class documentation. 
+
+The documentation for this struct was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+algebra/\+include/\+algebra/\+\doxymbox{\hyperlink{matrix_8h}{matrix.\+h}}\end{DoxyCompactItemize}

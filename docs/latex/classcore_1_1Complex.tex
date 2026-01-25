@@ -1,0 +1,115 @@
+\doxysection{core::\+Complex Class Reference}
+\hypertarget{classcore_1_1Complex}{}\label{classcore_1_1Complex}\index{core::Complex@{core::Complex}}
+
+
+Interface for complexes.  
+
+
+
+
+{\ttfamily \+\#include $<$complex.\+h$>$}
+
+
+
+Inheritance diagram for core::\+Complex:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classcore_1_1Complex__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for core::\+Complex:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classcore_1_1Complex__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ \doxymbox{\hyperlink{classcore_1_1Complex_a847e6c2a985f5aaa45934cfc60ce3578}{z2\+\_\+homology}} () const =0
+\begin{DoxyCompactList}\small\item\em Computes Z2 homology of the complex. \end{DoxyCompactList}\item 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ \doxymbox{\hyperlink{classcore_1_1Complex_a9745165d7cfa1c607d0777d511676ba1}{z3\+\_\+homology}} () const =0
+\begin{DoxyCompactList}\small\item\em Computes Z3 homology of the complex. \end{DoxyCompactList}\item 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ \doxymbox{\hyperlink{classcore_1_1Complex_a91e62ebdacdc7448d815aae323138f30}{z\+\_\+homology}} () const =0
+\begin{DoxyCompactList}\small\item\em Computes Z homology of the complex. \end{DoxyCompactList}\item 
+virtual void \doxymbox{\hyperlink{classcore_1_1Complex_a08a753784c880e5a54ab77e032f04fd2}{reduce}} ()=0
+\begin{DoxyCompactList}\small\item\em Decreases the complex\textquotesingle{}s size without changing its homology. \end{DoxyCompactList}\item 
+\Hypertarget{classcore_1_1Complex_a44fdd0711a18e31f5ba1e0abd75c6f22}\label{classcore_1_1Complex_a44fdd0711a18e31f5ba1e0abd75c6f22} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Complex} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for complexes. 
+
+\label{doc-func-members}
+\Hypertarget{classcore_1_1Complex_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcore_1_1Complex_a08a753784c880e5a54ab77e032f04fd2}\index{core::Complex@{core::Complex}!reduce@{reduce}}
+\index{reduce@{reduce}!core::Complex@{core::Complex}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily \label{classcore_1_1Complex_a08a753784c880e5a54ab77e032f04fd2} 
+virtual void core::\+\+Complex::\+reduce (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Decreases the complex\textquotesingle{}s size without changing its homology. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_afb140e7fa736a2e6e77b928f252469f8}{core::\+\+Cubical\+Complex3D}}.
+
+\Hypertarget{classcore_1_1Complex_a847e6c2a985f5aaa45934cfc60ce3578}\index{core::Complex@{core::Complex}!z2\_homology@{z2\_homology}}
+\index{z2\_homology@{z2\_homology}!core::Complex@{core::Complex}}
+\doxysubsubsection{\texorpdfstring{z2\_homology()}{z2\_homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1Complex_a847e6c2a985f5aaa45934cfc60ce3578} 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ core::\+\+Complex::\+z2\+\_\+homology (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Computes Z2 homology of the complex. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_aa3353005e19d5eafc53dcf603872e86b}{core::\+\+Cubical\+Complex3D}}.
+
+\Hypertarget{classcore_1_1Complex_a9745165d7cfa1c607d0777d511676ba1}\index{core::Complex@{core::Complex}!z3\_homology@{z3\_homology}}
+\index{z3\_homology@{z3\_homology}!core::Complex@{core::Complex}}
+\doxysubsubsection{\texorpdfstring{z3\_homology()}{z3\_homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1Complex_a9745165d7cfa1c607d0777d511676ba1} 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ core::\+\+Complex::\+z3\+\_\+homology (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Computes Z3 homology of the complex. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_a33cc149bfe11d904ab7f2223e91af1e3}{core::\+\+Cubical\+Complex3D}}.
+
+\Hypertarget{classcore_1_1Complex_a91e62ebdacdc7448d815aae323138f30}\index{core::Complex@{core::Complex}!z\_homology@{z\_homology}}
+\index{z\_homology@{z\_homology}!core::Complex@{core::Complex}}
+\doxysubsubsection{\texorpdfstring{z\_homology()}{z\_homology()}}
+{\footnotesize\ttfamily \label{classcore_1_1Complex_a91e62ebdacdc7448d815aae323138f30} 
+virtual std::\+unique\+\_\+ptr$<$ \doxymbox{\hyperlink{classcore_1_1Homology}{Homology}} $>$ core::\+\+Complex::\+z\+\_\+homology (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Computes Z homology of the complex. 
+
+
+
+Implemented in \doxymbox{\hyperlink{classcore_1_1CubicalComplex3D_accd6d910e146075ef5dff976d3960883}{core::\+\+Cubical\+Complex3D}}.
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+core/\+include/\+core/\+\doxymbox{\hyperlink{complex_8h}{complex.\+h}}\item 
+mc-\/homology/\+core/\+src/\+complex.\+cpp\end{DoxyCompactItemize}

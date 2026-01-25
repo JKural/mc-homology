@@ -1,0 +1,81 @@
+\doxysection{complexes::\+Basic\+Interval Class Reference}
+\hypertarget{classcomplexes_1_1BasicInterval}{}\label{classcomplexes_1_1BasicInterval}\index{complexes::BasicInterval@{complexes::BasicInterval}}
+
+
+A struct representing an interval of length 0 or 1.  
+
+
+
+
+{\ttfamily \+\#include $<$cubical\+\_\+complex.\+h$>$}
+
+
+
+Collaboration diagram for complexes::\+Basic\+Interval:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classcomplexes_1_1BasicInterval__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae}\label{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae} 
+{\bfseries Basic\+Interval} ()
+\begin{DoxyCompactList}\small\item\em Returns an singleton of 0. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_a881bbed59add0e7f3e9c6034739f88ad}\label{classcomplexes_1_1BasicInterval_a881bbed59add0e7f3e9c6034739f88ad} 
+std::\+size\+\_\+t {\bfseries hash} () const
+\begin{DoxyCompactList}\small\item\em Computer a hash of the inverval. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_a38587c34607ec7749002fcff3f1e4e91}\label{classcomplexes_1_1BasicInterval_a38587c34607ec7749002fcff3f1e4e91} 
+bool {\bfseries operator==} (\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae}{Basic\+Interval}} const \&) const
+\begin{DoxyCompactList}\small\item\em Compares two intervals. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}\label{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7} 
+int {\bfseries left} () const
+\begin{DoxyCompactList}\small\item\em Returns the left end of the interval. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_a9e188203135d550351057ed061d4db60}\label{classcomplexes_1_1BasicInterval_a9e188203135d550351057ed061d4db60} 
+int {\bfseries right} () const
+\begin{DoxyCompactList}\small\item\em Returns the right end of the interval. \end{DoxyCompactList}\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_a80f1328d98bec511ebd621573b269611}\label{classcomplexes_1_1BasicInterval_a80f1328d98bec511ebd621573b269611} 
+bool {\bfseries is\+\_\+trivial} () const
+\begin{DoxyCompactList}\small\item\em Returns true, if the interval is a singleton, false otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcomplexes_1_1BasicInterval_a980d11ad1afb8d4c59f3775971056643}\label{classcomplexes_1_1BasicInterval_a980d11ad1afb8d4c59f3775971056643} 
+static \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae}{Basic\+Interval}} {\bfseries point} (int p)
+\begin{DoxyCompactList}\small\item\em Creates a trivial interval. \end{DoxyCompactList}\item 
+static \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae}{Basic\+Interval}} \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_aa6ccd4723c82af1f2b740d0401328ef8}{interval}} (int \doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left}})
+\begin{DoxyCompactList}\small\item\em Creates a interval of length one starting in left. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A struct representing an interval of length 0 or 1. 
+
+A struct representing an interval of a form \+[{\ttfamily \doxylink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left}}, {\ttfamily \doxylink{classcomplexes_1_1BasicInterval_a9e188203135d550351057ed061d4db60}{right}}]\+, where {\ttfamily \doxylink{classcomplexes_1_1BasicInterval_a9e188203135d550351057ed061d4db60}{right} -\/ \doxylink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left} \texorpdfstring{$<$}{<} 2} 
+
+\label{doc-func-members}
+\Hypertarget{classcomplexes_1_1BasicInterval_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcomplexes_1_1BasicInterval_aa6ccd4723c82af1f2b740d0401328ef8}\index{complexes::BasicInterval@{complexes::BasicInterval}!interval@{interval}}
+\index{interval@{interval}!complexes::BasicInterval@{complexes::BasicInterval}}
+\doxysubsubsection{\texorpdfstring{interval()}{interval()}}
+{\footnotesize\ttfamily \label{classcomplexes_1_1BasicInterval_aa6ccd4723c82af1f2b740d0401328ef8} 
+\doxymbox{\hyperlink{classcomplexes_1_1BasicInterval_ad19968e4fd4bd61b9be7ae23321899ae}{Basic\+Interval}} complexes::\+\+Basic\+Interval::\+interval (\begin{DoxyParamCaption}\item[{int}]{left}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a interval of length one starting in left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \doxylink{classcomplexes_1_1BasicInterval_a102317692e6b358e76e99bb14319c8c7}{left}} & end of the interval \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+mc-\/homology/\+complexes/\+include/\+complexes/\+\doxymbox{\hyperlink{cubical__complex_8h}{cubical\+\_\+complex.\+h}}\item 
+mc-\/homology/\+complexes/\+src/\+cubical\+\_\+complex.\+cpp\end{DoxyCompactItemize}
